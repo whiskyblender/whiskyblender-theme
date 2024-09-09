@@ -97,27 +97,36 @@
         "collapsible_row_YA6UaV": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "Will I have to pay customs fees as well?",
+            "icon": "none",
+            "row_content": "<p>We unfortunately can't advise on local duties and taxes. If you're lucky enough to live in the UK or EU you won't need to worry about them. We don't know how much you might be asked to pay if you live in another part of the world nor do we know if some customs agent might decide to exchange your bottle for a nice letter saying, \"Thanks, that was delicious\" so bear this in mind & know your local laws!<\/p>",
             "page": ""
           }
         },
         "collapsible_row_cWDAwy": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "Is the parcel tracked?",
+            "icon": "none",
+            "row_content": "<p>Yes! However, because of the service we're using (to keep the shipping fees as low as possible) we don't get this information electronically sent to our customers – we ask you to be patient and allow the postal service to work their magic. In the case of orders going outside of Europe this is usually between 10 & 14 days on top of the 5 days it takes to blend up. If you are REALLY concerned about the delay send us an email (info@whiskyblender.com) and we will get a trace put on your parcel.<\/p>",
             "page": ""
           }
         },
         "collapsible_row_Tj4Qi8": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "Can I return my blend?",
+            "icon": "none",
+            "row_content": "<p>We will accept returns under certain circumstances. If you have received your bottle in a less than satisfactory condition (incorrect label, damaged: cork, seal or bottle) we will be happy to refund you in full or arrange for a replacement bottle to be sent. We must insist that we are notified within 48 hours of receiving your bottle in order to receive a full refund.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_eFcwhm": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I cancel my gift voucher",
+            "icon": "none",
+            "row_content": "<p>If you purchased a Whisky Blender gift voucher you can request a full refund on it at any time up to its expiry date - after which the voucher is void and useless - so long as it hasn't been redeemed. Simply email us quoting the voucher number or transaction ID (info@whiskyblender.com) and we'll handle it as soon as possible.<\/p>",
             "page": ""
           }
         }
@@ -133,7 +142,8 @@
         "collapsible_row_74aXJd",
         "collapsible_row_YA6UaV",
         "collapsible_row_cWDAwy",
-        "collapsible_row_Tj4Qi8"
+        "collapsible_row_Tj4Qi8",
+        "collapsible_row_eFcwhm"
       ],
       "settings": {
         "caption": "",
