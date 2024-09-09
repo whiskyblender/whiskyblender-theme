@@ -11,6 +11,9 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "custom_css": [
+
+      ],
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
@@ -49,6 +52,69 @@
         "collapsible_row_ew4Lkq": {
           "type": "collapsible_row",
           "settings": {
+            "heading": "What if I don't like my whisky?",
+            "icon": "none",
+            "row_content": "<p>Oh no! We're really sorry if you decide you don't like your whisky but if you send us an email with your tasting note as well as your bottle number and an example of a mainstream whisky you like, we can try and guide you towards something more palatable next time!<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_EWhJae": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I choose the bottled date?",
+            "icon": "none",
+            "row_content": "<p>Well... we label the bottle accurately, that is to say truthfully. If it was bottled on the 2nd of January then that is what we put on the label. We're happy to sit on an order and bottle on a requested date just drop us an email after you’ve placed your order and we will reply to confirm receipt.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_8P7C6E": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What whiskies do you use?",
+            "icon": "none",
+            "row_content": "<p>They're OUR secret! We encourage you to use 'the force' when it comes to blending in our Lab. The expert tasting notes are your most powerful ally! If we threw in a description about the distillery or the age of the whiskies involved then it would almost certainly taint your judgement in making your blend and we don't want people to feel biased against a region or distillery - we want you to pick what flavours appeal to you the most!<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_MaHU3C": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can you ship to my country?",
+            "icon": "none",
+            "row_content": "<p>If you don't find your country listed during the checkout procedure you can email your full shipping address to us and we will try and get a special price for you. Note that customs folks in places like Canada really don't like whisky being imported – so please make sure you know your local customs\/laws when ordering from us!<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_74aXJd": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How quickly will I get my whisky?",
+            "icon": "none",
+            "row_content": "<p>Obviously we want you to get your whisky as quickly as possible, but despite the fact we've made it look easy, blending is still labour intensive and we don't know how busy the lab will be at any given time. We aim to blend and bottle within 5 working days at most. Shipping varies depending on destination, UK is a 48 hour service, Europe 2-4 days and the rest of the world seems to vary between 5 days and 3 weeks depending on how lucky you are! Remember that we require a signature upon delivery.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_YA6UaV": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_cWDAwy": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_Tj4Qi8": {
+          "type": "collapsible_row",
+          "settings": {
             "heading": "Collapsible row",
             "icon": "check_mark",
             "row_content": "",
@@ -60,7 +126,14 @@
         "collapsible_row_4jEV96",
         "collapsible_row_akjpW9",
         "collapsible_row_j4fV9y",
-        "collapsible_row_ew4Lkq"
+        "collapsible_row_ew4Lkq",
+        "collapsible_row_EWhJae",
+        "collapsible_row_8P7C6E",
+        "collapsible_row_MaHU3C",
+        "collapsible_row_74aXJd",
+        "collapsible_row_YA6UaV",
+        "collapsible_row_cWDAwy",
+        "collapsible_row_Tj4Qi8"
       ],
       "settings": {
         "caption": "",
