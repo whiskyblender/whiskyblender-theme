@@ -22,18 +22,18 @@
         "collapsible_row_4jEV96": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "How much does a bottle cost?",
             "icon": "none",
-            "row_content": "",
+            "row_content": "<p>The prices will vary depending on the blend you finally select. The average price for a bottle is £59 (but the spread is around £40-78).<\/p>",
             "page": ""
           }
         },
         "collapsible_row_akjpW9": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "How do I pay you?",
+            "icon": "none",
+            "row_content": "<p>Stripe are our payment service provider they will accept most card types. When you are ordering your payment details will be securely sent to stripe for processing. At no point will Whisky Blender view or store your credit card information.<\/p>",
             "page": ""
           }
         },
@@ -64,7 +64,7 @@
       ],
       "settings": {
         "caption": "",
-        "heading": "<>Collapsible content",
+        "heading": "Collapsible content",
         "heading_size": "h1",
         "heading_alignment": "left",
         "layout": "none",
