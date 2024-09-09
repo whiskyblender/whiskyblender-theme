@@ -322,7 +322,11 @@
       </div>
     </div>
   </div>
-
+{% if request.design_mode %}
+  <!-- Code to execute when the customizer is loaded -->
+  <p>The customizer is currently active.</p>
+{% else %}
+  <!-- Code to execute when the customizer is not loaded -->
   <div id="tollgate" class="active-age-verification">
     <div class="tollgate-content">
       <p>Are you of legal drinking age in your country?</p>
@@ -336,6 +340,7 @@
       </div>
     </div>
   </div>
+{% endif %}
   <script defer>
     //Check if the user has already given age consent
     if (document.cookie.indexOf('age_consent=true') === -1) {
