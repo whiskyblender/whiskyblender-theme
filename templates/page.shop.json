@@ -37,6 +37,7 @@
         },
         "link_n9p8Mt": {
           "type": "link",
+          "disabled": true,
           "settings": {
             "text": "Gift credit",
             "url": "#shop-gift"
@@ -44,7 +45,6 @@
         },
         "link_pj3H4j": {
           "type": "link",
-          "disabled": true,
           "settings": {
             "text": "Blend your own",
             "url": "\/"
@@ -81,6 +81,7 @@
     },
     "shop_gift_cfyqwg": {
       "type": "shop-gift",
+      "disabled": true,
       "settings": {
         "title": "Gift Credit",
         "description": "We'll email you a voucher to print off, fold up and hand over to that special whisky person in your life. They visit the site, blend their bottle and enter voucher to deduct your gift credit from their total."
