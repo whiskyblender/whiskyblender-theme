@@ -80,8 +80,6 @@ const getVariantFromSelectedOptions = () => {
   let radios = document.querySelectorAll('.max input[type="radio"]');
   let checked = Array.from(radios).filter((radio) => radio.checked);
   let selectedOptions = checked.map((radio) => radio.value);
-  console.log(Window);
-  console.log(Window.product);
   let variant = Window.product.variants.find((variant) => {
     return variant.options.every((option, i) => option === selectedOptions[i]);
   });
@@ -146,13 +144,9 @@ const addProductToCart = async () => {
 };
 
 function fetchProduct() {
-  console.log('fetching product');
-  console.log(location.href.split('?')[0]);
   fetch(location.href.split('?')[0] + '.js')
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
-      console.log(location.href);
       Window.product = data;
     });
 
@@ -166,7 +160,6 @@ if (document.readyState === 'loading') {
   // Loading hasn't finished yet
   document.addEventListener('DOMContentLoaded', fetchProduct);
 } else {
-  console.log('here');
   // `DOMContentLoaded` has already fired
   fetchProduct();
 }
