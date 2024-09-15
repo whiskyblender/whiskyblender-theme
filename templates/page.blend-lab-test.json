@@ -20,8 +20,8 @@
     "1724967466e3d8a424": {
       "type": "apps",
       "blocks": {
-        "whiskyblender_app_blend_block_MtMmgU": {
-          "type": "shopify:\/\/apps\/whiskyblender-app\/blocks\/blend-block\/2e388c95-b32f-41c3-86df-6761f4bf5947",
+        "blend_whiskyblender_prod_blend_block_94URgY": {
+          "type": "shopify:\/\/apps\/blend-whiskyblender-prod\/blocks\/blend-block\/d25205c5-562b-431d-a85d-97605458e7de",
           "settings": {
             "first_step_subtitle": "Step 1",
             "first_step_title": "Blend it",
@@ -40,7 +40,7 @@
         }
       },
       "block_order": [
-        "whiskyblender_app_blend_block_MtMmgU"
+        "blend_whiskyblender_prod_blend_block_94URgY"
       ],
       "settings": {
         "include_margins": false
