@@ -145,7 +145,7 @@ const addProductToCart = async () => {
   });
 };
 
-document.addEventListener('DOMContentLoaded', function () {
+function fetchProduct() {
   fetch(location.href + '.js')
     .then((response) => response.json())
     .then((data) => {
@@ -158,4 +158,12 @@ document.addEventListener('DOMContentLoaded', function () {
   attachEventListeners();
   addQuantityListeners();
   addProductToCart();
-});
+}
+
+if (document.readyState === 'loading') {
+  // Loading hasn't finished yet
+  document.addEventListener('DOMContentLoaded', fetchProduct);
+} else {
+  // `DOMContentLoaded` has already fired
+  fetchProduct();
+}
