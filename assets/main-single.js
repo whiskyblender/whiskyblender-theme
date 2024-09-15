@@ -146,6 +146,7 @@ const addProductToCart = async () => {
 };
 
 function fetchProduct() {
+  console.log('fetching product');
   fetch(location.href + '.js')
     .then((response) => response.json())
     .then((data) => {
@@ -164,6 +165,7 @@ if (document.readyState === 'loading') {
   // Loading hasn't finished yet
   document.addEventListener('DOMContentLoaded', fetchProduct);
 } else {
+  console.log('here');
   // `DOMContentLoaded` has already fired
   fetchProduct();
 }
