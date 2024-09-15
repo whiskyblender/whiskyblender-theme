@@ -149,6 +149,8 @@ document.addEventListener('DOMContentLoaded', function () {
   fetch(location.href + '.js')
     .then((response) => response.json())
     .then((data) => {
+      console.log(data);
+      console.log(location.href);
       Window.product = data;
     });
 
