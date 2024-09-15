@@ -147,8 +147,8 @@ const addProductToCart = async () => {
 
 function fetchProduct() {
   console.log('fetching product');
-  console.log(location.href);
-  fetch(location.href + '.js')
+  console.log(location.href.split('?')[0]);
+  fetch(location.href.split('?')[0] + '.js')
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
