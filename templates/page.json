@@ -37,7 +37,7 @@
           "settings": {
             "heading": "How do I pay you?",
             "icon": "none",
-            "row_content": "<p>Stripe are our payment service provider they will accept most card types. When you are ordering your payment details will be securely sent to stripe for processing. At no point will Whisky Blender view or store your credit card information.<\/p>",
+            "row_content": "<p>Shopify is our payment service provider they will accept most card types. When you are ordering your payment details will be securely sent to stripe for processing. At no point will Whisky Blender view or store your credit card information.<\/p>",
             "page": ""
           }
         },
