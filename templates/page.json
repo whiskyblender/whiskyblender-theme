@@ -77,6 +77,15 @@
             "page": ""
           }
         },
+        "collapsible_row_kA87eK": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What states are safe to ship to in the USA?",
+            "icon": "none",
+            "row_content": "<p><strong>So... currently we can send to:<br\/><br\/>CALIFORNIA, <br\/>CONNETICUT,<br\/>DELAWARE,<br\/>DISTRICT OF COLUMBIA,<br\/>FLORIDA,<br\/>GEORGIA,<br\/>IDAHO,<br\/>ILLINOIS,<br\/>LOUISIANA,<br\/>MAINE,<br\/>MARYLAND,<br\/>MASSACHUSETTS,<br\/>NEBRASKA, <br\/>NEW JERSEY<br\/>NEW MEXICO, <br\/>NEW YORK, <br\/>NORTH<br\/>CAROLINA,<br\/>OREGON,<br\/>PENNSYLVANIA,<br\/>RHODE ISLAND,<br\/>SOUTH CAROLINA,<br\/>TEXAS,<br\/>VERMONT,<br\/>VIRGINIA, <br\/>WASHINGTON,<br\/>WYOMING, <\/strong><\/p><p><strong>ALASKA(anchorage<br\/>only at an £30 additional charge) - email us directly if you want to ship there.<\/strong><\/p>",
+            "page": ""
+          }
+        },
         "collapsible_row_MaHU3C": {
           "type": "collapsible_row",
           "settings": {
@@ -139,6 +148,7 @@
         "collapsible_row_ew4Lkq",
         "collapsible_row_EWhJae",
         "collapsible_row_8P7C6E",
+        "collapsible_row_kA87eK",
         "collapsible_row_MaHU3C",
         "collapsible_row_74aXJd",
         "collapsible_row_YA6UaV",
