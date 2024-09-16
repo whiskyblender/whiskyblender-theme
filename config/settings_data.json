@@ -403,5 +403,10 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".socials {display: none;}"
+    ]
   }
 }
