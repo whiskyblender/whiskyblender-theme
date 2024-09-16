@@ -26,9 +26,9 @@
         "collapsible_row_4jEV96": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "How much does a bottle cost?",
+            "heading": "How much does a custom bottle cost?",
             "icon": "none",
-            "row_content": "<p>The prices will vary depending on the blend you finally select. The average price for a bottle is £59 (but the spread is around £40-78).<\/p>",
+            "row_content": "<p>The prices will vary depending on the blend you finally select AND the whisky options currently offered. The average price for a bottle is £55 (but the spread is around £40-68).<\/p>",
             "page": ""
           }
         },
