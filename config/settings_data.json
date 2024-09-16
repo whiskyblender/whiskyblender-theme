@@ -406,8 +406,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".socials {display: none !important;}",
-      ".owl-carousel .owl-item img {padding: 0; border-radius: 20px;}"
+      ".socials {display: none !important;}"
     ]
   }
 }
