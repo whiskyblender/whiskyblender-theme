@@ -4,7 +4,7 @@
       {% for option in product.options_with_values %}
         <div class="product-details">
           <h4>Notes</h4>
-          <p>{product.metafields.custom.notes}</p>
+          <p> {{ product.metafields.custom.notes }} </p>
         </div>
         <div class="buying-option" style="display:none">
           <h4 class="option-title">
