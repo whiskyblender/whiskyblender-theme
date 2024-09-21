@@ -8,7 +8,7 @@
       {% unless collection.handle == 'frontpage' %}
         <a class="any-link breadcrumb" aria-label="Breadcrumb" href="pages/shop">shop</a> /
         <a class="any-link breadcrumb" aria-label="Breadcrumb" href="{{ collection.url }}"
-          >shop/{{ collection.title -}}
+          >{{ collection.title -}}
         </a>
       {% endunless %}
     {% endfor %}
