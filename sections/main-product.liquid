@@ -123,20 +123,24 @@
       </a>
     </div>
   </div>
-</article>
 
-<div class="owl-carousel gallery">
-  {% for image in product.images %}
-    <div class="item">
-      <img
-        height="auto"
-        width="auto"
-        src="{{ image.src | image_url: width: 904, height: 542 }}"
-        alt="{{ image.alt | escape }}"
-      >
-    </div>
-  {% endfor %}
-</div>
+  <div class="owl-carousel gallery">
+    {% for image in product.images %}
+      <div class="item">
+        <img
+          height="auto"
+          width="auto"
+          src="{{ image.src | image_url: width: 904, height: 542 }}"
+          alt="{{ image.alt | escape }}"
+        >
+      </div>
+    {% endfor %}
+  </div>
+
+  <p>
+    {{ product.description }}
+  </p>
+</article>
 
 {% render 'product-selector' %}
 {% comment %} {% render 'find-blend' %} {% endcomment %}
