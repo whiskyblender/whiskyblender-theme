@@ -37,8 +37,18 @@
             {% endif %}
           </h4>
           <div class="segmented-control">
-            <input type="radio" name="Size" value="50cl" id="50cl" checked>
-            <label for="50cl"> 50cl </label>
+            {% for value in option.values %}
+              <input
+                type="radio"
+                name="{{ option.name }}"
+                value="{{ value }}"
+                id="{{ value }}"
+                {% if forloop.first %}
+                  checked
+                {% endif %}
+              >
+              <label for="{{ value }}"> {{ value }} </label>
+            {% endfor %}
           </div>
         </div>
       {% endfor %}
