@@ -2,7 +2,8 @@
 <link href="{{ 'main-general.css' | asset_url }}" rel="stylesheet" type="text/css" media="all">
 <link href="{{ 'owl.carousel.min.css' | asset_url }}" rel="stylesheet" type="text/css" media="all">
 
-<article class="general-product product-page">
+<div class="product-page">
+<article class="general-product ">
   <div class="general-product-info">
     {% for collection in product.collections %}
       {% unless collection.handle == 'frontpage' %}
@@ -146,6 +147,7 @@
 </article>
 
 {% render 'product-selector' %}
+  </div>
 {% comment %} {% render 'find-blend' %} {% endcomment %}
 
 <script src="{{ 'main-general.js' | asset_url }}" defer="defer"></script>
