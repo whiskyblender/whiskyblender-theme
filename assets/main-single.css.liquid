@@ -408,6 +408,7 @@ input[type=number]:focus-visible{
 	margin: 0 -20px;
 }
 
+
 .segmented-control>input {
 	display: none;
 }
@@ -622,4 +623,35 @@ button:hover {
   font-size: 20px;
   font-weight: 100;
   margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .segmented-control {
+        margin: 0;
+        flex-direction: row;
+    }
+    
+    .inner-wrap {
+        flex-direction: row;
+        align-items: flex-end;
+        width: -webkit-fill-available;
+    }
+
+    .basket-items li {
+        padding: 20px;
+        display: flex;
+    }
+
+    .basket-items li .item-deets {
+        min-height: 160px;
+        padding: 20px;
+    }
+
+    .basket-items li .item-options {
+        padding: 20px;
+        width: 220px;
+        align-items: flex-end;
+    }
+    
 }
