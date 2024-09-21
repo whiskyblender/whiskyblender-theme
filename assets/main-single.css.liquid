@@ -687,3 +687,34 @@ button:hover {
     }
     
 }
+#product-page .gallery {
+    padding: 20px 0;
+}
+
+#product-page .gallery .item {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#product-page .gallery .owl-nav button {
+    position: absolute;
+    top: 0;
+    display: block;
+    height: 100%;
+    background: white;
+    width: 100%;
+    transition: opacity 0.3s;
+    opacity: 0;
+}
+
+#product-page .gallery .owl-nav button:hover {
+    opacity: 0;
+}
+
+#product-page .gallery .owl-nav .owl-prev {
+    left: -100%;
+}
+
+#product-page .gallery .owl-nav .owl-next {
+    right: -100%;
+}
