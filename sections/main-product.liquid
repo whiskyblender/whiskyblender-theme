@@ -7,7 +7,7 @@
     {% for collection in product.collections %}
       {% unless collection.handle == 'frontpage' %}
         <span>
-          <a class="any-link breadcrumb" aria-label="Breadcrumb" href="pages/shop">shop</a> /
+          <a class="any-link breadcrumb" aria-label="Breadcrumb" href="pages/shop">Shop</a> /
           <a class="any-link breadcrumb" aria-label="Breadcrumb" href="{{ collection.url }}">{{ collection.title -}}</a>
         </span>
       {% endunless %}
