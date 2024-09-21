@@ -47,7 +47,7 @@
           "type": "link",
           "settings": {
             "text": "Blend your own",
-            "url": "\/"
+            "url": "shopify:\/\/pages\/blend"
           }
         },
         "link_JLJCQ4": {
@@ -68,8 +68,7 @@
       "settings": {
         "title": "Look Aroon...",
         "video_url": "",
-        "webp_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/494725c9715446c7ae8cee10fed104a6.webm",
-        "poster_url": "shopify:\/\/shop_images\/pour-bg_b425a400-8a72-4246-95f7-bf72077b0e62.jpg"
+        "webp_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/494725c9715446c7ae8cee10fed104a6.webm"
       }
     },
     "shop_bottles_ePwbQ6": {
