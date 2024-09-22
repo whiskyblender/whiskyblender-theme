@@ -73,7 +73,12 @@
         </div>
         <div class="subtotal-of-items">{{ product.first_available_variant.price | money }}</div>
       </div>
-      <button class="pulse atc">Add to basket</button>
+      {% if product.available == false %}
+        <!-- Product is out of stock -->
+        <sup> Out of stock</sup>
+      {% else %}
+        <button class="pulse atc">Add to basket</button>
+      {% endif %}
     </div>
   </article>
 </div>
