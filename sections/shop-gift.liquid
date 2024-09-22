@@ -6,8 +6,7 @@
       {{ section.settings.description }}
     </p>
     <ul class="product-list">
-      
-        {% assign gift_credit = collections['gift-credit'] %}
+      {% assign gift_credit = collections['gift-credit'] %}
 
       {% for product in gift_credit.products %}
         <li class="product-list-card">
@@ -16,36 +15,30 @@
             style="background-image: url({{ product.featured_image | img_url: '1000x1000' }})"
           >
             <img src="{{ product.featured_image | img_url: '1000x1000' }}">
-             <span class="deetz single-casks-details">
+            <span class="deetz single-casks-details">
               <h4>{{ product.title }}</h4>
-              {{ product.description | truncate: 30}}
+              {{ product.type | truncate: 30 }}
               <div class="reveal">
-                <p>{{ product.product_type }}</p>
-              {% if product.available == false %}
+                {% if product.available == false %}
                   <!-- Product is out of stock -->
                   <sup> Out of stock</sup>
                 {% else %}
                   <sup class="buy pulse">{{ product.price | money }}</sup>
                 {% endif %}
-
-
-
               </div>
             </span>
-       </a>
-
-        {% endfor %}
-      
-        
+          </a>
+        </li>
+      {% endfor %}
     </ul>
   </article>
 </section>
 
 {% stylesheet %}
-.gift-credit {
-  background-color: #EAEAEA;
-  padding: 20px;
-}
+  .gift-credit {
+    background-color: #EAEAEA;
+    padding: 20px;
+  }
 {% endstylesheet %}
 
 {% javascript %}
