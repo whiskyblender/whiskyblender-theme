@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'TrimPosterWebCompressed';
-  src: url("TrimPosterWebCompressed.woff") format('woff')
+  src: url("assets/TrimPosterWebCompressed.woff") format('woff')
   , url("TrimPosterWebCompressed.ttf") format('truetype')
   , url("TrimPosterWebCompressed.otf") format('opentype');
   font-weight: normal;
