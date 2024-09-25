@@ -158,6 +158,15 @@
             "page": ""
           }
         },
+        "collapsible_row_MXjrQd": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will my whisky be collectable?",
+            "icon": "none",
+            "row_content": "<p>Part of the reason we decided to relaunch this site was in response to the fact that a friend told us a bottle of Yer Aunt Fanny's Cat's Arsehole turned up on an auction site for £95. </p><p>It was legitimately unavailable so it was, we suppose, collectable. However, we make our whisky for swallowing in the pursuit of a guid time. Your blend will kept available in our records for future blending and purchase (if stocks allow). Will it be collectable, who knows? We'd prefer if you collected empty bottles of ours, after you've consumed the contents!</p>",
+            "page": ""
+          }
+        },
         "collapsible_row_VAVnGT": {
           "type": "collapsible_row",
           "settings": {
@@ -184,6 +193,7 @@
         "collapsible_row_cWDAwy",
         "collapsible_row_Tj4Qi8",
         "collapsible_row_eFcwhm",
+        "collapsible_row_MXjrQd",
         "collapsible_row_VAVnGT"
       ],
       "settings": {
