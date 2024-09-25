@@ -20,27 +20,27 @@
     "1724967466e3d8a424": {
       "type": "apps",
       "blocks": {
-        "whiskyblender_app_blend_block_8jM4HK": {
-          "type": "shopify:\/\/apps\/whiskyblender-app\/blocks\/blend-block\/2e388c95-b32f-41c3-86df-6761f4bf5947",
+        "whiskyblender_app_blend_block_yahnMA": {
+          "type": "shopify://apps/whiskyblender-app/blocks/blend-block/2e388c95-b32f-41c3-86df-6761f4bf5947",
           "settings": {
             "first_step_subtitle": "Step 1",
             "first_step_title": "Blend it",
-            "first_step_description": "<p>Cycle through the whisky options below and start adding the ones you like the sound of until your bottle is full.<\/p>",
+            "first_step_description": "<p>Cycle through the whisky options below and start adding the ones you like the sound of until your bottle is full.</p>",
             "second_step_subtitle": "Step 2",
             "second_step_title": "Brand it",
             "second_step_description_title": "What's it called?",
-            "second_step_description": "<p>This is the fun part! Give your creation a name, or let us generate one for you.<\/p>",
+            "second_step_description": "<p>This is the fun part! Give your creation a name, or let us generate one for you.</p>",
             "second_step_input_placeholder": "Dram gooooood!",
             "third_step_subtitle": "Step 3",
             "third_step_title": "Bottle it",
             "third_step_description_title": "Who made it?",
-            "third_step_description": "<p>This will also be written on the label. So everyone will know the genius behind it.<\/p>",
+            "third_step_description": "<p>This will also be written on the label. So everyone will know the genius behind it.</p>",
             "third_step_input_placeholder": "Andy & Drew"
           }
         }
       },
       "block_order": [
-        "whiskyblender_app_blend_block_8jM4HK"
+        "whiskyblender_app_blend_block_yahnMA"
       ],
       "settings": {
         "include_margins": false
@@ -51,7 +51,7 @@
       "settings": {
         "header_title": "Uisge beatha!",
         "small_footer_text": "And in case you're wondering, uisge beatha is the original name for Scotch Whisky. It's pronounced 'oosh-keh—bae-ha' and means Water of Life in Scottish Gaelic (it's our version of aqua vitae, but better).",
-        "section_description": "<p>You've scrolled too far, head back up to complete your blend!<\/p><p>Maybe you'd rather send <a href=\"\/collections\/gift-credit\" title=\"Gift Credit\">gift credit<\/a> to someone so they can blend their own instead. Head to the <a href=\"\/pages\/shop\" title=\"Shop\">shop<\/a> for a wee look around (you can always come back later).<\/p>"
+        "section_description": "<p>You've scrolled too far, head back up to complete your blend!</p><p>Maybe you'd rather send <a href=\"/collections/gift-credit\" title=\"Gift Credit\">gift credit</a> to someone so they can blend their own instead. Head to the <a href=\"/pages/shop\" title=\"Shop\">shop</a> for a wee look around (you can always come back later).</p>"
       }
     }
   },
