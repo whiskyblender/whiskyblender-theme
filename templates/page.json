@@ -32,6 +32,15 @@
             "page": ""
           }
         },
+        "collapsible_row_KXWLdY": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I create a brand for my business?",
+            "icon": "none",
+            "row_content": "<p>Yes! <br/>Contact Andy directly via email andy@whiskyblender.com if you are interested in creating a bespoke product for resale or gifting.<br/><br/>We can offer the full bespoke service including whisky sourcing, label design, packaging, and bottling. </p>",
+            "page": ""
+          }
+        },
         "collapsible_row_tThPQy": {
           "type": "collapsible_row",
           "settings": {
@@ -152,6 +161,7 @@
       },
       "block_order": [
         "collapsible_row_4jEV96",
+        "collapsible_row_KXWLdY",
         "collapsible_row_tThPQy",
         "collapsible_row_akjpW9",
         "collapsible_row_j4fV9y",
