@@ -175,6 +175,15 @@
             "row_content": "<p>Yes. But we don't sell to the public for long-term maturation, sorry. If you're still keen to ask about it, please reach out we're happy to offer free opinions on the subject.</p><p>The cask investment world is a more or less a nonsense these days - our free advice is to just avoid it. Especially be on guard for firms based in or near London. Or for that matter YouTubers, who have been in the industry since the cask investment world blew up and work hard to cultivate an image of legitimacy. <br/><br/>If you're interested in buying a cask to bottle in the immediate to medium term - then of course reach out. <br/><br/>Alternatively, check out our single cask bottles or ask us if we have any stuff that's not on the site, everything we have can be fully personalised/branded. </p>",
             "page": ""
           }
+        },
+        "collapsible_row_K69z9e": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you sell or share my personal information?",
+            "icon": "none",
+            "row_content": "<p>As described in our Privacy Policy, we collect personal information from your interactions with us and our website, including through cookies and similar technologies. We may also share this personal information with third parties, including advertising partners. We do this in order to show you ads on other websites that are more relevant to your interests and for other reasons outlined in our privacy policy.</p><p>Sharing of personal information for targeted advertising based on your interaction on different websites may be considered \"sales\", \"sharing\", or \"targeted advertising\" under certain U.S. state privacy laws. Depending on where you live, you may have the right to opt out of these activities. If you would like to exercise this opt-out right, please follow the instructions below.</p><p>If you visit our website with the Global Privacy Control opt-out preference signal enabled, depending on where you are, we will treat this as a request to opt-out of activity that may be considered a “sale” or “sharing” of personal information or other uses that may be considered targeted advertising for the device and browser you used to visit our website.</p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -194,7 +203,8 @@
         "collapsible_row_Tj4Qi8",
         "collapsible_row_eFcwhm",
         "collapsible_row_MXjrQd",
-        "collapsible_row_VAVnGT"
+        "collapsible_row_VAVnGT",
+        "collapsible_row_K69z9e"
       ],
       "settings": {
         "caption": "",
