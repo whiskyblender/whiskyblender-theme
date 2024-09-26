@@ -127,7 +127,7 @@
           "settings": {
             "heading": "Will I have to pay customs fees as well?",
             "icon": "none",
-            "row_content": "<p>We unfortunately can't advise on local duties and taxes. If you're lucky enough to live in the UK or the US states we ship to, you won't need to worry about them. <br/><br/>We don't know how much you might be asked to pay if you live in another part of the world nor do we know if some customs agent might decide to exchange your bottle for a nice letter saying, \"Thanks, that was delicious\" so bear this in mind & know your local laws! Since leaving the EU we've noticed there are more problems than ever before with rejections.</p>",
+            "row_content": "<p>We unfortunately can't advise on local duties and taxes. If you're lucky enough to live in the UK, or the USA states that we ship to, you won't need to worry about them. <br/><br/>We don't know how much you might be asked to pay if you live in another part of the world nor do we know if some customs agent might decide to exchange your bottle for a nice letter saying, \"Thanks, that was delicious\" so bear this in mind & know your local laws! Since leaving the EU we've noticed there are more problems than ever before with rejections and mental duty charges.</p>",
             "page": ""
           }
         },
