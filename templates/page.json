@@ -32,6 +32,15 @@
             "page": ""
           }
         },
+        "collapsible_row_RDMq7h": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I name my whisky anything?",
+            "icon": "none",
+            "row_content": "<p>Well, there is a character limit but yeah you can pretty much name it whatever you want! </p><p>As you type, you'll find the label adjusts the size of the text, so you can play around with your brand to get something your happy with.<br/><br/>We would add, however, that if you try to name it something potentially misleading like, oh I dunno, JOHNNIE WALKER 15 YEAR OLD - we won't create this label. We'll contact you and ask for an alternate design, if we don't hear back from you we may refund your order or make up our own nonsense label as close to your own as we deem acceptable. In short, we won't knowingly reproduce copywritten brand names or produce age statements.</p>",
+            "page": ""
+          }
+        },
         "collapsible_row_KXWLdY": {
           "type": "collapsible_row",
           "settings": {
@@ -188,6 +197,7 @@
       },
       "block_order": [
         "collapsible_row_4jEV96",
+        "collapsible_row_RDMq7h",
         "collapsible_row_KXWLdY",
         "collapsible_row_tThPQy",
         "collapsible_row_akjpW9",
