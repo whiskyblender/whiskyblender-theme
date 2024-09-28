@@ -46,7 +46,7 @@
           "type": "link",
           "settings": {
             "text": "Blend your own",
-            "url": "shopify:\/\/pages\/blend"
+            "url": "shopify://pages/blend"
           }
         },
         "link_JLJCQ4": {
@@ -68,7 +68,7 @@
       "settings": {
         "title": "Look Aroon...",
         "video_url": "",
-        "webp_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/494725c9715446c7ae8cee10fed104a6.webm"
+        "webp_url": "https://cdn.shopify.com/videos/c/o/v/494725c9715446c7ae8cee10fed104a6.webm"
       }
     },
     "shop_bottles_ePwbQ6": {
@@ -87,7 +87,6 @@
     },
     "shop_clothes_r6WC8R": {
       "type": "shop-clothes",
-      "disabled": true,
       "settings": {
         "title": "Claes an' hings",
         "description": ""
