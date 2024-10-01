@@ -104,6 +104,15 @@
             "page": ""
           }
         },
+        "collapsible_row_7LkgMa": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Where's all your awards?",
+            "icon": "none",
+            "row_content": "<p>Well, in the words of more than one famous whisky distiller... whisky awards are all bullshit - except the ones I win.<br/><br/>Almost every award out there is bought and paid for. You pay to submit your whisky and you get medals for turning up. It's all marketing pish. The one's that aren't corporate, tend to be run by the whisky anoraks, who don't judge blind but instead by branding.</p>",
+            "page": ""
+          }
+        },
         "collapsible_row_kA87eK": {
           "type": "collapsible_row",
           "settings": {
@@ -205,6 +214,7 @@
         "collapsible_row_ew4Lkq",
         "collapsible_row_EWhJae",
         "collapsible_row_8P7C6E",
+        "collapsible_row_7LkgMa",
         "collapsible_row_kA87eK",
         "collapsible_row_MaHU3C",
         "collapsible_row_74aXJd",
