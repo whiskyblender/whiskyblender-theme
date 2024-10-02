@@ -50,21 +50,12 @@
             "page": ""
           }
         },
-        "collapsible_row_tThPQy": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "What are the shipping costs?",
-            "icon": "none",
-            "row_content": "<p><span style=\"text-decoration:underline\">United Kingdom - 1-3 Days</span></p><p>Orders under £100: <strong>£5.00</strong><br/>Orders over £100: <strong>FREE</strong></p><p><span style=\"text-decoration:underline\">USA (Safe States) - 7-14 Days</span></p><p>Orders under £100: <strong>£55</strong><br/>Between £100-£150: <strong>£60</strong><br/>Between £150-£199: <strong>£75</strong><br/>Between £200-499: <strong>£90</strong><br/>Orders over £500: <strong>£120<br/></strong>24 bottles or more: <strong>FREE</strong><br/><br/>Shipping to the US is calculated by volumetric weight and includes customs charges. Our \"Safe states\" for shipping are: CA, CT, DE, D.C., FL, GA, ID, IL, LA, ME, MD, MA, NE, NJ, NM, NY, NC, OR, PA, RI, SC, TX, VT, VA, WA, WY. Alaska (Anchorage only) has a £30 surcharge. <br/><br/>We promise these rates are amongst the best you'll find anywhere online to send Scotch from the UK. We're working hard  with our couriers to improve the pricing without compromising the service. </p><p>Contact us on the chat or via email for \"Other International\" destinations<br/></p>",
-            "page": ""
-          }
-        },
         "collapsible_row_akjpW9": {
           "type": "collapsible_row",
           "settings": {
             "heading": "How do I pay you?",
             "icon": "none",
-            "row_content": "<p>Shopify is our payment service provider they will accept most card types. When you are ordering your payment details will be securely sent to stripe for processing. At no point will Whisky Blender view or store your credit card information.</p>",
+            "row_content": "<p>Shopify is our payment service provider they will accept most card types. When you are ordering your payment details will be securely sent to stripe for processing. At no point will Whisky Blender view or store your credit card information. <br/><br/>If you are having trouble placing your order, please email or chat to us and we will arrange an alternate payment method.</p>",
             "page": ""
           }
         },
@@ -77,48 +68,12 @@
             "page": ""
           }
         },
-        "collapsible_row_ew4Lkq": {
+        "collapsible_row_74aXJd": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "What if I don't like my whisky?",
+            "heading": "How quickly will I get my whisky?",
             "icon": "none",
-            "row_content": "<p>Oh no! We're really sorry if you decide you don't like your whisky but if you send us an email with your tasting note as well as your bottle number and an example of a mainstream whisky you like, we can try and guide you towards something more palatable next time!</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_EWhJae": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Can I choose the bottled date?",
-            "icon": "none",
-            "row_content": "<p>We label the bottle accurately, that is to say truthfully. If it was bottled on the 2nd of January then that is what we would put on the label. We're happy to sit on an order and bottle on a requested date, just drop us an email after you’ve placed your order and we will reply to confirm receipt.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_8P7C6E": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "What whiskies do you use?",
-            "icon": "none",
-            "row_content": "<p>They're OUR secret! We encourage you to use 'the force' when it comes to blending in our Lab. Our tasting notes are your most powerful ally! </p><p>For those in the know, If we threw in a description about the distillery or the age of the whiskies involved then it would almost certainly taint your judgement in making your blend - we want you to pick what flavours appeal to you the most! Don't try to make Johnnie Walker - try to make one for yersel, Johnnie Worker! </p><p>For the geeks, yes, we know you all too well. The whiskies for blending are unmolested  single cask scotch whisky varieties - aside from being cut to 46%abv for an easy life. We use minimal filtration to retain as much original mouthfeel as possible, though we remove as much charcoal and other bits of wid as possible.<br/><br/>Let us know on social media (or email if you'd prefer) what you think of your whisky and give us your tasting notes! If you can guess what's in it and the age you'll win a prize.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_7LkgMa": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Where's all your awards?",
-            "icon": "none",
-            "row_content": "<p>Well, in the words of more than one of our whisky pals... \"whisky awards are all bullshit - except the ones I win\" - A. Distiller.<br/><br/>Almost every award out there is bought and paid for. You pay to submit your whisky and you get medals for turning up. If you've paid for a table at an award event or thrown a ton at advertising, you might command a gold. It's all marketing pish. How else does Haig Club get a silver medal for anything but cleaning your drains?</p><p>The one's that aren't corporate, tend to be run by the whisky afficionados, who don't judge blind but instead by branding - that is to say bottles that generally represent excellent value but are all too often impossible to find.<br/><br/>Having said all this,we have won a few \"dram of the days\" and a \"dram of the year\" at The Whisky Lounge events in the UK, plus we won a  \"Drammy Award\" back in the day! All, of course, voted for by the public. </p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_kA87eK": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "What states are safe to ship to in the USA?",
-            "icon": "none",
-            "row_content": "<p>So... currently we can send to:<br/><br/>CALIFORNIA, <br/>CONNETICUT,<br/>DELAWARE,<br/>DISTRICT OF COLUMBIA,<br/>FLORIDA,<br/>GEORGIA,<br/>IDAHO,<br/>ILLINOIS,<br/>LOUISIANA,<br/>MAINE,<br/>MARYLAND,<br/>MASSACHUSETTS,<br/>NEBRASKA, <br/>NEW JERSEY<br/>NEW MEXICO, <br/>NEW YORK, <br/>NORTH CAROLINA,<br/>OREGON,<br/>PENNSYLVANIA,<br/>RHODE ISLAND,<br/>SOUTH CAROLINA,<br/>TEXAS,<br/>VERMONT,<br/>VIRGINIA, <br/>WASHINGTON,<br/>WYOMING, </p><p>ALASKA (Anchorage only at an £30 additional charge) - email us directly if you want to ship there.</p>",
+            "row_content": "<p>Obviously we want you to get your whisky as quickly as possible, but despite the fact we've made it look easy, blending is still labour intensive and we don't know how busy the lab will be at any given time. We aim to blend and bottle within 3 working days at most. If your order is urgent, just let us know and we will do our best to get it done rapido! <br/><br/>Shipping varies depending on destination. <br/><br/><strong>UK </strong>is a next day service.<br/><br/><strong>USA </strong>is normally 5-10 working days.<br/><br/><strong>Europe </strong>(when customs aren't rejecting or charging outrageous fees) is normally 2-4 days. <br/><br/><strong>The rest of the world </strong>seems to vary between 2 days and 3 weeks depending on how lucky you are! Remember that we require a signature upon delivery.</p>",
             "page": ""
           }
         },
@@ -131,12 +86,21 @@
             "page": ""
           }
         },
-        "collapsible_row_74aXJd": {
+        "collapsible_row_tThPQy": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "How quickly will I get my whisky?",
+            "heading": "What are the shipping costs?",
             "icon": "none",
-            "row_content": "<p>Obviously we want you to get your whisky as quickly as possible, but despite the fact we've made it look easy, blending is still labour intensive and we don't know how busy the lab will be at any given time. We aim to blend and bottle within 3 working days at most. If your order is urgent, just let us know and we will do our best to get it done rapido! <br/><br/>Shipping varies depending on destination. <br/><br/><strong>UK </strong>is a next day service.<br/><br/><strong>USA </strong>is normally 5-10 working days.<br/><br/><strong>Europe </strong>(when customs aren't rejecting or charging outrageous fees) is normally 2-4 days. <br/><br/><strong>The rest of the world </strong>seems to vary between 2 days and 3 weeks depending on how lucky you are! Remember that we require a signature upon delivery.</p>",
+            "row_content": "<p><span style=\"text-decoration:underline\">United Kingdom - 1-3 Days</span></p><p>Orders under £100: <strong>£5.00</strong><br/>Orders over £100: <strong>FREE</strong></p><p><span style=\"text-decoration:underline\">USA (Safe States) - 7-14 Days</span></p><p>Orders under £100: <strong>£55</strong><br/>Between £100-£150: <strong>£60</strong><br/>Between £150-£199: <strong>£75</strong><br/>Between £200-499: <strong>£90</strong><br/>Orders over £500: <strong>£120<br/></strong>24 bottles or more: <strong>FREE</strong><br/><br/>Shipping to the US is calculated by volumetric weight and includes customs charges. Our \"Safe states\" for shipping are: CA, CT, DE, D.C., FL, GA, ID, IL, LA, ME, MD, MA, NE, NJ, NM, NY, NC, OR, PA, RI, SC, TX, VT, VA, WA, WY. Alaska (Anchorage only) has a £30 surcharge. <br/><br/>We promise these rates are amongst the best you'll find anywhere online to send Scotch from the UK. We're working hard  with our couriers to improve the pricing without compromising the service. </p><p>Contact us on the chat or via email for \"Other International\" destinations<br/></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_kA87eK": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What states are safe to ship to in the USA?",
+            "icon": "none",
+            "row_content": "<p>So... currently we can send to:<br/><br/>CALIFORNIA, <br/>CONNETICUT,<br/>DELAWARE,<br/>DISTRICT OF COLUMBIA,<br/>FLORIDA,<br/>GEORGIA,<br/>IDAHO,<br/>ILLINOIS,<br/>LOUISIANA,<br/>MAINE,<br/>MARYLAND,<br/>MASSACHUSETTS,<br/>NEBRASKA, <br/>NEW JERSEY<br/>NEW MEXICO, <br/>NEW YORK, <br/>NORTH CAROLINA,<br/>OREGON,<br/>PENNSYLVANIA,<br/>RHODE ISLAND,<br/>SOUTH CAROLINA,<br/>TEXAS,<br/>VERMONT,<br/>VIRGINIA, <br/>WASHINGTON,<br/>WYOMING, </p><p>ALASKA (Anchorage only at an £30 additional charge) - email us directly if you want to ship there.</p>",
             "page": ""
           }
         },
@@ -167,12 +131,48 @@
             "page": ""
           }
         },
+        "collapsible_row_ew4Lkq": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What if I don't like my whisky?",
+            "icon": "none",
+            "row_content": "<p>Oh no! We're really sorry if you decide you don't like your whisky but if you send us an email with your tasting note as well as your bottle number and an example of a mainstream whisky you like, we can try and guide you towards something more palatable next time!</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_8P7C6E": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What whiskies do you use?",
+            "icon": "none",
+            "row_content": "<p>They're OUR secret! We encourage you to use 'the force' when it comes to blending in our Lab. Our tasting notes are your most powerful ally! </p><p>For those in the know, If we threw in a description about the distillery or the age of the whiskies involved then it would almost certainly taint your judgement in making your blend - we want you to pick what flavours appeal to you the most! Don't try to make Johnnie Walker - try to make one for yersel, Johnnie Worker! </p><p>For the geeks, yes, we know you all too well. The whiskies for blending are unmolested  single cask scotch whisky varieties - aside from being cut to 46%abv for an easy life. We use minimal filtration to retain as much original mouthfeel as possible, though we remove as much charcoal and other bits of wid as possible.<br/><br/>Let us know on social media (or email if you'd prefer) what you think of your whisky and give us your tasting notes! If you can guess what's in it and the age you'll win a prize.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_EWhJae": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I choose the bottled date?",
+            "icon": "none",
+            "row_content": "<p>We label the bottle accurately, that is to say truthfully. If it was bottled on the 2nd of January then that is what we would put on the label. We're happy to sit on an order and bottle on a requested date, just drop us an email after you’ve placed your order and we will reply to confirm receipt.</p>",
+            "page": ""
+          }
+        },
         "collapsible_row_eFcwhm": {
           "type": "collapsible_row",
           "settings": {
             "heading": "How do I cancel my gift voucher",
             "icon": "none",
             "row_content": "<p>With great difficulty!!! <br/></p><p>Just kiddin'. If you purchased a Whisky Blender gift voucher you can request a full refund on it at any time up to its expiry date - after which the voucher is void and useless - so long as it hasn't been redeemed. Simply contact via the chat or email us (info@whiskyblender.com) quoting the voucher number or order number and we'll handle it as soon as possible.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_7LkgMa": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Where's all your awards?",
+            "icon": "none",
+            "row_content": "<p>Well, in the words of more than one of our whisky pals... \"whisky awards are all bullshit - except the ones I win\" - A. Distiller.<br/><br/>Almost every award out there is bought and paid for. You pay to submit your whisky and you get medals for turning up. If you've paid for a table at an award event or thrown a ton at advertising, you might command a gold. It's all marketing pish. How else does Haig Club get a silver medal for anything but cleaning your drains?</p><p>The one's that aren't corporate, tend to be run by the whisky afficionados, who don't judge blind but instead by branding - that is to say bottles that generally represent excellent value but are all too often impossible to find.<br/><br/>Having said all this,we have won a few \"dram of the days\" and a \"dram of the year\" at The Whisky Lounge events in the UK, plus we won a  \"Drammy Award\" back in the day! All, of course, voted for by the public. </p>",
             "page": ""
           }
         },
@@ -208,20 +208,20 @@
         "collapsible_row_4jEV96",
         "collapsible_row_RDMq7h",
         "collapsible_row_KXWLdY",
-        "collapsible_row_tThPQy",
         "collapsible_row_akjpW9",
         "collapsible_row_j4fV9y",
-        "collapsible_row_ew4Lkq",
-        "collapsible_row_EWhJae",
-        "collapsible_row_8P7C6E",
-        "collapsible_row_7LkgMa",
-        "collapsible_row_kA87eK",
-        "collapsible_row_MaHU3C",
         "collapsible_row_74aXJd",
+        "collapsible_row_MaHU3C",
+        "collapsible_row_tThPQy",
+        "collapsible_row_kA87eK",
         "collapsible_row_YA6UaV",
         "collapsible_row_cWDAwy",
         "collapsible_row_Tj4Qi8",
+        "collapsible_row_ew4Lkq",
+        "collapsible_row_8P7C6E",
+        "collapsible_row_EWhJae",
         "collapsible_row_eFcwhm",
+        "collapsible_row_7LkgMa",
         "collapsible_row_MXjrQd",
         "collapsible_row_VAVnGT",
         "collapsible_row_K69z9e"
