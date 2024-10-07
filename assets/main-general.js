@@ -91,8 +91,6 @@ function fetchProduct() {
     .then((data) => {
       Window.product = data;
     });
-
-  createStylesheet();
   attachEventListeners();
   addQuantityListeners();
   addProductToCart();
