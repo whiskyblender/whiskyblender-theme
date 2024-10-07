@@ -16,9 +16,8 @@
             <img src="{{ product.featured_image | img_url: '1000x1000' }}">
             <span class="deetz single-casks-details">
               <h4>{{ product.title }}</h4>
-              <a>{{ product.description | truncate: 30}}</p>
+              <a>{{ product.type | truncate: 30}}</p>
               <div class="reveal">
-                <p>{{ product.product_type }}</p>
                 {% if product.available == false %}
                   <!-- Product is out of stock -->
                   <sup> Out of stock</sup>
