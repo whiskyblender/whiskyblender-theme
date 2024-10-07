@@ -56,6 +56,7 @@ const getVariantFromSelectedOptions = () => {
  
      atc_button.addEventListener('click', async function() {
          let variant = getVariantFromSelectedOptions();
+         console.log('maria testing here');
          let quantity = document.querySelector('.quantity').querySelector('input').value;
          let data = {
              items: [
