@@ -85,16 +85,17 @@ const addProductToCart = async () => {
   });
 };
 
-document.addEventListener("DOMContentLoaded", function () {
-  fetch(location.href + ".js")
+function fetchProduct() {
+  fetch(location.href.split('?')[0] + '.js')
     .then((response) => response.json())
     .then((data) => {
       Window.product = data;
     });
+
+  createStylesheet();
   attachEventListeners();
   addQuantityListeners();
-  addProductToCart();
-});
+}
 
 // wb cart update function
 document.addEventListener("DOMContentLoaded", function () {
@@ -120,3 +121,14 @@ document.addEventListener("DOMContentLoaded", function () {
   // Initial call to set the cart count on page load
   updateCartCount();
 });
+
+
+
+if (document.readyState === 'loading') {
+  // Loading hasn't finished yet
+  document.addEventListener('DOMContentLoaded', fetchProduct);
+} else {
+  // `DOMContentLoaded` has already fired
+  fetchProduct();
+}
+
