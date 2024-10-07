@@ -95,6 +95,7 @@ function fetchProduct() {
   createStylesheet();
   attachEventListeners();
   addQuantityListeners();
+  addProductToCart();
 }
 
 // wb cart update function
