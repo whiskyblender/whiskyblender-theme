@@ -20,7 +20,7 @@
     "1724967466e3d8a424": {
       "type": "apps",
       "blocks": {
-        "whiskyblender_app_blend_block_gYdckX": {
+        "whiskyblender_app_blend_block_DiMRJP": {
           "type": "shopify://apps/whiskyblender-app/blocks/blend-block/2e388c95-b32f-41c3-86df-6761f4bf5947",
           "settings": {
             "first_step_subtitle": "Step 1",
@@ -40,7 +40,7 @@
         }
       },
       "block_order": [
-        "whiskyblender_app_blend_block_gYdckX"
+        "whiskyblender_app_blend_block_DiMRJP"
       ],
       "settings": {
         "include_margins": false
