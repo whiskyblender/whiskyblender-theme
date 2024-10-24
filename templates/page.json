@@ -23,15 +23,6 @@
     "collapsible_content_RLEXgn": {
       "type": "collapsible-content",
       "blocks": {
-        "collapsible_row_6jr6JJ": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        },
         "collapsible_row_V7mGb7": {
           "type": "collapsible_row",
           "settings": {
@@ -223,7 +214,6 @@
         }
       },
       "block_order": [
-        "collapsible_row_6jr6JJ",
         "collapsible_row_V7mGb7",
         "collapsible_row_4jEV96",
         "collapsible_row_RDMq7h",
