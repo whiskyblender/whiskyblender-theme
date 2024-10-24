@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -23,6 +23,24 @@
     "collapsible_content_RLEXgn": {
       "type": "collapsible-content",
       "blocks": {
+        "collapsible_row_6jr6JJ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_V7mGb7": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I make a good blend?",
+            "icon": "none",
+            "row_content": "<p>We’ve described our whiskies by flavour and that’s the best way to blend in our opinion. We’ve tried to make it as easy as possible by selecting whiskies that, we think, not only blend well together but improve with blending. This is to say, you can't make a bad blend! Though, it may not be to your taste in the end.</p><p>We recommend choosing the flavour that appeals the most to you as a<br/>foundation for playing with the blending lab. Try and imagine how you envision<br/>the flavours arriving on the palate. Andy likes to think of it as having a bunch of<br/>flavours on a plate, like Christmas dinner or a BBQ, none seemingly go together but in fact, they absolutely can! It’s just about what appeals to your palate, and how you choose to enjoy the flavours. <br/><br/>Note that your blend will continue to marry in bottle evolving over time and will soften with increasing oxidisation (exposure to air). Often, we find that new blends will take some time (days, sometimes weeks) to fully mellow into the flavour profile you sought to create. <br/><br/>Once in a glass it will change again, with time, especially if you choose to add water to reduce the alcohol and open up new flavours!<br/><br/>The whiskies themselves are unmolested and bottled with minimal filtration to retain as much character and flavours (fatty oils) as possible. At 46% they should deliver plenty of \"scotch mist\" when you add water, but please note, even at 46% flocculation (when those fatty oils that add to flavour and mouthfeel decide to clump together) can still occur, just give the bottle a shoogle and enjoy the extra flavour you don't get in the average bottle of Scotch!</p>",
+            "page": ""
+          }
+        },
         "collapsible_row_4jEV96": {
           "type": "collapsible_row",
           "settings": {
@@ -205,6 +223,8 @@
         }
       },
       "block_order": [
+        "collapsible_row_6jr6JJ",
+        "collapsible_row_V7mGb7",
         "collapsible_row_4jEV96",
         "collapsible_row_RDMq7h",
         "collapsible_row_KXWLdY",
