@@ -1,30 +1,33 @@
 {{ 'blend-it.css' | asset_url | stylesheet_tag }}
 {{ 'fonts-wb.css' | asset_url | stylesheet_tag }}
 
-<section class="standard ">
+<section class="standard">
   <article class="upwards">
-    <p class="intro">
-      {{ section.settings.intro_text }}
-    </p>
-    <div class="home-image1">
-      <img
-        height="auto"
-        width="auto"
-        src="{{ section.settings.home_image | image_url: width:500, height: 720 }}"
-        alt=" {{section.settings.home_image.alt }}"
-      >
-    </div>
-    <p class="help">
-      {{ section.settings.help_text }}
-    </p>
+    <p class="intro">Look at you! You've only gone and found the greatest website you're likely to see*!</p>
+    <p class="help">* today... that's about Scotch whisky &mdash; says <a href="yas.html">us</a>!</p>
     <div class="home-image2">
       <img
-        height="auto"
-        width="auto"
         src="{{ section.settings.home_image2 | image_url: width: 300, height: 112 }}"
         alt="{{ section.settings.home_image2.alt }}"
       >
     </div>
+    <ul class="imageGallery1 gallery">
+      <li class="image-1">
+        <a href="images/gallery/gallery21.jpg"><img src="images/gallery/gallery21.jpg"></a>
+      </li>
+      <li class="image-2">
+        <a href="images/gallery/gallery14.jpg"><img src="images/gallery/gallery14.jpg"></a>
+      </li>
+      <li class="image-3">
+        <a href="images/gallery/gallery17.jpg"><img src="images/gallery/gallery17.jpg"></a>
+      </li>
+      <li class="image-4">
+        <a href="images/gallery/gallery15.jpg"><img src="images/gallery/gallery15.jpg"></a>
+      </li>
+    </ul>
+    <span class="initial-button">
+      <button class="pulse" onclick="location.href='blend.html';">Start blending</button>
+    </span>
   </article>
 </section>
 <div class="bg-grey">
@@ -83,7 +86,7 @@
   </article>
   <article>
     <a class="get-started-link" href="{{ section.settings.start_link }}">
-      <button class="pulse" >{{ section.settings.start_button_label }}</button>
+      <button class="pulse">{{ section.settings.start_button_label }}</button>
     </a>
   </article>
 </section>
