@@ -1,17 +1,22 @@
-
 <section class="standard">
   <article class="upwards">
     <p class="intro">Look at you! You've only gone and found the greatest website you're likely to see*!</p>
     <p class="help">* today... that's about Scotch whisky &mdash; says <a href="yas.html">us</a>!</p>
     <div class="home-image2">
       <img
-        src="{{ section.settings.home_image2 | image_url: width: 300, height: 112 }}"
+        width="300"
+        height="112"
+        src="{{ section.settings.home_image2 }}"
         alt="{{ section.settings.home_image2.alt }}"
       >
     </div>
     <ul class="imageGallery1 gallery">
       <li class="image-1">
-        <a href="images/gallery/gallery21.jpg"><img src="images/gallery/gallery21.jpg"></a>
+        <a href="{{ section.settings.gallery.image-1.url }}">
+          <img
+            src="{{ section.settings.gallery.image-1 }}"
+            alt="{{ section.settings.gallery.image-1.alt }}"
+        ></a>
       </li>
       <li class="image-2">
         <a href="images/gallery/gallery14.jpg"><img src="images/gallery/gallery14.jpg"></a>
