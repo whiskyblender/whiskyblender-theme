@@ -22,6 +22,7 @@
       "type": "landing-wb",
       "settings": {
         "intro_text": "Look at you! You've only gone and found the greatest website you're likely to see*!",
+        "home_image": "shopify://shop_images/gallery06.jpg",
         "help_text": "* today... that's about Scotch whisky — says <a href=\"pages/yas\">us!</a>",
         "keythings_text": "The key things you need to know about this site are that you can <a href=\"pages/blend\">blend your own whisky</a> (that's right, you read correctly), <a href=\"pages/shop\">shop around</a> for other unique whisky goods and gifts, and more Scotch-related stuff.",
         "guide_title": "It's a skoosh!",
@@ -34,7 +35,7 @@
         "step3_text": "All that's left is to declare this blend YOURS, save it into our growing database of thousands, and then buy it (or ask someone else to buy it for you)! And enjoy whisky like it's supposed to be enjoyed. With good friends and banter.",
         "start_link": "shopify://pages/blend",
         "start_button_label": "Start blending",
-        "gallery_image1": "shopify://shop_images/gallery21.jpg"
+        "gallery_image1": "shopify://shop_images/gallery11.jpg"
       }
     },
     "1723731043529aca62": {
