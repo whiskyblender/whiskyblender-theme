@@ -12,6 +12,8 @@
     "landing_hero_wb_B8tf9K": {
       "type": "landing-hero-wb",
       "settings": {
+        "show_banner": true,
+        "banner_text": "<span>🎄</span> We'll be closing for Christmas on December 15. <span>☃️</span> All orders placed         <strong><u>after</u> December 14</strong> will be posted out in <strong>the New Year</strong> <span>🥃</span>",
         "title": "Your Own Whisky",
         "hero_video": "https://cdn.shopify.com/videos/c/o/v/52dedaab3e1348939a50021f6ebf171d.webm",
         "hero_video_webm": "https://cdn.shopify.com/videos/c/o/v/52dedaab3e1348939a50021f6ebf171d.webm",
