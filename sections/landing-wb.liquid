@@ -133,7 +133,10 @@
 <script>
   let gallery =new SimpleLightbox({elements: '.imageGallery1 a'});
 gallery.on('show.simplelightbox', function () {
-	// do something…
+	console.log('jere');
+});
+  gallery.on('error.simplelightbox', function (e) {
+	console.log(e); // some usefull information
 });
 </script>
 {% schema %}
