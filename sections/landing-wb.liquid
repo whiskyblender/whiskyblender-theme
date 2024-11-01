@@ -6,7 +6,7 @@
       <img
         width="300"
         height="112"
-        src="{{ section.settings.home_image2.src}}"
+        src="{{ section.settings.home_image2 | image_url: width: 300, height: 112}}"
         alt="{{ section.settings.home_image2.alt }}"
       >
     </div>
@@ -14,8 +14,6 @@
       <li class="image-1">
         <a href="{{ section.settings.gallery_image1.url }}">
           <img
-            height="240"
-            width="240"
             src="{{ section.settings.gallery_image1 | image_url: width:236, height: 236}}"
             alt="{{ section.settings.gallery_image1.alt }}"
         ></a>
