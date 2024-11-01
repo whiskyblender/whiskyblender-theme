@@ -86,11 +86,31 @@
     </ul>
   </article>
 </section>
-<article>
-        	   <div class="video-embed desktop"><iframe src="https://player.vimeo.com/video/1003772200?title=0&amp;byline=0&amp;portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen="" data-ready="true"></iframe></div>
-        	   <div class="video-embed mobile"><iframe src="https://player.vimeo.com/video/1019602245?title=0&amp;byline=0&amp;portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen="" data-ready="true"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-            </article>
+
 <section class="standard">
+  <article>
+    <div class="video-embed desktop">
+      <iframe
+        src="https://player.vimeo.com/video/1003772200?title=0&amp;byline=0&amp;portrait=0"
+        style="position:absolute;top:0;left:0;width:100%;height:100%;"
+        frameborder="0"
+        allow="fullscreen; picture-in-picture"
+        allowfullscreen=""
+        data-ready="true"
+      ></iframe>
+    </div>
+    <div class="video-embed mobile">
+      <iframe
+        src="https://player.vimeo.com/video/1019602245?title=0&amp;byline=0&amp;portrait=0"
+        style="position:absolute;top:0;left:0;width:100%;height:100%;"
+        frameborder="0"
+        allow="fullscreen; picture-in-picture"
+        allowfullscreen=""
+        data-ready="true"
+      ></iframe>
+    </div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+  </article>
   <article class="hang-right">
     <a name="guide"></a>
     <h3 class="section-title-wb">{{ section.settings.guide_title }}</h3>
@@ -135,8 +155,7 @@
   </article>
 </section>
 {% javascript %}
-
-var lightbox= new SimpleLightbox({ elements: document.querySelectorAll('.imageGallery1 a') });
+  var lightbox= new SimpleLightbox({ elements: document.querySelectorAll('.imageGallery1 a') });
 {% endjavascript %}
 
 {% schema %}
