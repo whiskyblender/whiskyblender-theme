@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
-    <meta name="google-site-verification" content="D7YWjCmuR8rK2ErJ06mVZhFGrVqMO_AyYEPdYUtdltw" />
+    <meta name="google-site-verification" content="D7YWjCmuR8rK2ErJ06mVZhFGrVqMO_AyYEPdYUtdltw">
     <link rel="canonical" href="{{ canonical_url }}">
-
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
     {%- endif -%}
@@ -33,6 +32,8 @@
     <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'simple-lightbox.min.js' | asset_url }}" defer="defer"></script>
+
     {%- if settings.animations_reveal_on_scroll -%}
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
