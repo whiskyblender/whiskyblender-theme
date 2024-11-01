@@ -131,8 +131,8 @@
   </article>
 </section>
 {% javascript %}
-  var lightbox = $('.imageGallery1 a').simpleLightbox({ /* options */ });
 
+var lightbox= new SimpleLightbox({ elements: document.querySelectorAll('.imageGallery1 a') });
 {% endjavascript %}
 
 {% schema %}
