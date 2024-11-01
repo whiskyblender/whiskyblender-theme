@@ -1,3 +1,5 @@
+{{ 'simple-lightbox.min.js' | asset_url | script_tag }}
+
 <section class="standard">
   <article class="upwards">
     <p class="intro">Look at you! You've only gone and found the greatest website you're likely to see*!</p>
@@ -130,8 +132,6 @@
     </a>
   </article>
 </section>
-<script src="{{ 'simple-lightbox.min.js' | asset_url }}" type="text/javascript" defer></script>
-<link rel="stylesheet" href="{{ 'simple-lightbox.min.css' | asset_url }}">
 {% javascript %}
   new SimpleLightbox({elements: '.imageGallery1 a'});
 {% endjavascript %}
