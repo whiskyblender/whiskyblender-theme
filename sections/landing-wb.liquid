@@ -131,7 +131,10 @@
   </article>
 </section>
 <script>
-  new SimpleLightbox({elements: '.imageGallery1 a'});
+  var lb = new SimpleLightbox({elements: '.imageGallery1 a'});
+  lb.on('error.simplelightbox', function (e) {
+	console.log(e); // some usefull information
+});
 </script>
 {% schema %}
 {
