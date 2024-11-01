@@ -651,7 +651,7 @@ p.help a:hover {
     display: inline-block;
     width: 180px;
     height: 26px;
-    background-image: url(../images/wblogo.svg);
+    background-image: url('https://cdn.shopify.com/s/files/1/0846/7592/0200/files/wblogo.svg?v=1730498213');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
