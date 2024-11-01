@@ -131,9 +131,11 @@
   </article>
 </section>
 <script>
- new SimpleLightbox({elements: '.imageGallery1 a'});
-
+  new SimpleLightbox({
+      elements: document.querySelectorAll('.imageGallery1 a')
+  });
 </script>
+
 {% schema %}
 {
   "name": "Landing - Whisky Blender",
