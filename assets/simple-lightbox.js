@@ -164,6 +164,7 @@ var SimpleLightbox = /*#__PURE__*/function () {
     if (this.options.uniqueImages) {
       var imgArr = [];
       this.elements = Array.from(this.elements).filter(function (element) {
+        console.log(element)
         var src = element.getAttribute(_this.options.sourceAttr);
         if (imgArr.indexOf(src) === -1) {
           imgArr.push(src);
