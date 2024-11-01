@@ -5,44 +5,47 @@
 {{ 'snow.css' | asset_url | stylesheet_tag }}
 {{ 'simple-lightbox.min.js' | asset_url | script_tag }}
 
-<div class="snowflakes" aria-hidden="true">
-  <div class="snowflake">
-    <div class="inner">❅</div>
+{%- if section.settings.show_snow -%}
+  <div class="snowflakes" aria-hidden="true">
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
   </div>
-  <div class="snowflake">
-    <div class="inner">❅</div>
-  </div>
-  <div class="snowflake">
-    <div class="inner">❅</div>
-  </div>
-  <div class="snowflake">
-    <div class="inner">❅</div>
-  </div>
-  <div class="snowflake">
-    <div class="inner">❅</div>
-  </div>
-  <div class="snowflake">
-    <div class="inner">❅</div>
-  </div>
-  <div class="snowflake">
-    <div class="inner">❅</div>
-  </div>
-  <div class="snowflake">
-    <div class="inner">❅</div>
-  </div>
-  <div class="snowflake">
-    <div class="inner">❅</div>
-  </div>
-  <div class="snowflake">
-    <div class="inner">❅</div>
-  </div>
-  <div class="snowflake">
-    <div class="inner">❅</div>
-  </div>
-  <div class="snowflake">
-    <div class="inner">❅</div>
-  </div>
-</div>
+{%- endif -%}
+
 {%- if section.settings.show_banner -%}
   <div class="banner">
     <div class="ticker-wrap">
