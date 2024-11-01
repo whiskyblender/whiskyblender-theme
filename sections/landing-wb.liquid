@@ -131,8 +131,10 @@
   </article>
 </section>
 <script>
-  new SimpleLightbox({elements: '.imageGallery1 a'});
-
+  let gallery =new SimpleLightbox({elements: '.imageGallery1 a'});
+gallery.on('show.simplelightbox', function () {
+	// do something…
+});
 </script>
 {% schema %}
 {
