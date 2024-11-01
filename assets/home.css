@@ -68,7 +68,7 @@ span.initial-button {
 span.step1, span.step2, span.step3 {
     display: block;
     padding: 20px 20px 14px 20px;
-    font-family: "NanumPenScript", cursive;
+    font-family: "Nanum Pen Script", cursive;
     font-weight: 300;
     font-size: 34px;
     text-transform: uppercase;
@@ -227,7 +227,7 @@ a.get-started:hover {
     }
 
     #index .imageGallery1.gallery li.image-1 img {
-        border: 10px solid #ffffff;
+        border: 20px solid #ffffff;
         transform: rotate(14deg);
     }
     
@@ -269,31 +269,31 @@ a.get-started:hover {
     }
 
     #index .imageGallery1.gallery li img {
-        border: 10px solid #ffffff;
+        border: 20px solid #ffffff;
     }
 
     #index .imageGallery1.gallery li.image-1 {
         top: -450px;
-        right: -110px;
+        right: -90px;
     }
 
     #index .imageGallery1.gallery li.image-2 {
-        top: -240px;
-        right: 0;
+        top: -220px;
+        right: 10px;
     }
 
     #index .imageGallery1.gallery li.image-3 {
-        top: -40px;
-        right: -150px;
+        top: -70px;
+        right: -180px;
     }
 
     #index .imageGallery1.gallery li.image-4 {
         top: 90px;
-        right: 50px;
+        right: -30px;
     }
 
     #index .imageGallery1.gallery li.image-1 img {
-        transform: rotate(3deg);
+        transform: rotate(10deg);
     }
 
     #index .imageGallery1.gallery li.image-2 img {
@@ -305,7 +305,7 @@ a.get-started:hover {
     }
 
     #index .imageGallery1.gallery li.image-4 img {
-        transform: rotate(-6deg);
+        transform: rotate(14deg);
     }
     
 }
