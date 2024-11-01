@@ -6,8 +6,8 @@
       <img
         width="300"
         height="112"
-        src="{{ section.settings.home_image2 | image_url: width: 300, height: 112}}"
-        alt="{{ section.settings.home_image2.alt }}"
+        src="{{ section.settings.signature_image | image_url: width: 300, height: 112}}"
+        alt="{{ section.settings.signature_image.alt }}"
       >
     </div>
     <ul class="imageGallery1 gallery">
@@ -143,19 +143,14 @@
     },
     {
       "type": "image_picker",
-      "id": "home_image2",
-      "label": "Home Image 2"
+      "id": "signature_image",
+      "label": "Signature Image 2"
     },
     {
       "type": "textarea",
       "id": "keythings_text",
       "label": "Key Things Text",
       "default": "The key things you need to know about this site are that you can blend your own whisky (that's right, you read correctly), shop around for other unique whisky goods and gifts, and more Scotch-related stuff."
-    },
-    {
-      "type": "image_picker",
-      "id": "home_image3",
-      "label": "Home Image 3"
     },
     {
       "type": "text",
@@ -204,11 +199,6 @@
       "id": "step3_text",
       "label": "Step 3 Text",
       "default": "Give your blend a name and share it with the world."
-    },
-    {
-      "type": "image_picker",
-      "id": "home_image4",
-      "label": "Home Image 4"
     },
     {
       "type": "url",
