@@ -130,9 +130,9 @@
     </a>
   </article>
 </section>
+<script src="{{ 'simple-lightbox.min.js' | asset_url }}" type="text/javascript" defer></script>
+<link rel="stylesheet" href="{{ 'simple-lightbox.min.css' | asset_url }}">
 {% javascript %}
-      <script src="{{ 'simple-lightbox.min.js' | asset_url }}" type="text/javascript" defer></script>
-    <link rel="stylesheet" href="{{ 'simple-lightbox.min.css' | asset_url }}">
   var lightbox = new SimpleLightbox({elements: '.imageGallery1 a'});
 {% endjavascript %}
 {% schema %}
