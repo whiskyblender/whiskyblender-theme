@@ -6,7 +6,7 @@
 <article class="general-product ">
   <div class="general-product-info">
     {% for collection in product.collections %}
-      {% unless collection.handle == 'frontpage' %}
+      {% unless collection.handle == 'promoted' %}
           <a class="any-link breadcrumb" aria-label="Breadcrumb" href="{{ collection.url }}">{{ collection.title -}}</a>
       {% endunless %}
     {% endfor %}
