@@ -58,14 +58,32 @@
     <p>
       {{ section.settings.keythings_text }}
     </p>
-    <div class="home-image3">
-      <img
-        height="auto"
-        width="auto"
-        src="{{ section.settings.home_image3 | image_url: width: 450, height: 438 }}"
-        alt="{{ section.settings.home_image3.alt }}"
-      >
-    </div>
+    <ul class="product-list">
+      {% assign bottles = collections['oor-bottlings'] %}
+
+      {% for product in bottles.products %}
+        <li class="product-list-card">
+          <a
+            href="{{ product.url }}"
+            style="background-image: url({{ product.featured_image | img_url: '1000x1000' }})"
+          >
+            <img alt=" Prouct image of whisky bottle" src="{{ product.featured_image | img_url: '1000x1000' }}">
+            <span class="deetz single-casks-details">
+              <h4>{{ product.title }}</h4>
+              <p>{{ product.type | truncate: 30 }}</p>
+              <div class="reveal">
+                {% if product.available == false %}
+                  <!-- Product is out of stock -->
+                  <sup> Out of stock</sup>
+                {% else %}
+                  <sup class="buy pulse">{{ product.price | money }}</sup>
+                {% endif %}
+              </div>
+            </span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
   </article>
 </section>
 <section class="standard">
@@ -97,7 +115,7 @@
       </p>
     </div>
     <div class="home-image4">
-      <div class="label-cycle"></div> 
+      <div class="label-cycle"></div>
       <img
         height="auto"
         width="auto"
