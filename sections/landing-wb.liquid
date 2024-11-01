@@ -131,13 +131,8 @@
   </article>
 </section>
 <script>
-  let gallery =new SimpleLightbox({elements: '.imageGallery1 a'});
-gallery.on('show.simplelightbox', function () {
-	console.log('jere');
-});
-  gallery.on('error.simplelightbox', function (e) {
-	console.log(e); // some usefull information
-});
+ new SimpleLightbox({elements: '.imageGallery1 a'});
+
 </script>
 {% schema %}
 {
