@@ -100,8 +100,8 @@
       <img
         height="auto"
         width="auto"
-        src="{{ section.settings.home_image4 | image_url: width: 356, height: 866 }}"
-        alt=" {{ section.settings.home_image4.alt }}"
+        src="{{ section.settings.stepper_image | image_url: width: 356, height: 866 }}"
+        alt=" {{ section.settings.stepper_image.alt }}"
       >
     </div>
   </article>
@@ -156,6 +156,11 @@
       "id": "guide_text",
       "label": "Guide Text",
       "default": "Blending your own whisky is a fun and rewarding experience. Here's a quick guide to get you started."
+    },
+    {
+      "type": "image_picker",
+      "id": "stepper_image",
+      "label": "blend stepper image"
     },
     {
       "type": "text",
