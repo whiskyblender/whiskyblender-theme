@@ -59,7 +59,7 @@
       {{ section.settings.keythings_text }}
     </p>
     <ul class="product-list">
-      {% assign bottles = collections['promoted'] %}
+      {% assign bottles = collections.promoted %}
 
       {% for product in bottles.products %}
         <li class="product-list-card">
@@ -130,9 +130,9 @@
     </a>
   </article>
 </section>
-   <script>
-      var lightbox = new SimpleLightbox({elements: '.imageGallery1 a'});
-    </script>
+{% javascript %}
+  var lightbox = new SimpleLightbox({elements: '.imageGallery1 a'});
+{% endjavascript %}
 {% schema %}
 {
   "name": "Landing - Whisky Blender",
