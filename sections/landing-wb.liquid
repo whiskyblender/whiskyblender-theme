@@ -1,5 +1,7 @@
-<script src={{ 'simple-lightbox.min.js' | asset_url }} defer> </script>
-
+<script src="{{ 'simple-lightbox.min.js' | asset_url }}" defer></script>
+<script>
+  new SimpleLightbox({elements: '.imageGallery1 a'});
+</script>
 <section class="standard">
   <article class="upwards">
     <p class="intro">Look at you! You've only gone and found the greatest website you're likely to see*!</p>
@@ -132,9 +134,7 @@
     </a>
   </article>
 </section>
-<script>
-  new SimpleLightbox({elements: '.imageGallery1 a'});
-</script>
+
 {% schema %}
 {
   "name": "Landing - Whisky Blender",
