@@ -36,7 +36,10 @@
         "step3_text": "All that's left is to declare this blend YOURS, save it into our growing database of thousands, and then buy it (or ask someone else to buy it for you)! And enjoy whisky like it's supposed to be enjoyed. With good friends and banter.",
         "start_link": "shopify://pages/blend",
         "start_button_label": "Start blending",
-        "gallery_image1": "shopify://shop_images/gallery21.jpg"
+        "gallery_image1": "shopify://shop_images/gallery21.jpg",
+        "gallery_image2": "shopify://shop_images/gallery14.jpg",
+        "gallery_image3": "shopify://shop_images/gallery17.jpg",
+        "gallery_image4": "shopify://shop_images/gallery15.jpg"
       }
     },
     "1723731043529aca62": {
