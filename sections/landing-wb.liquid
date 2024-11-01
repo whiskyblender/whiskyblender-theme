@@ -130,12 +130,9 @@
     </a>
   </article>
 </section>
-<script>
-  var lightbox= new SimpleLightbox({
-      elements: document.querySelectorAll('.imageGallery1 a')
-  });
-  lightbox.show();
-</script>
+{% javascript %}
+var lightbox= new SimpleLightbox({ elements: document.querySelectorAll('.imageGallery1 a') });
+{% endjavascript %}
 
 {% schema %}
 {
