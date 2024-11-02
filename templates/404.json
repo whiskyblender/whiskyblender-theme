@@ -14,6 +14,7 @@
       "settings": {
         "title": "Cannae find that page",
         "blurb": "Afraid we don't know what page you're looking for. But whatever it is, it's defintitely not this one. So you might need to click about in the menu links above to find it yourself.",
+        "main_image": "shopify://shop_images/the-bon.png",
         "feature1": "Craft a truly unique Scotch",
         "feature1-page": "shopify://pages/blend",
         "feature2": "See how easy it is to do",
