@@ -44,17 +44,10 @@
         "gallery_image3": "shopify://shop_images/gallery17.jpg",
         "gallery_image4": "shopify://shop_images/gallery15.jpg"
       }
-    },
-    "1723731043529aca62": {
-      "type": "apps",
-      "settings": {
-        "include_margins": false
-      }
     }
   },
   "order": [
     "landing_hero_wb_B8tf9K",
-    "landing_wb_wBDYHD",
-    "1723731043529aca62"
+    "landing_wb_wBDYHD"
   ]
 }
