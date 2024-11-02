@@ -173,11 +173,27 @@ nav {
 
     {%- if section.settings.logo_position != 'middle-center' -%}
       {%- if request.page_type == 'index' or request.page_type == 'product' or request.page_type == 'collection' or request.page_type == 'page' or request.path contains '/page' or request.path contains '/search' or request.path contains '/cart' or request.path contains 'policies'  -%}
-      
+
+        <h1>Create your own whisky</h1>
+        <div id="logo">
+            <a href="index.html">Whisky Blender</a>
+            <span class="pre-logo">{{settings.logo_text_left}}/span>
+            <span class="post-logo">{{settings.logo_text_left_mobile}}/span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="blend.html">Blend</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="find.html">Find</a></li>
+                <li><a href="yas.html">YAS!</a></li>
+                <li><a href="more.html">More</a></li>
+            </ul>
+        </nav>
+        
 
     <div id="logo-wrapper-wb">
           <div class="logo-subtitle left">
-            <span class='desktop-subtitle left'>{{settings.logo_text_left}}</span>
+            <span class='desktop-subtitle left'></span>
             <span class='mobile-subtitle left'>{{settings.logo_text_left_mobile}}</span> 
           </div>
         <h1 class="header__heading">
@@ -361,7 +377,6 @@ nav {
 
   
 
-</{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
 
 
 </div>
