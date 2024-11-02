@@ -49,7 +49,6 @@ span.initial-button {
 
 .step {
     margin: 40px 0 0 0;
-  line-height: 32px;
 }
 
 #blending-steps .step {
@@ -77,6 +76,8 @@ span.step1, span.step2, span.step3 {
     position: relative;
     border-radius: 40px;
     z-index: 20;
+    line-height: 32px;
+
 }
 
 span.step1 {
