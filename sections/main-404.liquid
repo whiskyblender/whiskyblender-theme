@@ -3,19 +3,18 @@
 
 <section class="standard">
   <article class="upwards">
-    <h2>Cannae find that page</h2>
+    <h2>{{ section.settings.title }}</h2>
     <p>
-      Afraid we don't know what page you're looking for. But whatever it is, it's defintitely not this one. So you might
-      need to click about in the menu links above to find it yourself.
+      {{ section.settings.blurb }}
     </p>
     <p>Or, here's a few suggestions to help you on your way...</p>
     <ul class="features">
-      <li><a class="button" href="blend.html">Craft a truly unique Scotch</a></li>
-      <li><a class="button" href="index.html#guide">See how easy it is to do</a></li>
-      <li><a class="button" href="shop.html#single-cask">Label some single cask Scotch</a></li>
-      <li><a class="button" href="shop.html#credit">Send gift credit to someone</a></li>
-      <li><a class="button" href="more.html">Learn a wee bit more about whisky</a></li>
-      <li><a class="button" href="shop.html#bottlings">Shop interesting bottles &amp; more</a></li>
+      <li><a class="button" href={{ section.settings.feature1-page }}>{{ section.settings.feature1 }}</a></li>
+            <li><a class="button" href={{ section.settings.feature2-page }}>{{ section.settings.feature2 }}</a></li>
+      <li><a class="button" href={{ section.settings.feature3-page }}>{{ section.settings.feature3 }}</a></li>
+      <li><a class="button" href={{ section.settings.feature4-page }}>{{ section.settings.feature4 }}</a></li>
+      <li><a class="button" href={{ section.settings.feature5-page }}>{{ section.settings.feature5 }}</a></li>
+      <li><a class="button" href={{ section.settings.feature6-page }}>{{ section.settings.feature6 }}</a></li>
     </ul>
     <div class="lost-image1">
       <img src="images/the-bon.png" alt="Cheers, Andy & Drew">
@@ -32,12 +31,75 @@
     }
   ],
     "settings": [
-    {
-      "type": "text",
-      "id": "title",
-      "label": "Title",
-      "default": "Twa"
-    }
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "blurb",
+        "label": "Blurb"
+      },
+      {
+        "type": "text",
+        "id": "feature1",
+        "label": "Feature 1"
+      },
+      {
+        "type": "page",
+        "id": "feature1-page",
+        "label": "Feature 1 Page"
+      },
+      {
+        "type": "text",
+        "id": "feature2",
+        "label": "Feature 2"
+      },
+      {
+        "type": "page",
+        "id": "feature2-page",
+        "label": "Feature 2 Page"
+      },
+      {
+        "type": "text",
+        "id": "feature3",
+        "label": "Feature 3"
+      },
+      {
+        "type": "page",
+        "id": "feature3-page",
+        "label": "Feature 3 Page"
+      },
+      {
+        "type": "text",
+        "id": "feature4",
+        "label": "Feature 4"
+      },
+      {
+        "type": "page",
+        "id": "feature4-page",
+        "label": "Feature 4 Page"
+      },
+      {
+        "type": "text",
+        "id": "feature5",
+        "label": "Feature 5"
+      },
+      {
+        "type": "page",
+        "id": "feature5-page",
+        "label": "Feature 5 Page"
+      },{
+        "type": "text",
+        "id": "feature6",
+        "label": "Feature 6"
+      },
+      {
+        "type": "page",
+        "id": "feature6-page",
+        "label": "Feature 6 Page"
+      }
     ]
 }
 {% endschema %}
