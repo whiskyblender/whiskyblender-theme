@@ -536,6 +536,7 @@ main {
     min-height: calc(100vh - 440px);
     overflow: hidden;
     position: relative;
+  max-width: 100vw;
 }
 
 article {
