@@ -106,6 +106,33 @@ header {
   }
 }
 
+@media only screen and (min-width: 600px) {
+
+  
+  #logo {
+    margin: 30px auto;
+    height: 24px;
+    position: relative;
+  }
+
+  #logo a {
+    width: 210px;
+    height: 30px;
+    margin-top: 6px;
+  }
+
+  #logo span {
+    font-size: 8px;
+    height: 24px;
+    padding: 6px 32px;
+    letter-spacing: 2px;
+    width: 130px;
+  }
+
+  #logo span span {
+    display: contents;
+  }
+}
 h1 {
   display: none;
 }
