@@ -105,6 +105,7 @@ header {
     text-transform: uppercase;
     width: 200px;
   }  
+
   .header-image {
     border-radius: 0 0 80px 80px;
     max-width: 904px;
@@ -147,9 +148,7 @@ header {
     width: 130px;
   }
 
-  #logo span span {
-    display: contents;
-  }
+
 }
 h1 {
   display: none;
