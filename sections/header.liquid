@@ -229,22 +229,7 @@
           <span class="h2">{{ shop.name }}</span>
         {%- endif -%}
       </a>
-      {%- if request.page_type == 'index'
-        or request.page_type == 'product'
-        or request.page_type == 'collection'
-        or request.page_type == 'page'
-        or request.path contains '/page'
-        or request.path contains '/search'
-        or request.path contains '/cart'
-        or request.path contains 'policies'
-      -%}
-        </h1>
 
-        <div class="logo-subtitle right">
-          <span class="desktop-subtitle right">{{ settings.logo_text_right }}</span>
-          <span class="mobile-subtitle right">{{ settings.logo_text_right_mobile }}</span>
-        </div>
-      {%- endif -%}
     {%- endif -%}
 
     {%- liquid
