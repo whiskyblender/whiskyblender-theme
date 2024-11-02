@@ -60,6 +60,10 @@ header {
   opacity: 0.8;
 }
 
+#logo span span {
+  display: none;
+}
+
 .header-image {
   border-radius: 0 0 60px 60px;
   margin: 0 20px;
@@ -269,9 +273,6 @@ span.post-logo {
   float: right;
 }
 
-#logo span span {
-  display: none;
-}
 
 nav {
   margin: 0 auto;
