@@ -9,12 +9,40 @@
     </p>
     <p>Or, here's a few suggestions to help you on your way...</p>
     <ul class="features">
-      <li><a class="button" href={{ section.settings.feature1-page }}>{{ section.settings.feature1 }}</a></li>
-            <li><a class="button" href={{ section.settings.feature2-page }}>{{ section.settings.feature2 }}</a></li>
-      <li><a class="button" href={{ section.settings.feature3-page }}>{{ section.settings.feature3 }}</a></li>
-      <li><a class="button" href={{ section.settings.feature4-page }}>{{ section.settings.feature4 }}</a></li>
-      <li><a class="button" href={{ section.settings.feature5-page }}>{{ section.settings.feature5 }}</a></li>
-      <li><a class="button" href={{ section.settings.feature6-page }}>{{ section.settings.feature6 }}</a></li>
+      {% if section.settings['feature1-page'] != blank %}
+        <li>
+          <a class="button" href="{{ section.settings.feature1-page }}">{{ section.settings.feature1 }}</a>
+        </li>
+      {% endif %}
+      {% if section.settings['feature2-page'] != blank %}
+        <li>
+          <a class="button" href="{{ section.settings.feature2-page }}">{{ section.settings.feature2 }}</a>
+        </li>
+      {% endif %}
+
+      {% if section.settings['feature3-page'] != blank %}
+        <li>
+          <a class="button" href="{{ section.settings.feature3-page }}">{{ section.settings.feature3 }}</a>
+        </li>
+      {% endif %}
+
+      {% if section.settings['feature4-page'] != blank %}
+        <li>
+          <a class="button" href="{{ section.settings.feature4-page }}">{{ section.settings.feature4 }}</a>
+        </li>
+      {% endif %}
+
+      {% if section.settings['feature5-page'] != blank %}
+        <li>
+          <a class="button" href="{{ section.settings.feature5-page }}">{{ section.settings.feature5 }}</a>
+        </li>
+      {% endif %}
+
+      {% if section.settings['feature6-page'] != blank %}
+        <li>
+          <a class="button" href="{{ section.settings.feature6-page }}">{{ section.settings.feature6 }}</a>
+        </li>
+      {% endif %}
     </ul>
     <div class="lost-image1">
       <img src="{{ section.settings.main_image | image_url }}" alt="Cheers, Andy & Drew">
