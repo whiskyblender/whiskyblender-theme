@@ -16,3 +16,46 @@ header {
     vertical-align: bottom;
     text-transform: uppercase;
 }
+
+.header-image {
+    background-size: cover;
+    background-position: center;
+    display: block;
+    color: #ffffff;
+    border-radius: 0 0 40px 40px;
+    box-shadow: inset 200px -300px 500px rgba(0,0,0,0.2);
+    margin: 0 10px;
+    overflow: hidden;
+    background-color: #111111;
+}
+
+.header-image.loose-header {
+    padding: 55vw 30px 10px 30px;
+}
+
+.header-image.tight-header {
+    padding: 40px 30px 10px 30px;
+}
+
+.header-image.mid-header {
+    border-radius: 40px;
+    margin-top: 40px;
+}
+
+.header-image h2 {
+    color: #ffffff;
+    z-index: 2;
+    position: relative;
+}
+
+.header-image video {
+    position: absolute;
+    box-shadow: inset 200px -300px 500px rgba(0,0,0,0.2);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.8;
+}
