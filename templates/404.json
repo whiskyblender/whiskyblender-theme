@@ -21,7 +21,7 @@
         "feature3": "Label some single cask Scotch",
         "feature3-page": "/pages/shop#single-cask",
         "feature4": "Send gift credit to someone",
-        "feature4-page": "",
+        "feature4-page": "/pages/shop#credit",
         "feature5": "Learn a wee bit more about whisky",
         "feature5-page": "",
         "feature6": "Shop interesting bottles &amp; more",
