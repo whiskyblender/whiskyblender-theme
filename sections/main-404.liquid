@@ -17,7 +17,7 @@
       <li><a class="button" href={{ section.settings.feature6-page }}>{{ section.settings.feature6 }}</a></li>
     </ul>
     <div class="lost-image1">
-      <img src="images/the-bon.png" alt="Cheers, Andy & Drew">
+      <img src="{{ section.settings.main_image | image_url }}" alt="Cheers, Andy & Drew">
     </div>
   </article>
 </section>
@@ -40,6 +40,11 @@
         "type": "text",
         "id": "blurb",
         "label": "Blurb"
+      },
+      {
+        "type": "image_picker",
+        "id": "main_image",
+        "label": "Main Image"
       },
       {
         "type": "text",
