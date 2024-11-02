@@ -105,3 +105,7 @@ header {
     border-radius: 80px;
   }
 }
+
+h1 {
+  display: none;
+}
