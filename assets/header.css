@@ -59,3 +59,20 @@ header {
     z-index: 1;
     opacity: 0.8;
 }
+
+    .header-image {
+        border-radius: 0 0 60px 60px;
+        margin: 0 20px;
+    }
+
+    .header-image.loose-header {
+        padding: 30vh 40px 30px 40px;
+    }
+
+    .header-image.tight-header {
+        padding: 40px 40px 30px 40px;
+    }
+
+    .header-image.mid-header {
+        border-radius: 60px;
+    }
