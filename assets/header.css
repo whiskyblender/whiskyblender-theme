@@ -85,8 +85,26 @@ header {
     line-height: 44px;
     width: 100px;
   }
+  #logo {
+    margin: 24px auto;
+    height: 36px;
+    position: relative;
+  }
 
-  
+  #logo a {
+    width: 230px;
+    height: 33px;
+    margin-top: 10px;
+  }
+
+  #logo span {
+    font-size: 10px;
+    height: 28px;
+    padding: 12px 52px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    width: 200px;
+  }  
   .header-image {
     border-radius: 0 0 80px 80px;
     max-width: 904px;
