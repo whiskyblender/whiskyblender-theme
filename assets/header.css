@@ -1,0 +1,18 @@
+header {
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+}
+
+.header-image h2 span {
+    font-family: "Nanum Pen Script", cursive;
+    font-weight: 300;
+    font-size: 5vw;
+    line-height: 4vw;
+    width: 14vw;
+    display: inline-block;
+    padding: 20px 0;
+    vertical-align: bottom;
+    text-transform: uppercase;
+}
