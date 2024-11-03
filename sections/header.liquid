@@ -27,80 +27,79 @@
 {%- endif -%}
 
 <style>
-  nav {
-    width: -webkit-fill-available;
-  }
-    header-drawer {
-      justify-self: start;
-      margin-left: -1.2rem;
+    nav {
+      width: -webkit-fill-available;
     }
-
-    {%- if section.settings.sticky_header_type == 'reduce-logo-size' -%}
-      .scrolled-past-header .header__heading-logo-wrapper {
-        width: 75%;
+      header-drawer {
+        justify-self: start;
+        margin-left: -1.2rem;
       }
-    {%- endif -%}
 
-    {%- if section.settings.menu_type_desktop != "drawer" -%}
-      @media screen and (min-width: 990px) {
-        header-drawer {
-          display: none;
+      {%- if section.settings.sticky_header_type == 'reduce-logo-size' -%}
+        .scrolled-past-header .header__heading-logo-wrapper {
+          width: 75%;
+        }
+      {%- endif -%}
+
+      {%- if section.settings.menu_type_desktop != "drawer" -%}
+        @media screen and (min-width: 990px) {
+          header-drawer {
+            display: none;
+          }
+        }
+      {%- endif -%}
+
+      .menu-drawer-container {
+        display: flex;
+      }
+
+    h1 {
+      font-size: 2em;
+      margin: 0.67em 0px;
+  }
+      .list-menu {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0 0 0;
+        width: 100%;
+        display: flex !important;
+        justify-content: space-between !important;
+      }
+
+      .list-menu--inline {
+        display: inline-flex;
+        flex-wrap: nowrap;
+      }
+
+      summary.list-menu__item {
+        padding-right: 2.7rem;
+      }
+
+      .list-menu__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: calc(1 + 0.3 / var(--font-body-scale));
+      }
+
+      li:has(.header__menu-item) {
+      flex-grow: 1;
+      }
+
+      .list-menu__item--link {
+        text-decoration: none;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        {% comment %} line-height: calc(1 + 0.8 / var(--font-body-scale)); {% endcomment %}
+      }
+
+      @media screen and (min-width: 750px) {
+        .list-menu__item--link {
+          {% comment %} padding-bottom: 0.5rem;
+          padding-top: 0.5rem; {% endcomment %}
         }
       }
-    {%- endif -%}
-
-    .menu-drawer-container {
-      display: flex;
-    }
-
-  h1 {
-    font-size: 2em;
-    margin: 0.67em 0px;
-}
-    .list-menu {
-      list-style: none;
-      padding: 0;
-      margin: 10px 0 0 0;
-      width: 100%;
-      display: flex !important;
-      justify-content: space-between !important;
-    }
-
-    .list-menu--inline {
-      display: inline-flex;
-      flex-wrap: nowrap;
-    }
-
-    summary.list-menu__item {
-      padding-right: 2.7rem;
-    }
-
-    .list-menu__item {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      line-height: calc(1 + 0.3 / var(--font-body-scale));
-    }
-
-    li:has(.header__menu-item) {
-    flex-grow: 1;
-    }
-
-    .list-menu__item--link {
-      text-decoration: none;
-      padding-bottom: 1rem;
-      padding-top: 1rem;
-      {% comment %} line-height: calc(1 + 0.8 / var(--font-body-scale)); {% endcomment %}
-    }
-
-    @media screen and (min-width: 750px) {
-      .list-menu__item--link {
-        {% comment %} padding-bottom: 0.5rem;
-        padding-top: 0.5rem; {% endcomment %}
-      }
-    }
 </style>
-
 
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
@@ -157,8 +156,6 @@
       if section.settings.menu != blank
         render 'header-drawer'
       endif
-
-
     -%}
 
     {%- if section.settings.logo_position != 'middle-center' -%}
@@ -357,18 +354,16 @@
   {% if cart.item_count > 0 %}
     <!-- Cart has items -->
     {% unless template.name == 'cart' %}
-      <a href="{{ routes.cart_url }}">
-        <div class="basket-wb">
-          <button>
-            Basket
-            {%- if cart != empty -%}
-              {%- if cart.item_count < 100 -%}
-                <sup id="cart-count" class="pulse">{{ cart.item_count }}</sup>
-              {%- endif -%}
+      <div class="basket">
+        <button onclick="location.href='{{ routes.cart_url }}';">
+          Basket
+          {%- if cart != empty -%}
+            {%- if cart.item_count < 100 -%}
+              <sup id="cart-count" class="pulse">{{ cart.item_count }}</sup>
             {%- endif -%}
-          </button>
-        </div>
-      </a>
+          {%- endif -%}
+        </button>
+      </div>
     {% endunless %}
   {% endif %}
 
