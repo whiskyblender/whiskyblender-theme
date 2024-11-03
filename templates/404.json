@@ -19,13 +19,13 @@
         "feature1-page": "shopify://pages/blend",
         "feature2": "See how easy it is to do",
         "feature2-page": "/#guide",
-        "feature3": "Label some single cask Scotch",
-        "feature3-page": "/pages/shop#single-cask",
-        "feature4": "Send gift credit to someone",
-        "feature4-page": "/pages/shop#credit",
-        "feature5": "Learn a wee bit more about whisky",
+        "feature3": "Send gift credit to someone",
+        "feature3-page": "shopify://collections/gift-credit",
+        "feature4": "Shop interesting bottles & more",
+        "feature4-page": "shopify://pages/shop",
+        "feature5": "",
         "feature5-page": "",
-        "feature6": "Shop interesting bottles &amp; more",
+        "feature6": "",
         "feature6-page": ""
       }
     }
