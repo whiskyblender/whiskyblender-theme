@@ -1,15 +1,6 @@
 <section class="standard">
   <article class="upwards">
     <p class="intro">Look at you! You've only gone and found the greatest website you're likely to see*!</p>
-    <p class="help">* today... that's about Scotch whisky &mdash; says <a href="yas.html">us</a>!</p>
-    <div class="home-image2">
-      <img
-        width="300"
-        height="112"
-        src="{{ section.settings.signature_image | image_url: width: 300, height: 112}}"
-        alt="{{ section.settings.signature_image.alt }}"
-      >
-    </div>
     <ul class="imageGallery1 gallery">
       <li class="image-1">
         <a href="{{ section.settings.gallery_image1 | image_url}}">
@@ -48,6 +39,16 @@
         ></a>
       </li>
     </ul>
+    <p class="help">* today... that's about Scotch whisky &mdash; says <a href="yas.html">us</a>!</p>
+    <div class="home-image2">
+      <img
+        width="300"
+        height="112"
+        src="{{ section.settings.signature_image | image_url: width: 300, height: 112}}"
+        alt="{{ section.settings.signature_image.alt }}"
+      >
+    </div>
+
     <span class="initial-button">
       <button class="pulse" onclick="window.location.href='{{ section.settings.start_link }}';">Start blending</button>
     </span>
