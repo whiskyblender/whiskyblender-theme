@@ -354,7 +354,7 @@
   {% if cart.item_count > 0 %}
     <!-- Cart has items -->
     {% unless template.name == 'cart' %}
-      <div class="basket">
+      <div class="basket-wb">
         <button onclick="location.href='{{ routes.cart_url }}';">
           Basket
           {%- if cart != empty -%}
