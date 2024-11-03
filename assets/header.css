@@ -248,6 +248,7 @@ section:last-of-type {
   padding: 10px;
   width: 80px;
   height: 80px;
+  z-index: 40px;
   position: absolute;
   right: 10px;
   top: 10px;
