@@ -27,7 +27,7 @@
         "intro_text": "Look at you! You've only gone and found the greatest website you're likely to see*!",
         "help_text": "* today... that's about Scotch whisky — says <a href=\"pages/yas\">us!</a>",
         "signature_image": "shopify://shop_images/signed.svg",
-        "keythings_text": "The key things you need to know about this site are that you can <a href=\"blend.html\">blend your own whisky</a> (that's right, you read correctly). But you can also <a href=\"shop.html\">shop around</a> for other unique whisky goods and gifts, such as...",
+        "keythings_text": "The key things you need to know about this site are that you can <a href=\"/pages/blend.html\">blend your own whisky</a> (that's right, you read correctly). But you can also <a href=\"/pages/shop.html\">shop around</a> for other unique whisky goods and gifts, such as...",
         "guide_title": "It's a skoosh!",
         "guide_text": "Obviously, becoming a world-renowned whisky blender takes years of practice, copious amounts of studying, a vast knowledge of the spirit, and a chunk of investment. But that doesn't mean we can't have fun!",
         "stepper_image": "shopify://shop_images/bottle.svg",
