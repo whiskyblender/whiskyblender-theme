@@ -376,6 +376,13 @@
   -%}
 {%- endif -%}
 
+<script>
+  let mybutton = document.getElementById("btt-button");
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
 {% javascript %}
   class StickyHeader extends HTMLElement {
     constructor() {
