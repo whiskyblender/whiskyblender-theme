@@ -1,5 +1,62 @@
-{{ 'blend-it.css' | asset_url | stylesheet_tag }}
 {{ 'fonts-wb.css' | asset_url | stylesheet_tag }}
+{{ 'main.css' | asset_url | stylesheet_tag }}
+{{ 'simple-lightbox.css' | asset_url | stylesheet_tag }}
+{{ 'home.css' | asset_url | stylesheet_tag }}
+{{ 'snow.css' | asset_url | stylesheet_tag }}
+{{ 'simple-lightbox.min.js' | asset_url | script_tag }}
+
+{%- if section.settings.show_snow -%}
+  <div class="snowflakes" aria-hidden="true">
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+  </div>
+{%- endif -%}
+
+{%- if section.settings.show_banner -%}
+  <div class="banner">
+    <div class="ticker-wrap">
+      <div class="ticker">
+        <div class="ticker__item">
+          {{ section.settings.banner_text }}
+        </div>
+      </div>
+    </div>
+  </div>
+{%- endif -%}
 
 <section class="header-image tight-header">
   <h2 class="page-title-wb">
@@ -21,6 +78,23 @@
     }
   ],
   "settings": [
+        {
+  "type": "checkbox",
+  "id": "show_snow",
+  "label": "Show Snow",
+  "default": true
+},
+    {
+  "type": "checkbox",
+  "id": "show_banner",
+  "label": "Show Banner",
+  "default": true
+},
+        {
+      "type": "text",
+      "id": "banner_text",
+      "label": "Banner Text",
+    },
     {
       "type": "text",
       "id": "title",

@@ -1,7 +1,33 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
-      "type": "main-404"
+      "type": "main-404",
+      "settings": {
+        "title": "Cannae find that page",
+        "blurb": "Afraid we don't know what page you're looking for. But whatever it is, it's defintitely not this one. So you might need to click about in the menu links above to find it yourself.",
+        "main_image": "shopify://shop_images/the-bon.png",
+        "feature1": "Craft a truly unique Scotch",
+        "feature1-page": "shopify://pages/blend",
+        "feature2": "See how easy it is to do",
+        "feature2-page": "/#guide",
+        "feature3": "Label some single cask Scotch",
+        "feature3-page": "/pages/shop#single-cask",
+        "feature4": "Send gift credit to someone",
+        "feature4-page": "/pages/shop#credit",
+        "feature5": "Learn a wee bit more about whisky",
+        "feature5-page": "",
+        "feature6": "Shop interesting bottles &amp; more",
+        "feature6-page": ""
+      }
     }
   },
   "order": [

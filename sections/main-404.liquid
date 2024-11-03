@@ -1,23 +1,138 @@
-<style type="text/css">
-  .template-404 .title + * {
-    margin-top: 1rem;
-  }
+{{ 'fonts-wb.css' | asset_url | stylesheet_tag }}
+{{ 'main.css' | asset_url | stylesheet_tag }}
 
-  @media screen and (min-width: 750px) {
-    .template-404 .title + * {
-      margin-top: 2rem;
+<section class="standard">
+  <article class="upwards">
+    <h2>{{ section.settings.title }}</h2>
+    <p>
+      {{ section.settings.blurb }}
+    </p>
+    <p>Or, here's a few suggestions to help you on your way...</p>
+    <ul class="features">
+      {% if section.settings['feature1-page'] != blank %}
+        <li>
+          <a class="button" href="{{ section.settings.feature1-page }}">{{ section.settings.feature1 }}</a>
+        </li>
+      {% endif %}
+      {% if section.settings['feature2-page'] != blank %}
+        <li>
+          <a class="button" href="{{ section.settings.feature2-page }}">{{ section.settings.feature2 }}</a>
+        </li>
+      {% endif %}
+
+      {% if section.settings['feature3-page'] != blank %}
+        <li>
+          <a class="button" href="{{ section.settings.feature3-page }}">{{ section.settings.feature3 }}</a>
+        </li>
+      {% endif %}
+
+      {% if section.settings['feature4-page'] != blank %}
+        <li>
+          <a class="button" href="{{ section.settings.feature4-page }}">{{ section.settings.feature4 }}</a>
+        </li>
+      {% endif %}
+
+      {% if section.settings['feature5-page'] != blank %}
+        <li>
+          <a class="button" href="{{ section.settings.feature5-page }}">{{ section.settings.feature5 }}</a>
+        </li>
+      {% endif %}
+
+      {% if section.settings['feature6-page'] != blank %}
+        <li>
+          <a class="button" href="{{ section.settings.feature6-page }}">{{ section.settings.feature6 }}</a>
+        </li>
+      {% endif %}
+    </ul>
+    <div class="lost-image1">
+      <img src="{{ section.settings.main_image | image_url }}" alt="Cheers, Andy & Drew">
+    </div>
+  </article>
+</section>
+{% schema %}
+{
+  "name": "404 Page",
+  "presets": [
+    {
+      "name": "404 Page",
+      "category": "Page"
     }
-  }
-</style>
-
-<div class="template-404 page-width page-margin center">
-  <p>
-    {{ 'templates.404.subtext' | t }}
-  </p>
-  <h1 class="title">
-    {{ 'templates.404.title' | t }}
-  </h1>
-  <a href="/pages/shop" class="button">
-    {{ 'general.continue_shopping' | t }}
-  </a>
-</div>
+  ],
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "blurb",
+        "label": "Blurb"
+      },
+      {
+        "type": "image_picker",
+        "id": "main_image",
+        "label": "Main Image"
+      },
+      {
+        "type": "text",
+        "id": "feature1",
+        "label": "Feature 1"
+      },
+      {
+        "type": "url",
+        "id": "feature1-page",
+        "label": "Feature 1 Page"
+      },
+      {
+        "type": "text",
+        "id": "feature2",
+        "label": "Feature 2"
+      },
+      {
+        "type": "url",
+        "id": "feature2-page",
+        "label": "Feature 2 Page"
+      },
+      {
+        "type": "text",
+        "id": "feature3",
+        "label": "Feature 3"
+      },
+      {
+        "type": "url",
+        "id": "feature3-page",
+        "label": "Feature 3 Page"
+      },
+      {
+        "type": "text",
+        "id": "feature4",
+        "label": "Feature 4"
+      },
+      {
+        "type": "url",
+        "id": "feature4-page",
+        "label": "Feature 4 Page"
+      },
+      {
+        "type": "text",
+        "id": "feature5",
+        "label": "Feature 5"
+      },
+      {
+        "type": "url",
+        "id": "feature5-page",
+        "label": "Feature 5 Page"
+      },{
+        "type": "text",
+        "id": "feature6",
+        "label": "Feature 6"
+      },
+      {
+        "type": "url",
+        "id": "feature6-page",
+        "label": "Feature 6 Page"
+      }
+    ]
+}
+{% endschema %}

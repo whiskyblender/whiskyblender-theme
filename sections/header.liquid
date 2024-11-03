@@ -1,8 +1,15 @@
 {{ 'fonts-wb.css' | asset_url | stylesheet_tag }}
+{{ 'header.css' | asset_url | stylesheet_tag }}
+
 <link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-search.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-menu-drawer.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-cart-notification.css' | asset_url }}" media="print" onload="this.media='all'">
+<link
+  rel="stylesheet"
+  href="{{ 'component-cart-notification.css' | asset_url }}"
+  media="print"
+  onload="this.media='all'"
+>
 <link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- if settings.predictive_search_enabled -%}
   <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -11,7 +18,7 @@
   <link rel="stylesheet" href="{{ 'component-mega-menu.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
 
-{%- if settings.cart_type == "drawer" -%}
+{%- if settings.cart_type == 'drawer' -%}
   {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
   {{ 'component-cart.css' | asset_url | stylesheet_tag }}
   {{ 'component-totals.css' | asset_url | stylesheet_tag }}
@@ -20,106 +27,86 @@
 {%- endif -%}
 
 <style>
-
-nav {
-  width: -webkit-fill-available;
-}
-  header-drawer {
-    justify-self: start;
-    margin-left: -1.2rem;
+  nav {
+    width: -webkit-fill-available;
   }
-
-  {%- if section.settings.sticky_header_type == 'reduce-logo-size' -%}
-    .scrolled-past-header .header__heading-logo-wrapper {
-      width: 75%;
+    header-drawer {
+      justify-self: start;
+      margin-left: -1.2rem;
     }
-  {%- endif -%}
 
-  {%- if section.settings.menu_type_desktop != "drawer" -%}
-    @media screen and (min-width: 990px) {
-      header-drawer {
-        display: none;
+    {%- if section.settings.sticky_header_type == 'reduce-logo-size' -%}
+      .scrolled-past-header .header__heading-logo-wrapper {
+        width: 75%;
+      }
+    {%- endif -%}
+
+    {%- if section.settings.menu_type_desktop != "drawer" -%}
+      @media screen and (min-width: 990px) {
+        header-drawer {
+          display: none;
+        }
+      }
+    {%- endif -%}
+
+    .menu-drawer-container {
+      display: flex;
+    }
+
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0px;
+}
+    .list-menu {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0 0;
+      width: 100%;
+      display: flex !important;
+      justify-content: space-between !important;
+    }
+
+    .list-menu--inline {
+      display: inline-flex;
+      flex-wrap: nowrap;
+    }
+
+    summary.list-menu__item {
+      padding-right: 2.7rem;
+    }
+
+    .list-menu__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: calc(1 + 0.3 / var(--font-body-scale));
+    }
+
+    li:has(.header__menu-item) {
+    flex-grow: 1;
+    }
+
+    .list-menu__item--link {
+      text-decoration: none;
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+      {% comment %} line-height: calc(1 + 0.8 / var(--font-body-scale)); {% endcomment %}
+    }
+
+    @media screen and (min-width: 750px) {
+      .list-menu__item--link {
+        {% comment %} padding-bottom: 0.5rem;
+        padding-top: 0.5rem; {% endcomment %}
       }
     }
-  {%- endif -%}
-
-  .menu-drawer-container {
-    display: flex;
-  }
-
-  .list-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    display: flex !important;
-    justify-content: space-between !important;
-  }
-
-  .list-menu--inline {
-    display: inline-flex;
-    flex-wrap: nowrap;
-  }
-
-  summary.list-menu__item {
-    padding-right: 2.7rem;
-  }
-
-  .list-menu__item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: calc(1 + 0.3 / var(--font-body-scale));
-  }
-  
-  li:has(.header__menu-item) {
-  flex-grow: 1;
-  }
-
-  .list-menu__item--link {
-    text-decoration: none;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    {% comment %} line-height: calc(1 + 0.8 / var(--font-body-scale)); {% endcomment %}
-  }
-
-  @media screen and (min-width: 750px) {
-    .list-menu__item--link {
-      {% comment %} padding-bottom: 0.5rem;
-      padding-top: 0.5rem; {% endcomment %}
-    }
-  }
 </style>
 
-{%- style -%}
-  .header {
-    padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 0px {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 0px;
-  }
-
-  .section-header {
-    position: sticky; /* This is for fixing a Safari z-index issue. PR #2147 */
-    margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .section-header {
-      margin-bottom: {{ section.settings.margin_bottom }}px;
-    }
-  }
-
-  /* @media screen and (min-width: 990px) {
-    .header {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  } */
-{%- endstyle -%}
 
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'search-form.js' | asset_url }}" defer="defer"></script>
-{%- if settings.cart_type == "drawer" -%}
+{%- if settings.cart_type == 'drawer' -%}
   <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
@@ -147,7 +134,12 @@ nav {
   endfor
 -%}
 
-<div {% if section.settings.sticky_header_type != 'none' %}sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
+<div
+  {% if section.settings.sticky_header_type != 'none' %}
+    sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"
+  {% endif %}
+  class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}"
+>
   {%- liquid
     assign social_links = false
     assign localization_forms = false
@@ -160,57 +152,67 @@ nav {
       assign localization_forms = true
     endif
   -%}
-  <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if section.settings.menu != blank %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}{% if social_links %} header--has-social{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}{% if localization_forms %} header--has-localizations{% endif %}">
+  <header class="header">
     {%- liquid
       if section.settings.menu != blank
         render 'header-drawer'
       endif
 
-      if section.settings.logo_position == 'top-center' or section.settings.menu == blank
-        render 'header-search', input_id: 'Search-In-Modal-1'
-      endif
+
     -%}
 
     {%- if section.settings.logo_position != 'middle-center' -%}
-      {%- if request.page_type == 'index' or request.page_type == 'product' or request.page_type == 'collection' or request.page_type == 'page' or request.path contains '/page' or request.path contains '/search' or request.path contains '/cart' or request.path contains 'policies'  -%}
-      
+      {%- if request.page_type == 'index'
+        or request.page_type == 'product'
+        or request.page_type == 'collection'
+        or request.page_type == 'page'
+        or request.path contains '/page'
+        or request.path contains '/search'
+        or request.path contains '/cart'
+        or request.path contains 'policies'
+        or request.path contains '404'
+      -%}
+        <h1>Create your own whisky</h1>
 
-    <div id="logo-wrapper-wb">
-          <div class="logo-subtitle left">
-            <span class='desktop-subtitle left'>{{settings.logo_text_left}}</span>
-            <span class='mobile-subtitle left'>{{settings.logo_text_left_mobile}}</span> 
-          </div>
+        <div id="logo">
+          <a href="/">Whisky Blender</a>
+          <span class="pre-logo">{{ settings.logo_text_left }}</span>
+          <span class="post-logo">{{ settings.logo_text_right }}</span>
+        </div>
         <h1 class="header__heading">
       {%- endif -%}
-          <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
-            {%- if settings.logo != blank -%}
-              <div class="header__heading-logo-wrapper">
-                {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
-                {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
-                {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
-                {{ settings.logo | image_url: width: 600 | image_tag:
-                  class: 'header__heading-logo motion-reduce',
-                  height: logo_height,
-                  alt: logo_alt,
-                  sizes: sizes,
-                  preload: true
-                }}
-              </div>
-            {%- else -%}
-              <span class="h2">{{ shop.name }}</span>
-            {%- endif -%}
-          </a>
-      {%- if request.page_type == 'index' or request.page_type == 'product' or request.page_type == 'collection' or request.page_type == 'page' or request.path contains '/page' or request.path contains '/search' or request.path contains '/cart' or request.path contains 'policies'  -%}
-      
+      <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
+        {%- if settings.logo != blank -%}
+          <div class="header__heading-logo-wrapper">
+            {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
+            {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
+            {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
+            {{
+              settings.logo
+              | image_url: width: 600
+              | image_tag:
+                class: 'header__heading-logo motion-reduce',
+                height: logo_height,
+                alt: logo_alt,
+                sizes: sizes,
+                preload: true
+            }}
+          </div>
+        {%- else -%}
+          <span class="h2">{{ shop.name }}</span>
+        {%- endif -%}
+      </a>
+      {%- if request.page_type == 'index'
+        or request.page_type == 'product'
+        or request.page_type == 'collection'
+        or request.page_type == 'page'
+        or request.path contains '/page'
+        or request.path contains '/search'
+        or request.path contains '/cart'
+        or request.path contains 'policies'
+        or request.path contains '404'
+      -%}
         </h1>
-
-        <div class="logo-subtitle right">
-          <span class='desktop-subtitle right'>{{settings.logo_text_right}}</span>
-            <span class='mobile-subtitle right'>{{settings.logo_text_right_mobile}}</span> 
-        </div>
-
-        
-      </div>
       {%- endif -%}
     {%- endif -%}
 
@@ -225,39 +227,53 @@ nav {
     %}
 
     {%- if section.settings.logo_position == 'middle-center' -%}
-      {%- if request.page_type == 'index' or request.page_type == 'product' or request.page_type == 'collection' or request.page_type == 'page' or request.path contains '/page' or request.path contains '/search' or request.path contains '/cart' or request.path contains 'policies'  -%}
-      
+      {%- if request.page_type == 'index'
+        or request.page_type == 'product'
+        or request.page_type == 'collection'
+        or request.page_type == 'page'
+        or request.path contains '/page'
+        or request.path contains '/search'
+        or request.path contains '/cart'
+        or request.path contains 'policies'
+        or request.path contains '404'
+      -%}
         <h1 class="header__heading">
-
-         
-
       {%- endif -%}
 
-      
-      
-          <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
-            {%- if settings.logo != blank -%}
-              <div class="header__heading-logo-wrapper">
-                {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
-                {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
-                {% capture sizes %}(min-width: 750px) {{ settings.logo_width }}px, 50vw{% endcapture %}
-                {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
-                {{ settings.logo | image_url: width: 600 | image_tag:
-                  class: 'header__heading-logo',
-                  widths: widths,
-                  height: logo_height,
-                  width: settings.logo_width,
-                  alt: logo_alt,
-                  sizes: sizes,
-                  preload: true
-                }}
-              </div>
-            {%- else -%}
-              <span class="h2">{{ shop.name }}</span>
-            {%- endif -%}
-          </a>
-      {%- if request.page_type == 'index' or request.page_type == 'product' or request.page_type == 'collection' or request.page_type == 'page' or request.path contains '/page' or request.path contains '/search' or request.path contains '/cart' or request.path contains 'policies'  -%}
-      
+      <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
+        {%- if settings.logo != blank -%}
+          <div class="header__heading-logo-wrapper">
+            {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
+            {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
+            {% capture sizes %}(min-width: 750px) {{ settings.logo_width }}px, 50vw{% endcapture %}
+            {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
+            {{
+              settings.logo
+              | image_url: width: 600
+              | image_tag:
+                class: 'header__heading-logo',
+                widths: widths,
+                height: logo_height,
+                width: settings.logo_width,
+                alt: logo_alt,
+                sizes: sizes,
+                preload: true
+            }}
+          </div>
+        {%- else -%}
+          <span class="h2">{{ shop.name }}</span>
+        {%- endif -%}
+      </a>
+      {%- if request.page_type == 'index'
+        or request.page_type == 'product'
+        or request.page_type == 'collection'
+        or request.page_type == 'page'
+        or request.path contains '/page'
+        or request.path contains '/search'
+        or request.path contains '/cart'
+        or request.path contains 'policies'
+        or request.path contains '404'
+      -%}
         </h1>
       {%- endif -%}
     {%- endif -%}
@@ -286,10 +302,12 @@ nav {
           </localization-form>
         {%- endif -%}
       </div>
-      {% render 'header-search', input_id: 'Search-In-Modal' %}
 
       {%- if shop.customer_accounts_enabled -%}
-        <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
+        <a
+          href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
+          class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}"
+        >
           <account-icon>
             {%- if customer and customer.has_avatar? -%}
               {{ customer | avatar }}
@@ -336,37 +354,31 @@ nav {
       </a>
     </div>
   </header>
-   {% if cart.item_count > 0 %}
-  <!-- Cart has items -->
-  {% unless template.name == 'cart' %}
-    <a href="{{ routes.cart_url }}">
-    <div class="basket-wb">
-      <button>Basket {%- if cart != empty -%}
-        {%- if cart.item_count < 100 -%}
-          <sup id="cart-count" class="pulse">{{ cart.item_count }}</sup>
-        {%- endif -%}
-      {%- endif -%}
-      </button>
-    </div>
-    </a>
-      
-  {% endunless %}
-   
-{% endif %}
+  {% if cart.item_count > 0 %}
+    <!-- Cart has items -->
+    {% unless template.name == 'cart' %}
+      <a href="{{ routes.cart_url }}">
+        <div class="basket-wb">
+          <button>
+            Basket
+            {%- if cart != empty -%}
+              {%- if cart.item_count < 100 -%}
+                <sup id="cart-count" class="pulse">{{ cart.item_count }}</sup>
+              {%- endif -%}
+            {%- endif -%}
+          </button>
+        </div>
+      </a>
+    {% endunless %}
+  {% endif %}
 
-<div id="cart-count-hidden" style="display:none;" >{{ cart.item_count }}</div>
-
- 
-
-
-  
-
-</{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
-
-
+  <div id="cart-count-hidden" style="display:none;">{{ cart.item_count }}</div>
 </div>
-{%- if settings.cart_type == "notification" -%}
-  {%- render 'cart-notification', color_scheme: section.settings.color_scheme, desktop_menu_type: section.settings.menu_type_desktop -%}
+{%- if settings.cart_type == 'notification' -%}
+  {%- render 'cart-notification',
+    color_scheme: section.settings.color_scheme,
+    desktop_menu_type: section.settings.menu_type_desktop
+  -%}
 {%- endif -%}
 
 {% javascript %}
@@ -504,8 +516,16 @@ nav {
   }
 </script>
 
-{%- if request.page_type == 'index' or request.page_type == 'product' or request.page_type == 'collection' or request.page_type == 'page' or request.path contains '/page' or request.path contains '/search' or request.path contains '/cart' or request.path contains 'policies'  -%}
-  {% assign potential_action_target = request.origin | append: routes.search_url | append: "?q={search_term_string}" %}
+{%- if request.page_type == 'index'
+  or request.page_type == 'product'
+  or request.page_type == 'collection'
+  or request.page_type == 'page'
+  or request.path contains '/page'
+  or request.path contains '/search'
+  or request.path contains '/cart'
+  or request.path contains 'policies'
+-%}
+  {% assign potential_action_target = request.origin | append: routes.search_url | append: '?q={search_term_string}' %}
 
   <script type="application/ld+json">
     {
