@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -66,9 +66,10 @@
         "link_JLJCQ4"
       ],
       "settings": {
-        "title": "Look Aroon...",
-        "video_url": "",
-        "webp_url": "https://cdn.shopify.com/videos/c/o/v/494725c9715446c7ae8cee10fed104a6.webm"
+        "title": "The big shop",
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/494fe2585a47457bb4ebfe8b01fc0c13.mp4",
+        "webp_url": "https://cdn.shopify.com/videos/c/o/v/494725c9715446c7ae8cee10fed104a6.webm",
+        "poster_url": "shopify://shop_images/pour-bg.jpg"
       }
     },
     "shop_bottles_ePwbQ6": {

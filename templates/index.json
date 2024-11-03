@@ -14,10 +14,11 @@
       "settings": {
         "show_snow": false,
         "show_banner": false,
-        "banner_text": "<span>🎄</span> We'll be closing for Christmas on December 15. <span>☃️</span> All orders placed         <strong><u>after</u> December 14</strong> will be posted out in <strong>the New Year</strong> <span>🥃</span>",
-        "title": "Your Own Whisky",
+        "banner_text": "🎄 We'll be closing for Christmas on December 15. ☃️ All orders placed         after December 14 will be posted out in the New Year 🥃",
+        "title": "Your own whisky",
         "hero_video": "https://cdn.shopify.com/videos/c/o/v/52dedaab3e1348939a50021f6ebf171d.webm",
         "hero_video_webm": "https://cdn.shopify.com/videos/c/o/v/52dedaab3e1348939a50021f6ebf171d.webm",
+        "hero_poster": "shopify://shop_images/scotch-bg.jpg",
         "get_stared_button_url": "shopify://pages/blend"
       }
     },
