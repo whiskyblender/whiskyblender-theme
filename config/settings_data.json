@@ -390,7 +390,8 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".socials {display: none !important;}"
+      ".socials {display: none !important;}",
+      "#blend-in-app-block .blend-wrapper-container input {text-transform: none;}"
     ]
   }
 }
