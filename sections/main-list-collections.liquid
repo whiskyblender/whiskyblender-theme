@@ -8,12 +8,14 @@
     <h3>Collections</h3>
     {%- paginate collections by paginate_by -%}
       <ul>
+        {% assign excluded_collections = "promoted, Home Page" | split: ", " %}
+
         {%- for collection in collections -%}
-                {% unless collection.handle == 'promoted' %}
-
-          <li><a href="{{ collection.url }}">{{ collection.title }}</a></li>
-                        {% endunless %}
-
+          {% unless  excluded_collections contains collection.handle %}
+            <li>
+              <a href="{{ collection.url }}">{{ collection.title }}</a>
+            </li>
+          {% endunless %}
         {%- endfor -%}
       </ul>
     {%- endpaginate -%}
@@ -29,6 +31,7 @@
 {
   "name": "t:sections.main-list-collections.name",
   "class": "section",
+
   "settings": [
     {
       "type": "inline_richtext",
