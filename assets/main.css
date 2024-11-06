@@ -1,7 +1,6 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 30px;
-  font-display: block;
 }
 
 @-webkit-keyframes ticker {
@@ -197,15 +196,20 @@ hr {
 
 .summary {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 32px;
   padding: 20px 0;
   display: flex;
   margin-bottom: 20px;
   flex-direction: column;
   flex-wrap: nowrap;
   gap: 30px;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+}
+
+.subtotal-of-items {
+  display: flex;
+  flex-direction: column;
 }
 
 p.intro {
@@ -239,13 +243,15 @@ body {
   color: #000000;
   margin: 0;
   padding: 0;
+  overflow-wrap: break-word;
+  hyphens: manual;
 }
 
 .basket {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 20;
+  z-index: 99;
   text-align: right;
   transition: opacity 0.4s;
   display: block;
@@ -385,6 +391,7 @@ ul.social-embed li img {
   width: 100%;
 }
 
+header,
 footer {
   background: #000000;
   color: #ffffff;
@@ -542,7 +549,6 @@ main {
   min-height: calc(100vh - 440px);
   overflow: hidden;
   position: relative;
-  max-width: 100vw;
 }
 
 article {
@@ -589,6 +595,18 @@ h2 {
   margin: 0 0 20px 0;
   font-size: 25vw;
   line-height: 19vw;
+}
+
+.header-image h2 span {
+  font-family: "Nanum Pen Script", cursive;
+  font-weight: 300;
+  font-size: 5vw;
+  line-height: 4vw;
+  width: 14vw;
+  display: inline-block;
+  padding: 20px 0;
+  vertical-align: bottom;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -639,7 +657,93 @@ p.help a:hover {
   display: none;
 }
 
+#logo {
+  display: inline-block;
+  margin: 20px auto;
+  height: 20px;
+  position: relative;
+}
 
+#logo a {
+  font-size: 0;
+  display: inline-block;
+  width: 180px;
+  height: 26px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-top: 6px;
+}
+
+#logo span {
+  font-size: 8px;
+  height: 20px;
+  display: inline-block;
+  padding: 4px 3vw;
+  color: #dddddd;
+  width: 14vw;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+span.pre-logo {
+  float: left;
+}
+
+span.post-logo {
+  float: right;
+}
+
+#logo span span {
+  display: none;
+}
+
+nav {
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 0 10px;
+}
+
+nav ul {
+  background-image: linear-gradient(#222222, #555555);
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 6px 6px 0 0;
+}
+
+nav ul li {
+  text-transform: uppercase;
+  position: relative;
+  width: -webkit-fill-available;
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  line-height: 32px;
+  padding: 5px 0 3px 0;
+  position: relative;
+  background: #222222;
+  transition: background 0.4s;
+  border-radius: 6px 6px 0 0;
+}
+
+nav ul li a:hover {
+  background: transparent;
+}
+
+nav ul li a.active {
+  background: #555555;
+}
 
 section {
   margin: 0 auto;
@@ -776,6 +880,50 @@ p.help {
   color: #666666;
   line-height: 22px;
   font-style: italic;
+}
+
+.header-image {
+  background-size: cover;
+  background-position: center;
+  display: block;
+  color: #ffffff;
+  border-radius: 0 0 40px 40px;
+  box-shadow: inset 200px -300px 500px rgba(0, 0, 0, 0.4);
+  margin: 0 10px;
+  overflow: hidden;
+  background-color: #111111;
+  background-attachment: fixed;
+}
+
+.header-image.loose-header {
+  padding: 55vw 30px 10px 30px;
+}
+
+.header-image.tight-header {
+  padding: 40px 30px 10px 30px;
+}
+
+.header-image.mid-header {
+  border-radius: 40px;
+  margin-top: 40px;
+}
+
+.header-image h2 {
+  color: #ffffff;
+  z-index: 2;
+  position: relative;
+}
+
+.header-image video {
+  position: absolute;
+  box-shadow: inset 200px -300px 500px rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  opacity: 0.8;
 }
 
 #bottles {
@@ -1384,7 +1532,6 @@ ul.gallery li:nth-of-type(2) img {
   }
 
   .summary {
-    font-size: 32px;
     padding: 40px;
     flex-direction: row;
     align-items: center;
@@ -1411,6 +1558,29 @@ ul.gallery li:nth-of-type(2) img {
     display: block;
   }
 
+  #logo {
+    margin: 30px auto;
+    height: 24px;
+    position: relative;
+  }
+
+  #logo a {
+    width: 210px;
+    height: 30px;
+    margin-top: 6px;
+  }
+
+  #logo span {
+    font-size: 8px;
+    height: 24px;
+    padding: 6px 32px;
+    letter-spacing: 2px;
+    width: 130px;
+  }
+
+  #logo span span {
+    display: contents;
+  }
 
   nav {
     padding: 0 20px;
@@ -1418,6 +1588,23 @@ ul.gallery li:nth-of-type(2) img {
 
   nav ul {
     font-size: 14px;
+  }
+
+  .header-image {
+    border-radius: 0 0 60px 60px;
+    margin: 0 20px;
+  }
+
+  .header-image.loose-header {
+    padding: 30vh 40px 30px 40px;
+  }
+
+  .header-image.tight-header {
+    padding: 40px 40px 30px 40px;
+  }
+
+  .header-image.mid-header {
+    border-radius: 60px;
   }
 
   .bottle {
@@ -1553,6 +1740,10 @@ ul.gallery li:nth-of-type(2) img {
 }
 
 @media only screen and (min-width: 768px) {
+  .summary {
+    font-size: 32px;
+  }
+
   #bottle-page .hang-right {
     width: calc(100% - 300px);
     left: 260px;
@@ -1736,13 +1927,38 @@ ul.gallery li:nth-of-type(2) img {
     margin: 20px 0 40px 0;
   }
 
+  .header-image h2 span {
+    font-size: 52px;
+    line-height: 44px;
+    width: 100px;
+  }
+
   h3 {
     font-size: 128px;
     line-height: 100px;
     margin: 20px 0 40px 0;
   }
 
+  #logo {
+    margin: 24px auto;
+    height: 36px;
+    position: relative;
+  }
 
+  #logo a {
+    width: 230px;
+    height: 33px;
+    margin-top: 10px;
+  }
+
+  #logo span {
+    font-size: 10px;
+    height: 28px;
+    padding: 12px 52px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    width: 200px;
+  }
 
   .standard article.hang-right {
     margin-left: calc(100% - 600px);
@@ -1752,6 +1968,23 @@ ul.gallery li:nth-of-type(2) img {
     padding: 40px 70px 0 70px;
   }
 
+  .header-image {
+    border-radius: 0 0 80px 80px;
+    max-width: 904px;
+    margin: 0 auto;
+  }
+
+  .header-image.loose-header {
+    padding: 300px 60px 20px 60px;
+  }
+
+  .header-image.tight-header {
+    padding: 40px 60px 20px 60px;
+  }
+
+  .header-image.mid-header {
+    border-radius: 80px;
+  }
 
   ul.popular li .bubble {
     width: 192px;
@@ -1868,7 +2101,7 @@ ul.gallery li:nth-of-type(2) img {
 
   #bottle-page h4,
   #product-page h4 {
-    max-width: 340px;
+    max-width: 640px;
   }
 
   .lost-image1 {
