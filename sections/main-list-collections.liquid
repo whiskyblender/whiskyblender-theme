@@ -8,7 +8,7 @@
     <h3>Collections</h3>
     {%- paginate collections by paginate_by -%}
       <ul>
-        {% assign excluded_collections = "promoted, Home Page" | split: ", " %}
+        {% assign excluded_collections = "promoted, Home page" | split: ", " %}
 
         {%- for collection in collections -%}
           {% unless  excluded_collections contains collection.handle %}
