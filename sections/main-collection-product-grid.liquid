@@ -28,22 +28,7 @@
       <p class="intro">
         {{ collection.description }}
       </p>
-    </article>
-  </section>
-
-      <div
-        class="collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}"
-      >
-        <div class="loading-overlay gradient"></div>
-        <ul
-          id="product-grid"
-          data-id="{{ section.id }}"
-          class="
-            grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down
-            grid--{{ section.settings.columns_desktop }}-col-desktop
-            {% if section.settings.quick_add == 'bulk' %} collection-quick-add-bulk{% endif %}
-          "
-        >
+                <ul class="product-list">
           {%- for product in collection.products -%}
             <li
               class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
@@ -55,14 +40,14 @@
                 show_secondary_image: section.settings.show_secondary_image,
                 show_vendor: section.settings.show_vendor,
                 show_rating: section.settings.show_rating,
-                lazy_load: lazy_load,
                 quick_add: section.settings.quick_add,
                 section_id: section.id
               %}
             </li>
           {%- endfor -%}
         </ul>
-    </div>
+          </article>
+  </section>
 </div>
 
 {% schema %}
