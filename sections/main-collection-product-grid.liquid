@@ -8,7 +8,7 @@
       <ul class="product-list">
 
           {%- for product in collection.products -%}
-          <li class="product-list-card">
+          <li>
             <a
               href="{{ product.url }}"
               style="background-image: url({{ product.featured_image | img_url: '1000x1000' }})"
