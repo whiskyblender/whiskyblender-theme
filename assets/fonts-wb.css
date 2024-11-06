@@ -1,5 +1,6 @@
-  font-family: 'trimPosterCompressed';
-  src: url('TrimPosterWeb-Compressed.eot'),
-       url('TrimPosterWeb-Compressed.woff') format('woff'),
-       url('TrimPosterWeb-Compressed.ttf')  format('truetype');
+@font-face {
+  font-family: "trimPosterCompressed";
+  src: url("TrimPosterWeb-Compressed.eot"),
+    url("TrimPosterWeb-Compressed.woff") format("woff"),
+    url("TrimPosterWeb-Compressed.ttf") format("truetype");
 }
