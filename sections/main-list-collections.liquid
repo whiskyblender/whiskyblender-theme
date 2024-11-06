@@ -9,7 +9,11 @@
     {%- paginate collections by paginate_by -%}
       <ul>
         {%- for collection in collections -%}
+                {% unless collection.handle == 'promoted' %}
+
           <li><a href="{{ collection.url }}">{{ collection.title }}</a></li>
+                        {% endunless %}
+
         {%- endfor -%}
       </ul>
     {%- endpaginate -%}
