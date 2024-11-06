@@ -1,6 +1,7 @@
 {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
-{{ 'component-collection-hero.css' | asset_url | stylesheet_tag }}
+{{ 'fonts-wb.css' | asset_url | stylesheet_tag }}
 {{ 'shop.css' | asset_url | stylesheet_tag }}
+
 {%- style -%}
   @media screen and (max-width: 749px) {
     .collection-hero--with-image .collection-hero__inner {
@@ -9,20 +10,15 @@
   }
 {%- endstyle -%}
 
-
-
-
-
-    {%- if section.settings.show_collection_image and collection.image -%}
-      <section class="header-image tight-header" style="background-image: url({{ collection.image | image_url }}) ;">
-        <h4><a href="/">Home</a> / <a href="/pages/shop">Shop</a> / <a href="/collections">Collections</a></h4>
-        <h2>{{ collection.title }}</h2>
-      </section>
-    {%- endif -%}
-          {%- if section.settings.show_collection_description -%}
-        <div class="collection-hero__description rte">{{ collection.description }}</div>
-      {%- endif -%}
-
+{%- if section.settings.show_collection_image and collection.image -%}
+  <section class="header-image tight-header" style="background-image: url({{ collection.image | image_url }}) ;">
+    <h4><a href="/">Home</a> / <a href="/pages/shop">Shop</a> / <a href="/collections">Collections</a></h4>
+    <h2>{{ collection.title }}</h2>
+  </section>
+{%- endif -%}
+{%- if section.settings.show_collection_description -%}
+  <div class="collection-hero__description rte">{{ collection.description }}</div>
+{%- endif -%}
 
 {% schema %}
 {
