@@ -6,14 +6,14 @@
       </p>
 
       <ul class="product-list">
-
-          {%- for product in collection.products -%}
+        {%- for product in collection.products -%}
           <li>
             <a
               href="{{ product.url }}"
               style="background-image: url({{ product.featured_image | img_url: '1000x1000' }})"
             >
-              <img alt=" Product image of whisky bottle" src="{{ product.featured_image | img_url: '1000x1000' }}">
+              <img src="https://cdn.shopify.com/s/files/1/0846/7592/0200/files/square.gif?v=1730910705">
+
               <span class="deetz single-casks-details">
                 <h4>{{ product.title }}</h4>
                 <p>{{ product.type | truncate: 30 }}</p>
