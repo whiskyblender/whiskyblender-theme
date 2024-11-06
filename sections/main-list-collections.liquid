@@ -9,7 +9,7 @@
     {%- paginate collections by paginate_by -%}
       <ul>
         {%- for collection in collections -%}
-          <li><a href="vouchers.html">Gift credit</a></li>
+          <li><a href="{{ collection.url }}">{{ collection.title }}</a></li>
         {%- endfor -%}
       </ul>
     {%- endpaginate -%}
