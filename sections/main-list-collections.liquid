@@ -11,7 +11,7 @@
         {% assign excluded_collections = "promoted, Home page" | split: ", " %}
 
         {%- for collection in collections -%}
-          {% unless  excluded_collections contains collection.handle %}
+          {% unless  excluded_collections contains collection.title %}
             <li>
               <a href="{{ collection.url }}">{{ collection.title }}</a>
             </li>
