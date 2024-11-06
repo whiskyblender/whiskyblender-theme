@@ -1,9 +1,11 @@
 .header-image h4, .header-image p {
     position: relative;
     z-index: 3;
+      color: #ffffff;
+
 }
 
-.header-image h4  {
+.header-image h4 a {
     color: #ffffff;
 }
 
