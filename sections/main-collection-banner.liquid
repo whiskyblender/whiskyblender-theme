@@ -41,6 +41,11 @@
           height="{{ collection.image.height }}"
         >
       </div>
+
+      <section class="header-image tight-header" style="background-image: {{ collection.image | image_url }} ;">
+        <h4><a href="/">Home</a> / <a href="/pages/shop">Shop</a> / <a href="/collections">Collections</a></h4>
+        <h2>Andras' bottles</h2>
+      </section>
     {%- endif -%}
   </div>
 </div>
