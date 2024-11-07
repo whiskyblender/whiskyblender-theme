@@ -12,12 +12,12 @@
               href="{{ product.url }}"
               style="background-image: url({{ product.featured_image | img_url: '1000x1000' }})"
             >
-              <img src="https://cdn.shopify.com/s/files/1/0846/1136/7177/files/square_878289f2-cc24-437e-a140-f4c00d06ac76.gif?v=1730919087">
+              <img alt=" Product image" src="{{ product.featured_image | img_url: '1000x1000' }}">
 
               <span class="deetz single-casks-details">
                 <h4>{{ product.title }}</h4>
                 <div class="reveal">
-                                  <p>{{ product.type | truncate: 30 }}</p>
+                  <p>{{ product.type | truncate: 30 }}</p>
 
                   {% if product.available == false %}
                     <!-- Product is out of stock -->
@@ -34,11 +34,11 @@
     </article>
   </section>
 </div>
-        <section class="banding">
-            <article class="max">
-                <button onclick="location.href='/collections';" class="secondary-button">Other collections</button>
-            </article>
-        </section>
+<section class="banding">
+  <article class="max">
+    <button onclick="location.href='/collections';" class="secondary-button">Other collections</button>
+  </article>
+</section>
 
 {% schema %}
 {
