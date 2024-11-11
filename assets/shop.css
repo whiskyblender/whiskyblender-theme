@@ -1,3 +1,6 @@
+.deetz .reveal .pulse {
+  float: none;
+}
 .header-image h4, .header-image p {
     position: relative;
     z-index: 3;
