@@ -22,6 +22,9 @@
                   {% if product.available == false %}
                     <!-- Product is out of stock -->
                     <sup> Out of stock</sup>
+                  {% elsif product.compare_at_price %}
+                    <sup class="buy pulse">{{ product.compare_at_price | money }}</sup>
+
                   {% else %}
                     <sup class="buy pulse">{{ product.price | money }}</sup>
                   {% endif %}
