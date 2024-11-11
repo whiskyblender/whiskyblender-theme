@@ -1,6 +1,48 @@
 {{ 'fonts-wb.css' | asset_url | stylesheet_tag }}
 {{ 'main.css' | asset_url | stylesheet_tag }}
 {{ 'shop.css' | asset_url | stylesheet_tag }}
+{{ 'snow.css' | asset_url | stylesheet_tag }}
+
+{%- if section.settings.show_snow and collection.title == 'Festive cheers' -%}
+  <div class="snowflakes" aria-hidden="true">
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+    <div class="snowflake">
+      <div class="inner">❅</div>
+    </div>
+  </div>
+{%- endif -%}
 
 {%- if section.settings.show_collection_image and collection.image -%}
   <section class="header-image tight-header" style="background-image: url({{ collection.image | image_url }}) ;">
@@ -20,7 +62,13 @@
       "default": false,
       "label": "t:sections.main-collection-banner.settings.show_collection_image.label",
       "info": "t:sections.main-collection-banner.settings.show_collection_image.info"
-    }
+    },
+            {
+  "type": "checkbox",
+  "id": "show_snow",
+  "label": "Show Snow",
+  "default": true
+}
   ]
 }
 {% endschema %}
