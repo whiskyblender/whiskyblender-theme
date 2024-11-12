@@ -18,16 +18,32 @@
           </h4>
           <div class="segmented-control">
             {% for value in option.values %}
-              <input
-                type="radio"
-                name="{{ option.name }}"
-                value="{{ value }}"
-                id="{{ value }}"
-                {% if forloop.first %}
-                  checked
-                {% endif %}
-              >
-              <label for="{{ value }}"> {{ value }} </label>
+              {% if option.name == 'Label' %}
+                <label for="{{ value }}">
+                <input
+                  type="radio"
+                  name="{{ option.name }}"
+                  value="{{ value }}"
+                  id="{{ value }}"
+                  {% if forloop.first %}
+                    checked
+                  {% endif %}
+                >
+                 {{ value }}
+                  <span> Free</span>
+                </label>
+              {% else %}
+                <input
+                  type="radio"
+                  name="{{ option.name }}"
+                  value="{{ value }}"
+                  id="{{ value }}"
+                  {% if forloop.first %}
+                    checked
+                  {% endif %}
+                >
+                <label for="{{ value }}"> {{ value }} </label>
+              {% endif %}
             {% endfor %}
           </div>
         </div>
