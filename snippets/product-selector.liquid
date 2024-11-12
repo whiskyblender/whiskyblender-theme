@@ -20,17 +20,17 @@
             {% for value in option.values %}
               {% if option.name == 'Label' %}
                 <label for="{{ value }}">
-                <input
-                  type="radio"
-                  name="{{ option.name }}"
-                  value="{{ value }}"
-                  id="{{ value }}"
-                  {% if forloop.first %}
-                    checked
-                  {% endif %}
-                >
-                 {{ value }}
-                  <span> Free</span>
+                  <input
+                    type="radio"
+                    name="{{ option.name }}"
+                    value="{{ value }}"
+                    id="{{ value }}"
+                    {% if forloop.first %}
+                      checked
+                    {% endif %}
+                  >
+                  {{ value }}
+                  <span> </span>
                 </label>
               {% else %}
                 <input
@@ -61,7 +61,6 @@
           <div class="segmented-control">
             {% for value in option.values %}
               {% if option.name == 'Label' %}
-                <label for="{{ value }}">
                 <input
                   type="radio"
                   name="{{ option.name }}"
@@ -71,8 +70,9 @@
                     checked
                   {% endif %}
                 >
-                 {{ value }}
-                  <span> Free</span>
+                <label for="{{ value }}">
+                  {{ value }}
+                  <span> </span>
                 </label>
               {% else %}
                 <input
