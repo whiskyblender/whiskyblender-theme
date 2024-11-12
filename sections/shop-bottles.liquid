@@ -9,26 +9,31 @@
       {% assign bottles = collections['oor-bottlings'] %}
 
       {% for product in bottles.products %}
-        <li class="product-list-card">
-          <a
-            href="{{ product.url }}"
-            style="background-image: url({{ product.featured_image | img_url: '1000x1000' }})"
-          >
-            <img alt=" Prouct image of whisky bottle" src="{{ product.featured_image | img_url: '1000x1000' }}">
-            <span class="deetz single-casks-details">
-              <h4>{{ product.title }}</h4>
-              <p>{{ product.type | truncate: 30 }}</p>
-              <div class="reveal">
-                {% if product.available == false %}
-                  <!-- Product is out of stock -->
-                  <sup> Out of stock</sup>
-                {% else %}
-                  <sup class="buy pulse">{{ product.price | money }}</sup>
-                {% endif %}
-              </div>
-            </span>
-          </a>
-        </li>
+          <li class="product-list-card">
+            <a
+              href="{{ product.url }}"
+              style="background-image: url({{ product.featured_image | img_url: '1000x1000' }})"
+            >
+              <img alt=" Product image" src="{{ product.featured_image | img_url: '1000x1000' }}">
+
+              <span class="deetz ">
+                <h4>{{ product.title }}</h4>
+                <div class="reveal">
+                  <p>{{ product.type | truncate: 30 }}</p>
+
+                  {% if product.available == false %}
+                    <!-- Product is out of stock -->
+                    <sup> Out of stock</sup>
+                  {% elsif product.compare_at_price %}
+                    <sup class="buy pulse">{{ product.price | money }}</sup>
+                    <sup class="sale">{{ product.compare_at_price | money }}</sup>
+                  {% else %}
+                    <sup class="buy pulse">{{ product.price | money }}</sup>
+                  {% endif %}
+                </div>
+              </span>
+            </a>
+          </li>
       {% endfor %}
     </ul>
   </article>
