@@ -73,7 +73,13 @@
                 <label for="{{ value }}">
                   {{ value }}
                   <span> </span>
-                  <div class="thumbnail"><img src="https://cdn.shopify.com/s/files/1/0846/1136/7177/files/label-standard.png?v=1731401733"></div>
+                  <div class="thumbnail">
+                    {% if value == 'Standard' %}
+                      <img src="https://cdn.shopify.com/s/files/1/0846/1136/7177/files/label-standard.png?v=1731401733">
+                    {% else %}
+                      <img src="https://cdn.shopify.com/s/files/1/0846/1136/7177/files/label-festive.png?v=1731401734">
+                    {% endif %}
+                  </div>
                 </label>
               {% else %}
                 <input
