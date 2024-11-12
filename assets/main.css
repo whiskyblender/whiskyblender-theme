@@ -631,7 +631,7 @@ hr {
 
 a {
   font-weight: 600;
-  text-decoration: underline;
+  text-decoration: none;
   text-underline-offset: 5px;
   color: #000000;
   transition: text-decoration-style 0.2s;
