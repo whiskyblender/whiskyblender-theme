@@ -87,7 +87,7 @@
         {% if product.type != blank %}
           <li>{{ product.type }} abv</li>
         {% endif %}
-        {% if product.metafields.custom.abv != blank %}
+        {% if product.metafields.custom.abv == true %}
           <li>{{ product.metafields.custom.abv }} abv</li>
         {% endif %}
       </ul>
