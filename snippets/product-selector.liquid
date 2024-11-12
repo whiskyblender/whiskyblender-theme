@@ -72,7 +72,12 @@
                 >
                 <label for="{{ value }}">
                   {{ value }}
-                  <span> </span>
+                  {% if value == 'Standard' %}
+                    <span> Free</span>
+                  {% else %}
+                    <span> + £3.00</span>
+                  {% endif %}
+
                   <div class="thumbnail">
                     {% if value == 'Standard' %}
                       <img src="https://cdn.shopify.com/s/files/1/0846/1136/7177/files/label-standard.png?v=1731401733">
