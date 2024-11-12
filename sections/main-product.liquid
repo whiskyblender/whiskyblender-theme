@@ -22,6 +22,7 @@
             <a class="any-link breadcrumb" aria-label="Breadcrumb" href="{{ collection.url }}">
               {{- collection.title -}}
             </a>
+            
           {% endunless %}
         {% endfor %}
       </h4>
@@ -83,10 +84,10 @@
 
       <h3>{{ product.title }}</h3>
       <ul class="product-summary">
-        {% if product.type %}
+        {% if product.type != blank %}
           <li>{{ product.type }} abv</li>
         {% endif %}
-        {% if product.metafields.custom.abv %}
+        {% if product.metafields.custom.abv != blank %}
           <li>{{ product.metafields.custom.abv }} abv</li>
         {% endif %}
       </ul>
