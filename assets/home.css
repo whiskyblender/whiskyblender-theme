@@ -76,6 +76,7 @@ span.step1, span.step2, span.step3 {
     position: relative;
     border-radius: 40px;
     line-height: 32px;
+  z-index: 20;
 
 }
 
