@@ -72,7 +72,7 @@
             <span class="deetz single-casks-details">
               <h4>{{ product.title }}</h4>
               <div class="reveal">
-                              <p>{{ product.type | truncate: 30 }}</p>
+                <p>{{ product.type | truncate: 30 }}</p>
 
                 {% if product.available == false %}
                   <!-- Product is out of stock -->
@@ -152,9 +152,11 @@
     </div>
   </article>
   <article>
-    <a class="get-started-link" href="{{ section.settings.start_link }}">
-      <button class="pulse">{{ section.settings.start_button_label }}</button>
-    </a>
+    <span class="get-started-link">
+      <button class="pulse" onclick="window.location.href='{{ section.settings.start_link }}';">
+        {{ section.settings.start_button_label }}
+      </button>
+    </span>
   </article>
 </section>
 {% javascript %}
@@ -280,5 +282,3 @@
   ]
 }
 {% endschema %}
-
-
