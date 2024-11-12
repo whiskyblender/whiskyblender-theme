@@ -3,7 +3,7 @@
 {{ 'basket.css' | asset_url | stylesheet_tag }}
 
 
-<div class="selector-container">
+<section class="banding">
   <article class="max">
     {% if product.has_only_default_variant %}
       {% for option in product.options_with_values %}
@@ -146,4 +146,4 @@
       {% endif %}
     </div>
   </article>
-</div>
+</section>
