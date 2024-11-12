@@ -141,9 +141,7 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "color_schemes": {
       "scheme-1": {
         "settings": {
@@ -390,7 +388,8 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".socials {display: none !important;}"
+      ".socials {display: none !important;}",
+      "input {text-transform: none;}"
     ]
   }
 }
