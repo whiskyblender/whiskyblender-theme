@@ -83,10 +83,12 @@
 
       <h3>{{ product.title }}</h3>
       <ul class="product-summary">
-        <li>{{ product.type }}</li>
+        {% if product.type %}
+          <li>{{ product.type }} abv</li>
+        {% endif %}
         {% if product.metafields.custom.abv %}
-        <li>{{ product.metafields.custom.abv }} abv</li>
-          {% endif %}
+          <li>{{ product.metafields.custom.abv }} abv</li>
+        {% endif %}
       </ul>
       <div class="mobile-socials">
         <div class="socials">
