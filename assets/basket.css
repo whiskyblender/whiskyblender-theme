@@ -1,0 +1,286 @@
+.basket-items {
+    list-style: none;
+    padding: 0;
+    margin: 0 -20px 40px -20px;
+}
+
+.basket-items li {
+    background: #ffffff;
+    padding: 10px;
+    max-width: 100%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    vertical-align: top;
+}
+
+.item-image .bottle {
+    width: 100%;
+    height: -webkit-fill-available;
+    border: 0;
+}
+
+.item-image .bottle .bottle-shape {
+    background-size: contain;
+    background-image: url(../images/bottle-shape-wide.png);
+}
+
+.item-image.bottle-visuals {
+    position: relative;
+    left: auto;
+}
+
+.item-image.bottle-visuals .bottle:last-of-type {
+    display: block;
+}
+
+.basket-items li .item-image {
+    width: 100%;
+    height: 140px;
+    min-height: 80px;
+    min-width: 200px;
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    background-position: center;
+}   
+
+ul.product-list.extras li a img {
+    margin: 0;
+}
+
+.basket-items li .item-deets {
+    padding: 10px;
+    width: -webkit-fill-available;
+}
+
+.basket-items li .item-deets p {
+    margin: 0;
+}
+
+.basket-items li .item-options {
+    text-align: right;
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    flex-direction: column;
+    width: -webkit-fill-available;
+    /*font-family: "Roboto Mono", monospace;*/
+}
+
+.item-options h4 {
+    font-size: 22px;
+}
+
+.quantity {
+    width: 180px;
+    font-size: 0;
+}
+
+.quantity button, .quantity input {
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 18px;
+    /*font-family: "Roboto Mono", monospace;*/
+}
+
+.quantity input {
+    width: 58px;
+    height: 58px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #aaaaaa;;
+    display: inline-block;
+    border-radius: 0;
+}
+
+.quantity input::-webkit-outer-spin-button,
+.quantity input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.quantity input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+.quantity button {
+    background-color: #222222;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-color 0.3s;
+}
+
+
+.quantity button:hover {
+    background-color: #000000;
+}
+
+
+.quantity button.remove-quantity {
+    border-radius: 12px 0 0 12px;
+    background-image: url(../images/icons/remove.svg);
+}
+
+
+.quantity button.add-quantity {
+    border-radius: 0 12px 12px 0;
+    background-image: url(../images/icons/add.svg);
+}
+
+.buying-option {
+    margin: 20px 0 40px 0;
+}
+
+.segmented-control {
+    display: flex;
+    position: relative;
+    user-select: none;
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    border-radius: 12px;
+    overflow: hidden;
+    color: #000000;
+    background-color: rgba(255,255,255,0.4);
+    border: solid 1px  rgba(0,0,0,0.1);
+    margin: 0 -20px;
+    flex-direction: column;
+}
+
+.segmented-control > input {
+    display: none;
+}
+
+.segmented-control label {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    padding: 18px 40px 18px 24px;
+    border-radius: 12px;
+    background-color: rgba(255,255,255,0);
+    border: solid 1px  rgba(0,0,0,0);
+    transition: background-color 0.2s, border 0.2s, font-size 0.2s;
+}
+
+.segmented-control label:not(:last-child) {
+}
+
+.segmented-control > input:checked + label {
+    color: #000000;
+    background-color: #ffffff;
+    font-size: 18px;
+    border: solid 1px #000000;
+    position: relative;
+}
+
+.segmented-control > input:checked + label:after {
+    content: '\2714';
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    color: #199776;
+    top: 18px;
+    right: 18px;
+}
+
+.segmented-control label span {
+    display: flex;
+    gap: 20px;
+    opacity: 0.6;
+    font-size: 14px;
+    font-weight: 600;
+    /*font-family: "Roboto Mono", monospace;*/
+}
+
+.strike-label {
+    text-decoration: line-through;
+}
+
+@media only screen and (min-width: 600px) {
+
+    .segmented-control {
+        margin: 0;
+    }
+
+    .item-image .bottle .bottle-shape {
+        background-size: cover;
+    }
+
+    .basket-items li {
+        padding: 20px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        column-gap: 20px;
+    }
+
+    .item-image .bottle {
+        height: 100%;
+    }
+
+    .inner-wrap {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+
+    .basket-items li .item-image {
+        min-height: 200px;
+        width: 200px;
+        height: auto;
+    }
+
+    .basket-items li .item-deets {
+        padding: 20px;
+    }
+
+    .basket-items li .item-options {
+        padding: 20px;
+    }
+    
+}
+
+@media only screen and (min-width: 768px) {
+
+    .segmented-control {
+        margin: 0;
+        flex-direction: row;
+    }
+    
+    .inner-wrap {
+        flex-direction: row;
+        align-items: flex-end;
+        width: -webkit-fill-available;
+    }
+
+    .basket-items li {
+        padding: 20px;
+        display: flex;
+    }
+
+    .basket-items li .item-deets {
+        min-height: 160px;
+        padding: 20px;
+    }
+
+    .basket-items li .item-options {
+        padding: 20px;
+        width: 220px;
+        align-items: flex-end;
+    }
+    
+}
