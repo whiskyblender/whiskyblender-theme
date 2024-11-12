@@ -131,7 +131,7 @@
           </div>
         </div>
         <div class="subtotal-of-items">
-          <span class="strike-price">{{ product.compare_at_price }}</span>
+          <span class="strike-price">{{ product.compare_at_price | money }}</span>
 
           {{ product.first_available_variant.price | money }}
         </div>
