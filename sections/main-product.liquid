@@ -7,7 +7,6 @@
 {{ 'home.css' | asset_url | stylesheet_tag }}
 {{ 'shop.css' | asset_url | stylesheet_tag }}
 
-
 <div id="product-page">
   <section class="standard">
     <article>
@@ -15,7 +14,6 @@
         <a aria-label="Breadcrumb" href="/"> Home</a>
         /
         <a aria-label="Breadcrumb" href="/pages/shop"> Shop</a>
-
         /
         <a aria-label="Breadcrumb" href="/collections"> Collections</a>
         /
@@ -27,7 +25,6 @@
           {% endunless %}
         {% endfor %}
       </h4>
-
 
       <div class="socials">
         <a
@@ -86,9 +83,9 @@
 
       <h3>{{ product.title }}</h3>
       <ul class="product-summary">
-                    <li>{{ product.type }}</li>
-                    <li>{{ product.metafields.custom.abv }} abv</li>
-                </ul>
+        <li>{{ product.type }}</li>
+        <li>{{ product.metafields.custom.abv }} abv</li>
+      </ul>
       <div class="mobile-socials">
         <div class="socials">
           <a
