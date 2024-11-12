@@ -389,7 +389,7 @@
   "platform_customizations": {
     "custom_css": [
       ".socials {display: none !important;}",
-      "input {text-transform: none;}"
+      "input {text-transform: none!important;}"
     ]
   }
 }
