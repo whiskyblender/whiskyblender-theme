@@ -130,7 +130,11 @@
             <button type="button" class="add-quantity">+</button>
           </div>
         </div>
-        <div class="subtotal-of-items">{{ product.first_available_variant.price | money }}</div>
+        <div class="subtotal-of-items">
+          <span class="strike-price">{{ product.compare_at_price }}</span>
+
+          {{ product.first_available_variant.price | money }}
+        </div>
       </div>
       {% if product.available == false %}
         <!-- Product is out of stock -->
