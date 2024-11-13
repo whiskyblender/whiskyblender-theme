@@ -89,7 +89,7 @@
         {% for option in product.options_with_values %}
           {% if option.name == 'Size' %}
             {% for value in option.values %}
-              <li>{{ value }}</li>
+              <li>{{ value }}/</li>
             {% endfor %}
           {% endif %}
         {% endfor %}
