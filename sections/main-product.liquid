@@ -89,11 +89,11 @@
         {% for option in product.options_with_values %}
           {% if option.name == 'Size' %}
             <li>
-              
               {% for value in option.values %}
-                {{ value }}
-                    {% unless forloop.last %}/{% endunless %}
-
+                {%- if forloop.length > 0 -%}
+                  {{ value }}
+                  {% unless forloop.last %}/{% endunless %}
+                {% endif %}
               {% endfor %}
             </li>
           {% endif %}
