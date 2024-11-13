@@ -22,7 +22,6 @@
             <a class="any-link breadcrumb" aria-label="Breadcrumb" href="{{ collection.url }}">
               {{- collection.title -}}
             </a>
-            
           {% endunless %}
         {% endfor %}
       </h4>
@@ -87,6 +86,13 @@
         {% if product.type != blank %}
           <li>{{ product.type }}</li>
         {% endif %}
+        {% for option in product.options_with_values %}
+          {% if option.name == 'Size' %}
+            {% for value in option.values %}
+              <li>{{ value }}</li>
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
         {% if product.metafields.custom.abv != blank %}
           <li>{{ product.metafields.custom.abv }} abv</li>
         {% endif %}
