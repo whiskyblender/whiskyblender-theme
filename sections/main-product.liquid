@@ -19,12 +19,13 @@
         /
         {% for collection in product.collections %}
           {%- if forloop.length > 0 -%}
+                        {% unless forloop.first %}&{% endunless %}
+
             {% unless collection.handle == 'promoted' %}
               <a class="any-link breadcrumb" aria-label="Breadcrumb" href="{{ collection.url }}">
                 {{- collection.title -}}
               </a>
             {% endunless %}
-            {% unless forloop.last %}&{% endunless %}
           {% endif %}
         {% endfor %}
       </h4>
