@@ -18,15 +18,11 @@
         <a aria-label="Breadcrumb" href="/collections"> Collections</a>
         /
         {% for collection in product.collections %}
-          {%- if forloop.length > 0 -%}
-            {% unless forloop.last %}&{% endunless %}
-
-            {% unless collection.handle == 'promoted' %}
-              <a class="any-link breadcrumb" aria-label="Breadcrumb" href="{{ collection.url }}">
-                {{- collection.title -}}
-              </a>
-            {% endunless %}
-          {% endif %}
+          {% unless collection.handle == 'promoted' %}
+            <a class="any-link breadcrumb" aria-label="Breadcrumb" href="{{ collection.url }}">
+              {{- collection.title -}}
+            </a>
+          {% endunless %}
         {% endfor %}
       </h4>
 
