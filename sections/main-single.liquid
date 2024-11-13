@@ -26,9 +26,24 @@
 
       <h3>{{ product.title }}</h3>
       <ul class="product-summary">
-        <li>{{ product.type }}</li>
-        <li>200ml / 500ml</li>
-        <li>46% abv</li>
+        {% if product.type != blank %}
+          <li>{{ product.type }}</li>
+        {% endif %}
+        {% for option in product.options_with_values %}
+          {% if option.name == 'Size' %}
+            <li>
+              {% for value in option.values %}
+                {%- if forloop.length > 0 -%}
+                  {{ value }}
+                  {% unless forloop.last %}/{% endunless %}
+                {% endif %}
+              {% endfor %}
+            </li>
+          {% endif %}
+        {% endfor %}
+        {% if product.metafields.custom.abv != blank %}
+          <li>{{ product.metafields.custom.abv }} abv</li>
+        {% endif %}
       </ul>
       <ul class="socials">
         <li>
