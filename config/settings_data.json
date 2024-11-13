@@ -405,7 +405,8 @@
   "platform_customizations": {
     "custom_css": [
       ".socials {display: none !important;}",
-      "input {text-transform: none !important;}"
+      "input {text-transform: none !important;}",
+      ".header-wrapper--border-bottom {border: 0;}"
     ]
   }
 }
