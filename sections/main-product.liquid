@@ -88,9 +88,12 @@
         {% endif %}
         {% for option in product.options_with_values %}
           {% if option.name == 'Size' %}
-            {% for value in option.values %}
-              <li>{{ value }}/</li>
-            {% endfor %}
+            <li>
+              
+              {% for value in option.values %}
+                {{ value }}/
+              {% endfor %}
+            </li>
           {% endif %}
         {% endfor %}
         {% if product.metafields.custom.abv != blank %}
