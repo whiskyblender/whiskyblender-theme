@@ -6,80 +6,135 @@
 {{ 'basket.css' | asset_url | stylesheet_tag }}
 
 <section class="standard">
-            <article class="hang-right">
-                <div class="bump">
-                    <h4><a href="index.html">Home</a> / <a href="find.html">Find</a> / <a href="blend-label.html">Custom blend</a></h4>
-                    <h3>WB537711</h3>
-                    <ul class="product-summary">
-                        <li>Blended Malt Scotch Whisky</li>
-                        <li>200ml / 500ml</li>
-                        <li>46% abv</li>
-                    </ul>
-                    <ul class="socials">
-                        <li>
-                            <a class="x" href="https://twitter.com/share?url=whiskyblender.com/WB53711&amp;text=I made my own blend on @whisky_blender. Check it out!" target="_blank">X</a>
-                        </li>
-                        <li>
-                            <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=whiskyblender.com/WB53711" target="_blank">Facebook</a>
-                        </li>
-                        <li>
-                            <a class="reddit" href="https://reddit.com/submit?url=whiskyblender.com/WB53711&amp;title=I made my own blend on whiskyblender.com" target="_blank">Reddit</a>
-                        </li>
-                        <li>
-                            <a class="linkedin" href="https://www.linkedin.com/shareArticle?url=whiskyblender.com/WB53711&amp;title=My own whisky&amp;summary=I made my own blend on whiskyblender.com&amp;source=whiskyblender.com" target="_blank">LinkedIn</a>
-                        </li>
-                        <li>
-                            <a class="email" href="mailto:?subject=My own whisky&amp;body=I made my own blend on @whisky_blender. Check it out! whiskyblender.com/WB5371" target="_blank">Email</a>
-                        </li>               
-                    </ul>
-                    <ul class="bottle-recipe">
-                        <li class="option1" style="display: block;"> <!-- none = not used in blend -->
-                            <span style="width: 40%;">Charred marshmallow</span> <!-- % = amount of option in blend -->
-                        </li>
-                        <li class="option2" style="display: block;"> <!-- none = not used in blend -->
-                            <span style="width: 100%;">Malted bacon</span> <!-- % = amount of option in blend -->
-                        </li>
-                        <li class="option3" style="display: block;"> <!-- none = not used in blend -->
-                            <span style="width: 25%;">Spicy beeswax</span> <!-- % = amount of option in blend -->
-                        </li>
-                        <li class="option4" style="display: none;"> <!-- none = not used in blend -->
-                            <span style="width: 0%;">Salty butter</span> <!-- % = amount of option in blend -->
-                        </li>
-                        <li class="option5" style="display: none;"> <!-- none = not used in blend -->
-                            <span style="width: 0%;">Banana split</span> <!-- % = amount of option in blend -->
-                        </li>
-                    </ul>
-                </div>
-                <div class="bottle-visuals">
-                    <!--<div class="bottle-image" style="background-image: url(images/shop/rendered-image.jpg);"><span class="product-mask"></span>
-                    </div>-->
-                    <div id="lab-bottle">
-                        <div class="bag-layer" style="opacity: 0;"></div><!-- opacity = show on completion -->
-                        <div class="cap-layer" style="opacity: 1;"></div><!-- opacity = show on completion -->
-                        <div class="label-layer" style="opacity: 1;"><!-- opacity = show on completion (include "scotch" class if contains grain) -->
-                            <div id="outer">
-                            <div class="text color1" style="font-size: 40.5px; line-height: 31.08px;">Best dram</div>
-                        </div>
-                        <div class="side">
-                            <div class="blender-name text color1" style="font-size: 50.5px; line-height: 38.11px;">The best man</div>
-                        </div>
-                        </div>
-                        <div class="mask-layer"></div>
-                        <div class="top-layer"></div>
-                        <div class="middle-layer"></div>
-                        <div class="bottom-layer" style="background: rgb(204, 174, 60);"><!-- background = colour of liquid -->
-                            <div class="liquid" style="height: 0%;"></div><!-- height % = space left in bottle -->
-                        </div>
-                        <div class="base-layer"></div>
-                    </div>
-                </div>
-            </article>
-        </section>
+  <article class="hang-right">
+    <div class="bump">
+      <h4>
+        <a class="any-link breadcrumb" aria="Breadcrumb" href="/"> Home</a>
+        /
+        <a class="any-link breadcrumb" aria-label="Breadcrumb" href="/pages/shop"> Shop</a>
+        /
+        <a class="any-link breadcrumb" aria-label="Breadcrumb" href="/collections"> Collections</a>
+        /
+        {% for collection in product.collections %}
+          {% unless collection.handle == 'promoted' %}
+            <a class="any-link breadcrumb" aria-label="Breadcrumb" href="{{ collection.url }}">
+              {{- collection.title -}}
+            </a>
+          {% endunless %}
+        {% endfor %}
+      </h4>
+
+      <h3>WB537711</h3>
+      <ul class="product-summary">
+        <li>Blended Malt Scotch Whisky</li>
+        <li>200ml / 500ml</li>
+        <li>46% abv</li>
+      </ul>
+      <ul class="socials">
+        <li>
+          <a
+            class="x"
+            href="https://twitter.com/share?url=whiskyblender.com/WB53711&amp;text=I made my own blend on @whisky_blender. Check it out!"
+            target="_blank"
+            >X</a
+          >
+        </li>
+        <li>
+          <a
+            class="facebook"
+            href="https://www.facebook.com/sharer/sharer.php?u=whiskyblender.com/WB53711"
+            target="_blank"
+            >Facebook</a
+          >
+        </li>
+        <li>
+          <a
+            class="reddit"
+            href="https://reddit.com/submit?url=whiskyblender.com/WB53711&amp;title=I made my own blend on whiskyblender.com"
+            target="_blank"
+            >Reddit</a
+          >
+        </li>
+        <li>
+          <a
+            class="linkedin"
+            href="https://www.linkedin.com/shareArticle?url=whiskyblender.com/WB53711&amp;title=My own whisky&amp;summary=I made my own blend on whiskyblender.com&amp;source=whiskyblender.com"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </li>
+        <li>
+          <a
+            class="email"
+            href="mailto:?subject=My own whisky&amp;body=I made my own blend on @whisky_blender. Check it out! whiskyblender.com/WB5371"
+            target="_blank"
+            >Email</a
+          >
+        </li>
+      </ul>
+      <ul class="bottle-recipe">
+        <li class="option1" style="display: block;">
+          <!-- none = not used in blend -->
+          <span style="width: 40%;">Charred marshmallow</span>
+          <!-- % = amount of option in blend -->
+        </li>
+        <li class="option2" style="display: block;">
+          <!-- none = not used in blend -->
+          <span style="width: 100%;">Malted bacon</span>
+          <!-- % = amount of option in blend -->
+        </li>
+        <li class="option3" style="display: block;">
+          <!-- none = not used in blend -->
+          <span style="width: 25%;">Spicy beeswax</span>
+          <!-- % = amount of option in blend -->
+        </li>
+        <li class="option4" style="display: none;">
+          <!-- none = not used in blend -->
+          <span style="width: 0%;">Salty butter</span>
+          <!-- % = amount of option in blend -->
+        </li>
+        <li class="option5" style="display: none;">
+          <!-- none = not used in blend -->
+          <span style="width: 0%;">Banana split</span>
+          <!-- % = amount of option in blend -->
+        </li>
+      </ul>
+    </div>
+    <div class="bottle-visuals">
+      <!--
+        <div class="bottle-image" style="background-image: url(images/shop/rendered-image.jpg);"><span class="product-mask"></span>
+        </div>
+      -->
+      <div id="lab-bottle">
+        <div class="bag-layer" style="opacity: 0;"></div>
+        <!-- opacity = show on completion -->
+        <div class="cap-layer" style="opacity: 1;"></div>
+        <!-- opacity = show on completion -->
+        <div class="label-layer" style="opacity: 1;">
+          <!-- opacity = show on completion (include "scotch" class if contains grain) -->
+          <div id="outer">
+            <div class="text color1" style="font-size: 40.5px; line-height: 31.08px;">Best dram</div>
+          </div>
+          <div class="side">
+            <div class="blender-name text color1" style="font-size: 50.5px; line-height: 38.11px;">The best man</div>
+          </div>
+        </div>
+        <div class="mask-layer"></div>
+        <div class="top-layer"></div>
+        <div class="middle-layer"></div>
+        <div class="bottom-layer" style="background: rgb(204, 174, 60);">
+          <!-- background = colour of liquid -->
+          <div class="liquid" style="height: 0%;"></div>
+          <!-- height % = space left in bottle -->
+        </div>
+        <div class="base-layer"></div>
+      </div>
+    </div>
+  </article>
+</section>
 
 {% render 'product-selector' %}
 
-<style id="bar-colors">
-
-</style>
+<style id="bar-colors"></style>
 
 <script src="{{ 'main-single.js' | asset_url }}" defer="defer"></script>
