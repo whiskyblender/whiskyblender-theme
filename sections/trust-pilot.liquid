@@ -1,4 +1,4 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js" defer></script>
+{{ 'tiny-slider.min.js' | asset_url | script_tag }}
 <section class="banding">
   <article class="max">
     <ul class="my-slider">
@@ -50,7 +50,6 @@
 {% endstylesheet %}
 
 {% javascript %}
-<script>
   var slider = tns({
     container: '.my-slider',
     items: 1,
@@ -68,7 +67,6 @@
       }
     }
   });
-</script>
 {% endjavascript %}
 {% schema %}
 {
