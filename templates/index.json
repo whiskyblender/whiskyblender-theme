@@ -9,6 +9,12 @@
  */
 {
   "sections": {
+    "trust_pilot_eEcNfw": {
+      "type": "trust-pilot",
+      "settings": {
+        "reviews": "{caption: \"The taste and quality is absolutely excellent...\", link: \"https://uk.trustpilot.com/reviews/6733ca8c862f6bb435709247\"},\n{caption:\"Everything about this company is just perfection...\", link:\"https://uk.trustpilot.com/reviews/672d396e455fbdcded358bc3\"}"
+      }
+    },
     "landing_hero_wb_B8tf9K": {
       "type": "landing-hero-wb",
       "settings": {
@@ -43,10 +49,6 @@
         "gallery_image3": "shopify://shop_images/gallery17.jpg",
         "gallery_image4": "shopify://shop_images/gallery15.jpg"
       }
-    },
-    "trust_pilot_eEcNfw": {
-      "type": "trust-pilot",
-      "settings": {}
     }
   },
   "order": [
