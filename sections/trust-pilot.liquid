@@ -53,10 +53,9 @@
 {% endstylesheet %}
 
 {% javascript %}
-  var input = document.querySelector('#options-autoplay-input')
 
   var glide = new Glide('#options-autoplay', {
-    autoplay: input.value,
+    autoplay: 2000,
     hoverpause: false,
     perView: 3
   })
