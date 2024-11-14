@@ -304,6 +304,7 @@ ul.trustpilot li span.stars {
   }
 
   ul.trustpilot li a {
+    width: 100%;
     padding: 40px;
     font-size: 28px;
     line-height: 34px;
