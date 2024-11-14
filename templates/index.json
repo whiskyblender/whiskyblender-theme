@@ -18,7 +18,6 @@
         "title": "Your own whisky",
         "hero_video": "https://cdn.shopify.com/videos/c/o/v/52dedaab3e1348939a50021f6ebf171d.webm",
         "hero_video_webm": "https://cdn.shopify.com/videos/c/o/v/52dedaab3e1348939a50021f6ebf171d.webm",
-        "hero_poster": "shopify://shop_images/scotch-bg.jpg",
         "get_stared_button_url": "shopify://pages/blend"
       }
     },
@@ -40,14 +39,18 @@
         "step3_text": "All that's left is to declare this blend YOURS, save it into our growing database of thousands, and then buy it (or ask someone else to buy it for you)! And enjoy whisky like it's supposed to be enjoyed. With good friends and banter.",
         "start_link": "shopify://pages/blend",
         "start_button_label": "Start blending",
-        "gallery_image1": "shopify://shop_images/gallery03_db64d79b-cf88-4723-90b5-dcfa88d550c3.jpg",
         "gallery_image2": "shopify://shop_images/gallery14.jpg",
         "gallery_image3": "shopify://shop_images/gallery17.jpg",
         "gallery_image4": "shopify://shop_images/gallery15.jpg"
       }
+    },
+    "trust_pilot_eEcNfw": {
+      "type": "trust-pilot",
+      "settings": {}
     }
   },
   "order": [
+    "trust_pilot_eEcNfw",
     "landing_hero_wb_B8tf9K",
     "landing_wb_wBDYHD"
   ]
