@@ -87,33 +87,65 @@
           >
         </li>
       </ul>
-      <ul class="bottle-recipe">
-        <li class="option1" style="display: block;">
-          <!-- none = not used in blend -->
-          <span style="width: 40%;">Charred marshmallow</span>
-          <!-- % = amount of option in blend -->
-        </li>
-        <li class="option2" style="display: block;">
-          <!-- none = not used in blend -->
-          <span style="width: 100%;">Malted bacon</span>
-          <!-- % = amount of option in blend -->
-        </li>
-        <li class="option3" style="display: block;">
-          <!-- none = not used in blend -->
-          <span style="width: 25%;">Spicy beeswax</span>
-          <!-- % = amount of option in blend -->
-        </li>
-        <li class="option4" style="display: none;">
-          <!-- none = not used in blend -->
-          <span style="width: 0%;">Salty butter</span>
-          <!-- % = amount of option in blend -->
-        </li>
-        <li class="option5" style="display: none;">
-          <!-- none = not used in blend -->
-          <span style="width: 0%;">Banana split</span>
-          <!-- % = amount of option in blend -->
-        </li>
-      </ul>
+      <div class="product-choices">
+        {% assign product_description_array = product.description | split: '<p>' %}
+        {% assign total_possible = 20 %}
+        {% assign descriptions = '' %}
+        {% assign values = '' %}
+
+        {% for description in product_description_array %}
+          {% if description != blank %}
+            {% assign description_parts = description | split: ':' %}
+            {% assign text = description_parts[0] | strip %}
+            {% assign numeric_value = description_parts[1] | strip | remove: 'cl' | plus: 0 %}
+
+            {% assign descriptions = descriptions | append: text | append: ',' %}
+            {% assign values = values | append: numeric_value | append: ',' %}
+          {% endif %}
+        {% endfor %}
+
+        {% assign descriptions_array = descriptions | split: ',' | slice: 0, descriptions.size | reverse %}
+        {% assign values_array = values | split: ',' | slice: 0, values.size | reverse %}
+
+        <style>
+          .progress-bar {
+              width: 100%;
+              background-color: #f3f3f3;
+              border-radius: 5px;
+              margin-bottom: 10px;
+              color:black;
+               margin: 8px 0;
+              height: 44px;
+              display: flex;
+              align-items: center;
+
+          }
+          .progress-bar-inner {
+              height: 44px;
+              border-radius: 5px;
+              text-align: left;
+              padding-right: 5px;
+              line-height: 20px;
+              color: white;
+              background-color: #f3f3f3;
+              transition: background-color 0.8s ease-in-out;
+          }
+        </style>
+
+        {% for value in values_array %}
+          {% assign percentage = value | times: 100 | divided_by: total_possible %}
+
+          <div class="progress-bar">
+            <div
+              class="progress-bar-inner"
+              data-name="{{descriptions_array[forloop.index0] | strip_html}}"
+              style="width: {{ percentage }}%;"
+            >
+              {{ descriptions_array[forloop.index0] }}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
     </div>
     <div class="bottle-visuals">
       <!--
