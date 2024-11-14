@@ -96,7 +96,7 @@
         {% for description in product_description_array %}
           {% if description != blank %}
             {% assign description_parts_initial = description | split: 'end' %}
-            {% assign description_parts = description_parts_initial | split: ':' %}
+            {% assign description_parts = description_parts_initial[0] | split: ':' %}
             {% assign text = description_parts[0] | strip %}
             {% assign numeric_value = description_parts[1] | strip | remove: 'cl' | plus: 0 %}
 
