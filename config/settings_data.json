@@ -407,8 +407,7 @@
       ".socials {display: none !important;}",
       "input {text-transform: none !important;}",
       ".header-wrapper--border-bottom {border: 0;}",
-      "#product-page .gallery .item {border-radius: 12px; overflow: hidden; justify-items: center; position: relative; height: 320px;}",
-      ".owl-carousel .owl-item img {width: auto; height: 100%;}"
+      "@media only screen and (min-width: 600px) {#product-page .gallery .item {border-radius: 12px; overflow: hidden; justify-items: center; position: relative; height: 320px;}.owl-carousel .owl-item img {width: auto; height: 100%;}}"
     ]
   }
 }
