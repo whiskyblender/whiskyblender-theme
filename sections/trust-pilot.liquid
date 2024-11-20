@@ -6,17 +6,16 @@
     <div class="glide" id="glide">
       <div class="glide__track" data-glide-el="track" style="overflow:unset;">
         <ul class="glide__slides trustpilot" style="padding:20px;">
-          {% assign reviews = '[{caption: "The taste and quality is absolutely excellent...", link: "https://uk.trustpilot.com/reviews/6733ca8c862f6bb435709247"},{caption:"Everything about this company is just perfection...", link:"https://uk.trustpilot.com/reviews/672d396e455fbdcded358bc3"}]' %}
 
-          {% for review in reviews %}
+          {% if section.settings.review_1_text %}
             <div style="width: auto; margin-right: 40px;">
               <li class="glide__slide">
-                <a href="https://uk.trustpilot.com/reviews/6733ca8c862f6bb435709247" target="_blank">
-                  <span class="stars"></span>{{ review }}
+                <a href={{ section.settings.review_1_url }} target="_blank">
+                  <span class="stars"></span>{{ section.settings.review_1_text }}
                 </a>
               </li>
             </div>
-          {% endfor %}
+          {% endif %}
         </ul>
       </div>
     </div>
