@@ -235,6 +235,48 @@ a.get-started:hover {
     
 }
 
+ul.trustpilot {
+  list-style: none;
+  padding: 0;
+  margin: 40px 0;
+  position: relative;
+}
+
+ul.trustpilot li {
+  background: #ffffff;
+  border-radius: 20px;
+  position: relative;
+  border: 1px solid rgba(25, 151, 118, 0);
+  transition: border 0.3s;
+  height: auto;
+}
+
+ul.trustpilot li a {
+  text-decoration: none;
+  padding: 30px;
+  display: block;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+ul.trustpilot li:hover {
+  border: 1px solid rgba(25, 151, 118, 1);
+  border-radius: 20px;
+}
+
+ul.trustpilot li span.stars {
+  position: absolute;
+  top: -16px;
+  left: 40px;
+  background: url("https://cdn.shopify.com/s/files/1/0846/7592/0200/files/5tars.png?v=1731620270") no-repeat;
+  background-size: contain;
+  width: 180px;
+  height: 32px;
+  display: block;
+}
+
+
 @media only screen and (min-width: 768px) {
 
     .home-image4 {
