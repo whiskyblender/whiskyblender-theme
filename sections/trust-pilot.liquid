@@ -1,8 +1,6 @@
 {{ 'glide.core.css' | asset_url | stylesheet_tag }}
 {{ 'glide.min.js' | asset_url | script_tag }}
 
-
-
 <section class="banding">
   <article class="max">
     <div class="glide" id="glide">
@@ -48,10 +46,15 @@
   "name": "Trust Pilot",
   "settings": [
     {
-  "type": "textarea",
-  "id": "reviews",
-  "label": "reviews"
-}
+  "type": "text",
+  "id": "review_1_text",
+  "label": "review_1_text"
+  },
+  {
+  "type": "url",
+  "id": "review_1_url",
+  "label": "review_1_url"
+  }
 
   ],
     "presets": [{ "name": "Trust Pilot" }],
