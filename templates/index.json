@@ -9,6 +9,25 @@
  */
 {
   "sections": {
+    "landing_hero_wb_B8tf9K": {
+      "type": "landing-hero-wb",
+      "settings": {
+        "intro_text": "Look at you! You've only gone and found the greatest website you're likely to see*!",
+        "help_text": "* today... that's about Scotch whisky — says us!",
+        "show_snow": false,
+        "show_banner": false,
+        "banner_text": "🎄 We'll be closing for Christmas on December 15. ☃️ All orders placed         after December 14 will be posted out in the New Year 🥃",
+        "title": "Your own whisky",
+        "hero_video": "https://cdn.shopify.com/videos/c/o/v/52dedaab3e1348939a50021f6ebf171d.webm",
+        "hero_video_webm": "https://cdn.shopify.com/videos/c/o/v/52dedaab3e1348939a50021f6ebf171d.webm",
+        "get_started_button_url": "shopify://pages/blend",
+        "start_button_label": "Get Started",
+        "gallery_image1": "shopify://shop_images/gallery03.jpg",
+        "gallery_image2": "shopify://shop_images/gallery14.jpg",
+        "gallery_image3": "shopify://shop_images/gallery17.jpg",
+        "gallery_image4": "shopify://shop_images/gallery15.jpg"
+      }
+    },
     "trust_pilot_eEcNfw": {
       "type": "trust-pilot",
       "settings": {
@@ -34,24 +53,9 @@
         "review_10_url": ""
       }
     },
-    "landing_hero_wb_B8tf9K": {
-      "type": "landing-hero-wb",
-      "settings": {
-        "show_snow": false,
-        "show_banner": false,
-        "banner_text": "🎄 We'll be closing for Christmas on December 15. ☃️ All orders placed         after December 14 will be posted out in the New Year 🥃",
-        "title": "Your own whisky",
-        "hero_video": "https://cdn.shopify.com/videos/c/o/v/52dedaab3e1348939a50021f6ebf171d.webm",
-        "hero_video_webm": "https://cdn.shopify.com/videos/c/o/v/52dedaab3e1348939a50021f6ebf171d.webm",
-        "get_stared_button_url": "shopify://pages/blend"
-      }
-    },
     "landing_wb_wBDYHD": {
       "type": "landing-wb",
       "settings": {
-        "intro_text": "Look at you! You've only gone and found the greatest website you're likely to see*!",
-        "help_text": "* today... that's about Scotch whisky — says <a href=\"pages/yas\">us!</a>",
-        "signature_image": "shopify://shop_images/signed.svg",
         "keythings_text": "The key things you need to know about this site are that you can <a href=\"/pages/blend.html\">blend your own whisky</a> (that's right, you read correctly). But you can also <a href=\"/pages/shop.html\">shop around</a> for other unique whisky goods and gifts, such as...",
         "guide_title": "It's a skoosh!",
         "guide_text": "Obviously, becoming a world-renowned whisky blender takes years of practice, copious amounts of studying, a vast knowledge of the spirit, and a chunk of investment. But that doesn't mean we can't have fun!",
@@ -63,16 +67,13 @@
         "step3_title": "Own it",
         "step3_text": "All that's left is to declare this blend YOURS, save it into our growing database of thousands, and then buy it (or ask someone else to buy it for you)! And enjoy whisky like it's supposed to be enjoyed. With good friends and banter.",
         "start_link": "shopify://pages/blend",
-        "start_button_label": "Start blending",
-        "gallery_image2": "shopify://shop_images/gallery14.jpg",
-        "gallery_image3": "shopify://shop_images/gallery17.jpg",
-        "gallery_image4": "shopify://shop_images/gallery15.jpg"
+        "start_button_label": "Start blending"
       }
     }
   },
   "order": [
-    "trust_pilot_eEcNfw",
     "landing_hero_wb_B8tf9K",
+    "trust_pilot_eEcNfw",
     "landing_wb_wBDYHD"
   ]
 }
