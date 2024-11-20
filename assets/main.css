@@ -2118,7 +2118,3 @@ ul.gallery li:nth-of-type(2) img {
     right: calc(50% - 550px);
   }
 }
-
-section:last-of-type {
-  padding-bottom: 80px;
-}
