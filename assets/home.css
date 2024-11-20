@@ -259,6 +259,7 @@ ul.trustpilot li {
   position: relative;
   border: 1px solid rgba(25, 151, 118, 0);
   transition: border 0.3s;
+  height: auto;
 }
 
 ul.trustpilot li a {
