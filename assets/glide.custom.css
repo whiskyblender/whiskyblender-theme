@@ -1,0 +1,287 @@
+.glide.lab .glide__slides {
+    transform: none !important;
+    width: auto !important;
+}
+
+.glide.lab .glide__slide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 1s;
+    margin-left: 0!important;
+    margin-right: 0!important;
+}
+
+.glide.lab .glide__slide:first-child {
+    position: relative;
+}
+
+.glide.lab .glide__slide--active {
+    z-index: 1;
+    opacity: 1;
+}
+
+.glide.lab .glide__bullets {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    width: 100%;
+    transform: none;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-top: 60px;
+}
+
+.glide.lab .glide__bullet {
+    width: 40px;
+    height: 40px;
+    box-shadow: none;
+    margin: 10px;
+}
+
+.glide.lab .glide__bullet:hover, .glide__bullet:focus {
+    border: none;
+    background: black;
+}
+
+.glide.lab .glide__bullet--active {
+    width: 10px;
+    height: 10px;
+    background: black;
+}
+
+
+.glide.lab .glide__arrows {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.glide.lab .glide__arrow {
+    width: 120px;
+    height: 120px;
+    background-color: #111111;
+    border-radius: 50%;
+    font-size: 0;
+    position: absolute;
+    top: -240px;
+    transition: border 0.2s;
+    padding: 0;
+    overflow: hidden;
+    border: none;
+}
+
+.glide.lab .glide__arrow:hover {
+    border: 1px solid #ffffff;
+    transition: border 0.2s;
+    background-color: #222222!important;
+}
+
+.glide.lab .glide__arrow.glide__arrow--left {
+    background-image: url(../images/icons/previous.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 75% 50%;
+    left: -80px;
+}
+
+.glide.lab .glide__arrow.glide__arrow--right{
+    background-image: url(../images/icons/next.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 25% 50%;
+    right: -80px;
+}
+
+.glide.thumbnails {
+    margin-bottom: 40px;
+}
+
+.glide.thumbnails li {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 320px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.glide.thumbnails img {
+    height: 100%;
+}
+
+.glide.thumbnails .glide__track, .glide__slides, .glide.reviews .glide__track, .glide.lab .glide__track {
+    overflow: visible;
+}
+
+.glide.thumbnails .glide__arrows button {
+    background: rgba(255,255,255,0.6);
+    top: 0;
+    height: 100%;
+    width: 20px;
+    transform: none;
+    border: 0;
+    border-radius: 0;
+    font-size: 0;
+    transition: background 0.4s;
+}
+
+.glide.thumbnails .glide__arrows button:hover {
+    background: rgba(255,255,255,0);
+}
+
+.glide.thumbnails .glide__arrows button.glide__arrow.glide__arrow--left {
+    left: -40px;
+}
+
+.glide.thumbnails .glide__arrows button.glide__arrow.glide__arrow--right {
+    right: -40px;
+}
+
+.glide.thumbnails .glide__arrows button:after {
+    position: absolute;
+    display: block;
+    background: black;
+    top: calc(50% - 30px);
+    width: 40px;
+    height: 60px;
+    line-height: 60px;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+
+.glide.thumbnails .glide__arrows button.glide__arrow.glide__arrow--left:after {
+    content: '\276E';
+    left: 0;
+    border-radius: 0 12px 12px 0;
+    padding-right: 5px;
+}
+
+.glide.thumbnails .glide__arrows button.glide__arrow.glide__arrow--right:after {
+    content: '\276F';
+    right: 0;
+    border-radius: 12px 0 0 12px;
+    padding-left: 5px;
+}
+
+@media only screen and (min-width: 600px) {
+
+    .glide.thumbnails .glide__arrows button:after {
+        top: calc(50% - 40px);
+        width: 60px;
+        height: 80px;
+        line-height: 80px;
+        font-size: 52px;
+    }
+
+    .glide.thumbnails .glide__arrows button.glide__arrow.glide__arrow--left:after {
+        padding-right: 10px;
+    }
+
+    .glide.thumbnails .glide__arrows button.glide__arrow.glide__arrow--right:after {
+        padding-left: 10px;
+    }
+
+    .glide.thumbnails li {
+        height: 420px;
+    } 
+
+    .glide.thumbnails .glide__arrows button {
+        width: 40px;
+    }
+
+    .glide.thumbnails .glide__arrows button.glide__arrow.glide__arrow--left {
+        left: -60px;
+    }
+
+    .glide.thumbnails .glide__arrows button.glide__arrow.glide__arrow--right {
+        right: -60px;
+    }
+
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    .glide.thumbnails li {
+        height: 560px;
+    } 
+    
+    .glide.lab .glide__bullets {
+        z-index: 100;
+        margin-top: 20px;
+    }
+    
+    .glide.lab .glide__bullet {
+        margin: 20px;
+    }
+
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+    .glide.thumbnails .glide__arrows button {
+        width: calc(50vw - 452px);
+    }
+
+    .glide.thumbnails .glide__arrows button.glide__arrow.glide__arrow--left {
+        left: calc(-50vw + 432px);
+    }
+
+    .glide.thumbnails .glide__arrows button.glide__arrow.glide__arrow--right {
+        right: calc(-50vw + 432px);
+    }
+
+    .glide.thumbnails .glide__arrows button.glide__arrow.glide__arrow--left:after {
+        left: auto;
+        right: -50px;
+        border-radius: 12px;
+        padding: 10px;
+    }
+
+    .glide.thumbnails .glide__arrows button.glide__arrow.glide__arrow--right:after {
+        right: auto;
+        left: -50px;
+        border-radius: 12px;
+        padding: 10px;
+    }
+    
+    .glide.lab .glide__arrows {
+        z-index: 101;
+    }
+    
+    .glide.lab .glide__arrow {
+        top: 385px;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+    }
+    
+    .glide.lab .glide__track {
+        height: 342px;
+    }
+    
+    .glide.lab {
+        margin: 0;
+        height: 450px;
+    }
+
+    .glide.lab .glide__arrows button.glide__arrow.glide__arrow--left {
+        background-position: 47% 50%;
+        left: 10px;
+    }
+
+    .glide.lab .glide__arrows button.glide__arrow.glide__arrow--right {
+        background-position: 53% 50%;
+        right: 10px;
+    }
+
+}
