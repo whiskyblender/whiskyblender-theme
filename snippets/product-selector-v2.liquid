@@ -1,13 +1,12 @@
 <section class="banding">
   <article class="max">
     <div class="buying-option"> 
-      {{ product.variants }}
-      {% for variant in product.variants %}
+      {% for option in product.options %}
         <h4>
-          {% if variant.name == 'Size' and product.template_suffix == 'single' %}
+          {% if option.name == 'Size' and product.template_suffix == 'single' %}
             Bottle size
           {% else %}
-            {{ variant.name }}
+            {{ option.name }}
           {% endif %}
         </h4>
       {% endfor %}
