@@ -3,19 +3,22 @@
 
 <section class="standard">
   <article>
-    <h4>
-      <a href="/">Home</a> / <a href="/pages/shop">Shop</a> / <a href="/collections">Collections</a> /
+      <h4>
+        <a aria-label="Breadcrumb" href="/"> Home</a>
+        /
+        <a aria-label="Breadcrumb" href="/pages/shop"> Shop</a>
+        /
+        <a aria-label="Breadcrumb" href="/collections"> Collections</a>
+        /
+        {% for collection in product.collections %}
+          {% unless collection.handle == 'promoted' %}
+            <a class="any-link breadcrumb" aria-label="Breadcrumb" href="{{ collection.url }}">
+              {{- collection.title -}}
+            </a>
+          {% endunless %}
+        {% endfor %}
+      </h4>
 
-      {% for collection in product.collections %}
-        {% unless collection.handle == 'promoted' %}
-          <a class="any-link breadcrumb" aria-label="Breadcrumb" href="{{ collection.url }}">{{ collection.title -}}</a>
-        {% endunless %}
-      {% endfor %}
-    </h4>
-
-    <h4>
-      <a href="bottlings.html">Andras' bottles</a>
-    </h4>
     <h3>{{ product.title }}</h3>
     <ul class="product-summary">
       <li>Blended Malt Scotch Whisky</li>
