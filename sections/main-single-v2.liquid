@@ -155,29 +155,47 @@
             alt="{{ section.settings.whats_include_1_image.alt }}"
           >
           <div class="extra-deetz">
-            <h5>Custom blended whisky</h5>
-            <p class="help">Your virtual blend is handcrafted for real by drawing from our casks</p>
+            <h5>{{ section.settings.whats_include_1_title }}</h5>
+            <p class="help">{{ section.settings.whats_include_1_text }}</p>
           </div>
         </li>
+
         <li>
-          <img src="https://cdn.shopify.com/s/files/1/0846/1136/7177/files/gallery15.jpg?v=1730505151">
+          <img
+            width="1080"
+            height="1080"
+            src="{{ section.settings.whats_include_2_image | image_url: width:1080, height: 1080}}"
+            alt="{{ section.settings.whats_include_2_image.alt }}"
+          >
           <div class="extra-deetz">
-            <h5>Personalised label</h5>
-            <p class="help">High quality label, complete with copper foil finishings</p>
+            <h5>{{ section.settings.whats_include_2_title }}</h5>
+            <p class="help">{{ section.settings.whats_include_2_text }}</p>
           </div>
         </li>
+
         <li>
-          <img src="https://cdn.shopify.com/s/files/1/0846/1136/7177/files/gallery22.jpg?v=1732829603">
+          <img
+            width="1080"
+            height="1080"
+            src="{{ section.settings.whats_include_3_image | image_url: width:1080, height: 1080}}"
+            alt="{{ section.settings.whats_include_3_image.alt }}"
+          >
           <div class="extra-deetz">
-            <h5>Burlap gift sack</h5>
-            <p class="help">Comes in a lovely wee, durable, pale blue, jute bag</p>
+            <h5>{{ section.settings.whats_include_3_title }}</h5>
+            <p class="help">{{ section.settings.whats_include_3_text }}</p>
           </div>
         </li>
+
         <li>
-          <img src="https://cdn.shopify.com/s/files/1/0846/1136/7177/files/gallery23.jpg?v=1732829604">
+          <img
+            width="1080"
+            height="1080"
+            src="{{ section.settings.whats_include_4_image | image_url: width:1080, height: 1080}}"
+            alt="{{ section.settings.whats_include_4_image.alt }}"
+          >
           <div class="extra-deetz">
-            <h5>Some wee extras</h5>
-            <p class="help">A note of your blend recipe, along with a certificate of blending, and more..</p>
+            <h5>{{ section.settings.whats_include_4_title }}</h5>
+            <p class="help">{{ section.settings.whats_include_4_text }}</p>
           </div>
         </li>
       </ul>
@@ -186,6 +204,60 @@
 
   {% render 'product-selector' %}
 </div>
+
+{% javascript %}
+          function insertSpaceForLongWords(str) {
+            const splitLength = 14;
+            // Split the string into words
+            let words = str.split(' ');
+
+            // Map through the words and modify any word longer than 14 characters
+            words = words.map(word => {
+                if (word.length > splitLength) {
+                    let modifiedWord = '';
+                    // Insert a space every 12 characters
+                    for (let i = 0; i < word.length; i += splitLength) {
+                        modifiedWord += word.slice(i, i + splitLength) + ' ';
+                    }
+                    return modifiedWord.trim(); // Remove any extra space at the end
+                }
+                return word; // Return word as-is if not longer than 14 chars
+            });
+
+            // Join the words back into a string
+            return words.join(' ');
+        }
+        function resize() {
+            const isOverflown = ({ clientWidth, scrollWidth, clientHeight, scrollHeight }) => scrollWidth > clientWidth || scrollHeight > clientHeight
+
+            const resizeText = ({ element, elements, minSize = 18, maxSize = 52, step = 2, unit = 'px' }) => {
+                (elements || [element]).forEach(el => {
+                    let i = minSize
+                    let overflow = false
+
+                    const parent = el.parentNode
+
+                    while (!overflow && i < maxSize) {
+                        el.style.fontSize = `${i}${unit}`
+                        overflow = isOverflown(parent)
+                        el.style.lineHeight = ((el.style.fontSize).slice(0, -2.4)) * 0.74 + "px"
+                        if (!overflow) i += step
+                    }
+
+                    el.style.fontSize = (`${i - step - 1}${unit}`)
+                })
+            }
+
+            resizeText({
+                elements: document.querySelectorAll('.text'),
+                step: 0.5
+            })
+        }
+
+        document.fonts.ready.then(function () {
+            resize();
+        });
+{% endjavascript %}
 
 {% schema %}
 {
