@@ -3,6 +3,7 @@
     <div class="buying-option"> 
       {{ product.options }}
       {% for option in product.options %}
+        {{ option }}
         <h4>
           {% if option.name == 'Size' and product.template_suffix == 'single' %}
             Bottle size
