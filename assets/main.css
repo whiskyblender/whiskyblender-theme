@@ -623,6 +623,12 @@ h4 {
   line-height: 24px;
 }
 
+h5 {
+  font-size: 18;
+  line-height: 24px;
+}
+
+
 hr {
   width: calc(100% - 80px);
   margin: 40px;
