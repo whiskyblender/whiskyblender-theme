@@ -1,13 +1,15 @@
 <section class="banding">
   <article class="max">
     <div class="buying-option">
-      <h4>
-        {% if option.name == 'Size' and product.template_suffix == 'single' %}
-          Bottle size
-        {% else %}
-          {{ option.name }}
-        {% endif %}
-      </h4>
+      {% for variant in product.variants %}
+        <h4>
+          {% if variant.name == 'Size' and product.template_suffix == 'single' %}
+            Bottle size
+          {% else %}
+            {{ variant.name }}
+          {% endif %}
+        </h4>
+      {% endfor %}
       <div class="segmented-control">
         <input type="radio" name="Size" value="Bottle" id="bottle" checked>
         <label for="bottle"> Single bottle <span>£50.00</span> </label>
