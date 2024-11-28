@@ -1,6 +1,7 @@
 <section class="banding">
   <article class="max">
-    <div class="buying-option">
+    <div class="buying-option"> 
+      {{ product.variants }}
       {% for variant in product.variants %}
         <h4>
           {% if variant.name == 'Size' and product.template_suffix == 'single' %}
