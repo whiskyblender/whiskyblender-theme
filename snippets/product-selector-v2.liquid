@@ -1,7 +1,13 @@
 <section class="banding">
   <article class="max">
     <div class="buying-option">
-      <h4>Quantity</h4>
+      <h4>
+        {% if option.name == 'Size' and product.template_suffix == 'single' %}
+          Bottle size
+        {% else %}
+          {{ option.name }}
+        {% endif %}
+      </h4>
       <div class="segmented-control">
         <input type="radio" name="Size" value="Bottle" id="bottle" checked>
         <label for="bottle"> Single bottle <span>£50.00</span> </label>
@@ -22,6 +28,7 @@
         </div>
         <div class="subtotal-of-items">£35.00</div>
       </div>
+
       <button class="pulse" onclick="location.href='basket.html';">Add to basket</button>
     </div>
   </article>
