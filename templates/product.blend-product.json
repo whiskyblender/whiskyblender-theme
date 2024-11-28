@@ -13,14 +13,17 @@
       "type": "main-single-v2",
       "settings": {
         "whats_include_1_image": "shopify://shop_images/gallery24.jpg",
-        "whats_include_1_title": "",
-        "whats_include_1_text": "",
-        "whats_include_2_title": "",
-        "whats_include_2_text": "",
-        "whats_include_3_title": "",
-        "whats_include_3_text": "",
-        "whats_include_4_title": "",
-        "whats_include_4_text": ""
+        "whats_include_1_title": "Custom blended whisky",
+        "whats_include_1_text": "Your virtual blend is handcrafted for real by drawing from our casks",
+        "whats_include_2_image": "shopify://shop_images/gallery15.jpg",
+        "whats_include_2_title": "Personalised label",
+        "whats_include_2_text": "High quality label, complete with copper foil finishings",
+        "whats_include_3_image": "shopify://shop_images/gallery22.jpg",
+        "whats_include_3_title": "Burlap gift sack",
+        "whats_include_3_text": "Comes in a lovely wee, durable, pale blue, jute bag",
+        "whats_include_4_image": "shopify://shop_images/gallery23.jpg",
+        "whats_include_4_title": "Some wee extras",
+        "whats_include_4_text": "A note of your blend recipe, along with a certificate of blending, and more.."
       }
     }
   },
