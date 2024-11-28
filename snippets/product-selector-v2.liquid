@@ -1,61 +1,128 @@
+{{ 'main.css' | asset_url | stylesheet_tag }}
+
+{{ 'shop.css' | asset_url | stylesheet_tag }}
 {{ 'basket.css' | asset_url | stylesheet_tag }}
 
-<section class="banding">
-  <article class="max">
-    <div class="buying-option">
-      {% for option in product.options_with_values %}
-        <h4>
-          {% if option.name == 'Size' and product.template_suffix == 'single' %}
-            Bottle size
-          {% else %}
-            {{ option.name }}
-          {% endif %}
-        </h4>
-        <div class="segmented-control">
-          {% for value in option.values %}
-            {% if option.name == 'Label' %}
-              <input
-                type="radio"
-                name="{{ option.name }}"
-                value="{{ value }}"
-                id="{{ value }}"
-                {% if forloop.first %}
-                  checked
-                {% endif %}
-              >
-              <label for="{{ value }}">
-                {{ value }}
-                {% if value == 'Standard' %}
-                  <span> Free</span>
-                {% else %}
-                  <span> + £3.00</span>
-                {% endif %}
 
-                <div class="thumbnail">
-                  {% if value == 'Standard' %}
-                    <img src="https://cdn.shopify.com/s/files/1/0846/1136/7177/files/label-standard.png?v=1731401733">
-                  {% else %}
-                    <img src="https://cdn.shopify.com/s/files/1/0846/1136/7177/files/label-festive.png?v=1731401734">
-                  {% endif %}
-                </div>
-              </label>
+<div class="selector-container">
+  <article class="max">
+    {% if product.has_only_default_variant %}
+      {% for option in product.options_with_values %}
+        {% if product.metafields.custom.notes %}
+          <div class="product-details">
+            <h4>Notes</h4>
+            <p>{{ product.metafields.custom.notes }}</p>
+          </div>
+        {% endif %}
+        <div class="buying-option" style="display:none">
+          <h4 class="option-title">
+            {% if option.name == 'Size' and product.template_suffix == 'single' %}
+              Bottle size
             {% else %}
-              <input
-                type="radio"
-                name="{{ option.name }}"
-                value="{{ value }}"
-                id="{{ value }}"
-                {% if forloop.first %}
-                  checked
-                {% endif %}
-              >
-              <label for="{{ value }}"> {{ value }} </label>
+              {{ option.name }}
             {% endif %}
-          {% endfor %}
+          </h4>
+          <div class="segmented-control">
+            {% for value in option.values %}
+              {% if option.name == 'Label' %}
+                <input
+                  type="radio"
+                  name="{{ option.name }}"
+                  value="{{ value }}"
+                  id="{{ value }}"
+                  {% if forloop.first %}
+                    checked
+                  {% endif %}
+                >
+                <label for="{{ value }}">
+                  {{ value }}
+                  {% if value == 'Standard' %}
+                    <span> Free</span>
+                  {% else %}
+                    <span> + £3.00</span>
+                  {% endif %}
+
+                  <div class="thumbnail">
+                    {% if value == 'Standard' %}
+                      <img src="https://cdn.shopify.com/s/files/1/0846/1136/7177/files/label-standard.png?v=1731401733">
+                    {% else %}
+                      <img src="https://cdn.shopify.com/s/files/1/0846/1136/7177/files/label-festive.png?v=1731401734">
+                    {% endif %}
+                  </div>
+                </label>
+              {% else %}
+                <input
+                  type="radio"
+                  name="{{ option.name }}"
+                  value="{{ value }}"
+                  id="{{ value }}"
+                  {% if forloop.first %}
+                    checked
+                  {% endif %}
+                >
+                <label for="{{ value }}"> {{ value }} </label>
+              {% endif %}
+            {% endfor %}
+          </div>
         </div>
       {% endfor %}
-    </div>
+    {% else %}
+      {% for option in product.options_with_values %}
+        <div class="buying-option">
+          <h4 class="option-title">
+            {% if option.name == 'Size' and product.template_suffix == 'single' %}
+              Bottle size
+            {% else %}
+              {{ option.name }}
+            {% endif %}
+          </h4>
+          <div class="segmented-control">
+            {% for value in option.values %}
+              {% if option.name == 'Label' %}
+                <input
+                  type="radio"
+                  name="{{ option.name }}"
+                  value="{{ value }}"
+                  id="{{ value }}"
+                  {% if forloop.first %}
+                    checked
+                  {% endif %}
+                >
+                <label for="{{ value }}">
+                  {{ value }}
+                  {% if value == 'Standard' %}
+                    <span> Free</span>
+                  {% else %}
+                    <span> + £3.00</span>
+                  {% endif %}
+
+                  <div class="thumbnail">
+                    {% if value == 'Standard' %}
+                      <img src="https://cdn.shopify.com/s/files/1/0846/1136/7177/files/label-standard.png?v=1731401733">
+                    {% else %}
+                      <img src="https://cdn.shopify.com/s/files/1/0846/1136/7177/files/label-festive.png?v=1731401734">
+                    {% endif %}
+                  </div>
+                </label>
+              {% else %}
+                <input
+                  type="radio"
+                  name="{{ option.name }}"
+                  value="{{ value }}"
+                  id="{{ value }}"
+                  {% if forloop.first %}
+                    checked
+                  {% endif %}
+                >
+                <label for="{{ value }}"> {{ value }} </label>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      {% endfor %}
+    {% endif %}
   </article>
+
   <article class="max">
     <div class="buy-this">
       <div class="summary">
@@ -80,4 +147,4 @@
       {% endif %}
     </div>
   </article>
-</section>
+</div>
