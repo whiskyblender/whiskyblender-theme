@@ -1,9 +1,7 @@
 <section class="banding">
   <article class="max">
     <div class="buying-option"> 
-      {{ product.options }}
       {% for option in product.options_with_values %}
-        {{ option }}
         <h4>
           {% if option.name == 'Size' and product.template_suffix == 'single' %}
             Bottle size
