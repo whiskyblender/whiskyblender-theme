@@ -103,7 +103,7 @@
           {% for value in values_array %}
             {% assign percentage = value | times: 100 | divided_by: total_possible %}
 
-            <li class="option1" style="display: block;">
+            <li class="option{{ value.index }}" style="display: block;">
               <span
                 data-name="{{descriptions_array[forloop.index0] | strip_html}}"
                 style="width: {{ percentage }}%;"
