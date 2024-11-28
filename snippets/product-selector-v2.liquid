@@ -61,56 +61,23 @@
       <div class="summary">
         <div class="number-of-items">
           <div class="quantity">
-            <button type="button" class="remove-quantity">&minus;</button>
+            <button type="button" class="remove-quantity">−</button>
             <input type="number" value="1">
-            <button type="button" class="add-quantity">&plus;</button>
+            <button type="button" class="add-quantity">+</button>
           </div>
         </div>
-        <div class="subtotal-of-items">£35.00</div>
-      </div>
+        <div class="subtotal-of-items">
+          <span class="strike-price">{{ product.compare_at_price | money }}</span>
 
-      <button class="pulse" onclick="location.href='basket.html';">Add to basket</button>
+          {{ product.first_available_variant.price | money }}
+        </div>
+      </div>
+      {% if product.available == false %}
+        <!-- Product is out of stock -->
+        <button class=" atc" disabled>Out of stock</button>
+      {% else %}
+        <button class="pulse atc">Add to basket</button>
+      {% endif %}
     </div>
-  </article>
-  <article class="max">
-    <ul class="product-list extras">
-      <li>
-        <a href="#" style="background-image: url(images/shop/tshirt/idrinkwhisky01.jpg)">
-          <img src="images/shop/tshirt/idrinkwhisky01.jpg">
-          <span class="deetz">
-            <h4>I Drink Whisky tee</h4>
-            <div class="reveal">
-              <p>Black T-shirt</p>
-              <sup class="buy pulse">Add for £25.00</sup>
-            </div>
-          </span>
-        </a>
-      </li>
-      <li>
-        <a href="#" style="background-image: url(images/shop/jotters/jotter01.jpg)">
-          <img src="images/shop/jotters/jotter01.jpg">
-          <span class="deetz">
-            <h4>Tasting Notes jotter</h4>
-            <div class="reveal">
-              <p>76 page soft cover notepad</p>
-              <sup class="buy pulse">Add for £3.00</sup>
-            </div>
-          </span>
-        </a>
-      </li>
-      <li>
-        <a href="#" style="background-image: url(images/shop/baseballcaps/stagandfalcon.jpg)">
-          <img src="images/shop/baseballcaps/stagandfalcon.jpg">
-          <span class="deetz">
-            <h4>Stag and Falcon cap</h4>
-            <div class="reveal">
-              <p>Embroidered petrol trucker hat</p>
-              <sup class="buy pulse">Add for £15.00</sup>
-            </div>
-          </span>
-        </a>
-      </li>
-    </ul>
-    <button onclick="location.href='shop.html';" class="secondary-button">Shop a wee bit more</button>
   </article>
 </section>
