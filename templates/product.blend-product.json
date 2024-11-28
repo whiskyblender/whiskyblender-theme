@@ -11,7 +11,17 @@
   "sections": {
     "main": {
       "type": "main-single-v2",
-      "settings": {}
+      "settings": {
+        "whats_include_1_image": "shopify://shop_images/gallery24.jpg",
+        "whats_include_1_title": "",
+        "whats_include_1_text": "",
+        "whats_include_2_title": "",
+        "whats_include_2_text": "",
+        "whats_include_3_title": "",
+        "whats_include_3_text": "",
+        "whats_include_4_title": "",
+        "whats_include_4_text": ""
+      }
     }
   },
   "order": [
