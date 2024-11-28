@@ -182,3 +182,24 @@
 
   {% render 'product-selector' %}
 </div>
+
+
+{% schema %}
+{
+  "name": "Main single v2",
+  "presets": [
+    {
+      "name": "Main single v2"
+    }
+  ],
+  "settings": [
+        {
+      "type": "textarea",
+      "id": "intro_text",
+      "label": "Intro Text",
+      "default": "Look at you! You've only gone and found the greatest website you're likely to see*!"
+    },
+
+  ]
+}
+{% endschema %}
