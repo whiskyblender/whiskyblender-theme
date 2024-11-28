@@ -112,7 +112,6 @@
               </span>
             </li>
           {% endfor %}
-
         </ul>
       </div>
       <div class="bottle-visuals">
@@ -149,7 +148,12 @@
     <article class="whatsincluded">
       <ul>
         <li>
-          <img src={{ section.setting.whats_include_1_image}}>
+          <img
+            width="236"
+            height="236"
+            src="{{ section.settings.whats_include_1_image | image_url: width:400, height: 400}}"
+            alt="{{ section.settings.whats_include_1_image.alt }}"
+          >
           <div class="extra-deetz">
             <h5>Custom blended whisky</h5>
             <p class="help">Your virtual blend is handcrafted for real by drawing from our casks</p>
@@ -182,7 +186,6 @@
 
   {% render 'product-selector' %}
 </div>
-
 
 {% schema %}
 {
