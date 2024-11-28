@@ -4,13 +4,16 @@
   <article class="max">
     <div class="buying-option">
       {% for option in product.options_with_values %}
-        <h4>
-          {% if option.name == 'Size' and product.template_suffix == 'single' %}
-            Bottle size
-          {% else %}
-            {{ option.name }}
-          {% endif %}
-        </h4>
+        {% unless option.name == 'Title' %}
+          <h4>
+            {% if option.name == 'Size' and product.template_suffix == 'single' %}
+              Bottle size
+            {% else %}
+              {{ option.name }}
+            {% endif %}
+          </h4>
+        {% endunless %}
+
         <div class="segmented-control">
           {% for value in option.values %}
             {% if option.name == 'Label' %}
