@@ -111,19 +111,19 @@
 }
 
 #lab-bottle .base-layer {
-    background-image: url(../images/lab/bottle-empty.png);
+    background-image: url("https://cdn.shopify.com/s/files/1/0846/1136/7177/files/bottle-empty.png?v=1732828541");
     z-index: 4;
     mix-blend-mode: darken;
 }
 
 #lab-bottle .middle-layer {
-    background-image: url(../images/lab/bottle-full.png);
+    background-image: url("https://cdn.shopify.com/s/files/1/0846/1136/7177/files/bottle-full.png?v=1732828542");
     z-index: 2;
     mix-blend-mode: overlay;
 }
 
 #lab-bottle .cap-layer {
-    background-image: url(../images/lab/bottle-cap.png);
+    background-image: url("https://cdn.shopify.com/s/files/1/0846/1136/7177/files/bottle-cap.png?v=1732828476");
     z-index: 6;
 }
 
@@ -133,7 +133,7 @@
 }
 
 #lab-bottle .label-layer {
-    background-image: url(../images/lab/bottle-label-malt.png);
+    background-image: url("https://cdn.shopify.com/s/files/1/0846/1136/7177/files/bottle-label-malt.png?v=1732828476");
     z-index: 7;
 }
 
