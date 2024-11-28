@@ -1,149 +1,69 @@
-
-{{ 'shop.css' | asset_url | stylesheet_tag }}
-{{ 'basket.css' | asset_url | stylesheet_tag }}
-
-
-<div class="selector-container v2">
+<section class="banding">
   <article class="max">
-    {% if product.has_only_default_variant %}
-      {% for option in product.options_with_values %}
-        {% if product.metafields.custom.notes %}
-          <div class="product-details">
-            <h4>Notes</h4>
-            <p>{{ product.metafields.custom.notes }}</p>
-          </div>
-        {% endif %}
-        <div class="buying-option" style="display:none">
-          <h4 class="option-title">
-            {% if option.name == 'Size' and product.template_suffix == 'single' %}
-              Bottle size
-            {% else %}
-              {{ option.name }}
-            {% endif %}
-          </h4>
-          <div class="segmented-control">
-            {% for value in option.values %}
-              {% if option.name == 'Label' %}
-                <input
-                  type="radio"
-                  name="{{ option.name }}"
-                  value="{{ value }}"
-                  id="{{ value }}"
-                  {% if forloop.first %}
-                    checked
-                  {% endif %}
-                >
-                <label for="{{ value }}">
-                  {{ value }}
-                  {% if value == 'Standard' %}
-                    <span> Free</span>
-                  {% else %}
-                    <span> + £3.00</span>
-                  {% endif %}
-
-                  <div class="thumbnail">
-                    {% if value == 'Standard' %}
-                      <img src="https://cdn.shopify.com/s/files/1/0846/1136/7177/files/label-standard.png?v=1731401733">
-                    {% else %}
-                      <img src="https://cdn.shopify.com/s/files/1/0846/1136/7177/files/label-festive.png?v=1731401734">
-                    {% endif %}
-                  </div>
-                </label>
-              {% else %}
-                <input
-                  type="radio"
-                  name="{{ option.name }}"
-                  value="{{ value }}"
-                  id="{{ value }}"
-                  {% if forloop.first %}
-                    checked
-                  {% endif %}
-                >
-                <label for="{{ value }}"> {{ value }} </label>
-              {% endif %}
-            {% endfor %}
-          </div>
-        </div>
-      {% endfor %}
-    {% else %}
-      {% for option in product.options_with_values %}
-        <div class="buying-option">
-          <h4 class="option-title">
-            {% if option.name == 'Size' and product.template_suffix == 'single' %}
-              Bottle size
-            {% else %}
-              {{ option.name }}
-            {% endif %}
-          </h4>
-          <div class="segmented-control">
-            {% for value in option.values %}
-              {% if option.name == 'Label' %}
-                <input
-                  type="radio"
-                  name="{{ option.name }}"
-                  value="{{ value }}"
-                  id="{{ value }}"
-                  {% if forloop.first %}
-                    checked
-                  {% endif %}
-                >
-                <label for="{{ value }}">
-                  {{ value }}
-                  {% if value == 'Standard' %}
-                    <span> Free</span>
-                  {% else %}
-                    <span> + £3.00</span>
-                  {% endif %}
-
-                  <div class="thumbnail">
-                    {% if value == 'Standard' %}
-                      <img src="https://cdn.shopify.com/s/files/1/0846/1136/7177/files/label-standard.png?v=1731401733">
-                    {% else %}
-                      <img src="https://cdn.shopify.com/s/files/1/0846/1136/7177/files/label-festive.png?v=1731401734">
-                    {% endif %}
-                  </div>
-                </label>
-              {% else %}
-                <input
-                  type="radio"
-                  name="{{ option.name }}"
-                  value="{{ value }}"
-                  id="{{ value }}"
-                  {% if forloop.first %}
-                    checked
-                  {% endif %}
-                >
-                <label for="{{ value }}"> {{ value }} </label>
-              {% endif %}
-            {% endfor %}
-          </div>
-        </div>
-      {% endfor %}
-    {% endif %}
+    <div class="buying-option">
+      <h4>Quantity</h4>
+      <div class="segmented-control">
+        <input type="radio" name="Size" value="Bottle" id="bottle" checked>
+        <label for="bottle"> Single bottle <span>£50.00</span> </label>
+        <input type="radio" name="Size" value="Case" id="case">
+        <label for="case"> Case of 6 <span>Save £25.00</span> </label>
+      </div>
+    </div>
   </article>
-
   <article class="max">
     <div class="buy-this">
       <div class="summary">
         <div class="number-of-items">
           <div class="quantity">
-            <button type="button" class="remove-quantity">−</button>
+            <button type="button" class="remove-quantity">&minus;</button>
             <input type="number" value="1">
-            <button type="button" class="add-quantity">+</button>
+            <button type="button" class="add-quantity">&plus;</button>
           </div>
         </div>
-        <div class="subtotal-of-items">
-          <span class="strike-price">{{ product.compare_at_price | money }}</span>
-
-          {{ product.first_available_variant.price | money }}
-        </div>
+        <div class="subtotal-of-items">£35.00</div>
       </div>
-      {% if product.available == false %}
-        <!-- Product is out of stock -->
-        <button class=" atc" disabled>Out of stock</button>
-      {% else %}
-        <button class="pulse atc">Add to basket</button>
-      {% endif %}
+      <button class="pulse" onclick="location.href='basket.html';">Add to basket</button>
     </div>
   </article>
-</div>
+  <article class="max">
+    <ul class="product-list extras">
+      <li>
+        <a href="#" style="background-image: url(images/shop/tshirt/idrinkwhisky01.jpg)">
+          <img src="images/shop/tshirt/idrinkwhisky01.jpg">
+          <span class="deetz">
+            <h4>I Drink Whisky tee</h4>
+            <div class="reveal">
+              <p>Black T-shirt</p>
+              <sup class="buy pulse">Add for £25.00</sup>
+            </div>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="#" style="background-image: url(images/shop/jotters/jotter01.jpg)">
+          <img src="images/shop/jotters/jotter01.jpg">
+          <span class="deetz">
+            <h4>Tasting Notes jotter</h4>
+            <div class="reveal">
+              <p>76 page soft cover notepad</p>
+              <sup class="buy pulse">Add for £3.00</sup>
+            </div>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="#" style="background-image: url(images/shop/baseballcaps/stagandfalcon.jpg)">
+          <img src="images/shop/baseballcaps/stagandfalcon.jpg">
+          <span class="deetz">
+            <h4>Stag and Falcon cap</h4>
+            <div class="reveal">
+              <p>Embroidered petrol trucker hat</p>
+              <sup class="buy pulse">Add for £15.00</sup>
+            </div>
+          </span>
+        </a>
+      </li>
+    </ul>
+    <button onclick="location.href='shop.html';" class="secondary-button">Shop a wee bit more</button>
+  </article>
+</section>
