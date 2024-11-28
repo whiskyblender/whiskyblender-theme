@@ -149,7 +149,7 @@
     <article class="whatsincluded">
       <ul>
         <li>
-          <img src="https://cdn.shopify.com/s/files/1/0846/1136/7177/files/gallery24.jpg?v=1732829518">
+          <img src={{ section.setting.whats_include_1_image}}>
           <div class="extra-deetz">
             <h5>Custom blended whisky</h5>
             <p class="help">Your virtual blend is handcrafted for real by drawing from our casks</p>
@@ -193,13 +193,69 @@
     }
   ],
   "settings": [
-        {
-      "type": "textarea",
-      "id": "intro_text",
-      "label": "Intro Text",
-      "default": "Look at you! You've only gone and found the greatest website you're likely to see*!"
+            {
+      "type": "image_picker",
+      "id": "whats_include_1_image",
+      "label": "whats_include_1_image"
+    },
+                {
+      "type": "text",
+      "id": "whats_include_1_title",
+      "label": "whats_include_1_title"
+    },
+                {
+      "type": "text",
+      "id": "whats_include_1_text",
+      "label": "whats_include_1_text"
     },
 
+                {
+      "type": "image_picker",
+      "id": "whats_include_2_image",
+      "label": "whats_include_2_image"
+    },
+                {
+      "type": "text",
+      "id": "whats_include_2_title",
+      "label": "whats_include_2_title"
+    },
+                {
+      "type": "text",
+      "id": "whats_include_2_text",
+      "label": "whats_include_2_text"
+    },
+
+                {
+      "type": "image_picker",
+      "id": "whats_include_3_image",
+      "label": "whats_include_3_image"
+    },
+                {
+      "type": "text",
+      "id": "whats_include_3_title",
+      "label": "whats_include_3_title"
+    },
+                {
+      "type": "text",
+      "id": "whats_include_3_text",
+      "label": "whats_include_3_text"
+    },
+
+                {
+      "type": "image_picker",
+      "id": "whats_include_4_image",
+      "label": "whats_include_4_image"
+    },
+                {
+      "type": "text",
+      "id": "whats_include_4_title",
+      "label": "whats_include_4_title"
+    },
+                {
+      "type": "text",
+      "id": "whats_include_4_text",
+      "label": "whats_include_4_text"
+    },
   ]
 }
 {% endschema %}
