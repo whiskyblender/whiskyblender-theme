@@ -32,7 +32,7 @@
           <li>{{ product.type }}</li>
         {% endif %}
         {% for option in product.options_with_values %}
-          {% if option.name == 'Size' %}
+          {% if option.name == 'Bottle size' %}
             <li>
               {% for value in option.values %}
                 {%- if forloop.length > 0 -%}
