@@ -255,6 +255,9 @@
         }
             resize();
 
+        document.fonts.ready.then(function () {
+            resize();
+        });
 {% endjavascript %}
 
 {% schema %}
