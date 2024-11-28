@@ -10,7 +10,7 @@
 {
   "sections": {
     "main": {
-      "type": "main-single",
+      "type": "main-single-v2",
       "settings": {}
     }
   },
