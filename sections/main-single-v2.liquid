@@ -1,6 +1,12 @@
-<link href="{{ 'main-single.css' | asset_url }}" rel="stylesheet" type="text/css" media="all">
+{{ 'fonts-wb.css' | asset_url | stylesheet_tag }}
+{{ 'main.css' | asset_url | stylesheet_tag }}
+{{ 'lab.css' | asset_url | stylesheet_tag }}
+{{ 'shop.css' | asset_url | stylesheet_tag }}
+{{ 'basket.css' | asset_url | stylesheet_tag }}
+
 <script src="{{ 'main-single.js' | asset_url }}" defer="defer"></script>
 
+    
 <div id="bottle-page" class="label">
   <section class="standard crop">
     <article class="hang-right">
@@ -8,7 +14,7 @@
         <h4>
           <a href="index.html">Home</a> / <a href="find.html">Find</a> / <a href="blend-label.html">Custom blend</a>
         </h4>
-        <h3>WB537711</h3>
+        <h3>{{ product.title }}</h3>
         <ul class="product-summary">
           <li>Blended Malt Scotch Whisky</li>
           <li>200ml / 500ml</li>
