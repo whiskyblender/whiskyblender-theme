@@ -8,24 +8,23 @@
 {{ 'glide.theme.css' | asset_url | stylesheet_tag }}
 {{ 'glide.custom.css' | asset_url | stylesheet_tag }}
 
-
 <section class="standard">
   <article>
-      <h4>
-        <a aria-label="Breadcrumb" href="/"> Home</a>
-        /
-        <a aria-label="Breadcrumb" href="/pages/shop"> Shop</a>
-        /
-        <a aria-label="Breadcrumb" href="/collections"> Collections</a>
-        /
-        {% for collection in product.collections %}
-          {% unless collection.handle == 'promoted' %}
-            <a class="any-link breadcrumb" aria-label="Breadcrumb" href="{{ collection.url }}">
-              {{- collection.title -}}
-            </a>
-          {% endunless %}
-        {% endfor %}
-      </h4>
+    <h4>
+      <a aria-label="Breadcrumb" href="/"> Home</a>
+      /
+      <a aria-label="Breadcrumb" href="/pages/shop"> Shop</a>
+      /
+      <a aria-label="Breadcrumb" href="/collections"> Collections</a>
+      /
+      {% for collection in product.collections %}
+        {% unless collection.handle == 'promoted' %}
+          <a class="any-link breadcrumb" aria-label="Breadcrumb" href="{{ collection.url }}">
+            {{- collection.title -}}
+          </a>
+        {% endunless %}
+      {% endfor %}
+    </h4>
 
     <h3>{{ product.title }}</h3>
     <ul class="product-summary">
@@ -79,3 +78,10 @@
 </section>
 
 {% render 'product-selector' %}
+
+{% javascript %}
+  new Glide('.glide', {
+      type: 'carousel',
+      gap: 20
+  }).mount()
+{% endjavascript %}
