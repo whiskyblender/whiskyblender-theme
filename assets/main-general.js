@@ -47,9 +47,14 @@ const addQuantityListeners = () => {
 
     let variant = getVariantFromSelectedOptions();
     let subtotal = document.querySelector(`.subtotal-of-items`);
-    subtotal.innerHTML = `£${((variant.price / 100) * quantity.value).toFixed(
-      2
-    )}`;
+    console.debug(variant);
+    if (variant.compare_at_price !== "" || variant.compare_at_price !== null || variant.compare_at_price !== undefined) {
+      // If strike-price exists, get the next sibling text node
+      subtotal.innerHTML = `<span class="strike-price up2"> £${((variant.compare_at_price / 100) * quantity.value).toFixed(2)}</span> £${((variant.price / 100) * quantity.value).toFixed(2)}`;
+    } else {
+      subtotal.innerHTML = `£${((variant.price / 100) * quantity.value).toFixed(2)}`;
+    }
+    
   });
 };
 
