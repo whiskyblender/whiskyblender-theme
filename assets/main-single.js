@@ -74,12 +74,6 @@ const attachEventListeners = () => {
       subtotal.innerHTML = `£${((variant.price / 100) * quantity).toFixed(2)}`;
     });
   });
-
-    const radioButtonsBuyingOption = document.querySelectorAll('.segmented-control input[type="radio"]');
-  console.log('here')
-  radioButtonsBuyingOption.forEach((radio) => {
-      console.log(radio)
-  });
 };
 
 const getVariantFromSelectedOptions = () => {
