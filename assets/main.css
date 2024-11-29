@@ -1344,11 +1344,12 @@ ul.popular li:after {
 }
 
 #bottle-page.label .bottle-visuals {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  margin-bottom: -20px;
-  margin-top: -20px;
+    position: relative;
+    width: 120%;
+    overflow: hidden;
+    margin-bottom: 0;
+    margin-top: -10px;
+    margin-left: -30px;
 }
 
 #bottle-page.label .bottle-visuals #lab-bottle {
