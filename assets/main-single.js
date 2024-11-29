@@ -115,7 +115,7 @@ const addQuantityListeners = () => {
     let subtotal = document.querySelector(`.subtotal-of-items`);
     if (variant.compare_at_price != "") {
       // If strike-price exists, get the next sibling text node
-      subtotal.innerHTML = `<span class="strike-price u"> £${((variant.compare_at_price / 100) * quantity.value).toFixed(2)}</span> £${((variant.price / 100) * quantity.value).toFixed(2)}`;
+      subtotal.innerHTML = `<span class="strike-price up"> £${((variant.compare_at_price / 100) * quantity.value).toFixed(2)}</span> £${((variant.price / 100) * quantity.value).toFixed(2)}`;
     } else {
       subtotal.innerHTML = `£${((variant.price / 100) * quantity.value).toFixed(2)}`;
     }
