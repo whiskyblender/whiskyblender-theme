@@ -75,7 +75,10 @@ const attachEventListeners = () => {
     });
   });
 
-
+    const radioButtonsBuyingOption = document.querySelectorAll('.buying-option input[type="radio"]');
+  radioButtonsBuyingOption.forEach((radio) => {
+      console.log(radio)
+  });
 };
 
 const getVariantFromSelectedOptions = () => {
