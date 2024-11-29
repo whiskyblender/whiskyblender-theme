@@ -7,7 +7,6 @@
 <script src="{{ 'main-single.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'confetti.min.js' | asset_url }}" defer="defer"></script>
 
-
 <div id="bottle-page" class="label">
   <section class="standard crop">
     <article class="hang-right">
@@ -16,7 +15,6 @@
           <a aria-label="Breadcrumb" href="/"> Home</a>
           /
           <a aria-label="Breadcrumb" href="/pages/blend"> Custom blend</a>
-          
         </h4>
 
         <h3>{{ product.title }}</h3>
@@ -127,13 +125,15 @@
           <!-- opacity = show on completion -->
           <div class="cap-layer" style="opacity: 1;"></div>
           <!-- opacity = show on completion -->
-          {% if product.type != blank and product.type == 'Blended Scotch Whisky' %}
-          
-          <div class="label-layer scotch" style="opacity: 1;">
-            {% else %}
-                      <div class="label-layer" style="opacity: 1;">
 
-                        {% endif %}
+          <div
+            class="
+              label-layer 
+            {% if product.type != blank and product.type == 'Blended Scotch Whisky' %}
+              'scotch' {% else %} '' {% endif %}
+            "
+            style="opacity: 1;"
+          >
             <!-- opacity = show on completion (include "scotch" class if contains grain) -->
             <div id="outer">
               <div class="text color1">{{ product.title }}</div>
