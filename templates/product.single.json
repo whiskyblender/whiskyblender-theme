@@ -1,8 +1,25 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "main-single",
       "settings": {
+        "whats_include_1_title": "Custom blended whisky",
+        "whats_include_1_text": "",
+        "whats_include_2_title": "Personalised label",
+        "whats_include_2_text": "",
+        "whats_include_3_title": "Burlap gift sack",
+        "whats_include_3_text": "",
+        "whats_include_4_title": "Some wee extras",
+        "whats_include_4_text": ""
       }
     }
   },
