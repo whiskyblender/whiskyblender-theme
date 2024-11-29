@@ -113,10 +113,9 @@ const addQuantityListeners = () => {
 
     let variant = getVariantFromSelectedOptions();
     let subtotal = document.querySelector(`.subtotal-of-items`);
-    const strikePrice = subtotal.querySelector(`.strike-price`);
+    let strikePrice = subtotal.querySelector(`.strike-price`);
     if (strikePrice) {
       // If strike-price exists, get the next sibling text node
-      priceText = strikePrice.nextSibling;
       subtotal.innerHTML = `<span class="strike-price"> £${((variant.compare_at_price / 100) * quantity.value).toFixed(2)}</span> £${((variant.price / 100) * quantity.value).toFixed(2)}`;
     } else {
       subtotal.innerHTML = `£${((variant.price / 100) * quantity.value).toFixed(2)}`;
