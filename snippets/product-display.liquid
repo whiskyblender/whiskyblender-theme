@@ -1,13 +1,13 @@
 <li>
   <a
     href="{{ product.url }}"
-    style="background-image: url({{ product.featured_image | image_url: width:800, height:800 }})"
+    style="background-image: url({{ product.featured_image | image_url: width:1500, height:900 }})"
   >
     <img
       alt=" Product image of whisky bottle"
-      src="{{ product.featured_image | image_url: width:800, height:800 }}"
-      width="800"
-      height="800"
+      src="{{ product.featured_image | image_url: width:1500, height:900 }}"
+      width="1500"
+      height="900"
     >
     <span class="deetz">
       <h4>{{ product.title }}</h4>
