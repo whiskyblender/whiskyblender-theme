@@ -1,5 +1,5 @@
 const createStylesheet = async () => {
-  await fetch('https://app.whiskyblender.com/blend/get-all')
+  await fetch("https://app.whiskyblender.com/blend/get-all")
     .then((response) => response.json())
     .then((data) => {
       let stylesheet = document.querySelector(`#bar-colors`);
@@ -19,21 +19,21 @@ const createStylesheet = async () => {
       Window.data = data;
     });
 
-  let bars = document.querySelectorAll('.progress-bar-inner');
+  let bars = document.querySelectorAll(".progress-bar-inner");
   let arr = [];
   bars.forEach((bar) => {
     let width = bar.style.width;
-    let name = bar.getAttribute('data-name');
+    let name = bar.getAttribute("data-name");
     let obj = {
       name: name,
-      width: width.replace('%', ''),
+      width: width.replace("%", ""),
       data: Window.data.find((item) => item.title === name),
     };
     arr.push(obj);
   });
 
   let barWithHighestWidth = getBarWithHighestWidth(arr);
-  let detailsImage = document.querySelector('.gallery-details__image');
+  let detailsImage = document.querySelector(".gallery-details__image");
 
   detailsImage.style.backgroundImage = `url(${barWithHighestWidth.data.image})`;
   // add to stylesheet
@@ -50,7 +50,7 @@ const createStylesheet = async () => {
 
 const getBarWithHighestWidth = (arr) => {
   let highest = 0;
-  let item = '';
+  let item = "";
 
   for (let i = 0; i < arr.length; i++) {
     let obj = arr[i];
@@ -67,10 +67,12 @@ const getBarWithHighestWidth = (arr) => {
 const attachEventListeners = () => {
   const radioButtons = document.querySelectorAll('.max input[type="radio"]');
   radioButtons.forEach((radio) => {
-    radio.addEventListener('change', function () {
+    radio.addEventListener("change", function () {
       let variant = getVariantFromSelectedOptions();
       let subtotal = document.querySelector(`.subtotal-of-items`);
-      let quantity = document.querySelector(`.quantity`).querySelector('input').value;
+      let quantity = document
+        .querySelector(`.quantity`)
+        .querySelector("input").value;
       subtotal.innerHTML = `£${((variant.price / 100) * quantity).toFixed(2)}`;
     });
   });
@@ -87,23 +89,25 @@ const getVariantFromSelectedOptions = () => {
 };
 
 const addQuantityListeners = () => {
-  let remove = document.querySelector('.remove-quantity');
-  let add = document.querySelector('.add-quantity');
+  let remove = document.querySelector(".remove-quantity");
+  let add = document.querySelector(".add-quantity");
 
-  remove.addEventListener('click', function () {
-    let quantity = document.querySelector('.quantity').querySelector('input');
+  remove.addEventListener("click", function () {
+    let quantity = document.querySelector(".quantity").querySelector("input");
     let value = parseInt(quantity.value);
     if (value > 1) {
       quantity.value = value - 1;
 
       let variant = getVariantFromSelectedOptions();
       let subtotal = document.querySelector(`.subtotal-of-items`);
-      subtotal.innerHTML = `£${((variant.price / 100) * quantity.value).toFixed(2)}`;
+      subtotal.innerHTML = `£${((variant.price / 100) * quantity.value).toFixed(
+        2
+      )}`;
     }
   });
 
-  add.addEventListener('click', function () {
-    let quantity = document.querySelector('.quantity').querySelector('input');
+  add.addEventListener("click", function () {
+    let quantity = document.querySelector(".quantity").querySelector("input");
     let value = parseInt(quantity.value);
     quantity.value = value + 1;
 
@@ -113,20 +117,28 @@ const addQuantityListeners = () => {
     if (strikePrice) {
       // If strike-price exists, get the next sibling text node
       priceText = strikePrice.nextSibling;
-    } else{
-      subtotal.innerHTML = `£${((variant.price / 100) * quantity.value).toFixed(2)}`;
-
+      subtotal.innerHTML = `<span class="strike-price">£${(
+        (variant.compare_at_price / 100) *
+        quantity.value
+      ).toFixed(2)}</span> £${((variant.price / 100) * quantity.value).toFixed(
+        2
+      )}`;
+    } else {
+      subtotal.innerHTML = `£${((variant.price / 100) * quantity.value).toFixed(
+        2
+      )}`;
     }
-    subtotal.innerHTML = `£${((variant.price / 100) * quantity.value).toFixed(2)}`;
   });
 };
 
 const addProductToCart = async () => {
-  let atc_button = document.querySelector('.atc');
+  let atc_button = document.querySelector(".atc");
 
-  atc_button.addEventListener('click', async function () {
+  atc_button.addEventListener("click", async function () {
     let variant = getVariantFromSelectedOptions();
-    let quantity = document.querySelector('.quantity').querySelector('input').value;
+    let quantity = document
+      .querySelector(".quantity")
+      .querySelector("input").value;
     let data = {
       items: [
         {
@@ -136,23 +148,23 @@ const addProductToCart = async () => {
       ],
     };
 
-    await fetch('/cart/add.js', {
-      method: 'POST',
+    await fetch("/cart/add.js", {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(data),
     })
       .then((response) => response.json())
       .then((data) => {
-        atc_button.innerHTML = 'Added to Basket!';
-        window.location.href = '/cart';
+        atc_button.innerHTML = "Added to Basket!";
+        window.location.href = "/cart";
       });
   });
 };
 
 function fetchProduct() {
-  fetch(location.href.split('?')[0] + '.js')
+  fetch(location.href.split("?")[0] + ".js")
     .then((response) => response.json())
     .then((data) => {
       Window.product = data;
@@ -164,9 +176,9 @@ function fetchProduct() {
   addProductToCart();
 }
 
-if (document.readyState === 'loading') {
+if (document.readyState === "loading") {
   // Loading hasn't finished yet
-  document.addEventListener('DOMContentLoaded', fetchProduct);
+  document.addEventListener("DOMContentLoaded", fetchProduct);
 } else {
   // `DOMContentLoaded` has already fired
   fetchProduct();
