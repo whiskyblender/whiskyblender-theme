@@ -5,9 +5,9 @@
   >
     <img
       alt=" Product image of whisky bottle"
-      src="{{ product.featured_image | image_url: '1000x1000' }}"
-      width="1000"
-      height="1000"
+      src="{{ product.featured_image | image_url: width:400, height:400 }}"
+      width="400"
+      height="400"
     >
     <span class="deetz">
       <h4>{{ product.title }}</h4>
