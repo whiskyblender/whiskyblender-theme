@@ -15,9 +15,9 @@
               <li>
                 <a href="{{ collection.url }}">{{ collection.title }}</a>
               </li>
-                      <li style="background-image: url({{ collection.featured_image }})">
-          <a href={{ collection.url }}>{{ collection.title }}</a>
-        </li>
+              <li style="background-image: url({{ collection.featured_image }})">
+                <a href="{{ collection.url }}">{{ collection.title }}</a>
+              </li>
             {% endunless %}
           {%- endfor -%}
         </ul>
@@ -29,13 +29,14 @@
       <button onclick="location.href='shop.html';" class="secondary-button">The big shop</button>
     </article>
   </section>
+
+  <section class="banding">
+    <article class="max">
+      <button onclick="location.href='/pages/shop';" class="secondary-button">The big shop</button>
+    </article>
+  </section>
 </div>
 
-<section class="banding">
-  <article class="max">
-    <button onclick="location.href='/pages/shop';" class="secondary-button">The big shop</button>
-  </article>
-</section>
 {% schema %}
 {
   "name": "t:sections.main-list-collections.name",
