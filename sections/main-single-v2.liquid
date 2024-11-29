@@ -216,7 +216,11 @@
 
 {% javascript %}
 
-  
+        const labelLayer = document.querySelector('.label-layer');
+  const radios = document.querySelectorAll('.max input[type="radio"]');
+  const checked = Array.from(radios).filter((radio) => radio.checked);
+  console.log(radios);
+  console.log(checked)
         // start - confetti
 
         const start = () => {
