@@ -118,7 +118,7 @@ const addQuantityListeners = () => {
       // If no strike-price, get the text node directly within subtotal
       priceText = Array.from(subtotal.childNodes).find(node => node.nodeType === Node.TEXT_NODE && node.textContent.trim());
     }
-    console.log(priceText);
+    console.error(priceText);
     subtotal.innerHTML = `£${((variant.price / 100) * quantity.value).toFixed(2)}`;
   });
 };
