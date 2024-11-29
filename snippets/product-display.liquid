@@ -1,10 +1,10 @@
-<li class="product-list-card v2">
+<li>
   <a
     href="{{ product.url }}"
     style="background-image: url({{ product.featured_image | img_url: '1000x1000' }})"
   >
-    <img alt=" Prouct image of whisky bottle" src="{{ product.featured_image | img_url: '1000x1000' }}">
-    <span class="deetz single-casks-details">
+    <img alt=" Product image of whisky bottle" src="{{ product.featured_image | img_url: '1000x1000' }}" width="1000" height="1000">
+    <span class="deetz">
       <h4>{{ product.title }}</h4>
       <div class="reveal">
         <p>{{ product.type | truncate: 30 }}</p>
