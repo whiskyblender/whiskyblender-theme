@@ -12,8 +12,9 @@
     "main": {
       "type": "main-single",
       "settings": {
+        "whats_include_1_image": "shopify://shop_images/gallery24.jpg",
         "whats_include_1_title": "Custom blended whisky",
-        "whats_include_1_text": "",
+        "whats_include_1_text": "Your virtual blend is handcrafted for real by drawing from our casks",
         "whats_include_2_title": "Personalised label",
         "whats_include_2_text": "",
         "whats_include_3_title": "Burlap gift sack",
