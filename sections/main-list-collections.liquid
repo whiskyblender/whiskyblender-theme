@@ -12,7 +12,7 @@
           {% assign excluded_collections = section.settings.excluded_collections_list | split: ', ' %}
           {%- for collection in collections -%}
             {% unless excluded_collections contains collection.title %}
-              <li style="background-image: {{ collection.featured_image }}">
+              <li style="background-image: url({{ collection.image | image_url }}) ;">
                 <a href="{{ collection.url }}">{{ collection.title }}</a>
               </li>
             {% endunless %}
