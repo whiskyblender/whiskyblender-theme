@@ -74,6 +74,11 @@ const attachEventListeners = () => {
       subtotal.innerHTML = `£${((variant.price / 100) * quantity).toFixed(2)}`;
     });
   });
+
+    const radioButtons = document.querySelectorAll('.buying-option input[type="radio"]');
+  radioButtons.forEach((radio) => {
+      console.log(radio)
+  });
 };
 
 const getVariantFromSelectedOptions = () => {
