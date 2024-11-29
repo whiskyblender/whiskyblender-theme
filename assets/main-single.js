@@ -75,7 +75,7 @@ const attachEventListeners = () => {
     });
   });
 
-    const radioButtonsBuyingOption = document.querySelectorAll('.buying-option input[type="radio"]');
+    const radioButtonsBuyingOption = document.querySelectorAll('.segmented-control input[type="radio"]');
   radioButtonsBuyingOption.forEach((radio) => {
       console.log(radio)
   });
