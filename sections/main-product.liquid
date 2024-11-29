@@ -23,6 +23,9 @@
             <a class="any-link breadcrumb" aria-label="Breadcrumb" href="{{ collection.url }}">
               {{- collection.title -}}
             </a>
+            {% if forloop.last != true %}
+              &
+            {% endif %}
           {% endunless %}
         {% endfor %}
       </h4>
