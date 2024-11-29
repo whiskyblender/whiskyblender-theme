@@ -2,24 +2,71 @@
 {{ 'main.css' | asset_url | stylesheet_tag }}
 {{ 'shop.css' | asset_url | stylesheet_tag }}
 
+<div id="shop-page">
+  <section class="standard">
+    <article>
+      <h4 class="breadcrumbs"><a href="/">Home</a> / <a href="/pages/shop">Shop</a></h4>
+      <h3>Collections</h3>
+      <ul class="collections">
+        <ul>
+          {% assign excluded_collections = section.settings.excluded_collections_list | split: ', ' %}
+          {%- for collection in collections -%}
+            {% unless excluded_collections contains collection.title %}
+              <li>
+                <a href="{{ collection.url }}">{{ collection.title }}</a>
+              </li>
+                      <li style="background-image: url({{ collection.featured_image }})">
+          <a href={{ collection.url }}>{{ collection.title }}</a>
+        </li>
+            {% endunless %}
+          {%- endfor -%}
+        </ul>
+        <li style="background-image: url(images/shop/collections/bottlings.png)">
+          <a href="bottlings.html">Andras' bottles</a>
+        </li>
+        <li style="background-image: url(images/shop/collections/famousscots.png)">
+          <a href="famousscots.html">Famous Scots</a>
+        </li>
+        <li style="background-image: url(images/shop/collections/festive.png)">
+          <a href="festive.html">Festive cheers</a>
+        </li>
+        <li style="background-image: url(images/shop/collections/vouchers.png)">
+          <a href="vouchers.html">Gift credit</a>
+        </li>
+        <li style="background-image: url(images/shop/collections/iconicscotland.png)">
+          <a href="iconicscotland.html">Iconic Scotland</a>
+        </li>
+        <li style="background-image: url(images/shop/collections/patter.png)">
+          <a href="patter.html">Quality patter</a>
+        </li>
+        <li style="background-image: url(images/shop/collections/weebits.png)">
+          <a href="products.html">Wee bits</a>
+        </li>
+      </ul>
+    </article>
+  </section>
+  <section class="banding">
+    <article class="max">
+      <button onclick="location.href='shop.html';" class="secondary-button">The big shop</button>
+    </article>
+  </section>
+</div>
+
 <section class="standard">
   <article>
     <h4><a href="/">Home</a> / <a href="/pages/shop">Shop</a></h4>
     <h3>Collections</h3>
-    {%- paginate collections by paginate_by -%}
-      <ul>
-        {% assign excluded_collections = section.settings.excluded_collections_list | split: ", " %}
+    <ul>
+      {% assign excluded_collections = section.settings.excluded_collections_list | split: ', ' %}
 
-        {%- for collection in collections -%}
-          {% unless  excluded_collections contains collection.title %}
-            <li>
-              <a href="{{ collection.url }}">{{ collection.title }}</a>
-            </li>
-          {% endunless %}
-        {%- endfor -%}
-      </ul>
-    {%- endpaginate -%}
-    {% render 'pagination', paginate: paginate %}
+      {%- for collection in collections -%}
+        {% unless excluded_collections contains collection.title %}
+          <li>
+            <a href="{{ collection.url }}">{{ collection.title }}</a>
+          </li>
+        {% endunless %}
+      {%- endfor -%}
+    </ul>
   </article>
 </section>
 <section class="banding">
