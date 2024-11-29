@@ -34,9 +34,15 @@ const addQuantityListeners = () => {
 
       let variant = getVariantFromSelectedOptions();
       let subtotal = document.querySelector(`.subtotal-of-items`);
-      subtotal.innerHTML = `£${((variant.price / 100) * quantity.value).toFixed(
-        2
-      )}`;
+      if (
+        variant.compare_at_price !== "" &&
+        variant.compare_at_price !== null &&
+        variant.compare_at_price !== undefined
+      ) {
+        subtotal.innerHTML = `<span class="strike-price"> £${((variant.compare_at_price / 100) * quantity.value).toFixed(2)}</span> £${((variant.price / 100) * quantity.value).toFixed(2)}`;
+      } else {
+        subtotal.innerHTML = `£${((variant.price / 100) * quantity.value).toFixed(2)}`;
+      }
     }
   });
 
@@ -47,14 +53,15 @@ const addQuantityListeners = () => {
 
     let variant = getVariantFromSelectedOptions();
     let subtotal = document.querySelector(`.subtotal-of-items`);
-    console.debug(variant);
-    if (variant.compare_at_price !== "" && variant.compare_at_price !== null && variant.compare_at_price !== undefined) {
-      // If strike-price exists, get the next sibling text node
+    if (
+      variant.compare_at_price !== "" &&
+      variant.compare_at_price !== null &&
+      variant.compare_at_price !== undefined
+    ) {
       subtotal.innerHTML = `<span class="strike-price up2"> £${((variant.compare_at_price / 100) * quantity.value).toFixed(2)}</span> £${((variant.price / 100) * quantity.value).toFixed(2)}`;
     } else {
       subtotal.innerHTML = `£${((variant.price / 100) * quantity.value).toFixed(2)}`;
     }
-    
   });
 };
 
@@ -91,7 +98,7 @@ const addProductToCart = async () => {
 };
 
 function fetchProduct() {
-  fetch(location.href.split('?')[0] + '.js')
+  fetch(location.href.split("?")[0] + ".js")
     .then((response) => response.json())
     .then((data) => {
       Window.product = data;
@@ -126,13 +133,10 @@ document.addEventListener("DOMContentLoaded", function () {
   updateCartCount();
 });
 
-
-
-if (document.readyState === 'loading') {
+if (document.readyState === "loading") {
   // Loading hasn't finished yet
-  document.addEventListener('DOMContentLoaded', fetchProduct);
+  document.addEventListener("DOMContentLoaded", fetchProduct);
 } else {
   // `DOMContentLoaded` has already fired
   fetchProduct();
 }
-
