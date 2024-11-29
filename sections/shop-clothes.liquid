@@ -8,27 +8,8 @@
       {% assign clothes = collections['claes-an-hings'] %}
 
       {% for product in clothes.products %}
-        <li class="product-list-card">
-          <a
-            href="{{ product.url }}"
-            style="background-image: url({{ product.featured_image | img_url: '1000x1000' }})"
-          >
-            <img src="{{ product.featured_image | img_url: '1000x1000' }}">
-            <span class="deetz single-casks-details">
-              <h4>{{ product.title }}</h4>
-              {{ product.type | truncate: 30 }}
-              <div class="reveal">
-                {% if product.available == false %}
-                  <!-- Product is out of stock -->
-                  <sup> Out of stock</sup>
-                {% else %}
-                  <sup class="buy pulse">{{ product.price | money }}</sup>
-                {% endif %}
+          {% render 'product-display', product: product %}
 
-              </div>
-            </span>
-          </a>
-        </li>
       {% endfor %}
     </ul>
   </article>
