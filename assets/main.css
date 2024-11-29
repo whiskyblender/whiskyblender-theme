@@ -2060,15 +2060,16 @@ ul.gallery li:nth-of-type(2) img {
     z-index: 2;
   }
 
-  #bottle-page.label .bottle-visuals {
-    position: absolute;
-    z-index: 1;
-    left: -340px;
-    height: calc(100% + 40px);
-    top: 20px;
-    padding-left: 0;
-    bottom: auto;
-  }
+    #bottle-page.label .bottle-visuals {
+        position: absolute;
+        z-index: 1;
+        left: -340px;
+        height: auto;
+        top: 0;
+        padding-left: 40px;
+        padding-bottom: 40px;
+        bottom: auto;
+    }
 
   #bottle-page.label .bottle-visuals #lab-bottle {
     transform: scale(1.2);
