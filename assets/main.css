@@ -248,29 +248,30 @@ body {
 }
 
 .breadcrumbs {
-    z-index: 999;
-    position: relative;
-    color: #999999;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+  z-index: 999;
+  position: relative;
+  color: #999999;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .breadcrumbs a {
-    color: #999999;
-    transition: color 0.3s;
+  color: #999999;
+  transition: color 0.3s;
 }
 
 .breadcrumbs a:hover {
-    color: #000000;
+  color: #000000;
 }
 
-.header-image .breadcrumbs, .header-image .breadcrumbs a {
-    color: rgba(255,255,255,0.8);
+.header-image .breadcrumbs,
+.header-image .breadcrumbs a {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .header-image .breadcrumbs a:hover {
-    color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .basket {
@@ -341,6 +342,11 @@ body {
   .basket button {
     right: 20px;
     top: 20px;
+  }
+
+  .breadcrumbs {
+    font-size: 18px;
+    line-height: 26px;
   }
 }
 
@@ -647,7 +653,7 @@ h3 {
 h4 {
   font-size: 20px;
   line-height: 24px;
-  font-weight:700;
+  font-weight: 700;
 }
 
 h5 {
@@ -655,7 +661,6 @@ h5 {
   line-height: 24px;
   font-weight: 700;
 }
-
 
 hr {
   width: calc(100% - 80px);
@@ -1945,6 +1950,12 @@ ul.gallery li:nth-of-type(2) img {
   #product-page .gallery .item {
     height: 560px;
   }
+
+  .breadcrumbs {
+    font-size: 20px;
+    line-height: 28px;
+    padding-bottom: 6px;
+  }
 }
 
 @media only screen and (min-width: 1064px) {
@@ -2156,8 +2167,8 @@ ul.gallery li:nth-of-type(2) img {
 
 ul.product-list li a span sup.sale {
   padding: 12px 0;
-background: transparent;
-color: #333333;
-margin-left: 20px;
-text-decoration: line-through;
+  background: transparent;
+  color: #333333;
+  margin-left: 20px;
+  text-decoration: line-through;
 }
