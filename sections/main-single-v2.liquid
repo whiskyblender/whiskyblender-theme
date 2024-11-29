@@ -221,6 +221,12 @@
   const checked = Array.from(radios).filter((radio) => radio.checked);
   console.log(radios);
   console.log(checked)
+
+  radios.forEach(radio => {
+  radio.addEventListener('click', () => {
+    labelLayer.classList.add('festive');
+  });
+});
         // start - confetti
 
         const start = () => {
