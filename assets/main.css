@@ -247,6 +247,32 @@ body {
   hyphens: manual;
 }
 
+.breadcrumbs {
+    z-index: 999;
+    position: relative;
+    color: #999999;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.breadcrumbs a {
+    color: #999999;
+    transition: color 0.3s;
+}
+
+.breadcrumbs a:hover {
+    color: #000000;
+}
+
+.header-image .breadcrumbs, .header-image .breadcrumbs a {
+    color: rgba(255,255,255,0.8);
+}
+
+.header-image .breadcrumbs a:hover {
+    color: rgba(255,255,255,1);
+}
+
 .basket {
   position: -webkit-sticky;
   position: sticky;
