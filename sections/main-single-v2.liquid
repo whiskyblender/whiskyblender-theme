@@ -127,7 +127,13 @@
           <!-- opacity = show on completion -->
           <div class="cap-layer" style="opacity: 1;"></div>
           <!-- opacity = show on completion -->
-          <div class="label-layer" style="opacity: 1;">
+          {% if product.type != blank and product.type == 'Blended Scotch Whisky' %}
+          
+          <div class="label-layer scotch" style="opacity: 1;">
+            {% else %}
+                      <div class="label-layer" style="opacity: 1;">
+
+                        {% endif %}
             <!-- opacity = show on completion (include "scotch" class if contains grain) -->
             <div id="outer">
               <div class="text color1">{{ product.title }}</div>
@@ -211,7 +217,7 @@
 {% javascript %}
 
   
-        // start
+        // start - confetti
 
         const start = () => {
             setTimeout(function() {
@@ -219,7 +225,7 @@
             }, 600); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
         };
 
-        //  Stop
+        //  Stop - confetti
 
         const stop = () => {
             setTimeout(function() {
