@@ -65,6 +65,9 @@
         "link_pj3H4j",
         "link_JLJCQ4"
       ],
+      "custom_css": [
+        "section:last-of-type {padding-bottom: 0px;}"
+      ],
       "settings": {
         "title": "The big shop",
         "video_url": "https://cdn.shopify.com/videos/c/o/v/494fe2585a47457bb4ebfe8b01fc0c13.mp4",
