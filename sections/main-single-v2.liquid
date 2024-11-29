@@ -13,7 +13,16 @@
         <h4>
           <a aria-label="Breadcrumb" href="/"> Home</a>
           /
-          <a aria-label="Breadcrumb" href="/pages/blend"> Custom blend</a>
+          {% for collection in product.collections %}
+            {% unless collection.handle == 'promoted' %}
+              <a class="any-link breadcrumb" aria-label="Breadcrumb" href="{{ collection.url }}">
+                {{- collection.title -}}
+              </a>
+              {% if forloop.last != true and product.collections[forloop.index].handle != 'promoted' %}
+                &
+              {% endif %}
+            {% endunless %}
+          {% endfor %}
         </h4>
 
         <h3>{{ product.title }}</h3>
