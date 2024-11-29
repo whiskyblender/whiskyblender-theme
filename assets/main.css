@@ -621,7 +621,7 @@ h3 {
 h4 {
   font-size: 20px;
   line-height: 24px;
-  font-weight:700;
+  font-weight: 700;
 }
 
 h5 {
@@ -629,7 +629,6 @@ h5 {
   line-height: 24px;
   font-weight: 700;
 }
-
 
 hr {
   width: calc(100% - 80px);
@@ -2128,3 +2127,10 @@ ul.gallery li:nth-of-type(2) img {
   }
 }
 
+ul.product-list li a span sup.sale {
+  padding: 12px 0;
+  background: transparent;
+  color: #333333;
+  margin-left: 20px;
+  text-decoration: line-through;
+}
