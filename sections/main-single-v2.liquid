@@ -128,9 +128,9 @@
 
           <div
             class="
-              label-layer 
-            {% if product.type != blank and product.type == 'Blended Scotch Whisky' %}
-              scotch {% endif %}
+                label-layer
+              {% if product.type != blank and product.type == 'Blended Scotch Whisky' %}
+                scotch {% endif %}
             "
             style="opacity: 1;"
           >
@@ -214,22 +214,20 @@
   {% render 'product-selector' %}
 </div>
 
-<style id="bar-colors">
-
-</style>
+<style id="bar-colors"></style>
 
 {% javascript %}
 
         const labelLayer = document.querySelector('.label-layer');
   const radios = document.querySelectorAll('.max input[type="radio"]');
-  const checked = Array.from(radios).filter((radio) => radio.checked);
-  console.log(radios);
-  console.log(checked)
 
   radios.forEach(radio => {
   radio.addEventListener('click', () => {
-    labelLayer.classList.add('festive');
-  });
+    if (radio.value === 'festive') { // Replace 'festive' with the actual value of the "festive" radio
+      labelLayer.classList.add('festive');
+    } else {
+      labelLayer.classList.remove('festive');
+    }  });
 });
         // start - confetti
 
