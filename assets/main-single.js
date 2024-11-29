@@ -76,6 +76,7 @@ const attachEventListeners = () => {
   });
 
     const radioButtonsBuyingOption = document.querySelectorAll('.segmented-control input[type="radio"]');
+  console.log('here')
   radioButtonsBuyingOption.forEach((radio) => {
       console.log(radio)
   });
