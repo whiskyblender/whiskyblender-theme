@@ -403,6 +403,9 @@
     }
   },
   "platform_customizations": {
-    "custom_css": []
+    "custom_css": [
+      "input {text-transform: none !important;}",
+      ".header-wrapper--border-bottom {border: 0;}"
+    ]
   }
 }
