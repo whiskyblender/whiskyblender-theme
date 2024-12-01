@@ -89,7 +89,7 @@
           "settings": {
             "heading": "Can you ship to my country?",
             "icon": "none",
-            "row_content": "<p>If you don't find your country listed during the checkout procedure you can email your full shipping address to us and we will try and get a special price for you. Note that customs folks in places like Canada really don't like whisky being imported – so please make sure you know your local customs/laws when ordering from us!</p>",
+            "row_content": "<p>If you don't find your country listed during the checkout procedure you can email your full shipping address to us and we will try and get a special price for you. </p><p>Note that customs and excise folks generally don't like whisky being imported – so please make sure you know your local customs/laws when ordering from us!</p>",
             "page": ""
           }
         },
@@ -98,7 +98,7 @@
           "settings": {
             "heading": "What are the shipping costs?",
             "icon": "none",
-            "row_content": "<p><span style=\"text-decoration:underline\">United Kingdom - 1-3 Days</span></p><p>Orders under £100: <strong>£5.00</strong><br/>Orders over £100: <strong>FREE</strong></p><p><span style=\"text-decoration:underline\">USA (Safe States) - 5-10 Days</span></p><p>Orders under £100: <strong>£55</strong><br/>Between £100-£150: <strong>£60</strong><br/>Between £150-£199: <strong>£75</strong><br/>Between £200-499: <strong>£90</strong><br/>Orders over £500: <strong>£120<br/></strong>24 bottles or more: <strong>FREE</strong><br/><br/>Shipping to the US is calculated by volumetric weight and includes customs charges. Our \"Safe states\" for shipping are: CA, CT, DE, D.C., FL, GA, ID, IL, LA, ME, MD, MA, NE, NJ, NM, NY, NC, OR, PA, RI, SC, TX, VT, VA, WA, WY. Alaska (Anchorage only) has a £30 surcharge. <br/><br/>We promise these rates are amongst the best you'll find anywhere online to send Scotch from the UK. We're working hard  with our couriers to improve the pricing without compromising the service. </p><p>Contact us on the chat or via email for \"Other International\" destinations<br/></p>",
+            "row_content": "<p><span style=\"text-decoration:underline\">United Kingdom - 1-3 Days</span></p><p>Orders under £100: <strong>£5.00</strong><br/>Orders over £100: <strong>FREE</strong></p><p><span style=\"text-decoration:underline\">USA (Safe States) - 5-10 Days</span></p><p>Orders under £100: <strong>£55</strong><br/>Between £100-£150: <strong>£60</strong><br/>Between £150-£199: <strong>£75</strong><br/>Between £200-499: <strong>£90</strong><br/>Orders over £500: <strong>£55<br/></strong>24 bottles or more: <strong>FREE</strong><br/><br/>Shipping to the US is calculated by volumetric weight and includes customs charges. Our \"Safe states\" for shipping are: CA, CT, DE, D.C., FL, GA, ID, IL, LA, ME, MD, MA, NE, NJ, NM, NY, NC, OR, PA, RI, SC, TX, VT, VA, WA, WY. Alaska (Anchorage only) has a £30 surcharge. <br/><br/>We promise these rates are amongst the best you'll find anywhere online to send Scotch from the UK. We're working hard  with our couriers to improve the pricing without compromising the service. </p><p><span style=\"text-decoration:underline\">Other country zones:</span></p><p>Up to 10kg: £45<br/>Orders over £250: Free</p><p>Contact us on the chat or via email for \"Other International\" destinations<br/></p>",
             "page": ""
           }
         },
