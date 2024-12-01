@@ -403,12 +403,6 @@
     }
   },
   "platform_customizations": {
-    "custom_css": [
-      ".socials {display: none !important;}",
-      "input {text-transform: none !important;}",
-      ".header-wrapper--border-bottom {border: 0;}",
-      "@media only screen and (max-width: 600px) {#product-page .gallery .item {border-radius: 12px; overflow: hidden; display: flex; justify-content: center; position: relative; height: 320px; align-items: center; } .owl-carousel .owl-item img {width: auto; height: 100%; align-self: center; }}",
-      "ul.trustpilot {padding: 20px 0 !important;}"
-    ]
+    "custom_css": []
   }
 }
