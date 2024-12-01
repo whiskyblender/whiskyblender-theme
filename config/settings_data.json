@@ -405,7 +405,8 @@
   "platform_customizations": {
     "custom_css": [
       "input {text-transform: none !important;}",
-      ".header-wrapper--border-bottom {border: 0;}"
+      ".header-wrapper--border-bottom {border: 0;}",
+      "ul.trustpilot {padding: 20px 0 !important;}"
     ]
   }
 }
