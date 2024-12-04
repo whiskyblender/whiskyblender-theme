@@ -125,7 +125,7 @@
           "settings": {
             "heading": "Is the parcel tracked?",
             "icon": "none",
-            "row_content": "<p>Aye! However, because of the service we're using (to keep the shipping fees as low as possible) we don't always get this information electronically sent to our customers – we ask you to be patient and allow the postal service to work their magic. </p><p>In the case of orders going outside of Europe this is usually between 7 & 14 days on top of the 2-3 days it can take to blend up. If you are REALLY concerned about the delay send us an email (info@whiskyblender.com) and we will get a trace put on your parcel.</p>",
+            "row_content": "<p>Aye! You should receive a text message from our courier to confirm the details. Please be sure to enter your contact mobile telephone number carefully.</p><p>In the case of orders going outside of Europe this is usually between 2 & 14 days on top of the 2-3 days it can take to blend up. If you are REALLY concerned about the delay send us an email (info@whiskyblender.com) and we will get a trace put on your parcel.</p>",
             "page": ""
           }
         },
