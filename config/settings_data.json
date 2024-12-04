@@ -406,7 +406,8 @@
     "custom_css": [
       "input {text-transform: none !important;}",
       ".header-wrapper--border-bottom {border: 0;}",
-      "ul.trustpilot {padding: 20px 0 !important;}"
+      "ul.trustpilot {padding: 20px 0 !important;}",
+      "ul.socials {display: none;}"
     ]
   }
 }
