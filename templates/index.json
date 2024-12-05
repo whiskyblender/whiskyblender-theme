@@ -16,7 +16,7 @@
         "help_text": "* today... that's about Scotch whisky — says us!",
         "signature_image": "shopify://shop_images/signed.svg",
         "show_snow": true,
-        "show_banner": false,
+        "show_banner": true,
         "banner_text": "🎄 We'll be closing for Christmas on December 20. ☃️ All orders placed         after December 19 will be posted out in the New Year 🥃",
         "title": "Your own whisky",
         "hero_video": "https://cdn.shopify.com/videos/c/o/v/52dedaab3e1348939a50021f6ebf171d.webm",
