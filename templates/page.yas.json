@@ -20,8 +20,6 @@
     "yas_hero_banner_qJy4Nm": {
       "type": "yas-hero-banner",
       "settings": {
-        "title": "Twa",
-        "subtitle": "Andras",
         "poster": "shopify://shop_images/cask-heids.jpg",
         "video_url": "https://cdn.shopify.com/videos/c/o/v/1dca107e2b1d467885d075f46354f9a6.mp4",
         "video_webm_url": "https://cdn.shopify.com/videos/c/o/v/a453c2363b2648318604ff3f077e2029.webm"
@@ -30,8 +28,7 @@
     "yas_about_arUXWV": {
       "type": "yas-about",
       "settings": {
-        "text": "Scotch whisky is a tremendous spirit made in Scotland. Andy and Drew—that's us two cask-heided fannies above—are also made in Scotland. Two pals with a fondness for drams and a whisky-inspired idea:",
-        "text_bold": "anyone can have a bottle of Scotch they can truly call their own.",
+        "text": "<p>Scotch whisky is a tremendous spirit made in Scotland. Andy and Drew—that's us two cask-heided fannies above—are also made in Scotland. Two pals with a fondness for drams and a whisky-inspired idea: <strong>anyone can have a bottle of Scotch they can truly call their own.</strong><br/>                </p>",
         "text_help": "\"Twa Andras\" is just Scots for \"two Andrews\" by the way (because we're both called Andrew). As for why we're levitating with whisky casks for heads... well, your guess is as good as ours.",
         "image_url": "shopify://shop_images/bothwell-castle.png"
       }
