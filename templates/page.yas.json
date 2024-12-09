@@ -60,57 +60,50 @@
         "image_FBwCE8": {
           "type": "image",
           "settings": {
-            "image_url": "shopify://shop_images/foodbeast.png",
-            "url": "",
-            "name": ""
+            "logo_name": "",
+            "logo_url": ""
           }
         },
         "image_LJ4pwf": {
           "type": "image",
           "settings": {
-            "image_url": "shopify://shop_images/urbandaddy.png",
-            "url": "",
-            "name": ""
+            "logo_name": "",
+            "logo_url": ""
           }
         },
         "image_ed8hAq": {
           "type": "image",
           "settings": {
-            "image_url": "shopify://shop_images/uncrate.png",
-            "url": "",
-            "name": ""
+            "logo_name": "",
+            "logo_url": ""
           }
         },
         "image_tDh8ET": {
           "type": "image",
           "settings": {
-            "image_url": "shopify://shop_images/thescotsman.png",
-            "url": "",
-            "name": ""
+            "logo_name": "",
+            "logo_url": ""
           }
         },
         "image_QK4qTF": {
           "type": "image",
           "settings": {
-            "image_url": "shopify://shop_images/alisterpaine.png",
-            "url": "",
-            "name": ""
+            "logo_name": "",
+            "logo_url": ""
           }
         },
         "image_mGczeM": {
           "type": "image",
           "settings": {
-            "image_url": "shopify://shop_images/ralfy.png",
-            "url": "",
-            "name": ""
+            "logo_name": "",
+            "logo_url": ""
           }
         },
         "image_wFrKKW": {
           "type": "image",
           "settings": {
-            "image_url": "shopify://shop_images/springwise.png",
-            "url": "",
-            "name": ""
+            "logo_name": "",
+            "logo_url": ""
           }
         }
       },
@@ -124,8 +117,7 @@
         "image_wFrKKW"
       ],
       "settings": {
-        "title": "Look, maw!",
-        "subtitle": "We're famous!",
+        "title": "<p>Look, maw! We're famous!</p>",
         "intro_text": "Some of the places we've been featured over the years."
       }
     }
