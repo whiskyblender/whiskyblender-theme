@@ -224,9 +224,7 @@ nav ul li a.active {
 }
 
 
-section:last-of-type {
-    padding-bottom: 80px;
-}
+
 
 .basket {
   position: -webkit-sticky;
