@@ -24,7 +24,7 @@
           "type": "link",
           "settings": {
             "text": "Gift credit",
-            "url": "#shop-gift"
+            "url": "shopify://collections/gift-credit"
           }
         },
         "link_KBLU4U": {
