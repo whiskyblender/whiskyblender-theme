@@ -105,6 +105,8 @@
         color: rgba(var(--color-foreground), 0.75);
         background-color: rgb(var(--color-background));
       }
+              {{ 'fonts-wb.css' | asset_url | stylesheet_tag }}
+
 
       :root {
         --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
@@ -249,7 +251,7 @@
         margin: 0;
         font-size: 1.8rem;
         line-height: calc(1 + 0.8 / var(--font-body-scale));
-        font-family: "TrimPosterWebCompressed";
+        font-family: var(--font-body-family);
         font-style: var(--font-body-style);
         font-weight: var(--font-body-weight);
       }
@@ -258,7 +260,6 @@
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
-        {{ 'fonts-wb.css' | asset_url | stylesheet_tag }}
 
 
     {%- unless settings.type_body_font.system? -%}
