@@ -61,6 +61,13 @@
             "text": "Quality patter",
             "url": "shopify://collections/patter"
           }
+        },
+        "link_EUiBJn": {
+          "type": "link",
+          "settings": {
+            "text": "Custom blends",
+            "url": "shopify://pages/blend"
+          }
         }
       },
       "block_order": [
@@ -69,7 +76,8 @@
         "link_nKG6TP",
         "link_dkVW7p",
         "link_tcbkFH",
-        "link_pUMDGH"
+        "link_pUMDGH",
+        "link_EUiBJn"
       ],
       "custom_css": [
         "section:last-of-type {padding-bottom: 0px;}"
