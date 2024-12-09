@@ -1,4 +1,4 @@
-<section class="banding">
+<section class="{% if section.settings.grey_background %} banding {% else %} standard{% endif %}">
   <article class="max">
     <h3 class="section-title-wb">{{ section.settings.collection.title }}</h3>
     <p>
@@ -22,6 +22,11 @@
         "type": "collection",
         "id": "collection",
         "label": "collection"
+      },
+          {
+        "type": "checkbox",
+        "id": "grey_background",
+        "label": "grey_background"
       }
   ],
 }
