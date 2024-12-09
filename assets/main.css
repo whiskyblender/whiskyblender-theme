@@ -1569,7 +1569,7 @@ ul.gallery li:nth-of-type(2) img {
     font-size: 0;
     width: 100px;
     height: 34px;
-    background: url(../images/trustpilot.png) no-repeat;
+    background: url("https://cdn.shopify.com/s/files/1/0846/1136/7177/files/trustpilot.png?v=1733755332") no-repeat;
     background-size: contain;
     vertical-align: middle;
 }
