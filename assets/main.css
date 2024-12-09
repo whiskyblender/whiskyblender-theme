@@ -1591,13 +1591,13 @@ ul.gallery li:nth-of-type(2) img {
 }
 
 @media only screen and (min-width: 600px) {
-  .video-embed.desktop {
-    display: block;
-  }
+    .video-embed.tablet {
+        display: block;
+    }
 
-  .video-embed.mobile {
-    display: none;
-  }
+    .video-embed.mobile {
+        display: none;
+    }
 
   ul.gallery li {
     width: 21%;
@@ -1830,6 +1830,16 @@ ul.gallery li:nth-of-type(2) img {
 }
 
 @media only screen and (min-width: 768px) {
+
+      .video-embed.desktop {
+        display: block;
+    }
+
+    .video-embed.tablet {
+        display: none;
+    }
+
+  
   .summary {
     font-size: 32px;
   }
