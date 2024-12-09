@@ -84,13 +84,15 @@
     "shop_collection_g3pMrn": {
       "type": "shop-collection",
       "settings": {
-        "collection": "gift-credit"
+        "collection": "gift-credit",
+        "grey_background": true
       }
     },
     "shop_collection_cK3cDC": {
       "type": "shop-collection",
       "settings": {
-        "collection": "oor-bottlings"
+        "collection": "oor-bottlings",
+        "grey_background": false
       }
     }
   },
