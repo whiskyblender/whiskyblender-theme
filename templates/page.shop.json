@@ -81,27 +81,6 @@
         "webp_url": "https://cdn.shopify.com/videos/c/o/v/494725c9715446c7ae8cee10fed104a6.webm"
       }
     },
-    "shop_bottles_ePwbQ6": {
-      "type": "shop-bottles",
-      "settings": {
-        "title": "Oor Bottlings",
-        "description": "As well as letting people have their own whisky, we also enjoy bottling some ourselves from time to time."
-      }
-    },
-    "shop_gift_cfyqwg": {
-      "type": "shop-gift",
-      "settings": {
-        "title": "Gift Credit",
-        "description": "We'll email you a voucher code for gift credit that can forward to that special whisky person in your life. They visit the site, blend their bottle and enter the code to deduct your gift credit from their total."
-      }
-    },
-    "shop_clothes_r6WC8R": {
-      "type": "shop-clothes",
-      "settings": {
-        "title": "Claes an' hings",
-        "description": ""
-      }
-    },
     "shop_collection_g3pMrn": {
       "type": "shop-collection",
       "settings": {
@@ -118,9 +97,6 @@
   "order": [
     "main",
     "shop_hero_banner_HBdAAm",
-    "shop_bottles_ePwbQ6",
-    "shop_gift_cfyqwg",
-    "shop_clothes_r6WC8R",
     "shop_collection_g3pMrn",
     "shop_collection_cK3cDC"
   ]
