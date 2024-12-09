@@ -60,61 +60,101 @@
         "image_FBwCE8": {
           "type": "image",
           "settings": {
-            "logo_name": "wired",
+            "logo_name": "Wired",
             "logo_url": "https://www.wired.com/2012/03/whisky-blender/"
           }
         },
         "image_LJ4pwf": {
           "type": "image",
           "settings": {
-            "logo_name": "playboy",
+            "logo_name": "Playboy",
             "logo_url": ""
+          }
+        },
+        "image_pnUqmE": {
+          "type": "image",
+          "settings": {
+            "logo_name": "Urban Daddy",
+            "logo_url": "https://www.urbandaddy.com/articles/15907/dram-come-true-your-own-blend-of-whisky"
           }
         },
         "image_ed8hAq": {
           "type": "image",
           "settings": {
-            "logo_name": "",
-            "logo_url": ""
+            "logo_name": "The Scotsman",
+            "logo_url": "https://www.scotsman.com/business/scots-entrepreneurs-launch-online-rum-blending-service-1489705"
           }
         },
         "image_tDh8ET": {
           "type": "image",
           "settings": {
-            "logo_name": "",
+            "logo_name": "Uncrate",
             "logo_url": ""
           }
         },
         "image_QK4qTF": {
           "type": "image",
           "settings": {
-            "logo_name": "",
-            "logo_url": ""
+            "logo_name": "Springwise",
+            "logo_url": "https://springwise.com/design-whisky-blend/"
           }
         },
         "image_mGczeM": {
           "type": "image",
           "settings": {
-            "logo_name": "",
-            "logo_url": ""
+            "logo_name": "Great Drams",
+            "logo_url": "https://greatdrams.com/interview-andy-davidson/"
           }
         },
         "image_wFrKKW": {
           "type": "image",
           "settings": {
-            "logo_name": "",
-            "logo_url": ""
+            "logo_name": "Ralfy",
+            "logo_url": "https://www.youtube.com/watch?v=FabGicBG3OE"
+          }
+        },
+        "image_EBPmk9": {
+          "type": "image",
+          "settings": {
+            "logo_name": "LS:N Global",
+            "logo_url": "https://www.lsnglobal.com/article/view/5138"
+          }
+        },
+        "image_kAwk7x": {
+          "type": "image",
+          "settings": {
+            "logo_name": "Foodbeast",
+            "logo_url": "https://www.foodbeast.com/news/whiskey-blender-blend-your-own-whiskey-like-a-boss/"
+          }
+        },
+        "image_LUPVEp": {
+          "type": "image",
+          "settings": {
+            "logo_name": "Alister &amp; Paine",
+            "logo_url": "https://alisterpaine.com/2012/12/12/make-your-own-whisky-blend/"
+          }
+        },
+        "image_JTtX97": {
+          "type": "image",
+          "settings": {
+            "logo_name": "Lagom",
+            "logo_url": "https://readlagom.com/stories/whisky-talk-6-phrases-you-should-never-say.html"
           }
         }
       },
       "block_order": [
         "image_FBwCE8",
         "image_LJ4pwf",
+        "image_pnUqmE",
         "image_ed8hAq",
         "image_tDh8ET",
         "image_QK4qTF",
         "image_mGczeM",
-        "image_wFrKKW"
+        "image_wFrKKW",
+        "image_EBPmk9",
+        "image_kAwk7x",
+        "image_LUPVEp",
+        "image_JTtX97"
       ],
       "settings": {
         "title": "Look, maw!",
