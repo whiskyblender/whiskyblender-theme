@@ -1,8 +1,6 @@
 <section class="standard">
   <article class="hang-right">
-    <h3 class="section-title-wb">
-      {{ section.settings.title }}
-    </h3>
+    <h3>{{ section.settings.title }}</h3>
     <p>
       {{ section.settings.text }}
     </p>
@@ -22,17 +20,27 @@
     </p>
   </article>
   <article>
-    <div class="video-embed">
+    <div class="video-embed desktop">
       <iframe
-        src="{{ section.settings.video_url }}"
-        style="position:absolute;top:0;left:0;width:100%;height:100%;"
+        src="{{ section.settings.video_url_desktop }}"
         frameborder="0"
-        allow="fullscreen; picture-in-picture"
         allowfullscreen=""
-        data-ready="true"
       ></iframe>
     </div>
-    <script async src="https://player.vimeo.com/api/player.js"></script>
+    <div class="video-embed tablet">
+      <iframe
+        src="{{ section.settings.video_url_tablet }}"
+        frameborder="0"
+        allowfullscreen=""
+      ></iframe>
+    </div>
+    <div class="video-embed mobile">
+      <iframe
+        src="{{ section.settings.video_url_mobile }}"
+        frameborder="0"
+        allowfullscreen=""
+      ></iframe>
+    </div>
   </article>
 </section>
 {% schema %}
@@ -70,8 +78,18 @@
     },
     {
       "type": "url",
-      "id": "video_url",
-      "label": "Video URL"
+      "id": "video_url_mobile",
+      "label": "Video URL Mobile"
+    },
+        {
+      "type": "url",
+      "id": "video_url_desktop",
+      "label": "Video URL Desktop"
+    },
+        {
+      "type": "url",
+      "id": "video_url_tablet",
+      "label": "Video URL Tablet"
     },
     {
       "type": "image_picker",
