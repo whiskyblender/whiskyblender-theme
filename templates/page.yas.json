@@ -60,14 +60,14 @@
         "image_FBwCE8": {
           "type": "image",
           "settings": {
-            "logo_name": "",
-            "logo_url": ""
+            "logo_name": "wired",
+            "logo_url": "https://www.wired.com/2012/03/whisky-blender/"
           }
         },
         "image_LJ4pwf": {
           "type": "image",
           "settings": {
-            "logo_name": "",
+            "logo_name": "playboy",
             "logo_url": ""
           }
         },
@@ -117,7 +117,8 @@
         "image_wFrKKW"
       ],
       "settings": {
-        "title": "<p>Look, maw! We're famous!</p>",
+        "title": "Look, maw!",
+        "subtitle": "We're famous!",
         "intro_text": "Some of the places we've been featured over the years."
       }
     }
