@@ -3,6 +3,11 @@
     href="{{ product.url }}"
     style="background-image: url({{ product.featured_image | image_url: width:1500, height:900 }})"
   >
+    {% if display_stock %}
+      <div class="counter sold-out">
+        <span class="no-bottles">0</span><span class="out-of">/200</span> <span class="bottles-left">bottles left</span>
+      </div>
+    {% endif %}
     <img
       alt=" Product image of whisky bottle"
       src="{{ product.featured_image | image_url: width:1500, height:900 }}"
