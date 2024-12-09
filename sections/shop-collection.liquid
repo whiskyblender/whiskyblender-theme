@@ -9,7 +9,7 @@
         {% render 'product-display', product: product %}
       {% endfor %}
     </ul>
-    <button onclick="{{ section.settings.collection.url }}" class="secondary-button">View all</button>
+    <button onclick="location.href='{{ section.settings.collection.url }}'" class="secondary-button">View all</button>
   </article>
 </section>
 
