@@ -20,9 +20,16 @@
     "shop_hero_banner_HBdAAm": {
       "type": "shop-hero-banner",
       "blocks": {
-        "link_n9wHfH": {
+        "link_jnt6jQ": {
           "type": "link",
           "disabled": true,
+          "settings": {
+            "text": "",
+            "url": ""
+          }
+        },
+        "link_n9wHfH": {
+          "type": "link",
           "settings": {
             "text": "Single Casks",
             "url": "#single-cask"
@@ -51,7 +58,6 @@
         },
         "link_JLJCQ4": {
           "type": "link",
-          "disabled": true,
           "settings": {
             "text": "Other stuff",
             "url": "#shop-clothes"
@@ -59,6 +65,7 @@
         }
       },
       "block_order": [
+        "link_jnt6jQ",
         "link_n9wHfH",
         "link_KBLU4U",
         "link_n9p8Mt",
@@ -71,8 +78,7 @@
       "settings": {
         "title": "The big shop",
         "video_url": "https://cdn.shopify.com/videos/c/o/v/494fe2585a47457bb4ebfe8b01fc0c13.mp4",
-        "webp_url": "https://cdn.shopify.com/videos/c/o/v/494725c9715446c7ae8cee10fed104a6.webm",
-        "poster_url": "shopify://shop_images/pour-bg.jpg"
+        "webp_url": "https://cdn.shopify.com/videos/c/o/v/494725c9715446c7ae8cee10fed104a6.webm"
       }
     },
     "shop_bottles_ePwbQ6": {
