@@ -107,6 +107,12 @@
       "settings": {
         "collection": "gift-credit"
       }
+    },
+    "shop_collection_cK3cDC": {
+      "type": "shop-collection",
+      "settings": {
+        "collection": "oor-bottlings"
+      }
     }
   },
   "order": [
@@ -115,6 +121,7 @@
     "shop_bottles_ePwbQ6",
     "shop_gift_cfyqwg",
     "shop_clothes_r6WC8R",
-    "shop_collection_g3pMrn"
+    "shop_collection_g3pMrn",
+    "shop_collection_cK3cDC"
   ]
 }
