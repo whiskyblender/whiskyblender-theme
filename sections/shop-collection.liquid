@@ -6,7 +6,7 @@
     </p>
     <ul class="product-list">
       {%- for product in section.settings.collection.products -%}
-        {% render 'product-display', product: product %}
+        {% render 'product-display', product: product, display_stock: {{ section.settings.display_stock }} %}
       {% endfor %}
     </ul>
     <button onclick="location.href='{{ section.settings.collection.url }}'" class="secondary-button">View all</button>
@@ -27,6 +27,12 @@
         "type": "checkbox",
         "id": "grey_background",
         "label": "grey_background"
+      },
+              {
+        "type": "checkbox",
+        "id": "display_stock",
+        "label": "display_stock",
+        "default": true
       }
   ],
 }
