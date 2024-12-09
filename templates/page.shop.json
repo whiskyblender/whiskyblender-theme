@@ -104,18 +104,9 @@
     },
     "shop_collection_g3pMrn": {
       "type": "shop-collection",
-      "blocks": {
-        "sections_adhqQM": {
-          "type": "sections",
-          "settings": {
-            "collection_id": "oor-bottlings"
-          }
-        }
-      },
-      "block_order": [
-        "sections_adhqQM"
-      ],
-      "settings": {}
+      "settings": {
+        "collection": "gift-credit"
+      }
     }
   },
   "order": [
