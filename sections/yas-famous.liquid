@@ -5,7 +5,7 @@
 
 <section class="banding">
   <article class="max">
-    <h3>{{ section.settings.title }}</h3>
+    <h3>{{ section.settings.title }} <br/> {{ section.settings.subtitle }}</h3>
     <p>
       {{ section.settings.intro_text }}
     </p>
@@ -41,9 +41,14 @@
   "class": "yaldy-famous",
   "settings": [
     {
-      "type": "richtext",
+      "type": "text",
       "id": "title",
       "label": "Title",
+    },
+        {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
     },
     {
       "type": "textarea",
