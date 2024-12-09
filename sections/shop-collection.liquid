@@ -1,5 +1,5 @@
 <section class="{% if section.settings.grey_background %} banding {% else %} standard{% endif %}">
-  <article class="max">
+  <article class="{% if section.settings.grey_background %} {% else %} max{% endif %}">
     <h3 class="section-title-wb">{{ section.settings.collection.title }}</h3>
     <p>
       {{ section.settings.collection.description }}
