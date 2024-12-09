@@ -17,7 +17,7 @@
         >
           {% for block in section.blocks %}
             <li
-              class="glide__slide {{ block.settings.logo_name | downcase | strip}} glide__slide--clone"
+              class="glide__slide {{ block.settings.logo_name | downcase | strip | remove:" "}} glide__slide--clone"
               style="width: 228px; margin-right: 30px;"
             >
               <a href="{{ block.settings.logo_url }}" target="_blank">Great Drams</a>
