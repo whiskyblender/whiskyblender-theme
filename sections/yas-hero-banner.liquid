@@ -1,16 +1,14 @@
-{{ 'blend-it.css' | asset_url | stylesheet_tag }}
+{{ 'fonts-wb.css' | asset_url | stylesheet_tag }}
+{{ 'main.css' | asset_url | stylesheet_tag }}
+{{ 'yas.css' | asset_url | stylesheet_tag }}
 
 <section class="header-image tight-header">
-  <h2 class="page-title-wb">
-    {{ section.settings.title }}
-    <br>
-    {{ section.settings.subtitle }}
-  </h2>
-  <video autoplay="" muted="" loop="" playsinline="" poster="{{ section.settings.poster }}">
+            <h2>Twa <br>Andras</h2>
+            <video autoplay="" muted="" loop="" playsinline="" poster="{{ section.settings.poster }}">
     <source src="{{ section.settings.video_url }}" type="video/mp4">
     <source src="{{ section.settings.video_webm_url }}" type="video/webm">
-  </video>
-</section>
+            </video>
+        </section>
 {% schema %}
 {
   "name": "Yass! - Hero banner WB",
@@ -22,18 +20,6 @@
   ],
 
   "settings": [
-    {
-      "type": "text",
-      "id": "title",
-      "label": "Title",
-      "default": "Twa"
-    },
-    {
-      "type": "text",
-      "id": "subtitle",
-      "label": "Subtitle",
-      "default": "Andras"
-    },
     {
       "type": "image_picker",
       "id": "poster",
