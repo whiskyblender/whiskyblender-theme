@@ -5,7 +5,7 @@
       {{ section.settings.collection.description }}
     </p>
     <ul class="product-list">
-      {%- for product in collection.products -%}
+      {%- for product in section.settings.collection.products -%}
         {% render 'product-display', product: product %}
       {% endfor %}
     </ul>
