@@ -101,6 +101,21 @@
         "title": "Claes an' hings",
         "description": ""
       }
+    },
+    "shop_collection_g3pMrn": {
+      "type": "shop-collection",
+      "blocks": {
+        "sections_adhqQM": {
+          "type": "sections",
+          "settings": {
+            "collection_id": "oor-bottlings"
+          }
+        }
+      },
+      "block_order": [
+        "sections_adhqQM"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -108,6 +123,7 @@
     "shop_hero_banner_HBdAAm",
     "shop_bottles_ePwbQ6",
     "shop_gift_cfyqwg",
-    "shop_clothes_r6WC8R"
+    "shop_clothes_r6WC8R",
+    "shop_collection_g3pMrn"
   ]
 }
