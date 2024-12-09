@@ -1542,6 +1542,38 @@ ul.gallery li:nth-of-type(2) img {
   transform: rotate(3deg);
 }
 
+.crop {
+    overflow: hidden;
+}
+
+.trustpilot-footer {
+    padding: 16px 22px 12px 22px;
+    display: inline-block;
+    margin: auto;
+    color: white;
+    text-decoration: none;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 12px;
+    font-size: 16px;
+    line-height: 22px;
+    transition: background 0.3s, border 0.3s;
+}
+
+.trustpilot-footer:hover {
+    border: 2px solid rgba(4, 218, 141, 0.4);
+    background: rgba(4, 218, 141, 0.2);
+}
+
+.trustpilot-footer span {
+    display: inline-block;
+    font-size: 0;
+    width: 100px;
+    height: 34px;
+    background: url(../images/trustpilot.png) no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+
 @media only screen and (min-width: 600px) {
   .video-embed.desktop {
     display: block;
