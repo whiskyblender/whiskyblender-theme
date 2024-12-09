@@ -37,7 +37,7 @@
       "type": "yas-how",
       "settings": {
         "title": "How but?",
-        "text_two": "Head to the <a href=\"/pages/blend\" title=\"Blend\">blending lab</a> and fill your bottle with the whiskies that sound good to you. Once your bottle is full you can name it and declare yourself as the blender. Just have fun and trust your instincts!",
+        "text": "<p>We want people to enjoy whisky without fear. To explore Scotch and to have fun doing so. Drink whatever you like and however you like it. But drink responsibly, and with good company.</p><p>Head to the <a href=\"https://www.drewnotweird.com/whiskyblender/v2/blend.html\">blending lab</a> and fill your bottle with the whiskies that sound good to you. Once your bottle is full you can name it and declare yourself as the blender. Just have fun and trust your instincts!</p>",
         "image_url": "shopify://shop_images/saltire-patch.png"
       }
     },
