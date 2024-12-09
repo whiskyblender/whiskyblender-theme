@@ -2,10 +2,10 @@
   <article class="max">
     <h3 class="section-title-wb">{{ section.settings.collection.title }}</h3>
     <p>
-      {{ section.settings.description }}
+      {{ section.settings.collection.description }}
     </p>
     <ul class="product-list">
-      {% for product in section.settings.collection_id %}
+      {% for product in section.settings.collection %}
         {% render 'product-display', product: product %}
       {% endfor %}
     </ul>
