@@ -1,3 +1,8 @@
+{{ 'glide.min.js' | asset_url | script_tag }}
+{{ 'glide.core.css' | asset_url | stylesheet_tag }}
+{{ 'glide.theme.css' | asset_url | stylesheet_tag }}
+{{ 'glide.custom.css' | asset_url | stylesheet_tag }}
+
 <section class="banding">
   <article class="max">
     <h3>{{ section.settings.title }}</h3>
@@ -72,28 +77,24 @@
 {% stylesheet %}
 {% endstylesheet %}
 
-<script
-  src="https://code.jquery.com/jquery-3.7.1.min.js"
-  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-  crossorigin="anonymous"
-></script>
-<script src="{{ 'owl.carousel.min.js' | asset_url }}"></script>
-
-<script>
-  $(document).ready(function () {
-    $('.owl-carousel').owlCarousel({
-      loop: true,
-      margin: 60,
-      nav: false,
-      autoplay: true,
-      mouseDrag: false,
-      autoplayHoverPause: false,
-      autoWidth: true,
-      slideTransition: 'linear',
-      autoplaySpeed: 6000,
-      smartSpeed: 6000,
-      center: true,
-    });
-  });
-  console.log('Yass! - Famous');
-</script>
+{% javascript %}
+    new Glide('.glide', {
+      type: 'carousel',
+      gap: 60,
+      perView: 3,
+      autoplay: 1,
+      animationDuration: 3000,
+      animationTimingFunc: 'linear',
+      hoverpause: true,
+      peek: {
+          before: 50,
+          after: 50
+      },
+      breakpoints: {
+          767: { perView: 2, gap: 10, peek: {
+          before: 5,
+          after: 5
+      } }
+      }
+  }).mount()
+{% endjavascript %}
