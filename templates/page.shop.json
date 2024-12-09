@@ -20,21 +20,6 @@
     "shop_hero_banner_HBdAAm": {
       "type": "shop-hero-banner",
       "blocks": {
-        "link_n9wHfH": {
-          "type": "link",
-          "disabled": true,
-          "settings": {
-            "text": "Single Casks",
-            "url": "#single-cask"
-          }
-        },
-        "link_KBLU4U": {
-          "type": "link",
-          "settings": {
-            "text": "Oor bottlings",
-            "url": "#shop-bottles"
-          }
-        },
         "link_n9p8Mt": {
           "type": "link",
           "settings": {
@@ -42,28 +27,49 @@
             "url": "#shop-gift"
           }
         },
-        "link_pj3H4j": {
+        "link_KBLU4U": {
           "type": "link",
           "settings": {
-            "text": "Blend your own",
-            "url": "shopify://pages/blend"
+            "text": "Andras' bottles",
+            "url": "shopify://collections/oor-bottlings"
           }
         },
-        "link_JLJCQ4": {
+        "link_nKG6TP": {
           "type": "link",
-          "disabled": true,
           "settings": {
-            "text": "Other stuff",
-            "url": "#shop-clothes"
+            "text": "Iconic Scotland",
+            "url": "shopify://collections/iconic-scotland"
+          }
+        },
+        "link_dkVW7p": {
+          "type": "link",
+          "settings": {
+            "text": "Wee bits",
+            "url": "shopify://collections/claes-an-hings"
+          }
+        },
+        "link_tcbkFH": {
+          "type": "link",
+          "settings": {
+            "text": "Famous Scots",
+            "url": "shopify://collections/famous-scots"
+          }
+        },
+        "link_pUMDGH": {
+          "type": "link",
+          "settings": {
+            "text": "Quality patter",
+            "url": "shopify://collections/patter"
           }
         }
       },
       "block_order": [
-        "link_n9wHfH",
-        "link_KBLU4U",
         "link_n9p8Mt",
-        "link_pj3H4j",
-        "link_JLJCQ4"
+        "link_KBLU4U",
+        "link_nKG6TP",
+        "link_dkVW7p",
+        "link_tcbkFH",
+        "link_pUMDGH"
       ],
       "custom_css": [
         "section:last-of-type {padding-bottom: 0px;}"
@@ -75,33 +81,63 @@
         "poster_url": "shopify://shop_images/pour-bg.jpg"
       }
     },
-    "shop_bottles_ePwbQ6": {
-      "type": "shop-bottles",
+    "shop_collection_PdA77W": {
+      "type": "shop-collection",
       "settings": {
-        "title": "Oor Bottlings",
-        "description": "As well as letting people have their own whisky, we also enjoy bottling some ourselves from time to time."
+        "collection": "gift-credit",
+        "grey_background": false,
+        "display_stock": false
       }
     },
-    "shop_gift_cfyqwg": {
-      "type": "shop-gift",
+    "shop_collection_J8rFny": {
+      "type": "shop-collection",
       "settings": {
-        "title": "Gift Credit",
-        "description": "We'll email you a voucher code for gift credit that can forward to that special whisky person in your life. They visit the site, blend their bottle and enter the code to deduct your gift credit from their total."
+        "collection": "oor-bottlings",
+        "grey_background": true,
+        "display_stock": false
       }
     },
-    "shop_clothes_r6WC8R": {
-      "type": "shop-clothes",
+    "shop_collection_aT3qw8": {
+      "type": "shop-collection",
       "settings": {
-        "title": "Claes an' hings",
-        "description": ""
+        "collection": "iconic-scotland",
+        "grey_background": false,
+        "display_stock": false
+      }
+    },
+    "shop_collection_nheyjE": {
+      "type": "shop-collection",
+      "settings": {
+        "collection": "claes-an-hings",
+        "grey_background": true,
+        "display_stock": false
+      }
+    },
+    "shop_collection_rAEy64": {
+      "type": "shop-collection",
+      "settings": {
+        "collection": "famous-scots",
+        "grey_background": false,
+        "display_stock": true
+      }
+    },
+    "shop_collection_naiXX7": {
+      "type": "shop-collection",
+      "settings": {
+        "collection": "patter",
+        "grey_background": true,
+        "display_stock": false
       }
     }
   },
   "order": [
     "main",
     "shop_hero_banner_HBdAAm",
-    "shop_bottles_ePwbQ6",
-    "shop_gift_cfyqwg",
-    "shop_clothes_r6WC8R"
+    "shop_collection_PdA77W",
+    "shop_collection_J8rFny",
+    "shop_collection_aT3qw8",
+    "shop_collection_nheyjE",
+    "shop_collection_rAEy64",
+    "shop_collection_naiXX7"
   ]
 }
