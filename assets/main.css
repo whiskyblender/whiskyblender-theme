@@ -844,6 +844,7 @@ button:hover {
   width: calc(100% - 40px);
   color: #000000;
   border: 1px solid rgba(0, 0, 0, 0.05);
+  min-height: auto;
 }
 
 button.secondary-button {
