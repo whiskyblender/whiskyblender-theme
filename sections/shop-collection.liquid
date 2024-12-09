@@ -1,6 +1,35 @@
+<section class="banding">
+  <article class="max">
+    <h3 class="section-title-wb">{{ section.settings.title }}</h3>
+    <p>
+      {{ section.settings.description }}
+    </p>
+    <ul class="product-list">
+      {% for product in section.settings.collection_id %}
+        {% render 'product-display', product: product %}
+      {% endfor %}
+    </ul>
+  </article>
+</section>
+
 {% schema %}
+{
+  "name": "Shop Collection",
+  "settings": [
+
+  ],
+    "blocks": [
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Shop Options",
+    "type": "sections",
+    "settings": [
+      {
+        "type": "collection",
+        "id": "collection_id",
+        "label": "collection"
+      },
+    ]
   }
+],
+}
 {% endschema %}
