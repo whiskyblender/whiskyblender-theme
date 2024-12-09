@@ -9,6 +9,7 @@
         {% render 'product-display', product: product %}
       {% endfor %}
     </ul>
+    <button onclick="{{ section.settings.button_link }}" class="secondary-button">{{ section.settings.button_text }}</button>
   </article>
 </section>
 
@@ -23,6 +24,16 @@
         "id": "collection",
         "label": "collection"
       },
+        {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text"
+    },
+        {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
   ],
 }
 {% endschema %}
