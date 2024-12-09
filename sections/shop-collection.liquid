@@ -1,6 +1,39 @@
+<section class="{% if section.settings.grey_background %}banding {% else %}standard{% endif %}">
+  <article class="{% if section.settings.grey_background %}max{% endif %}">
+    <h3 class="section-title-wb">{{ section.settings.collection.title }}</h3>
+    <p>
+      {{ section.settings.collection.description }}
+    </p>
+    <ul class="product-list">
+      {%- for product in section.settings.collection.products -%}
+        {% render 'product-display', product: product, display_stock: {{ section.settings.display_stock }} %}
+      {% endfor %}
+    </ul>
+    <button onclick="location.href='{{ section.settings.collection.url }}'" class="secondary-button">View all</button>
+  </article>
+</section>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Shop Collection",
+  "presets": [{ "name": "Shop Collection" }],
+  "settings": [
+      {
+        "type": "collection",
+        "id": "collection",
+        "label": "collection"
+      },
+          {
+        "type": "checkbox",
+        "id": "grey_background",
+        "label": "grey_background"
+      },
+              {
+        "type": "checkbox",
+        "id": "display_stock",
+        "label": "display_stock",
+        "default": true
+      }
+  ],
+}
 {% endschema %}
