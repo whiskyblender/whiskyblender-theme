@@ -1,6 +1,6 @@
 <section class="banding">
   <article class="max">
-    <h3 class="section-title-wb">{{ section.settings.title }}</h3>
+    <h3 class="section-title-wb">{{ section.settings.collection.title }}</h3>
     <p>
       {{ section.settings.description }}
     </p>
@@ -18,20 +18,11 @@
     "presets": [{ "name": "Shop Collection" }],
 
   "settings": [
-
-  ],
-    "blocks": [
-  {
-    "name": "Shop Options",
-    "type": "sections",
-    "settings": [
       {
         "type": "collection",
-        "id": "collection_id",
+        "id": "collection",
         "label": "collection"
       },
-    ]
-  }
-],
+  ],
 }
 {% endschema %}
