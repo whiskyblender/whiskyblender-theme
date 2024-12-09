@@ -3,6 +3,7 @@
     href="{{ product.url }}"
     style="background-image: url({{ product.featured_image | image_url: width:1500, height:900 }})"
   >
+    {{ display_stock }}
     {% if display_stock %}
       <div class="counter sold-out">
         <span class="no-bottles">0</span><span class="out-of">/200</span> <span class="bottles-left">bottles left</span>
