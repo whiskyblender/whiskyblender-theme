@@ -8,6 +8,10 @@ const attachEventListeners = () => {
       let quantity = document
         .querySelector(`.quantity`)
         .querySelector("input").value;
+      var strike_price = document.createElement("span");
+      strike_price.innerHTML = `£${((variant.compare_at_price / 100) * quantity).toFixed(2)}`;
+      strike_price.classList.add('strike-price');
+      subtotal.appendChild(strike_price);
       subtotal.innerHTML = `£${((variant.price / 100) * quantity).toFixed(2)}`;
           
 
