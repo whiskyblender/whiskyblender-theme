@@ -23,6 +23,9 @@ const attachEventListeners = () => {
         if (!atc_button.classList.contains("pulse")) {
           atc_button.classList.add("pulse");
         }
+        if (atc_button.classList.contains("disabled")) {
+          atc_button.classList.remove("disabled");
+        }
         atc_button.disabled = false;
       } else {
         atc_button.innerHTML = "Out of stock";
