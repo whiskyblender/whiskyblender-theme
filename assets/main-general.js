@@ -29,6 +29,9 @@ const attachEventListeners = () => {
         if (atc_button.classList.contains("pulse")) {
           atc_button.classList.remove("pulse");
         }
+        if (!atc_button.classList.contains("disabled")) {
+          atc_button.classList.add("disabled");
+        }
         atc_button.disabled = true;
       }
     });
