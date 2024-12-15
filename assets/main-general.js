@@ -4,10 +4,25 @@ const attachEventListeners = () => {
     radio.addEventListener("change", function () {
       let variant = getVariantFromSelectedOptions();
       let subtotal = document.querySelector(`.subtotal-of-items`);
+      let atc_button = document.querySelector(".atc");
       let quantity = document
         .querySelector(`.quantity`)
         .querySelector("input").value;
       subtotal.innerHTML = `£${((variant.price / 100) * quantity).toFixed(2)}`;
+
+      if (variant.available) {
+        atc_button.innerHTML = "Add to basket";
+        if (!atc_button.classList.contains("pulse")) {
+          atc_button.classList.add("pulse");
+        }
+        atc_button.disabled = false;
+      } else {
+        atc_button.innerHTML = "Out of stock";
+        if (atc_button.classList.contains("pulse")) {
+          atc_button.classList.remove("pulse");
+        }
+        atc_button.disabled = true;
+      }
     });
   });
 };
@@ -39,9 +54,18 @@ const addQuantityListeners = () => {
         variant.compare_at_price !== null &&
         variant.compare_at_price !== undefined
       ) {
-        subtotal.innerHTML = `<span class="strike-price"> £${((variant.compare_at_price / 100) * quantity.value).toFixed(2)}</span> £${((variant.price / 100) * quantity.value).toFixed(2)}`;
+        subtotal.innerHTML = `<span class="strike-price"> £${(
+          (variant.compare_at_price / 100) *
+          quantity.value
+        ).toFixed(2)}</span> £${(
+          (variant.price / 100) *
+          quantity.value
+        ).toFixed(2)}`;
       } else {
-        subtotal.innerHTML = `£${((variant.price / 100) * quantity.value).toFixed(2)}`;
+        subtotal.innerHTML = `£${(
+          (variant.price / 100) *
+          quantity.value
+        ).toFixed(2)}`;
       }
     }
   });
@@ -58,9 +82,16 @@ const addQuantityListeners = () => {
       variant.compare_at_price !== null &&
       variant.compare_at_price !== undefined
     ) {
-      subtotal.innerHTML = `<span class="strike-price up2"> £${((variant.compare_at_price / 100) * quantity.value).toFixed(2)}</span> £${((variant.price / 100) * quantity.value).toFixed(2)}`;
+      subtotal.innerHTML = `<span class="strike-price up2"> £${(
+        (variant.compare_at_price / 100) *
+        quantity.value
+      ).toFixed(2)}</span> £${((variant.price / 100) * quantity.value).toFixed(
+        2
+      )}`;
     } else {
-      subtotal.innerHTML = `£${((variant.price / 100) * quantity.value).toFixed(2)}`;
+      subtotal.innerHTML = `£${((variant.price / 100) * quantity.value).toFixed(
+        2
+      )}`;
     }
   });
 };
