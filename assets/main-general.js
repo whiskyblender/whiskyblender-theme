@@ -8,7 +8,7 @@ const attachEventListeners = () => {
       let quantity = document
         .querySelector(`.quantity`)
         .querySelector("input").value;
-      subtotal.innerHTML = `<span class="strike-price">${ variant.compare_at_price | money }</span> £${((variant.price / 100) * quantity).toFixed(2)}`;
+      subtotal.innerHTML = `£${((variant.price / 100) * quantity).toFixed(2)}`;
           
 
       if (variant.available) {
