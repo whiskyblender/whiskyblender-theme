@@ -11,9 +11,9 @@ const attachEventListeners = () => {
       var strike_price = document.createElement("span");
       strike_price.innerHTML = `£${((variant.compare_at_price / 100) * quantity).toFixed(2)}`;
       strike_price.classList.add('strike-price');
-      subtotal.appendChild(strike_price);
       subtotal.innerHTML = `£${((variant.price / 100) * quantity).toFixed(2)}`;
-          
+      subtotal.insertAdjacentElement("afterbegin", strike_price);
+
 
       if (variant.available) {
         atc_button.innerHTML = "Add to basket";
