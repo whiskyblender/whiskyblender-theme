@@ -20,7 +20,7 @@
               class="glide__slide {{ block.settings.logo_name | downcase | strip | remove:" " | remove: ":" | remove: "&"}}"
               style="width: 228px; margin-right: 30px;"
             >
-              <a href="{{ block.settings.logo_url }}" target="_blank">Great Drams</a>
+              <a href="{{ block.settings.logo_url }}" target="_blank">{{ block.settings.logo_name }}</a>
             </li>
           {% endfor %}
         </ul>
