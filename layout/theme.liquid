@@ -2,6 +2,7 @@
 <html class="js" lang="{{ request.locale.iso_code }}">
   <head>
     {% render 'pandectes-rules' %}
+    console.log({{ collection }});
     {% if collection.handle == 'Custom Blends' %}
       <meta name="robots" content="noindex">
     {% endif %}
