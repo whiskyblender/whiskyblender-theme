@@ -111,15 +111,16 @@
 
           {% for value in values_array %}
             {% assign percentage = value | times: 100 | divided_by: total_possible %}
-
-            <li class="option{{ forloop.index }}" style="display: block;">
-              <span
-                data-name="{{descriptions_array[forloop.index0] | strip_html}}"
-                style="width: {{ percentage }}%;"
-              >
-                {{ descriptions_array[forloop.index0] }}
-              </span>
-            </li>
+            {% if descriptions_array[forloop.index0] != blank and percentage != blank %}
+              <li class="option{{ forloop.index }}" style="display: block;">
+                <span
+                  data-name="{{descriptions_array[forloop.index0] | strip_html}}"
+                  style="width: {{ percentage }}%;"
+                >
+                  {{ descriptions_array[forloop.index0] }}
+                </span>
+              </li>
+            {% endif %}
           {% endfor %}
         </ul>
       </div>
