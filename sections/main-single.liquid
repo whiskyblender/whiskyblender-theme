@@ -82,9 +82,9 @@
           </li>
         </ul>
         <ul class="bottle-recipe">
-          {% assign product_description_array_initial = product.description |  split: '20cl:' %}
-          {% assign product_description_array = product_description_array_initial[0] |  split: '<p>' %}
-          console.log({{ product_description_array }})
+          {% assign product_description_array_initial = product.description | split: '20cl:' %}
+          {% assign product_description_array = product_description_array_initial[0] | split: '<p>' %}
+
           {% assign total_possible = 20 %}
           {% assign descriptions = '' %}
           {% assign values = '' %}
