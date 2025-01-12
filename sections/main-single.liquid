@@ -108,6 +108,7 @@
 
           {% assign descriptions_array = descriptions | split: ',' | slice: 0, descriptions.size | reverse %}
           {% assign values_array = values | split: ',' | slice: 0, values.size | reverse %}
+<script>console.log({{values_array}});</script>
 
           {% for value in values_array %}
             {% assign percentage = value | times: 100 | divided_by: total_possible %}
