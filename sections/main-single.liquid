@@ -96,6 +96,8 @@
           {% assign values = '' %}
 
           {% for description in product_description_array %}
+            <script>console.log({{description}});</script>
+
             {% if description != blank %}
               {% assign description_parts = description | split: ':' %}
               {% assign text = description_parts[0] | strip %}
