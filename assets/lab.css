@@ -623,7 +623,7 @@ span.sample {
         top: calc(50vh - 230px);
     }
 
-    #lab-bottle .mask-layer, #lab-bottle .top-layer, #lab-bottle .base-layer, #lab-bottle .middle-layer, #lab-bottle .cap-layer, #lab-bottle .bag-layer, #lab-bottle .label-layer {
+    #lab-bottle .mask-layer, #lab-bottle .top-layer, #lab-bottle .base-layer, #lab-bottle .middle-layer, #lab-bottle .cap-layer, #lab-bottle .bag-layer, #lab-bottle .label-layer .label-background {
         background-size: contain;
     }
 
