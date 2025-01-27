@@ -234,21 +234,11 @@
         }).mount()
   
         const labelLayer = document.querySelector('.label-layer');
-  const radios = document.querySelectorAll('.max input[type="radio"]');
-
-  radios.forEach(radio => {
-  radio.addEventListener('click', () => {
-    const classes = ['festive', 'party', 'gold', 'heart', 'standard'];
-
-    // Remove all classes first
-    labelLayer.classList.remove(...classes);
-  
-    // Add the class corresponding to the selected radio value, if it exists in the class list
-    if (classes.includes(radio.value.toLowerCase())) {
-      labelLayer.classList.add(radio.value.toLowerCase());
-    }
- });
-});
+  const glide_slide = document.querySelectorAll('.max .glide__slide--active');
+  console.log(glide_slide)
+glide.on('run', () => {
+    console.log('move called')
+})
         // start - confetti
 
         const start = () => {
