@@ -238,7 +238,7 @@
         const labelLayer = document.querySelector('.label-layer');
   const glide_slide = document.querySelectorAll('.max .glide__slide--active');
   console.log(glide_slide)
-glide.on('run', () => {
+glide.on('move.after', () => {
   console.log(glide.index)
       const active = document.querySelector('.glide__slide--active');
     console.log(active)
