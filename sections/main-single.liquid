@@ -235,14 +235,19 @@
 
   glide.mount()
   
-        const labelLayer = document.querySelector('.label-layer');
+  const labelLayer = document.querySelector('.label-layer');
   const glide_slide = document.querySelectorAll('.max .glide__slide--active');
-  console.log(glide_slide)
-glide.on('move.after', () => {
-  console.log(glide.index)
-      const active = document.querySelector('.glide__slide--active').classList;
+  glide.on('move.after', () => {
+      const active = document.querySelector('.glide__slide--active').classList[0];
+      const classes = ['festive', 'party', 'gold', 'heart', 'standard'];
+
+      // Remove all classes first
+      labelLayer.classList.remove(...classes);
+
+      // Add the class corresponding to the selected radio value, if it exists in the class list
+ 
     console.log(active)
-    console.log('move called')
+    
 })
         // start - confetti
 
