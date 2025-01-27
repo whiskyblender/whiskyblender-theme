@@ -69,30 +69,26 @@
             {% endif %}
           </h4>
 
-          <div class="segmented-control">
-            {% for value in option.values %}
-              {% if option.name == 'Label' %}
-                <input
-                  type="radio"
-                  name="{{ option.name }}"
-                  value="{{ value }}"
-                  id="{{ value }}"
-                  {% if forloop.first %}
-                    checked
-                  {% endif %}
-                >
-                <label for="{{ value }}">
-                  {{ value }}
-
-                  <div class="thumbnail">
-                    {% if value == 'Standard' %}
+          {% for value in option.values %}
+            {% if option.name == 'Label' %}
+              <div class="glide variant-options">
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides">
+                    <li class="glide__slide">
                       <img src="https://cdn.shopify.com/s/files/1/0846/1136/7177/files/label-standard.png?v=1731401733">
-                    {% else %}
-                      <img src="https://cdn.shopify.com/s/files/1/0846/1136/7177/files/label-festive.png?v=1731401734">
-                    {% endif %}
-                  </div>
-                </label>
-              {% else %}
+                    </li>
+                    <li class="glide__slide"><img src="images/lab/backgrounds/label-heart.png"></li>
+                    <li class="glide__slide"><img src="images/lab/backgrounds/label-party.png"></li>
+                    <li class="glide__slide"><img src="images/lab/backgrounds/label-gold.png"></li>
+                  </ul>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                  <button class="glide__arrow glide__arrow--left" data-glide-dir="<">Previous</button>
+                  <button class="glide__arrow glide__arrow--right" data-glide-dir=">">Next</button>
+                </div>
+              </div>
+            {% else %}
+              <div class="segmented-control">
                 <input
                   type="radio"
                   name="{{ option.name }}"
@@ -103,9 +99,9 @@
                   {% endif %}
                 >
                 <label for="{{ value }}"> {{ value }} </label>
-              {% endif %}
-            {% endfor %}
-          </div>
+              </div>
+            {% endif %}
+          {% endfor %}
         </div>
       {% endfor %}
     {% endif %}
