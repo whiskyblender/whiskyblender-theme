@@ -69,8 +69,8 @@
             {% endif %}
           </h4>
           {% if option.name != 'Label' %}
-            {% for value in option.values %}
-              <div class="segmented-control">
+            <div class="segmented-control">
+              {% for value in option.values %}
                 <input
                   type="radio"
                   name="{{ option.name }}"
@@ -81,8 +81,8 @@
                   {% endif %}
                 >
                 <label for="{{ value }}"> {{ value }} </label>
-              </div>
-            {% endfor %}
+              {% endfor %}
+            </div>
           {% endif %}
 
           {% if option.name == 'Label' %}
