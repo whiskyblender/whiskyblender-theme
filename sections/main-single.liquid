@@ -223,7 +223,7 @@
 
 {% javascript %}
 
-      new Glide('.glide', {
+      var glide = new Glide('.glide', {
             type: 'carousel',
             focusAt: 'center',
             gap: 40,
@@ -231,7 +231,9 @@
             breakpoints: {
                 767: { perView: 1 }
             }
-        }).mount()
+        })
+
+  glide.mount()
   
         const labelLayer = document.querySelector('.label-layer');
   const glide_slide = document.querySelectorAll('.max .glide__slide--active');
