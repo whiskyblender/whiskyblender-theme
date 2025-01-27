@@ -70,28 +70,7 @@
           </h4>
 
           {% for value in option.values %}
-            {% if option.name == 'Label' %}
-              <div class="glide variant-options">
-                <div class="glide__track" data-glide-el="track">
-                  <ul class="glide__slides">
-                    {% if value == 'Standard' %}
-                      <li class="glide__slide">
-                        <img src="https://cdn.shopify.com/s/files/1/0846/1136/7177/files/label-standard.png?v=1731401733">
-                      </li>
-                    {% elsif value == 'Heart'%}
-                      <li class="glide__slide"><img src="images/lab/backgrounds/label-heart.png"></li>
-
-                    {% elsif value == 'Party'%}
-                    <li class="glide__slide"><img src="images/lab/backgrounds/label-party.png"></li>
-
-                    {% elsif value == 'Gold'%}
-                    <li class="glide__slide"><img src="images/lab/backgrounds/label-gold.png"></li>
-                    {% endif %}
-                  </ul>
-                </div>
-
-              </div>
-            {% else %}
+            {% if option.name != 'Label' %}
               <div class="segmented-control">
                 <input
                   type="radio"
@@ -106,7 +85,31 @@
               </div>
             {% endif %}
           {% endfor %}
-        </div>
+          {% if option.name == 'Label' %}
+                        <div class="glide variant-options">
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides"
+            {% for value in option.values %}
+
+                    {% if value == 'Standard' %}
+                      <li class="glide__slide">
+                        <img src="https://cdn.shopify.com/s/files/1/0846/1136/7177/files/label-standard.png?v=1731401733">
+                      </li>
+                    {% elsif value == 'Heart' %}
+                      <li class="glide__slide"><img src="images/lab/backgrounds/label-heart.png"></li>
+
+                    {% elsif value == 'Party' %}
+                      <li class="glide__slide"><img src="images/lab/backgrounds/label-party.png"></li>
+
+                    {% elsif value == 'Gold' %}
+                      <li class="glide__slide"><img src="images/lab/backgrounds/label-gold.png"></li>
+                    {% endif %}
+                                {% endfor %}
+
+                  </ul>
+                </div>
+              </div>
+          {% endif %}
       {% endfor %}
     {% endif %}
   </article>
