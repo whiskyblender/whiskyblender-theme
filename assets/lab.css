@@ -28,7 +28,7 @@
     margin: 0 auto;
 }
 
-#lab-bottle .mask-layer, #lab-bottle .top-layer, #lab-bottle .base-layer, #lab-bottle .middle-layer, #lab-bottle .cap-layer, #lab-bottle .bag-layer, #lab-bottle .label-layer {
+#lab-bottle .mask-layer, #lab-bottle .top-layer, #lab-bottle .base-layer, #lab-bottle .middle-layer, #lab-bottle .cap-layer, #lab-bottle .bag-layer, #lab-bottle .label-layer .label-background {
     width: 100%;    
     height: 100%;
     display: block;
