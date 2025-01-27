@@ -68,9 +68,8 @@
               {{ option.name }}
             {% endif %}
           </h4>
-
-          {% for value in option.values %}
-            {% if option.name != 'Label' %}
+          {% if option.name != 'Label' %}
+            {% for value in option.values %}
               <div class="segmented-control">
                 <input
                   type="radio"
@@ -83,8 +82,9 @@
                 >
                 <label for="{{ value }}"> {{ value }} </label>
               </div>
-            {% endif %}
-          {% endfor %}
+            {% endfor %}
+          {% endif %}
+
           {% if option.name == 'Label' %}
             <div class="glide variant-options">
               <div class="glide__track" data-glide-el="track">
