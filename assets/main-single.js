@@ -87,7 +87,7 @@ const getVariantFromSelectedOptions = () => {
   if(active){
     selectedOptions.push(active);
   }
-  console.log(Window.product)
+  console.log(window.product)
   let variant = Window.product.variants.find((variant) => {
     console.log(variant)
     return variant.options.every((option, i) => option === selectedOptions[i]);
@@ -167,6 +167,7 @@ function fetchProduct() {
     .then((response) => response.json())
     .then((data) => {
       Window.product = data;
+      console.log(Window.product)
     });
 
   createStylesheet();
