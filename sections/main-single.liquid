@@ -238,11 +238,16 @@
 
   radios.forEach(radio => {
   radio.addEventListener('click', () => {
-    if (radio.value === 'Christmas') { // Replace 'festive' with the actual value of the "festive" radio
-      labelLayer.classList.add('festive');
-    } else {
-      labelLayer.classList.remove('festive');
-    }  });
+    const classes = ['festive', 'party', 'gold', 'heart', 'standard'];
+
+    // Remove all classes first
+    labelLayer.classList.remove(...classes);
+  
+    // Add the class corresponding to the selected radio value, if it exists in the class list
+    if (classes.includes(radio.value.toLowerCase())) {
+      labelLayer.classList.add(radio.value.toLowerCase());
+    }
+ });
 });
         // start - confetti
 
