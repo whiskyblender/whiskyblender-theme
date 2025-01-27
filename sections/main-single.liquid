@@ -218,6 +218,16 @@
 
 {% javascript %}
 
+      new Glide('.glide', {
+            type: 'carousel',
+            focusAt: 'center',
+            gap: 40,
+            perView: 2,
+            breakpoints: {
+                767: { perView: 1 }
+            }
+        }).mount()
+  
         const labelLayer = document.querySelector('.label-layer');
   const radios = document.querySelectorAll('.max input[type="radio"]');
 
