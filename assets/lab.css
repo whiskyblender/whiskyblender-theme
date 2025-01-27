@@ -157,15 +157,15 @@
     z-index: 7;
 }
 
-#lab-bottle .label-background.heart {
+#lab-bottle .label-layer.heart {
     background-image: url("https://cdn.shopify.com/s/files/1/0846/7592/0200/files/label-heart.png?v=1738003983");
 }
 
-#lab-bottle .label-background.gold {
+#lab-bottle .label-layer.gold {
     background-image: url("https://cdn.shopify.com/s/files/1/0846/7592/0200/files/label-gold.png?v=1738003983");
 }
 
-#lab-bottle .label-background.party {
+#lab-bottle .label-layer.party {
     background-image: url("https://cdn.shopify.com/s/files/1/0846/7592/0200/files/label-party.png?v=1738003983");
 }
 
