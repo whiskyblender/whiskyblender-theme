@@ -108,7 +108,7 @@
 }
 
 .glide.lab .glide__arrow.glide__arrow--left {
-    background-image: url(../images/icons/previous.svg);
+    background-image: url("https://cdn.shopify.com/s/files/1/0846/7592/0200/files/previous.svg?v=1738004257");
     background-repeat: no-repeat;
     background-position: center;
     background-position: 75% 50%;
@@ -116,7 +116,7 @@
 }
 
 .glide.lab .glide__arrow.glide__arrow--right{
-    background-image: url(../images/icons/next.svg);
+    background-image: url("https://cdn.shopify.com/s/files/1/0846/7592/0200/files/next.svg?v=1738004256");
     background-repeat: no-repeat;
     background-position: center;
     background-position: 25% 50%;
@@ -124,7 +124,7 @@
 }
 
 .glide.variant-options .glide__arrow.glide__arrow--left {
-    background-image: url(../images/icons/previous.svg);
+    background-image: url("https://cdn.shopify.com/s/files/1/0846/7592/0200/files/previous.svg?v=1738004257");
     background-repeat: no-repeat;
     background-position: center;
     background-position: 45% 50%;
@@ -132,7 +132,7 @@
 }
 
 .glide.variant-options .glide__arrow.glide__arrow--right{
-    background-image: url(../images/icons/next.svg);
+    background-image: url("https://cdn.shopify.com/s/files/1/0846/7592/0200/files/next.svg?v=1738004256");
     background-repeat: no-repeat;
     background-position: center;
     background-position: 55% 50%;
