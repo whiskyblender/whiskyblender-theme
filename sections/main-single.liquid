@@ -245,8 +245,9 @@
       labelLayer.classList.remove(...classes);
 
       // Add the class corresponding to the selected radio value, if it exists in the class list
- 
-    console.log(active)
+      if (classes.includes(active)) {
+        labelLayer.classList.add(active);
+      }
     
 })
         // start - confetti
