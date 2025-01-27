@@ -88,7 +88,7 @@ const getVariantFromSelectedOptions = () => {
     selectedOptions.push(active);
   }
   
-  console.log(selectedOptions);
+  console.log(Window.product.variants);
   let variant = Window.product.variants.find((variant) => {
     return variant.options.every((option, i) => option === selectedOptions[i]);
   });
