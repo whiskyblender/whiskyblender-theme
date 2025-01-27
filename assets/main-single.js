@@ -167,7 +167,6 @@ function fetchProduct() {
     .then((response) => response.json())
     .then((data) => {
       Window.product = data;
-      console.log(Window.product)
     });
 
   createStylesheet();
