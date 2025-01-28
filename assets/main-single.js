@@ -165,7 +165,9 @@ const addProductToCart = async () => {
   });
 };
 
-function findVariant
+function findVariant() {
+  
+}
 
 function fetchProduct() {
   let urlDetails = location.href.split("?")
