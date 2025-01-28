@@ -87,7 +87,17 @@
           </li>
         </ul>
         <ul class="bottle-recipe">
-          {% assign product_description_array = product.description | split: '<p>' %}
+          {% if product.description contains '20cl:' %}
+            {% assign product_description_array_initial = product.description | split: '20cl:' %}
+            {% assign product_description_array_initial_dupe = product_description_array_initial[0] | split: '50cl:' %}
+            {% assign product_description_array = product_description_array_initial_dupe[1] | split: '<p>' %}
+          {% else %}
+            {% assign product_description_array = product.description | split: '<p>' %}
+          {% endif %}
+          <script>
+            console.log({{product_description_array}});
+          </script>
+
           {% assign total_possible = 20 %}
           {% assign descriptions = '' %}
           {% assign values = '' %}
