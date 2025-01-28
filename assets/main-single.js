@@ -124,6 +124,7 @@ const addQuantityListeners = () => {
     let variant = getVariantFromSelectedOptions();
     let subtotal = document.querySelector(`.subtotal-of-items`);
     console.debug(variant);
+    console.log(variant.compare_at_price)
     console.log('hello')
     if (variant.compare_at_price !== "" || variant.compare_at_price !== null || variant.compare_at_price !== undefined) {
       // If strike-price exists, get the next sibling text node
