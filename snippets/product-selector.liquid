@@ -85,11 +85,12 @@
             </div>
           {% endif %}
 
-          {% if option.name == 'Label' %}
+          {% if option.name == 'Label' and option.values.size > 1 %}
             <div class="glide variant-options">
               <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
                   {% for value in option.values %}
+                    
                     {% if value == 'standard' %}
                       <li class="standard glide__slide ">
                         <img src="https://cdn.shopify.com/s/files/1/0846/1136/7177/files/label-standard.png?v=1731401733">
