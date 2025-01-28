@@ -64,7 +64,7 @@
           <h4>
             {% if option.name == 'Size' and product.template_suffix == 'single' %}
               Bottle size   
-            
+            {%  elsif option.name == 'Label' and option.values.size > 2 %}
             {% else %}
               {{ option.name }}
             {% endif %}
