@@ -165,6 +165,8 @@ const addProductToCart = async () => {
   });
 };
 
+function findVariant
+
 function fetchProduct() {
   let urlDetails = location.href.split("?")
   fetch(urlDetails[0] + ".js")
@@ -178,7 +180,6 @@ function fetchProduct() {
       let variantId = variant[1]
       console.log(variantId)
     }
-    console.log(variantId)
   }
 
   createStylesheet();
