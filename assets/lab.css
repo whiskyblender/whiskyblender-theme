@@ -28,7 +28,7 @@
     margin: 0 auto;
 }
 
-#lab-bottle .mask-layer, #lab-bottle .top-layer, #lab-bottle .base-layer, #lab-bottle .middle-layer, #lab-bottle .cap-layer, #lab-bottle .bag-layer, #lab-bottle .label-layer {
+#lab-bottle .mask-layer, #lab-bottle .top-layer, #lab-bottle .base-layer, #lab-bottle .middle-layer, #lab-bottle .cap-layer, #lab-bottle .bag-layer, #lab-bottle .label-layer, #lab-bottle .label-background {
     width: 100%;    
     height: 100%;
     display: block;
@@ -155,6 +155,24 @@
 #lab-bottle .label-layer.cask {
     background-image: url("https://cdn.shopify.com/s/files/1/0846/1136/7177/files/bottle-label-cask.png?v=1732828726");
     z-index: 7;
+}
+
+#lab-bottle .label-background {
+    z-index: 10;
+    mix-blend-mode: multiply;
+}
+
+
+#lab-bottle .label-background.heart {
+    background-image: url("https://cdn.shopify.com/s/files/1/0846/1136/7177/files/label-heart_preview.png?v=1738083206");
+}
+
+#lab-bottle .label-background.gold {
+    background-image: url("https://cdn.shopify.com/s/files/1/0846/1136/7177/files/label-gold_preview.png?v=1738083206");
+}
+
+#lab-bottle .label-background.party {
+    background-image: url("https://cdn.shopify.com/s/files/1/0846/1136/7177/files/label-party_preview.png?v=1738083205");
 }
 
 #lab-bottle .bottom-layer {
@@ -605,7 +623,7 @@ span.sample {
         top: calc(50vh - 230px);
     }
 
-    #lab-bottle .mask-layer, #lab-bottle .top-layer, #lab-bottle .base-layer, #lab-bottle .middle-layer, #lab-bottle .cap-layer, #lab-bottle .bag-layer, #lab-bottle .label-layer {
+    #lab-bottle .mask-layer, #lab-bottle .top-layer, #lab-bottle .base-layer, #lab-bottle .middle-layer, #lab-bottle .cap-layer, #lab-bottle .bag-layer, #lab-bottle .label-layer, #lab-bottle .label-background {
         background-size: contain;
     }
 
