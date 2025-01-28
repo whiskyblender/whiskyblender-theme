@@ -173,7 +173,7 @@ function fetchProduct() {
       Window.product = data;
     });
   if(urlDetails.length > 0){
-    let variant = urlDetails[1].split("=")[1];
+    let variant = urlDetails[1].split("=");
     if(variant.length > 0 ){
       let variantId = variant[1]
       console.log(variantId)
