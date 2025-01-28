@@ -4,6 +4,11 @@
 {{ 'shop.css' | asset_url | stylesheet_tag }}
 {{ 'basket.css' | asset_url | stylesheet_tag }}
 
+{{ 'glide.min.js' | asset_url | script_tag }}
+{{ 'glide.core.css' | asset_url | stylesheet_tag }}
+{{ 'glide.theme.css' | asset_url | stylesheet_tag }}
+{{ 'glide.custom.css' | asset_url | stylesheet_tag }}
+
 <script src="{{ 'main-single.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'confetti.min.js' | asset_url }}" defer="defer"></script>
 
@@ -82,22 +87,12 @@
           </li>
         </ul>
         <ul class="bottle-recipe">
-          {% if product.description contains '20cl:' %}
-            {% assign product_description_array_initial = product.description | split: '20cl:' %}
-            {% assign product_description_array_initial_dupe = product_description_array_initial[0] | split: '50cl:' %}
-
-            {% assign product_description_array = product_description_array_initial_dupe[1] | split: '<p>' %}
-          {% else %}
-            {% assign product_description_array = product.description | split: '<p>' %}
-          {% endif %}
-            <script>console.log({{product_description_array}});</script>
-
+          {% assign product_description_array = product.description | split: '<p>' %}
           {% assign total_possible = 20 %}
           {% assign descriptions = '' %}
           {% assign values = '' %}
 
           {% for description in product_description_array %}
-
             {% if description != blank %}
               {% assign description_parts = description | split: ':' %}
               {% assign text = description_parts[0] | strip %}
@@ -110,21 +105,18 @@
 
           {% assign descriptions_array = descriptions | split: ',' | slice: 0, descriptions.size | reverse %}
           {% assign values_array = values | split: ',' | slice: 0, values.size | reverse %}
-<script>console.log({{values_array}});</script>
 
           {% for value in values_array %}
             {% assign percentage = value | times: 100 | divided_by: total_possible %}
 
-            {% if percentage != 0 %}
-              <li class="option{{ forloop.index }}" style="display: block;">
-                <span
-                  data-name="{{descriptions_array[forloop.index0] | strip_html}}"
-                  style="width: {{ percentage }}%;"
-                >
-                  {{ descriptions_array[forloop.index0] }}
-                </span>
-              </li>
-            {% endif %}
+            <li class="option{{ forloop.index }}" style="display: block;">
+              <span
+                data-name="{{descriptions_array[forloop.index0] | strip_html}}"
+                style="width: {{ percentage }}%;"
+              >
+                {{ descriptions_array[forloop.index0] }}
+              </span>
+            </li>
           {% endfor %}
         </ul>
       </div>
@@ -138,7 +130,7 @@
           <!-- opacity = show on completion -->
           <div class="cap-layer" style="opacity: 1;"></div>
           <!-- opacity = show on completion -->
-
+          <div class="label-background"></div>
           <div
             class="
                 label-layer
@@ -231,17 +223,33 @@
 
 {% javascript %}
 
-        const labelLayer = document.querySelector('.label-layer');
-  const radios = document.querySelectorAll('.max input[type="radio"]');
+      var glide = new Glide('.glide', {
+            type: 'carousel',
+            focusAt: 'center',
+            gap: 40,
+            perView: 2,
+            breakpoints: {
+                767: { perView: 1 }
+            }
+        })
 
-  radios.forEach(radio => {
-  radio.addEventListener('click', () => {
-    if (radio.value === 'Christmas') { // Replace 'festive' with the actual value of the "festive" radio
-      labelLayer.classList.add('festive');
-    } else {
-      labelLayer.classList.remove('festive');
-    }  });
-});
+  glide.mount()
+  
+  const labelLayer = document.querySelector('.label-background');
+  const glide_slide = document.querySelectorAll('.max .glide__slide--active');
+  glide.on('move.after', () => {
+      const active = document.querySelector('.glide__slide--active').classList[0];
+      const classes = ['festive', 'party', 'gold', 'heart', 'standard'];
+
+      // Remove all classes first
+      labelLayer.classList.remove(...classes);
+
+      // Add the class corresponding to the selected radio value, if it exists in the class list
+      if (classes.includes(active)) {
+        labelLayer.classList.add(active);
+      }
+    
+})
         // start - confetti
 
         const start = () => {
