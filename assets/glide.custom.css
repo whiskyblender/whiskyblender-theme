@@ -115,7 +115,7 @@
 }
 
 .glide.lab .glide__arrow.glide__arrow--right{
-    background-image: url(../images/icons/next.svg);
+    background-image: url("https://cdn.shopify.com/s/files/1/0846/1136/7177/files/next_730a0142-e63c-4485-9d67-3eaa99734f3b.svg?v=1738083204");
     background-repeat: no-repeat;
     background-position: center;
     background-position: 25% 50%;
@@ -131,7 +131,7 @@
 }
 
 .glide.variant-options .glide__arrow.glide__arrow--right{
-    background-image: url(../images/icons/next.svg);
+    background-image: url("https://cdn.shopify.com/s/files/1/0846/1136/7177/files/next_730a0142-e63c-4485-9d67-3eaa99734f3b.svg?v=1738083204");
     background-repeat: no-repeat;
     background-position: center;
     background-position: 55% 50%;
