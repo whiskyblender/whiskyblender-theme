@@ -166,11 +166,16 @@ const addProductToCart = async () => {
 };
 
 function fetchProduct() {
-  fetch(location.href.split("?")[0] + ".js")
+  let urlDetails = location.href.split("?")
+  fetch(urlDetails[0] + ".js")
     .then((response) => response.json())
     .then((data) => {
       Window.product = data;
     });
+  if(urlDetails.length > 0){
+    let variantId = urlDetails[1];
+    console.log(variantId)
+  }
 
   createStylesheet();
   attachEventListeners();
