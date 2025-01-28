@@ -11,9 +11,7 @@
   "sections": {
     "main": {
       "type": "main-single",
-      "custom_css": [
-        ".buying-option + .buying-option {display: none;}"
-      ],
+      "custom_css": [],
       "settings": {
         "whats_include_1_image": "shopify://shop_images/gallery24.jpg",
         "whats_include_1_title": "Custom blended whisky",
