@@ -97,7 +97,7 @@ const addQuantityListeners = () => {
       variant.compare_at_price !== null &&
       variant.compare_at_price !== undefined
     ) {
-      subtotal.innerHTML = `<span class="strike-price up2"> £${(
+      subtotal.innerHTML = `<span class="strike-price up3"> £${(
         (variant.compare_at_price / 100) *
         quantity.value
       ).toFixed(2)}</span> £${((variant.price / 100) * quantity.value).toFixed(
