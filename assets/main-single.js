@@ -86,6 +86,9 @@ const getVariantFromSelectedOptions = () => {
   const active = document.querySelector('.glide__slide--active');
   if(active){
     selectedOptions.push(active.classList[0]);
+  } else{
+        selectedOptions.push('Standard');
+
   }
   let variant = Window.product.variants.find((variant) => {
     return variant.options.every((option, i) => option === selectedOptions[i]);
