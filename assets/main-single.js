@@ -83,9 +83,9 @@ const getVariantFromSelectedOptions = () => {
   let checked = Array.from(radios).filter((radio) => radio.checked);
   let selectedOptions = checked.map((radio) => radio.value);
 
-  const active = document.querySelector('.glide__slide--active').classList[0];
+  const active = document.querySelector('.glide__slide--active');
   if(active){
-    selectedOptions.push(active);
+    selectedOptions.push(active.classList[0]);
   }
   let variant = Window.product.variants.find((variant) => {
     return variant.options.every((option, i) => option === selectedOptions[i]);
