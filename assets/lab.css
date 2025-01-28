@@ -1,4 +1,3 @@
-79% of storage used … If you run out, you can't create, edit, and upload files. Get 100 GB of storage for £1.59 £0.39/month for 3 months.
 #sticky-frame {
     position: relative;
     display: block;
@@ -60,7 +59,6 @@
     display: grid;
     justify-content: start;
     text-shadow: 1px 1px 0 white;
-    z-index: 2;
 }
 
 .label-layer .side {
@@ -75,7 +73,6 @@
         rotateY(23deg)
         rotateZ(0.5deg);
     text-shadow: 1px 1px 0 white;
-    z-index: 2;
 }
 
 .side .blender-name, .side .blend-date, .side .blend-code {
@@ -87,12 +84,12 @@
 }
 
 #lab-bottle .mask-layer {
-    background-image: url(../images/lab/bottle-mask.png);
+    background-image: url("https://cdn.shopify.com/s/files/1/0846/1136/7177/files/bottle-mask.png?v=1732828623");
     z-index: 5;
 }
 
 #lab-bottle .top-layer {
-    background-image: url(../images/lab/bottle-empty.png);
+    background-image: url("https://cdn.shopify.com/s/files/1/0846/1136/7177/files/bottle-empty.png?v=1732828541");
     z-index: 3;
     mix-blend-mode: color-burn;
 }
@@ -101,8 +98,6 @@
     position: absolute;
     background: rgba(240, 240, 240, 0.6);
     color:  rgba(0, 0, 0, 0.6);
-    -moz-border-radius: 200px;
-    -webkit-border-radius: 200px;
     border-radius: 200px;
     overflow: hidden;
     width: 60px;
@@ -116,67 +111,68 @@
 }
 
 #lab-bottle .base-layer {
-    background-image: url(../images/lab/bottle-empty.png);
+    background-image: url("https://cdn.shopify.com/s/files/1/0846/1136/7177/files/bottle-empty.png?v=1732828541");
     z-index: 4;
     mix-blend-mode: darken;
 }
 
 #lab-bottle .middle-layer {
-    background-image: url(../images/lab/bottle-full.png);
+    background-image: url("https://cdn.shopify.com/s/files/1/0846/1136/7177/files/bottle-full.png?v=1732828542");
     z-index: 2;
     mix-blend-mode: overlay;
 }
 
 #lab-bottle .cap-layer {
-    background-image: url(../images/lab/bottle-cap.png);
+    background-image: url("https://cdn.shopify.com/s/files/1/0846/1136/7177/files/bottle-cap.png?v=1732828476");
     z-index: 6;
 }
 
 #lab-bottle .bag-layer {
-    background-image: url(../images/lab/bottle-bag.png);
+    background-image: url("https://cdn.shopify.com/s/files/1/0846/1136/7177/files/bottle-bag.png?v=1732828401");
     z-index: 8;
 }
 
 #lab-bottle .label-layer {
-    background-image: url(../images/lab/bottle-label-malt.png);
+    background-image: url("https://cdn.shopify.com/s/files/1/0846/1136/7177/files/bottle-label-malt.png?v=1732828476");
     z-index: 7;
 }
 
 #lab-bottle .label-layer.festive {
-    background-image: url(../images/lab/festive-label-malt.png);
+    background-image: url("https://cdn.shopify.com/s/files/1/0846/1136/7177/files/festive-label-malt.png?v=1732828726");
     z-index: 7;
 }
 
 #lab-bottle .label-layer.scotch {
-    background-image: url(../images/lab/bottle-label-scotch.png);
+    background-image: url("https://cdn.shopify.com/s/files/1/0846/1136/7177/files/bottle-label-scotch.png?v=1732828623");
     z-index: 7;
 }
 
 #lab-bottle .label-layer.scotch.festive {
-    background-image: url(../images/lab/festive-label-scotch.png);
+    background-image: url("https://cdn.shopify.com/s/files/1/0846/1136/7177/files/festive-label-scotch.png?v=1732828725");
     z-index: 7;
 }
 
 #lab-bottle .label-layer.cask {
-    background-image: url(../images/lab/bottle-label-cask.png);
+    background-image: url("https://cdn.shopify.com/s/files/1/0846/1136/7177/files/bottle-label-cask.png?v=1732828726");
     z-index: 7;
 }
 
 #lab-bottle .label-background {
-    z-index: 1;
+    z-index: 10;
     mix-blend-mode: multiply;
 }
 
+
 #lab-bottle .label-background.heart {
-    background-image: url(../images/lab/backgrounds/label-heart_preview.png);
+    background-image: url("https://cdn.shopify.com/s/files/1/0846/1136/7177/files/label-heart_preview.png?v=1738100701");
 }
 
 #lab-bottle .label-background.gold {
-    background-image: url(../images/lab/backgrounds/label-gold_preview.png);
+    background-image: url("https://cdn.shopify.com/s/files/1/0846/1136/7177/files/label-gold_preview.png?v=1738100707");
 }
 
 #lab-bottle .label-background.party {
-    background-image: url(../images/lab/backgrounds/label-party_preview.png);
+    background-image: url("https://cdn.shopify.com/s/files/1/0846/1136/7177/files/label-party_preview.png?v=1738100697");
 }
 
 #lab-bottle .bottom-layer {
@@ -222,8 +218,6 @@
 .hints {
     background: #fafafa;
     padding: 10px 20px;
-    -moz-border-radius: 16px;
-    -webkit-border-radius: 16px;
     border-radius: 16px;
     font-size: 14px;
     line-height: 18px;
@@ -242,8 +236,6 @@
     padding: 6px 10px;
     background: #dddddd;
     font-weight: 600;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
     border-radius: 6px;
     margin-top: 10px;
     transition: background 0.4s;
@@ -267,8 +259,6 @@
     position: relative;
     background: #555555;
     padding: 20px;
-    -moz-border-radius: 16px;
-    -webkit-border-radius: 16px;
     border-radius: 16px;
     color: #ffffff;
     z-index: 2;
@@ -312,8 +302,6 @@ ul.summary-details li span {
     top: -40%;
     left: 0;
     display: block;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
     border-radius: 50%;
     z-index: 1;
     opacity: 0;
@@ -330,8 +318,6 @@ ul.summary-details li span {
     background-color: inherit;
     top: 30%;
     left: 0;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
     border-radius: 50%;
     opacity: 0.95;
     transition: top 1.4s, width 1.4s, height 1.4s, left 1.4s;
@@ -378,8 +364,6 @@ ul.summary-details li span {
     background: #fafafa;
     z-index: 20;
     padding: 18px 90px 18px 20px;
-    -moz-border-radius: 16px;
-    -webkit-border-radius: 16px;
     border-radius: 16px;
     min-height: 180px;
     -webkit-transform: translate3d(0,0,0);
@@ -416,8 +400,6 @@ ul.option-controls {
     z-index: 30;
     text-align: center;
     font-weight: 600;
-    -moz-border-radius: 16px;
-    -webkit-border-radius: 16px;
     border-radius: 16px;
     margin: 0;
     width: 88px;
@@ -526,8 +508,6 @@ span.sample {
     display: block;
     width: 100%;
     height: 30px;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
     border-radius: 6px;
 }
 
@@ -798,8 +778,6 @@ span.sample {
     }
 
     .option-card {
-        -moz-border-radius: 16px;
-        -webkit-border-radius: 16px;
         border-radius: 16px;
     }
 
