@@ -85,7 +85,7 @@
             </div>
           {% endif %}
 
-          {% if option.name == 'Label' %}
+          {% if option.name == 'Label' and option.values.size > 1%}
             <div class="glide variant-options">
               <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
@@ -112,12 +112,10 @@
                   {% endfor %}
                 </ul>
               </div>
-              {%  if option.values.size > 1 %}
               <div class="glide__arrows" data-glide-el="controls">
                 <button class="glide__arrow glide__arrow--left" data-glide-dir="<">Previous</button>
                 <button class="glide__arrow glide__arrow--right" data-glide-dir=">">Next</button>
               </div>
-              {% endif %}
             </div>
           {% endif %}
         </div>
