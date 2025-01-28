@@ -91,6 +91,7 @@ const addQuantityListeners = () => {
 
     let variant = getVariantFromSelectedOptions();
     let subtotal = document.querySelector(`.subtotal-of-items`);
+    console.log(variant.compare_at_price)
     if (
       variant.compare_at_price !== "" &&
       variant.compare_at_price !== null &&
