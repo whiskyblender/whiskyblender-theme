@@ -238,15 +238,18 @@
   const labelLayer = document.querySelector('.label-background');
   const glide_slide = document.querySelectorAll('.max .glide__slide--active');
   glide.on('move.after', () => {
-      const active = document.querySelector('.glide__slide--active').classList[0];
-      const classes = ['festive', 'party', 'gold', 'heart', 'standard'];
-
-      // Remove all classes first
-      labelLayer.classList.remove(...classes);
-
-      // Add the class corresponding to the selected radio value, if it exists in the class list
-      if (classes.includes(active)) {
-        labelLayer.classList.add(active);
+      const active = document.querySelector('.glide__slide--active');
+      if (active){
+        let activeClass = active.classList[0]
+        const classes = ['festive', 'party', 'gold', 'heart', 'standard'];
+  
+        // Remove all classes first
+        labelLayer.classList.remove(...classes);
+  
+        // Add the class corresponding to the selected radio value, if it exists in the class list
+        if (classes.includes(activeClass)) {
+          labelLayer.classList.add(activeClass);
+        }
       }
     
 })
