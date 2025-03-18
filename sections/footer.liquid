@@ -57,7 +57,6 @@
         {%- endif -%}
       </div>
     <a class="trustpilot-footer" href="https://uk.trustpilot.com/review/whiskyblender.com" target="_blank">Review us on <span>Trustpilot</span></a>
-{% render 'header-search', input_id: 'My-Id'%}
       <div class="footer__content-top page-width">
         {%- if section.blocks.size > 0 -%}
           {%- liquid
@@ -243,7 +242,7 @@
             <div class="footer__follow-on-shop">
               {% comment %} TODO: enable theme-check once `login_button` is accepted as valid filter {% endcomment %}
               {% # theme-check-disable %}
-              {{ shop | login_button: action: 'follow' }}
+              {{ shop | login_button: action: 'default' }}
               {% # theme-check-enable %}
             </div>
           {%- endif -%}
