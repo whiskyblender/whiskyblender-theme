@@ -20,18 +20,25 @@
     "shop_hero_banner_HBdAAm": {
       "type": "shop-hero-banner",
       "blocks": {
-        "link_n9p8Mt": {
-          "type": "link",
-          "settings": {
-            "text": "Gift credit",
-            "url": "shopify://collections/gift-credit"
-          }
-        },
         "link_KBLU4U": {
           "type": "link",
           "settings": {
             "text": "Andras' bottles",
             "url": "shopify://collections/oor-bottlings"
+          }
+        },
+        "link_mcXGni": {
+          "type": "link",
+          "settings": {
+            "text": "Collections",
+            "url": "shopify://collections"
+          }
+        },
+        "link_n9p8Mt": {
+          "type": "link",
+          "settings": {
+            "text": "Gift credit",
+            "url": "shopify://collections/gift-credit"
           }
         },
         "link_nKG6TP": {
@@ -68,16 +75,25 @@
             "text": "Custom blends",
             "url": "shopify://pages/blend"
           }
+        },
+        "link_8hzbwj": {
+          "type": "link",
+          "settings": {
+            "text": "Glasgow 850",
+            "url": "shopify://collections/glasgow-850"
+          }
         }
       },
       "block_order": [
-        "link_n9p8Mt",
         "link_KBLU4U",
+        "link_mcXGni",
+        "link_n9p8Mt",
         "link_nKG6TP",
         "link_dkVW7p",
         "link_tcbkFH",
         "link_pUMDGH",
-        "link_EUiBJn"
+        "link_EUiBJn",
+        "link_8hzbwj"
       ],
       "custom_css": [
         "section:last-of-type {padding-bottom: 0px;}"
@@ -136,6 +152,14 @@
         "grey_background": true,
         "display_stock": false
       }
+    },
+    "shop_collection_QcnkXW": {
+      "type": "shop-collection",
+      "settings": {
+        "collection": "glasgow-850",
+        "grey_background": false,
+        "display_stock": false
+      }
     }
   },
   "order": [
@@ -146,6 +170,7 @@
     "shop_collection_aT3qw8",
     "shop_collection_nheyjE",
     "shop_collection_rAEy64",
-    "shop_collection_naiXX7"
+    "shop_collection_naiXX7",
+    "shop_collection_QcnkXW"
   ]
 }
