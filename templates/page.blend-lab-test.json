@@ -25,16 +25,16 @@
           "settings": {
             "first_step_subtitle": "Step 1",
             "first_step_title": "Blend it",
-            "first_step_description": "<p>Cycle through the whisky options below and start adding the ones you like the sound of until your bottle is full.</p>",
+            "first_step_description": "<p>Explore our whiskies and start adding the ones you like the sound of to fill your bottle.</p>",
             "second_step_subtitle": "Step 2",
             "second_step_title": "Name it",
             "second_step_description_title": "What's it called?",
-            "second_step_description": "<p>This is the fun part! Give your creation a name, or let us generate one for you.</p>",
+            "second_step_description": "<p>Give your creation a name.</p>",
             "second_step_input_placeholder": "Dram gooooood!",
             "third_step_subtitle": "Step 3",
             "third_step_title": "Own it",
             "third_step_description_title": "Who made it?",
-            "third_step_description": "<p>This will also be written on the label. So everyone will know the genius behind it.</p>",
+            "third_step_description": "<p>It can be yourself, someone else, or even made up.</p>",
             "third_step_input_placeholder": "Andy & Drew"
           }
         }
