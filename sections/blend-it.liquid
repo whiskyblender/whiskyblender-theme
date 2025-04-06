@@ -5,7 +5,7 @@
     {% render 'blend-header', label: 'Step 1', title: 'Blend It', colorBg: '#f4e6f2' %}
 
     <p class="blend-description">
-      Cycle through the whisky options below and start adding the ones you like the sound of until your bottle is full.
+      Explore our whiskies and start adding the ones you like the sound of to fill your bottle.
     </p>
 
     <div class="control-flavours-container">
@@ -100,9 +100,9 @@
 
     <div class="blend-input">
       <p class="blend-description blend-description-mobile" style="max-width: 22ch; margin-bottom: 0;">
-        This is the fun part! Give your creation a name
+        Give your creation a name.
       </p>
-      <input type="text" class="blend-input" placeholder="DAM GOOOOOOD!" maxlength="30" oninput="handleBlendName(this)">
+      <input type="text" class="blend-input" placeholder="DRAM GOOOOOOD!" maxlength="30" oninput="handleBlendName(this)">
     </div>
 
     {% render 'blend-header', label: 'Step 3', title: 'Own it', colorBg: '#dccfbb' %}
@@ -110,7 +110,7 @@
 
     <div class="blend-input" style="margin-bottom: 60px;">
       <p class="blend-description blend-description-mobile" style="max-width: 22ch; margin-bottom: 0;">
-        This will also be written on the label. So everyone will know the genius behind it.
+        It can be yourself, someone else, or even made up.
       </p>
       <input type="text" class="blend-input" placeholder="ANDY & DREW" oninput="handleBlendAuthor(this)">
     </div>
@@ -152,21 +152,13 @@
 
   <article class="upwards">
     <p>
-      You've scrolled too far, head back up to complete your blend! If you need
-      <a href="{{ section.settings.guide }}">some help</a> getting started, we have
-      <a href="{{ section.settings.suggestions }}">a few wee suggestions</a>.
+      If you need <a href="{{ section.settings.guide }}">some help</a> getting started, we have <a href="{{ section.settings.suggestions }}">a few wee suggestions</a>.
     </p>
     <!--
       <p>
-        Are you trying to <a href="find.html">find a blend</a> you already made? Maybe you'd rather send
-        <a href="{{ section.settings.credit }}">gift credit</a> to someone so they can blend their own instead. Head to
-        the <a href="{{ section.settings.shop_url }}">shop</a> for a wee look around (you can always come back later).
+        Need to <a href="find.html">find a blend</a> you already made? Or maybe you'd rather send <a href="{{ section.settings.credit }}">gift credit</a> to someone so they can blend their own instead. Check out our collections in our <a href="{{ section.settings.shop_url }}">shop</a>.
       </p>
     -->
-    <p class="help">
-      And in case you're wondering, uisge beatha is the original name for Scotch Whisky. It's pronounced
-      "oosh-keh—bae-ha" and means Water of Life in Scottish Gaelic (it's our version of aqua vitae, but better).
-    </p>
     <div class="lab-image2">
       <img src="{{ 'drips-black.svg' |  asset_url  }}" alt="Drops of whisky">
     </div>
