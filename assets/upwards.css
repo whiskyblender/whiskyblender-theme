@@ -315,10 +315,6 @@ h6,
     margin: 0 20px;
   }
 
-  /* .header-image.tight-header {
-    padding: 40px 40px 30px 40px;
-  } */
-
   .header-image.mid-header {
     border-radius: 60px;
   }
@@ -361,22 +357,6 @@ h6,
   .lab-image2:hover {
     top: 10px;
   }
-
-    .lab-image2 {
-        display: block;
-        width: 160px;
-        margin: 10px 0;
-        max-width: 600px;
-        position: absolute;
-        z-index: 3;
-        top: 30px;
-        right: 60px;
-        transition: top 1s;
-    }
-
-    .lab-image2:hover {
-        top: 40px;
-    }
 }
 
 @media only screen and (min-width: 768px) {
