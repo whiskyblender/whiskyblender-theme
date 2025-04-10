@@ -1,17 +1,5 @@
 <div class="blend-container uisge" style="margin-bottom: 40px; display:flex; flex-direction: column;">
-  <section class="banding header-image tight-header mid-header">
-    {% if section.settings.header_title != blank %}
-      <h2>{{ section.settings.header_title }}</h2>
-    {% endif %}
-
-    <video autoplay="" muted="" loop="" playsinline="" poster="video/draining-bg.jpg">
-      <source src="{{ 'draining-bg.mp4' |  asset_url  }}" type="video/mp4">
-      <source src="{{ 'draining-bg.webm' |  asset_url  }}" type="video/webm">
-    </video>
-    <div class="lab-image1">
-      <img src="{{ 'drips-white.svg' |  asset_url  }}" alt="Drops of whisky">
-    </div>
-  </section>
+  <section class="banding">
 
   <div class="upwards-content-grid">
     <article class="upwards">
@@ -31,6 +19,7 @@
     </div>
   </div>
 </div>
+  </section>
 
 {{ 'upwards.css' | asset_url | stylesheet_tag: preload: true }}
 
