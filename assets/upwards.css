@@ -1,3 +1,14 @@
+
+
+section.banding {
+    background-color: #eaeaea;
+    padding: 0;
+    max-width: 100%;
+    margin: 0;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
 .blend-container {
   max-width: 990px;
   margin: 0 auto;
