@@ -321,25 +321,6 @@ h6,
 }
 
 @media only screen and (min-width: 1024px) {
-  
-  .header-image {
-    border-radius: 0 0 80px 80px;
-    max-width: 904px;
-    margin: 0 auto;
-  }
-
-  .upwards-content-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .upwards {
-    grid-column: span 2 / span 2;
-  }
-
-  .header-image.mid-header {
-    border-radius: 80px;
-  }
 
   .lab-image2 {
     display: block;
