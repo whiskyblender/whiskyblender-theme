@@ -1,8 +1,7 @@
 
   <section class="banding">
 
-  <div class="upwards-content-grid">
-    <article class="upwards">
+    <article class="max">
       {% if section.settings.section_description != blank %}
         {{ section.settings.section_description }}
       {% endif %}
@@ -12,12 +11,11 @@
           {{ section.settings.small_footer_text }}
         </p>
       {% endif %}
-    </article>
 
     <div class="lab-image2">
       <img src="{{ 'drips-black.svg' |  asset_url  }}" alt="Drops of whisky">
     </div>
-  </div>
+    </article>
   </section>
 
 {{ 'upwards.css' | asset_url | stylesheet_tag: preload: true }}
