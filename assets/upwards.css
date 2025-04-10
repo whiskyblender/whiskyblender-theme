@@ -18,6 +18,28 @@ section.banding {
     border: 1px solid rgba(0,0,0,0.3);
 }
 
+article.max {
+    max-width: 904px;
+    padding: 40px 40px 0 40px;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 600px) {
+
+    article.max {
+        padding: 40px 60px 20px 60px;
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+
+    article.max {
+        padding: 40px 60px 20px 60px;
+    }
+
+}
+
 .blend-container {
   max-width: 990px;
   margin: 0 auto;
