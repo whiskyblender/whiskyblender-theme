@@ -309,17 +309,6 @@ h6,
   }
 }
 
-@media only screen and (min-width: 600px) {
-  .header-image {
-    border-radius: 0 0 60px 60px;
-    margin: 0 20px;
-  }
-
-  .header-image.mid-header {
-    border-radius: 60px;
-  }
-}
-
 @media only screen and (min-width: 1024px) {
 
   .lab-image2 {
