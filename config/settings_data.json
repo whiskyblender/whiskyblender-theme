@@ -148,13 +148,13 @@
         "disabled": false,
         "settings": {
           "button_color": "#000000",
-          "secondary_color": "#FFFFFF",
-          "ternary_color": "#6A6A6A",
+          "secondary_color": "#ffffff",
+          "ternary_color": "#6a6a6a",
           "button_icon": "chat_bubble",
           "button_text": "live_chat",
           "button_horizontal_position": "bottom_right",
           "button_vertical_position": "higher",
-          "greeting_message": ""
+          "greeting_message": "Awrite, how's it gaun? (Hello, how are you?) You can LiveChat to blender or support admin here, as well as get some instant answers."
         }
       }
     },
@@ -408,7 +408,7 @@
       ".header-wrapper--border-bottom {border: 0;}",
       "ul.trustpilot {padding: 20px 0 !important;}",
       "ul.socials {display: none;}",
-      "#tollgate, #cookies {left: 0; }"
+      "#tollgate,#cookies {left: 0;}"
     ]
   }
 }
