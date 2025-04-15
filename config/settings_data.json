@@ -154,7 +154,7 @@
           "button_text": "live_chat",
           "button_horizontal_position": "bottom_right",
           "button_vertical_position": "higher",
-          "greeting_message": "Awrite, how's it gaun? (Hello, how are you?) You can LiveChat to someone from the lab or support admin here, as well as get some instant answers."
+          "greeting_message": "Awrite, how's it gaun? (Hello, how are you?) Type below to LiveChat a blender from the lab. You can also get some instant answers."
         }
       }
     },
