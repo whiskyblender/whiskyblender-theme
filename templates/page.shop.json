@@ -22,6 +22,7 @@
       "blocks": {
         "link_KBLU4U": {
           "type": "link",
+          "disabled": true,
           "settings": {
             "text": "Andras' bottles",
             "url": "shopify://collections/oor-bottlings"
@@ -43,6 +44,7 @@
         },
         "link_nKG6TP": {
           "type": "link",
+          "disabled": true,
           "settings": {
             "text": "Iconic Scotland",
             "url": "shopify://collections/iconic-scotland"
@@ -64,6 +66,7 @@
         },
         "link_pUMDGH": {
           "type": "link",
+          "disabled": true,
           "settings": {
             "text": "Quality patter",
             "url": "shopify://collections/patter"
