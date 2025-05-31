@@ -50,8 +50,8 @@
       "type": "upwards",
       "settings": {
         "header_title": "Uisge beatha!",
-        "small_footer_text": "And in case you're wondering, uisge beatha is the original name for Scotch Whisky. It's pronounced 'oosh-keh—bae-ha' and means Water of Life in Scottish Gaelic (it's our version of aqua vitae, but better).",
-        "section_description": "<p>You've scrolled too far, head back up to complete your blend!</p><p>Maybe you'd rather send <a href=\"/collections/gift-credit\" title=\"Gift Credit\">gift credit</a> to someone so they can blend their own instead. Head to the <a href=\"/pages/shop\" title=\"Shop\">shop</a> for a wee look around (you can always come back later).</p>"
+        "small_footer_text": "",
+        "section_description": "<p>You can also send <a href=\"/collections/gift-credit\" title=\"Gift Credit\">gift credit</a> to someone so they can blend it themselves (or get something else from our <a href=\"/pages/shop\" title=\"Shop\">shop</a>). Or if you're a business and looking to create your own label, please <a href=\"/pages/contact\" title=\"Contact\">get in touch</a> with us to see what we can do.</p>"
       }
     }
   },
