@@ -9,7 +9,7 @@
  */
 {
   "sections": {
-    "main": {
+    "blank": {
       "type": "blank-product",
       "settings": {}
     },
@@ -34,7 +34,7 @@
     }
   },
   "order": [
-    "main",
+    "blank",
     "related-products"
   ]
 }
