@@ -8,6 +8,10 @@
 {{ 'glide.core.css' | asset_url | stylesheet_tag }}
 {{ 'glide.theme.css' | asset_url | stylesheet_tag }}
 {{ 'glide.custom.css' | asset_url | stylesheet_tag }}
+{% style %}
+  header {display:none}
+{% endstyle %}
+
 <div id="product-page">
   <section class="standard">
     <article>
