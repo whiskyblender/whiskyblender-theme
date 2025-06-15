@@ -116,6 +116,14 @@
         "display_stock": false
       }
     },
+    "shop_collection_nheyjE": {
+      "type": "shop-collection",
+      "settings": {
+        "collection": "claes-an-hings",
+        "grey_background": true,
+        "display_stock": false
+      }
+    },
     "shop_collection_J8rFny": {
       "type": "shop-collection",
       "settings": {
@@ -129,14 +137,6 @@
       "settings": {
         "collection": "iconic-scotland",
         "grey_background": false,
-        "display_stock": false
-      }
-    },
-    "shop_collection_nheyjE": {
-      "type": "shop-collection",
-      "settings": {
-        "collection": "claes-an-hings",
-        "grey_background": true,
         "display_stock": false
       }
     },
@@ -169,11 +169,11 @@
     "main",
     "shop_hero_banner_HBdAAm",
     "shop_collection_PdA77W",
-    "shop_collection_J8rFny",
-    "shop_collection_aT3qw8",
     "shop_collection_nheyjE",
-    "shop_collection_rAEy64",
+    "shop_collection_aT3qw8",
+    "shop_collection_J8rFny",
+    "shop_collection_QcnkXW",
     "shop_collection_naiXX7",
-    "shop_collection_QcnkXW"
+    "shop_collection_rAEy64"
   ]
 }
