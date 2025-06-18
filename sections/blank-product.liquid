@@ -16,7 +16,7 @@
   <section class="standard">
     <article>
       <!--<h3>{{ product.title }}</h3>-->
-      <--<ul class="socials">
+      <!--<ul class="socials">
         <li>
           <a class="x" href="https://twitter.com/share?url=[URL]&text=[Product name]" target="_blank">X</a>
         </li>
@@ -38,26 +38,6 @@
           <a class="email" href="mailto:?subject=[Product name]&body=Check this out! [URL]" target="_blank">Email</a>
         </li>
       </ul>-->
-      <ul class="product-summary">
-        {% if product.type != blank %}
-          <li>{{ product.type }}</li>
-        {% endif %}
-        {% for option in product.options_with_values %}
-          {% if option.name == 'Bottle size' %}
-            <li>
-              {% for value in option.values %}
-                {%- if forloop.length > 0 -%}
-                  {{ value }}
-                  {% unless forloop.last %}/{% endunless %}
-                {% endif %}
-              {% endfor %}
-            </li>
-          {% endif %}
-        {% endfor %}
-        {% if product.metafields.custom.abv != blank %}
-          <li>{{ product.metafields.custom.abv }} abv</li>
-        {% endif %}
-      </ul>
       <div class="glide thumbnails">
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides">
@@ -78,6 +58,26 @@
           <button class="glide__arrow glide__arrow--right" data-glide-dir=">">Next</button>
         </div>
       </div>
+      <ul class="product-summary">
+        {% if product.type != blank %}
+          <li>{{ product.type }}</li>
+        {% endif %}
+        {% for option in product.options_with_values %}
+          {% if option.name == 'Bottle size' %}
+            <li>
+              {% for value in option.values %}
+                {%- if forloop.length > 0 -%}
+                  {{ value }}
+                  {% unless forloop.last %}/{% endunless %}
+                {% endif %}
+              {% endfor %}
+            </li>
+          {% endif %}
+        {% endfor %}
+        {% if product.metafields.custom.abv != blank %}
+          <li>{{ product.metafields.custom.abv }} abv</li>
+        {% endif %}
+      </ul>
       <p>
         {{ product.description }}
       </p>
