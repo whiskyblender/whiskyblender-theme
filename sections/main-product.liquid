@@ -19,7 +19,7 @@
         <a aria-label="Breadcrumb" href="/collections"> Collections</a>
         /
         {% for collection in product.collections %}
-          {% unless collection.handle == 'promoted' or 'shop-items' %}
+          {% unless collection.handle == 'promoted' %}
             <a aria-label="Breadcrumb" href="{{ collection.url }}">
               {{- collection.title -}}
             </a>
