@@ -23,7 +23,7 @@
             <a aria-label="Breadcrumb" href="{{ collection.url }}">
               {{- collection.title -}}
             </a>
-            {% if forloop.last != true and product.collections[forloop.index].handle != 'promoted, shop-items' %}
+            {% if forloop.last != true and product.collections[forloop.index].handle != 'promoted, shop items' %}
               &
             {% endif %}
           {% endunless %}
