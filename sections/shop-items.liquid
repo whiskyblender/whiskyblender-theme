@@ -1,6 +1,45 @@
-{% schema %}
+<section id="shop-items" class="standard">
+  <article>
+    <a id="bottlings"></a>
+    <h3 class="section-title-wb">{{ section.settings.title }}</h3>
+    <p>
+      {{ section.settings.description }}
+    </p>
+    <ul class="product-list">
+      {% assign bottles = collections['oor-bottlings'] %}
+
+      {% for product in bottles.products %}
+          {% render 'product-display', product: product %}
+      {% endfor %}
+    </ul>
+  </article>
+</section>
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
   {
-    "name": "Section name",
-    "settings": []
   }
+{% endjavascript %}
+
+{% schema %}
+{
+  "name": "Shop Items",
+  "presets": [{ "name": "Shop Items" }],
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Header Title"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description"
+    }
+  ],
+
+  "tag": "section"
+}
 {% endschema %}
