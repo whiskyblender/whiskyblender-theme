@@ -6,7 +6,7 @@
       {{ section.settings.description }}
     </p>
     <ul class="product-list">
-      {% assign bottles = collections['oor-bottlings'] %}
+      {% assign bottles = collections['shop-items'] %}
 
       {% for product in bottles.products %}
           {% render 'product-display', product: product %}
