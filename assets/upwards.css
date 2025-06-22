@@ -362,4 +362,8 @@ h6,
   .lab-image1 {
     display: none;
   }
+
+  #blend-in-app-block .wrapper {
+    overflow: visible;
+  }
 }
