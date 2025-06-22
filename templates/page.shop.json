@@ -111,20 +111,20 @@
         "poster_url": "shopify://shop_images/pour-bg.jpg"
       }
     },
-    "shop_collection_rAEy64": {
-      "type": "shop-collection",
-      "settings": {
-        "collection": "custom-labels",
-        "grey_background": false,
-        "display_stock": true
-      }
-    },
     "shop_items_h3jtr8": {
       "type": "shop-items",
       "name": "Shop Items",
       "settings": {
         "title": "",
         "description": ""
+      }
+    },
+    "shop_collection_rAEy64": {
+      "type": "shop-collection",
+      "settings": {
+        "collection": "custom-labels",
+        "grey_background": true,
+        "display_stock": true
       }
     }
   },
