@@ -48,6 +48,9 @@
     },
     "upwards_36hB6q": {
       "type": "upwards",
+      "custom_css": [
+        "@media only screen and (min-width: 768px) {#blend-in-app-block .wrapper {overflow: none; }}"
+      ],
       "settings": {
         "header_title": "Uisge beatha!",
         "small_footer_text": "",
