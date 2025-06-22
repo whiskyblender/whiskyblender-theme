@@ -27,14 +27,6 @@
               &
             {% endif %}
           {% endunless %}
-          {% unless collection.handle == 'shop-items' %}
-            <a aria-label="Breadcrumb" href="{{ collection.url }}">
-              {{- collection.title -}}
-            </a>
-            {% if forloop.last != true and product.collections[forloop.index].handle != 'shop-items' %}
-              &
-            {% endif %}
-          {% endunless %}
         {% endfor %}
       </h4>
 
