@@ -19,11 +19,19 @@
         <a aria-label="Breadcrumb" href="/collections"> Collections</a>
         /
         {% for collection in product.collections %}
-          {% unless collection.handle == 'promoted, shop-items' %}
+          {% unless collection.handle == 'promoted' %}
             <a aria-label="Breadcrumb" href="{{ collection.url }}">
               {{- collection.title -}}
             </a>
-            {% if forloop.last != true and product.collections[forloop.index].handle != 'promoted, shop items' %}
+            {% if forloop.last != true and product.collections[forloop.index].handle != 'promoted' %}
+              &
+            {% endif %}
+          {% endunless %}
+          {% unless collection.handle == 'shop-items' %}
+            <a aria-label="Breadcrumb" href="{{ collection.url }}">
+              {{- collection.title -}}
+            </a>
+            {% if forloop.last != true and product.collections[forloop.index].handle != 'shop-items' %}
               &
             {% endif %}
           {% endunless %}
