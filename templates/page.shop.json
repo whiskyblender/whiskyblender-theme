@@ -111,65 +111,10 @@
         "poster_url": "shopify://shop_images/pour-bg.jpg"
       }
     },
-    "shop_collection_PdA77W": {
-      "type": "shop-collection",
-      "disabled": true,
-      "settings": {
-        "collection": "gift-credit",
-        "grey_background": false,
-        "display_stock": false
-      }
-    },
-    "shop_collection_nheyjE": {
-      "type": "shop-collection",
-      "disabled": true,
-      "settings": {
-        "collection": "claes-an-hings",
-        "grey_background": true,
-        "display_stock": false
-      }
-    },
-    "shop_collection_aT3qw8": {
-      "type": "shop-collection",
-      "disabled": true,
-      "settings": {
-        "collection": "iconic-scotland",
-        "grey_background": false,
-        "display_stock": false
-      }
-    },
-    "shop_collection_J8rFny": {
-      "type": "shop-collection",
-      "disabled": true,
-      "settings": {
-        "collection": "oor-bottlings",
-        "grey_background": true,
-        "display_stock": false
-      }
-    },
-    "shop_collection_QcnkXW": {
-      "type": "shop-collection",
-      "disabled": true,
-      "settings": {
-        "collection": "glasgow-850",
-        "grey_background": false,
-        "display_stock": false
-      }
-    },
-    "shop_collection_naiXX7": {
-      "type": "shop-collection",
-      "disabled": true,
-      "settings": {
-        "collection": "patter",
-        "grey_background": true,
-        "display_stock": false
-      }
-    },
     "shop_collection_rAEy64": {
       "type": "shop-collection",
-      "disabled": true,
       "settings": {
-        "collection": "famous-scots",
+        "collection": "custom-labels",
         "grey_background": false,
         "display_stock": true
       }
@@ -186,13 +131,7 @@
   "order": [
     "main",
     "shop_hero_banner_HBdAAm",
-    "shop_collection_PdA77W",
-    "shop_collection_nheyjE",
-    "shop_collection_aT3qw8",
-    "shop_collection_J8rFny",
-    "shop_collection_QcnkXW",
-    "shop_collection_naiXX7",
-    "shop_collection_rAEy64",
-    "shop_items_h3jtr8"
+    "shop_items_h3jtr8",
+    "shop_collection_rAEy64"
   ]
 }
