@@ -65,8 +65,8 @@
     <a href="{{ section.settings.get_started_button_url }}" class="get-started pulse">→</a>
   </h2>
   <video autoplay="" muted="" loop="" playsinline="" poster="{{ section.settings.hero_poster | image_url: 'original master'  }}">
-    <source src="{{ section.settings.hero_video }}" type="video/mp4">
-    <source src="{{ section.settings.hero_video_webm }}" type="video/webm">
+    <source src="{{ section.settings.hero_video | asset_url }}" type="video/mp4">
+    <source src="{{ section.settings.hero_video_webm | asset_url }}" type="video/webm">
   </video>
 </section>
 <section class="standard">
