@@ -840,7 +840,9 @@ span.sample {
 
 .glide__bullet:nth-of-type(5) {
     background-color: #f3e05f;   
-}@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 768px) {
   #blend-in-app-block .wrapper {
     overflow: none;
   }
