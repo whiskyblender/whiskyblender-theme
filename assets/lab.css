@@ -846,7 +846,7 @@ span.sample {
 
 @media only screen and (min-width: 768px) {
   
-  #blend-in-app-block .wrapper {
+  section.lab-wrapper {
     overflow: none;
   }
   
