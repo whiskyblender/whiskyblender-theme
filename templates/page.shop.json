@@ -37,6 +37,7 @@
         },
         "link_n9p8Mt": {
           "type": "link",
+          "disabled": true,
           "settings": {
             "text": "Gift credit",
             "url": "shopify://collections/gift-credit"
@@ -59,6 +60,7 @@
         },
         "link_tcbkFH": {
           "type": "link",
+          "disabled": true,
           "settings": {
             "text": "Famous Scots",
             "url": "shopify://collections/famous-scots"
@@ -81,6 +83,7 @@
         },
         "link_8hzbwj": {
           "type": "link",
+          "disabled": true,
           "settings": {
             "text": "Glasgow 850",
             "url": "shopify://collections/glasgow-850"
@@ -110,6 +113,7 @@
     },
     "shop_collection_PdA77W": {
       "type": "shop-collection",
+      "disabled": true,
       "settings": {
         "collection": "gift-credit",
         "grey_background": false,
@@ -118,50 +122,64 @@
     },
     "shop_collection_nheyjE": {
       "type": "shop-collection",
+      "disabled": true,
       "settings": {
         "collection": "claes-an-hings",
         "grey_background": true,
         "display_stock": false
       }
     },
-    "shop_collection_J8rFny": {
-      "type": "shop-collection",
-      "settings": {
-        "collection": "oor-bottlings",
-        "grey_background": true,
-        "display_stock": false
-      }
-    },
     "shop_collection_aT3qw8": {
       "type": "shop-collection",
+      "disabled": true,
       "settings": {
         "collection": "iconic-scotland",
         "grey_background": false,
         "display_stock": false
       }
     },
-    "shop_collection_rAEy64": {
+    "shop_collection_J8rFny": {
       "type": "shop-collection",
+      "disabled": true,
       "settings": {
-        "collection": "famous-scots",
-        "grey_background": false,
-        "display_stock": true
-      }
-    },
-    "shop_collection_naiXX7": {
-      "type": "shop-collection",
-      "settings": {
-        "collection": "patter",
+        "collection": "oor-bottlings",
         "grey_background": true,
         "display_stock": false
       }
     },
     "shop_collection_QcnkXW": {
       "type": "shop-collection",
+      "disabled": true,
       "settings": {
         "collection": "glasgow-850",
         "grey_background": false,
         "display_stock": false
+      }
+    },
+    "shop_collection_naiXX7": {
+      "type": "shop-collection",
+      "disabled": true,
+      "settings": {
+        "collection": "patter",
+        "grey_background": true,
+        "display_stock": false
+      }
+    },
+    "shop_collection_rAEy64": {
+      "type": "shop-collection",
+      "disabled": true,
+      "settings": {
+        "collection": "famous-scots",
+        "grey_background": false,
+        "display_stock": true
+      }
+    },
+    "shop_items_h3jtr8": {
+      "type": "shop-items",
+      "name": "Shop Items",
+      "settings": {
+        "title": "",
+        "description": ""
       }
     }
   },
@@ -174,6 +192,7 @@
     "shop_collection_J8rFny",
     "shop_collection_QcnkXW",
     "shop_collection_naiXX7",
-    "shop_collection_rAEy64"
+    "shop_collection_rAEy64",
+    "shop_items_h3jtr8"
   ]
 }
