@@ -23,14 +23,14 @@
         "link_EUiBJn": {
           "type": "link",
           "settings": {
-            "text": "The Lab: <br> Blend Your Own",
+            "text": "The Lab: <br> Create Your Own",
             "url": "shopify://pages/blend"
           }
         },
         "link_n9p8Mt": {
           "type": "link",
           "settings": {
-            "text": "Tailor-Made: <br>Custom Bottlings",
+            "text": "Tailor-Made: Custom Bottlings",
             "url": "shopify://collections/custom-labels"
           }
         },
