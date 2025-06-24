@@ -20,12 +20,18 @@
     "shop_hero_banner_HBdAAm": {
       "type": "shop-hero-banner",
       "blocks": {
-        "link_KBLU4U": {
+        "link_EUiBJn": {
           "type": "link",
-          "disabled": true,
           "settings": {
-            "text": "Andras' bottles",
-            "url": "shopify://collections/oor-bottlings"
+            "text": "Start blending",
+            "url": "shopify://pages/blend"
+          }
+        },
+        "link_n9p8Mt": {
+          "type": "link",
+          "settings": {
+            "text": "Tailor-made",
+            "url": "shopify://collections/custom-labels"
           }
         },
         "link_mcXGni": {
@@ -35,12 +41,12 @@
             "url": "shopify://collections"
           }
         },
-        "link_n9p8Mt": {
+        "link_KBLU4U": {
           "type": "link",
           "disabled": true,
           "settings": {
-            "text": "Gift credit",
-            "url": "shopify://collections/gift-credit"
+            "text": "Andras' bottles",
+            "url": "shopify://collections/oor-bottlings"
           }
         },
         "link_nKG6TP": {
@@ -53,6 +59,7 @@
         },
         "link_dkVW7p": {
           "type": "link",
+          "disabled": true,
           "settings": {
             "text": "Wee bits",
             "url": "shopify://collections/claes-an-hings"
@@ -74,13 +81,6 @@
             "url": "shopify://collections/patter"
           }
         },
-        "link_EUiBJn": {
-          "type": "link",
-          "settings": {
-            "text": "Start blending",
-            "url": "shopify://pages/blend"
-          }
-        },
         "link_8hzbwj": {
           "type": "link",
           "disabled": true,
@@ -91,14 +91,14 @@
         }
       },
       "block_order": [
-        "link_KBLU4U",
-        "link_mcXGni",
+        "link_EUiBJn",
         "link_n9p8Mt",
+        "link_mcXGni",
+        "link_KBLU4U",
         "link_nKG6TP",
         "link_dkVW7p",
         "link_tcbkFH",
         "link_pUMDGH",
-        "link_EUiBJn",
         "link_8hzbwj"
       ],
       "custom_css": [
