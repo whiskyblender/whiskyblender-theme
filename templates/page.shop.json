@@ -23,7 +23,7 @@
         "link_EUiBJn": {
           "type": "link",
           "settings": {
-            "text": "Start blending",
+            "text": "The lab",
             "url": "shopify://pages/blend"
           }
         },
@@ -88,6 +88,13 @@
             "text": "Glasgow 850",
             "url": "shopify://collections/glasgow-850"
           }
+        },
+        "link_8i9XxU": {
+          "type": "link",
+          "settings": {
+            "text": "",
+            "url": ""
+          }
         }
       },
       "block_order": [
@@ -99,7 +106,8 @@
         "link_dkVW7p",
         "link_tcbkFH",
         "link_pUMDGH",
-        "link_8hzbwj"
+        "link_8hzbwj",
+        "link_8i9XxU"
       ],
       "custom_css": [
         "section:last-of-type {padding-bottom: 0px;}"
