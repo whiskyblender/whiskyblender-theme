@@ -37,7 +37,7 @@
         "link_mcXGni": {
           "type": "link",
           "settings": {
-            "text": "Collections & Gift Vouchers",
+            "text": "Collections & <br> Gift Vouchers",
             "url": "shopify://collections"
           }
         },
