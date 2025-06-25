@@ -23,14 +23,14 @@
         "link_EUiBJn": {
           "type": "link",
           "settings": {
-            "text": "The Lab:<br>Create Your Whisky",
+            "text": "The Lab:<br>Create your whisky",
             "url": "shopify://pages/blend"
           }
         },
         "link_n9p8Mt": {
           "type": "link",
           "settings": {
-            "text": "Tailor-Made: <br>Custom Whisky",
+            "text": "Tailor-Made:<br>Craft your brand",
             "url": "shopify://collections/custom-labels"
           }
         },
