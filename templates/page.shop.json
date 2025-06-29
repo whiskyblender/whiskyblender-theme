@@ -23,7 +23,7 @@
         "link_EUiBJn": {
           "type": "link",
           "settings": {
-            "text": "The Blending Lab: Create your whisky",
+            "text": "The Blending Lab: <br>Create your whisky",
             "url": "shopify://pages/blend"
           }
         },
