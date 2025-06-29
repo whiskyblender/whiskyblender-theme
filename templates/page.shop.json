@@ -37,7 +37,7 @@
         "link_mcXGni": {
           "type": "link",
           "settings": {
-            "text": "Bottles, Swag, and Gift Vouchers",
+            "text": "Bottles, Swag, <br> and Gift Vouchers",
             "url": "shopify://collections"
           }
         },
