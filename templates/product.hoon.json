@@ -10,7 +10,7 @@
 {
   "sections": {
     "blank": {
-      "type": "blank-product",
+      "type": "hoon-product",
       "settings": {}
     },
     "related-products": {
