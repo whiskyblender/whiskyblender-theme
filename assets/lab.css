@@ -177,6 +177,10 @@
     background-image: url("https://cdn.shopify.com/s/files/1/0846/1136/7177/files/label-party_preview.png?v=1738100697");
 }
 
+#lab-bottle .label-background.floral {
+    background-image: url("https://cdn.shopify.com/s/files/1/0846/1136/7177/files/label-floral_preview.png?v=1752853954");
+}
+
 #lab-bottle .bottom-layer {
     width: 90%;
     height: 310px;
