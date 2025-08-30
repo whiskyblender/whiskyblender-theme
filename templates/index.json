@@ -30,6 +30,26 @@
         "gallery_image4": "shopify://shop_images/gallery27.jpg"
       }
     },
+    "landing_wb_wBDYHD": {
+      "type": "landing-wb",
+      "settings": {
+        "keythings_text": "The key things you need to know about this site are that you can <a href=\"/pages/blend.html\">blend your own whisky</a> (that's right, you read correctly). But you can also <a href=\"/pages/shop.html\">shop around</a> for other unique whisky goods and gifts, such as...",
+        "guide_title": "It's a skoosh!",
+        "guide_text": "Obviously, becoming a world-renowned whisky blender takes years of practice, copious amounts of studying, a vast knowledge of the spirit, and a chunk of investment. But that doesn't mean we can't have fun!",
+        "stepper_image": "shopify://shop_images/bottle.svg",
+        "step1_title": "Blend it",
+        "step1_text": "Simply <a href=\"/pages/blend\">create your blend </a> by filling the empty bottle with whisky from the 5 options available. Each whisky is described in terms of flavour and from this you decide which ones you'd like to use.",
+        "step2_title": "Name it",
+        "step2_text": "Once your bottle is full you have to give it a name for us to print onto your label. Seriously though, go to town with the name. We have an award-winning bottle called <a href=\"/products/yer-aunt-fannys\">Yer Aunt Fanny's.</a>",
+        "step3_title": "Own it",
+        "step3_text": "All that's left is to declare this blend YOURS, save it into our growing database of thousands, and then buy it (or ask someone else to buy it for you)! And enjoy whisky like it's supposed to be enjoyed. With good friends and banter.",
+        "start_link": "shopify://pages/blend",
+        "start_button_label": "Start blending",
+        "video_url_mobile": "https://www.youtube.com/embed/2vc89gCWT7o",
+        "video_url_desktop": "https://www.youtube.com/embed/sYBd3EUc9B0",
+        "video_url_tablet": "https://www.youtube.com/embed/NQtXWOYwZNg"
+      }
+    },
     "trust_pilot_bfYdYJ": {
       "type": "trust-pilot",
       "settings": {
@@ -54,31 +74,11 @@
         "review_10_text": "",
         "review_10_url": ""
       }
-    },
-    "landing_wb_wBDYHD": {
-      "type": "landing-wb",
-      "settings": {
-        "keythings_text": "The key things you need to know about this site are that you can <a href=\"/pages/blend.html\">blend your own whisky</a> (that's right, you read correctly). But you can also <a href=\"/pages/shop.html\">shop around</a> for other unique whisky goods and gifts, such as...",
-        "guide_title": "It's a skoosh!",
-        "guide_text": "Obviously, becoming a world-renowned whisky blender takes years of practice, copious amounts of studying, a vast knowledge of the spirit, and a chunk of investment. But that doesn't mean we can't have fun!",
-        "stepper_image": "shopify://shop_images/bottle.svg",
-        "step1_title": "Blend it",
-        "step1_text": "Simply <a href=\"/pages/blend\">create your blend </a> by filling the empty bottle with whisky from the 5 options available. Each whisky is described in terms of flavour and from this you decide which ones you'd like to use.",
-        "step2_title": "Name it",
-        "step2_text": "Once your bottle is full you have to give it a name for us to print onto your label. Seriously though, go to town with the name. We have an award-winning bottle called <a href=\"/products/yer-aunt-fannys\">Yer Aunt Fanny's.</a>",
-        "step3_title": "Own it",
-        "step3_text": "All that's left is to declare this blend YOURS, save it into our growing database of thousands, and then buy it (or ask someone else to buy it for you)! And enjoy whisky like it's supposed to be enjoyed. With good friends and banter.",
-        "start_link": "shopify://pages/blend",
-        "start_button_label": "Start blending",
-        "video_url_mobile": "https://www.youtube.com/embed/2vc89gCWT7o",
-        "video_url_desktop": "https://www.youtube.com/embed/sYBd3EUc9B0",
-        "video_url_tablet": "https://www.youtube.com/embed/NQtXWOYwZNg"
-      }
     }
   },
   "order": [
     "landing_hero_wb_B8tf9K",
-    "trust_pilot_bfYdYJ",
-    "landing_wb_wBDYHD"
+    "landing_wb_wBDYHD",
+    "trust_pilot_bfYdYJ"
   ]
 }
