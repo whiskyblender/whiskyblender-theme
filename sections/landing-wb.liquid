@@ -1,3 +1,19 @@
+
+<section class="banding">
+  <article class="max">
+    <p>
+      {{ section.settings.keythings_text }}
+    </p>
+    <ul class="product-list">
+      {% assign bottles = collections.promoted %}
+
+      {% for product in bottles.products %}
+        {% render 'product-display', product: product %}
+      {% endfor %}
+    </ul>
+    <button onclick="location.href='/collections';" class="secondary-button">Our collections</button>
+  </article>
+</section>
 <section class="standard">
   <div id="guide"></div>
   <article>
@@ -54,21 +70,6 @@
         {{ section.settings.start_button_label }}
       </button>
     </span>
-  </article>
-</section>
-<section class="banding">
-  <article class="max">
-    <p>
-      {{ section.settings.keythings_text }}
-    </p>
-    <ul class="product-list">
-      {% assign bottles = collections.promoted %}
-
-      {% for product in bottles.products %}
-        {% render 'product-display', product: product %}
-      {% endfor %}
-    </ul>
-    <button onclick="location.href='/collections';" class="secondary-button">Our collections</button>
   </article>
 </section>
 {% javascript %}
