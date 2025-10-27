@@ -39,6 +39,7 @@ const attachEventListeners = () => {
 
   // Run on page load
   updateVariantInfo();
+  console.log('here');
 
   // Also run on radio button changes
   radioButtons.forEach((radio) => {
