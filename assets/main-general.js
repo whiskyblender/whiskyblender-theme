@@ -1,4 +1,5 @@
 const attachEventListeners = () => {
+  console.log('here');
   const radioButtons = document.querySelectorAll('.max input[type="radio"]');
   radioButtons.forEach((radio) => {
     radio.addEventListener("change", function () {
