@@ -4,6 +4,7 @@ const attachEventListeners = () => {
   radioButtons.forEach((radio) => {
     radio.addEventListener("change", function () {
       let variant = getVariantFromSelectedOptions();
+      console.log(variant);
       let subtotal = document.querySelector(`.subtotal-of-items`);
       let atc_button = document.querySelector(".atc");
       let quantity = document
@@ -13,7 +14,6 @@ const attachEventListeners = () => {
       strike_price.innerHTML = `£${((variant.compare_at_price / 100) * quantity).toFixed(2)}`;
       strike_price.classList.add('strike-price');
       subtotal.innerHTML = `£${((variant.price / 100) * quantity).toFixed(2)}`;
-      console.log(variant.compare_at_price)
       if(variant.compare_at_price !== null ){
         subtotal.insertAdjacentElement("afterbegin", strike_price);
       }
