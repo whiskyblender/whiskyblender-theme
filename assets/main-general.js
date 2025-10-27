@@ -4,6 +4,12 @@ const attachEventListeners = () => {
   // Function to update variant info
   const updateVariantInfo = () => {
     let variant = getVariantFromSelectedOptions();
+
+    // Exit early if variant data isn't available yet
+    if (!variant) {
+      return;
+    }
+
     let subtotal = document.querySelector(`.subtotal-of-items`);
     let atc_button = document.querySelector('.atc');
     let quantity = document.querySelector(`.quantity`).querySelector('input').value;
@@ -39,7 +45,6 @@ const attachEventListeners = () => {
 
   // Run on page load
   updateVariantInfo();
-  console.log('here');
 
   // Also run on radio button changes
   radioButtons.forEach((radio) => {
@@ -48,6 +53,12 @@ const attachEventListeners = () => {
 };
 
 const getVariantFromSelectedOptions = () => {
+  // Safety check to ensure product data is loaded
+  if (!Window.product || !Window.product.variants) {
+    console.warn('Product data not yet loaded');
+    return null;
+  }
+
   let radios = document.querySelectorAll('.max input[type="radio"]');
   let checked = Array.from(radios).filter((radio) => radio.checked);
   let selectedOptions = checked.map((radio) => radio.value);
@@ -142,10 +153,11 @@ function fetchProduct() {
     .then((response) => response.json())
     .then((data) => {
       Window.product = data;
+      // Only call these functions after the product data is loaded
+      attachEventListeners();
+      addQuantityListeners();
+      addProductToCart();
     });
-  attachEventListeners();
-  addQuantityListeners();
-  addProductToCart();
 }
 
 // wb cart update function
