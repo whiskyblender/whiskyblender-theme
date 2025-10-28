@@ -139,7 +139,7 @@
           </div>
         </div>
         <div class="subtotal-of-items">
-          <span class="strike-price hello">{{ product.compare_at_price | money }}</span>
+          <span class="strike-price">{{ product.compare_at_price | money }}</span>
 
           {{ product.first_available_variant.price | money }}
         </div>
@@ -148,7 +148,7 @@
         <!-- Product is out of stock -->
         <button class=" atc disabled" disabled>Out of stock</button>
       {% else %}
-        <button class="pulse atc">Add to baskets</button>
+        <button class="pulse atc">Add to basket</button>
       {% endif %}
     </div>
   </article>
