@@ -23,7 +23,7 @@ const attachEventListeners = () => {
     }
 
     if (variant.available) {
-      atc_button.innerHTML = 'Add to baskets';
+      atc_button.innerHTML = 'Add to basket';
       if (!atc_button.classList.contains('pulse')) {
         atc_button.classList.add('pulse');
       }
