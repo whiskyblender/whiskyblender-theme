@@ -9,6 +9,10 @@
  */
 {
   "sections": {
+    "1762084597702c0b08": {
+      "type": "_blocks",
+      "settings": {}
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -25,10 +29,67 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "slideshow_AdUzKq": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_8He3ej": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/01_hoonjuice.jpg",
+            "heading": "",
+            "heading_size": "h2",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": true,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_GhE3x3": {
+          "type": "slide",
+          "settings": {
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_8He3ej",
+        "slide_GhE3x3"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "grid",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
     }
   },
   "order": [
+    "1762084597702c0b08",
     "main",
-    "form"
+    "form",
+    "slideshow_AdUzKq"
   ]
 }
