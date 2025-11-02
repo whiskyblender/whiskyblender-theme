@@ -1,0 +1,174 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "yas_hero_banner_qJy4Nm": {
+      "type": "yas-hero-banner",
+      "settings": {
+        "poster": "shopify://shop_images/cask-heids.jpg",
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/1dca107e2b1d467885d075f46354f9a6.mp4",
+        "video_webm_url": "https://cdn.shopify.com/videos/c/o/v/a453c2363b2648318604ff3f077e2029.webm"
+      }
+    },
+    "yas_about_arUXWV": {
+      "type": "yas-about",
+      "settings": {
+        "text": "<p>Scotch whisky is a tremendous spirit made in Scotland. Andy and Drew—that's us two cask-heided fannies above—are also made in Scotland. Two pals with a fondness for drams and a whisky-inspired idea: <strong>anyone can have a bottle of Scotch they can truly call their own.</strong><br/>                </p>",
+        "text_help": "\"Twa Andras\" is just Scots for \"two Andrews\" by the way (because we're both called Andrew). As for why we're levitating with whisky casks for heads... well, your guess is as good as ours.",
+        "image_url": "shopify://shop_images/bothwell-castle.png"
+      }
+    },
+    "yas_how_yR3ey6": {
+      "type": "yas-how",
+      "settings": {
+        "title": "How but?",
+        "text": "<p>We want people to enjoy whisky without fear. To explore Scotch and to have fun doing so. Drink whatever you like and however you like it. But drink responsibly, and with good company.</p><p>Head to the <a href=\"/pages/blend\" title=\"Blend\">blending lab</a> fill your bottle with the whiskies that sound good to you. Once your bottle is full you can name it and declare yourself as the blender. Just have fun and trust your instincts!</p>",
+        "image_url": "shopify://shop_images/saltire-patch.png"
+      }
+    },
+    "yas_story_X3faCU": {
+      "type": "yas-story",
+      "settings": {
+        "title": "Oor Story",
+        "text": "The idea came one day after we'd enoyed a few drams at a whisky festival in Ayr (and perhaps enjoyed it slightly more than we should have). After some food and a snooze on the train back to Glasgow we went for a few pints — and thats when the idea came to us! This concept of allowing people to blend their own bottle of Scotch... through a website!",
+        "text_two": "We were so excited! We discussed it more, drew up sketches, concept mocks, the works. Slowly but surely life got in the way and this idea was put back in the whisky cabinet until such a time arose that we said to each other “lets do it”. And we did. Whisky Blender was officially established in 2011... and we've been having a dram guid time ever since!",
+        "text_three": "Interesting wee piece of trivia for you: see that photo of us asleep in a bus stop? Drew (in the Ardbeg baseball cap) is wearinga T-shirt depicting the acrospire of a barley grain. This is an important part of the germination process and it's when the endosperm has been modified into starch. Withoutthis, there is no whisky.",
+        "video_url_mobile": "https://www.youtube.com/embed/oy-dpr6pTk0",
+        "video_url_desktop": "https://www.youtube.com/embed/gYt-WNUicw8",
+        "video_url_tablet": "https://www.youtube.com/embed/Q_8okWksjFI",
+        "image_url": "shopify://shop_images/acrospire.png"
+      }
+    },
+    "yas_famous_VYzEqz": {
+      "type": "yas-famous",
+      "blocks": {
+        "image_FBwCE8": {
+          "type": "image",
+          "settings": {
+            "logo_name": "Wired",
+            "logo_url": "https://www.wired.com/2012/03/whisky-blender/"
+          }
+        },
+        "image_LJ4pwf": {
+          "type": "image",
+          "settings": {
+            "logo_name": "Playboy",
+            "logo_url": ""
+          }
+        },
+        "image_pnUqmE": {
+          "type": "image",
+          "settings": {
+            "logo_name": "Urban Daddy",
+            "logo_url": "https://www.urbandaddy.com/articles/15907/dram-come-true-your-own-blend-of-whisky"
+          }
+        },
+        "image_ed8hAq": {
+          "type": "image",
+          "settings": {
+            "logo_name": "The Scotsman",
+            "logo_url": "https://www.scotsman.com/business/scots-entrepreneurs-launch-online-rum-blending-service-1489705"
+          }
+        },
+        "image_tDh8ET": {
+          "type": "image",
+          "settings": {
+            "logo_name": "Uncrate",
+            "logo_url": ""
+          }
+        },
+        "image_QK4qTF": {
+          "type": "image",
+          "settings": {
+            "logo_name": "Springwise",
+            "logo_url": "https://springwise.com/design-whisky-blend/"
+          }
+        },
+        "image_mGczeM": {
+          "type": "image",
+          "settings": {
+            "logo_name": "Great Drams",
+            "logo_url": "https://greatdrams.com/interview-andy-davidson/"
+          }
+        },
+        "image_wFrKKW": {
+          "type": "image",
+          "settings": {
+            "logo_name": "Ralfy",
+            "logo_url": "https://www.youtube.com/watch?v=FabGicBG3OE"
+          }
+        },
+        "image_EBPmk9": {
+          "type": "image",
+          "settings": {
+            "logo_name": "LS:N Global",
+            "logo_url": "https://www.lsnglobal.com/article/view/5138"
+          }
+        },
+        "image_kAwk7x": {
+          "type": "image",
+          "settings": {
+            "logo_name": "Foodbeast",
+            "logo_url": "https://www.foodbeast.com/news/whiskey-blender-blend-your-own-whiskey-like-a-boss/"
+          }
+        },
+        "image_LUPVEp": {
+          "type": "image",
+          "settings": {
+            "logo_name": "Alister &amp; Paine",
+            "logo_url": "https://alisterpaine.com/2012/12/12/make-your-own-whisky-blend/"
+          }
+        },
+        "image_JTtX97": {
+          "type": "image",
+          "settings": {
+            "logo_name": "Lagom",
+            "logo_url": "https://readlagom.com/stories/whisky-talk-6-phrases-you-should-never-say.html"
+          }
+        }
+      },
+      "block_order": [
+        "image_FBwCE8",
+        "image_LJ4pwf",
+        "image_pnUqmE",
+        "image_ed8hAq",
+        "image_tDh8ET",
+        "image_QK4qTF",
+        "image_mGczeM",
+        "image_wFrKKW",
+        "image_EBPmk9",
+        "image_kAwk7x",
+        "image_LUPVEp",
+        "image_JTtX97"
+      ],
+      "settings": {
+        "title": "Look, maw!",
+        "subtitle": "We're famous!",
+        "intro_text": "Some of the places we've been featured over the years."
+      }
+    }
+  },
+  "order": [
+    "main",
+    "yas_hero_banner_qJy4Nm",
+    "yas_about_arUXWV",
+    "yas_how_yR3ey6",
+    "yas_story_X3faCU",
+    "yas_famous_VYzEqz"
+  ]
+}
