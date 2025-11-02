@@ -30,14 +30,14 @@
         "link_n9p8Mt": {
           "type": "link",
           "settings": {
-            "text": "Your own brand",
-            "url": "shopify://pages/your-own-brand"
+            "text": "Our collections",
+            "url": "shopify://collections"
           }
         },
         "link_mcXGni": {
           "type": "link",
           "settings": {
-            "text": "Gift voucher",
+            "text": "Gift vouchers",
             "url": "shopify://products/gift-credit"
           }
         },
