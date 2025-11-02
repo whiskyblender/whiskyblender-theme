@@ -16,11 +16,11 @@
     "main": {
       "type": "main-page",
       "custom_css": [
-        "h3 {font-family: trimPosterCompressed, sans-serif; font-weight: 400; color: #000; margin: 0 0 20px; font-size: 120px; line-height: 56px;}"
+        "h3 {font-family: trimPosterCompressed, sans-serif; font-weight: 400; color: #000; margin: 0 0 20px; font-size: 100px; line-height: 76px;}"
       ],
       "settings": {
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 52,
+        "padding_bottom": 44
       }
     },
     "slideshow_AdUzKq": {
@@ -175,8 +175,8 @@
         "paragraph": "If you have an idea, a label, or even just a spark of inspiration, let us know about.",
         "heading_size": "h2",
         "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 64
+        "padding_top": 52,
+        "padding_bottom": 100
       }
     }
   },
