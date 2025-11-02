@@ -44,7 +44,7 @@
         "slide_GhE3x3": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/02_glasgow850.jpg",
+            "image": "shopify://shop_images/08_joker.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -94,13 +94,32 @@
             "color_scheme": "scheme-1",
             "text_alignment_mobile": "center"
           }
+        },
+        "slide_c8WRR9": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/05_caskslug.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
         }
       },
       "block_order": [
         "slide_8He3ej",
         "slide_GhE3x3",
         "slide_dW4yih",
-        "slide_LfMcex"
+        "slide_LfMcex",
+        "slide_c8WRR9"
       ],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
@@ -112,6 +131,37 @@
         "image_behavior": "none",
         "show_text_below": false,
         "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "rich_text_hwTken": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_MnqXhY": {
+          "type": "heading",
+          "settings": {
+            "heading": "Let’s talk Scotch",
+            "heading_size": "h1"
+          }
+        },
+        "text_JiPn69": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you have an idea, a label, or even just a spark of inspiration, write us a \"letter\".</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_MnqXhY",
+        "text_JiPn69"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "form": {
@@ -129,6 +179,7 @@
     "1762084597702c0b08",
     "main",
     "slideshow_AdUzKq",
+    "rich_text_hwTken",
     "form"
   ]
 }
