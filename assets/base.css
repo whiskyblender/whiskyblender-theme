@@ -2957,6 +2957,7 @@ details[open]>.header__submenu {
   background: linear-gradient(#222222, #222222); /* Initial gradient */
   transition: background 0.3s ease-in-out; /* Transition for background color */
   cursor: pointer; /* Change cursor to pointer on hover */
+  white-space: pre;
 }
 .navigation-link-wb:before {
   content: "";
