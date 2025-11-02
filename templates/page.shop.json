@@ -22,6 +22,7 @@
       "blocks": {
         "link_EUiBJn": {
           "type": "link",
+          "disabled": true,
           "settings": {
             "text": "The Blending Lab: <br>Create your whisky",
             "url": "shopify://pages/blend"
@@ -29,6 +30,7 @@
         },
         "link_n9p8Mt": {
           "type": "link",
+          "disabled": true,
           "settings": {
             "text": "Custom Tailored: <br>White Label Service",
             "url": "shopify://collections/custom-labels"
@@ -36,6 +38,7 @@
         },
         "link_mcXGni": {
           "type": "link",
+          "disabled": true,
           "settings": {
             "text": "Bottles, Swag, <br> & Gift Vouchers",
             "url": "shopify://collections"
