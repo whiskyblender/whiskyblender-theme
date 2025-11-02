@@ -762,6 +762,7 @@ nav ul li {
   position: relative;
   width: -webkit-fill-available;
   margin: 0;
+      white-space: pre;
 }
 
 nav ul li a {
