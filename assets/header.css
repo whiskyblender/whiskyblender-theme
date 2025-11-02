@@ -114,7 +114,6 @@ nav ul {
 }
 
 nav ul li {
-    text-transform: uppercase;
     position: relative;
     width: -webkit-fill-available;
     margin: 0;
