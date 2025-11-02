@@ -15,6 +15,9 @@
     },
     "main": {
       "type": "main-page",
+      "custom_css": [
+        "h3{font-family: trimPosterCompressed, sans-serif; font-weight: 400; color: #000; margin: 0 0 20px; font-size: 72px; line-height: 72px;}"
+      ],
       "settings": {
         "padding_top": 36,
         "padding_bottom": 36
