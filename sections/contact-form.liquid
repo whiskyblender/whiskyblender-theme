@@ -22,6 +22,9 @@
       <h2 class="title title-wrapper--no-top-margin inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         {{ section.settings.heading }}
       </h2>
+      <p>
+        {{ section.settings.paragraph }}
+      </p>
     {%- else -%}
       <h2 class="visually-hidden">{{ 'templates.contact.form.title' | t }}</h2>
     {%- endif -%}
@@ -149,6 +152,12 @@
       "id": "heading",
       "default": "Contact form",
       "label": "Heading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "paragraph",
+      "default": "Contact form",
+      "label": "Paragraph"
     },
     {
       "type": "select",
