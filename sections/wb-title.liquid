@@ -1,0 +1,45 @@
+<section class="standard">
+  <article class="upwards">
+    <p>
+      {{ section.settings.text }}
+    </p>
+    <p class="help">{{ section.settings.text_help }}</p>
+    <div class="yaldy-image1">
+      <img
+        height="auto"
+        width="auto"
+        src="{{ section.settings.image_url | image_url: width: 750, height: 600}}"
+        alt=" {{ section.settings.image_about.alt }}"
+      >
+    </div>
+  </article>
+</section>
+
+{% schema %}
+{
+  "name": "WB - Title",
+  "presets": [
+    {
+      "name": "WB - Title",
+      "category": "Whiskyblender"
+    }
+  ],
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+    },
+    {
+      "type": "text",
+      "id": "text_help",
+      "label": "Text Help",
+    },
+    {
+      "type": "image_picker",
+      "id": "image_url",
+      "label": "Image About"
+    }
+  ]
+}
+{% endschema %}
