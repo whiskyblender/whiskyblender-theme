@@ -14,12 +14,10 @@
       "blocks": {
         "title_N3ebyR": {
           "type": "title",
-          "disabled": true,
           "settings": {}
         },
         "variant_picker_hbj6CT": {
           "type": "variant_picker",
-          "disabled": true,
           "settings": {
             "picker_type": "button",
             "swatch_shape": "circle"
@@ -27,12 +25,10 @@
         },
         "price_kRHNGV": {
           "type": "price",
-          "disabled": true,
           "settings": {}
         },
         "buy_buttons_jjFBBr": {
           "type": "buy_buttons",
-          "disabled": true,
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
