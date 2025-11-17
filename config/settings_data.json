@@ -413,7 +413,8 @@
       ".header-wrapper--border-bottom {border: 0;}",
       "ul.trustpilot {padding: 20px 0 !important;}",
       "ul.socials {display: none;}",
-      "#tollgate,#cookies {left: 0;}"
+      "#tollgate,#cookies {left: 0;}",
+      "textarea.tpo_option-input.tpo_text-box {min-height: unset !important; max-height: 65px !important;}"
     ]
   }
 }
