@@ -414,7 +414,7 @@
       "ul.trustpilot {padding: 20px 0 !important;}",
       "ul.socials {display: none;}",
       "#tollgate,#cookies {left: 0;}",
-      "textarea.tpo_option-input.tpo_text-box {min-height: unset !important; max-height: 65px !important;}"
+      "textarea.tpo_option-input.tpo_text-box {min-height: unset !important; max-height: 22px !important; font-size: 20px; padding: 18px; border-radius: 12px;}"
     ]
   }
 }
