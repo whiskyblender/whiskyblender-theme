@@ -12,7 +12,7 @@
     "main": {
       "type": "main-list-collections",
       "settings": {
-        "excluded_collections_list": "promoted, Custom Blends, Shop items"
+        "excluded_collections_list": "promoted, Custom Blends, Shop items, Single Cask"
       }
     }
   },
