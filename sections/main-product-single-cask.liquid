@@ -86,6 +86,7 @@
           {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
           {%- for block in section.blocks -%}
+            console.log(product.title)
             {%- case block.type -%}
               {%- when '@app' -%}
                 {% render block %}
