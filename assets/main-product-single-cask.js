@@ -62,6 +62,8 @@ const getVariantFromSelectedOptions = () => {
   let radios = document.querySelectorAll('.max input[type="radio"]');
   let checked = Array.from(radios).filter((radio) => radio.checked);
   let selectedOptions = checked.map((radio) => radio.value);
+      let customLabelValue = document.querySelector('#custom-label-input').value;
+console.log(customLabelValue)
   let variant = Window.product.variants.find((variant) => {
     return variant.options.every((option, i) => option === selectedOptions[i]);
   });
