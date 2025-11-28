@@ -278,21 +278,7 @@
                   {{ block.shopify_attributes }}
                 >
 
-                  <label
-                    class="quantity__label form__label"
-                    for="Quantity-{{ section.id }}"
-                    aria-labelledby="quantity-label-{{ section.id }}"
-                  >
-                    <span aria-hidden="true">{{ 'products.product.quantity.label' | t }}</span>
-                    <span class="quantity__rules-cart{% if cart_qty == 0 %} hidden{% endif %}" aria-hidden="true">
-                      {%- render 'loading-spinner' -%}
-                      <span
-                        >(
-                        {{- 'products.product.quantity.in_cart_html' | t: quantity: cart_qty -}}
-                        )</span
-                      >
-                    </span>
-                  </label>
+
                   <div class="price-per-item__container">
                     <quantity-input class="quantity" data-url="{{ product.url }}" data-section="{{ section.id }}">
                       <button class="quantity__button" name="minus" type="button">
