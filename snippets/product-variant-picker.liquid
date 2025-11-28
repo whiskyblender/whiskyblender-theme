@@ -45,14 +45,12 @@
       {%- elsif picker_type == 'button' -%}
         <div class="buying-option">
           <legend class="form__label" >{{ option.name }}</legend>
-          <div class="segmented-control">
           {% render 'product-variant-options',
             product: product,
             option: option,
             block: block,
             picker_type: picker_type
           %}
-          </div>
         </div>
       {%- else -%}
         <div class="product-form__input product-form__input--dropdown">
