@@ -784,6 +784,13 @@
   </div>
 </product-info>
 
+{% javascript %}
+  new Glide('.glide', {
+      type: 'carousel',
+      gap: 20
+  }).mount()
+{% endjavascript %}
+
 {% schema %}
 {
   "name": "t:sections.main-product.name",
