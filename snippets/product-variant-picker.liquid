@@ -43,7 +43,7 @@
           %}
         </fieldset>
       {%- elsif picker_type == 'button' -%}
-        hello
+            <div class="segmented-control">
         <fieldset class="js product-form__input product-form__input--pill">
           <legend class="form__label">{{ option.name }}</legend>
           {% render 'product-variant-options',
@@ -53,6 +53,7 @@
             picker_type: picker_type
           %}
         </fieldset>
+        </div>
       {%- else -%}
         <div class="product-form__input product-form__input--dropdown">
           <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
