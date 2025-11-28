@@ -124,7 +124,7 @@
         </div>
       </div>
       <div class="product__info">
-        <article
+        <section
           id="ProductInfo-{{ section.id }}"
         >
           {%- assign product_form_id = 'product-form-' | append: section.id -%}
@@ -724,7 +724,7 @@
             {{ 'products.product.view_full_details' | t }}
             {{- 'icon-arrow.svg' | inline_asset_content -}}
           </a>
-        </article>
+        </section>
       </div>
     </div>
 
