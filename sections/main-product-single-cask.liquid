@@ -10,13 +10,13 @@
   {% endif %}
 >
   {{ 'fonts-wb.css' | asset_url | stylesheet_tag }}
-{{ 'main.css' | asset_url | stylesheet_tag }}
-{{ 'home.css' | asset_url | stylesheet_tag }}
-{{ 'shop.css' | asset_url | stylesheet_tag }}
-{{ 'glide.min.js' | asset_url | script_tag }}
-{{ 'glide.core.css' | asset_url | stylesheet_tag }}
-{{ 'glide.theme.css' | asset_url | stylesheet_tag }}
-{{ 'glide.custom.css' | asset_url | stylesheet_tag }}
+  {{ 'main.css' | asset_url | stylesheet_tag }}
+  {{ 'home.css' | asset_url | stylesheet_tag }}
+  {{ 'shop.css' | asset_url | stylesheet_tag }}
+  {{ 'glide.min.js' | asset_url | script_tag }}
+  {{ 'glide.core.css' | asset_url | stylesheet_tag }}
+  {{ 'glide.theme.css' | asset_url | stylesheet_tag }}
+  {{ 'glide.custom.css' | asset_url | stylesheet_tag }}
   {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
   {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
   {{ 'component-price.css' | asset_url | stylesheet_tag }}
@@ -81,27 +81,27 @@
   {%- endif -%}
 
   <div class="page-width">
-          <h3>{{ product.title }}</h3>
-      <ul class="product-summary">
-        {% if product.type != blank %}
-          <li>{{ product.type }}</li>
+    <h3>{{ product.title }}</h3>
+    <ul class="product-summary">
+      {% if product.type != blank %}
+        <li>{{ product.type }}</li>
+      {% endif %}
+      {% for option in product.options_with_values %}
+        {% if option.name == 'Bottle size' %}
+          <li>
+            {% for value in option.values %}
+              {%- if forloop.length > 0 -%}
+                {{ value }}
+                {% unless forloop.last %}/{% endunless %}
+              {% endif %}
+            {% endfor %}
+          </li>
         {% endif %}
-        {% for option in product.options_with_values %}
-          {% if option.name == 'Bottle size' %}
-            <li>
-              {% for value in option.values %}
-                {%- if forloop.length > 0 -%}
-                  {{ value }}
-                  {% unless forloop.last %}/{% endunless %}
-                {% endif %}
-              {% endfor %}
-            </li>
-          {% endif %}
-        {% endfor %}
-        {% if product.metafields.custom.abv != blank %}
-          <li>{{ product.metafields.custom.abv }} abv</li>
-        {% endif %}
-      </ul>
+      {% endfor %}
+      {% if product.metafields.custom.abv != blank %}
+        <li>{{ product.metafields.custom.abv }} abv</li>
+      {% endif %}
+    </ul>
     <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
       <div class="glide thumbnails">
         <div class="glide__track" data-glide-el="track">
@@ -123,13 +123,12 @@
           <button class="glide__arrow glide__arrow--right" data-glide-dir=">">Next</button>
         </div>
       </div>
-      <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-        <section
+      <div class="product__info">
+        <article
           id="ProductInfo-{{ section.id }}"
-          class="standard"
         >
           {%- assign product_form_id = 'product-form-' | append: section.id -%}
-            
+
           {%- for block in section.blocks -%}
             {%- case block.type -%}
               {%- when '@app' -%}
@@ -725,14 +724,9 @@
             {{ 'products.product.view_full_details' | t }}
             {{- 'icon-arrow.svg' | inline_asset_content -}}
           </a>
-        </section>
+        </article>
       </div>
     </div>
-
-
-
-
-
 
     <script type="application/ld+json">
       {{ product | structured_data }}
@@ -742,9 +736,9 @@
 
 {% javascript %}
   new Glide('.glide', {
-      type: 'carousel',
-      gap: 20
-  }).mount()
+    type: 'carousel',
+    gap: 20,
+  }).mount();
 {% endjavascript %}
 {% schema %}
 {
