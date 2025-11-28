@@ -80,7 +80,26 @@
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
   <div class="page-width">
           <h3>{{ product.title }}</h3>
-
+      <ul class="product-summary">
+        {% if product.type != blank %}
+          <li>{{ product.type }}</li>
+        {% endif %}
+        {% for option in product.options_with_values %}
+          {% if option.name == 'Bottle size' %}
+            <li>
+              {% for value in option.values %}
+                {%- if forloop.length > 0 -%}
+                  {{ value }}
+                  {% unless forloop.last %}/{% endunless %}
+                {% endif %}
+              {% endfor %}
+            </li>
+          {% endif %}
+        {% endfor %}
+        {% if product.metafields.custom.abv != blank %}
+          <li>{{ product.metafields.custom.abv }} abv</li>
+        {% endif %}
+      </ul>
     <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
       <div class="grid__item product__media-wrapper">
         {% render 'product-media-gallery', variant_images: variant_images %}
