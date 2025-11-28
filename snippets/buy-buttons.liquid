@@ -94,7 +94,7 @@
               {%- if product.selected_or_first_available_variant == nil -%}
                 {{ 'products.product.unavailable' | t }}
               {%- elsif product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
-                {{ 'products.product.sold_out' | t }}
+                Out of stock
               {%- else -%}
                 Add to basket
               {%- endif -%}
