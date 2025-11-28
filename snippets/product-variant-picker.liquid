@@ -45,12 +45,14 @@
       {%- elsif picker_type == 'button' -%}
         <fieldset class="buying-option js product-form__input product-form__input--pill">
           <h4 class="form__label">{{ option.name }}</h4>
+          <div class="segmented-control">
           {% render 'product-variant-options',
             product: product,
             option: option,
             block: block,
             picker_type: picker_type
           %}
+          </div>
         </fieldset>
       {%- else -%}
         <div class="product-form__input product-form__input--dropdown">
