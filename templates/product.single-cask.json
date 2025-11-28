@@ -12,15 +12,8 @@
     "main": {
       "type": "main-product-single-cask",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "title": {
-          "type": "title",
+        "description": {
+          "type": "description",
           "settings": {}
         },
         "caption": {
@@ -51,21 +44,15 @@
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": false
           }
-        },
-        "description": {
-          "type": "description",
-          "settings": {}
         }
       },
       "block_order": [
-        "vendor",
-        "title",
+        "description",
         "caption",
         "price",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons",
-        "description"
+        "buy_buttons"
       ],
       "settings": {
         "enable_sticky_info": true,
