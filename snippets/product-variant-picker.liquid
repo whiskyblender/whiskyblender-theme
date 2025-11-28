@@ -46,6 +46,7 @@
         <fieldset class="js product-form__input product-form__input--pill">
           <legend class="form__label">{{ option.name }}</legend>
         <div class="buying-option">
+            <div class="segmented-control">
 
           {% render 'product-variant-options',
             product: product,
@@ -53,6 +54,7 @@
             block: block,
             picker_type: picker_type
           %}
+        </div>
         </div>
 
         </fieldset>

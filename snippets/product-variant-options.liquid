@@ -77,7 +77,6 @@
       additional_props: input_dataset
     %}
   {%- elsif picker_type == 'button' -%}
-            <div class="segmented-control">
 
     <input
       type="radio"
@@ -97,7 +96,6 @@
       {{ value -}}
       {{ label_unavailable }}
     </label>
-    </div>
 
   {%- elsif picker_type == 'dropdown' or picker_type == 'swatch_dropdown' -%}
     <option
