@@ -306,7 +306,6 @@
                   </div>
                 </details>
               </div>
-            <div style="background:red">
             {%- when 'quantity_selector' -%}
               <div
                 id="Quantity-Form-{{ section.id }}"
@@ -578,7 +577,6 @@
                 </div>
               {%- endif -%}
             </div></div>
-      </div>
             {%- when 'complementary' -%}
               <product-recommendations
                 class="complementary-products quick-add-hidden{% if block.settings.make_collapsible_row %} is-accordion{% endif %}{% if block.settings.enable_quick_add %} complementary-products-contains-quick-add{% endif %}"
