@@ -93,7 +93,6 @@
   {%- endstyle -%}
 
   <!--<div class="page-width">-->
-  <div class="wb-container">
     <h3>{{ product.title }}</h3>
     <ul class="product-summary">
       {% if product.type != blank %}
@@ -115,7 +114,6 @@
         <li>{{ product.metafields.custom.abv }} abv</li>
       {% endif %}
     </ul>
-  </div>
     <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
       <div class="glide thumbnails">
         <div class="glide__track" data-glide-el="track">
@@ -137,6 +135,7 @@
           <button class="glide__arrow glide__arrow--right" data-glide-dir=">">Next</button>
         </div>
       </div>
+
       <div class="product__info">
         <section
           id="ProductInfo-{{ section.id }}"
