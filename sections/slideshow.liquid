@@ -22,9 +22,17 @@
         display: block;
       }
     }
+
+    .wb-container {
+      padding: 10px 30px;
+      max-width: 1024px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      margin: 40px auto;
+    }
   {%- endstyle -%}
 {%- endif -%}
-
+<div class="wb-container">
 <slideshow-component
   class="slider-mobile-gutter{% if section.settings.layout == 'grid' %} page-width{% endif %}{% if section.settings.show_text_below %} mobile-text-below{% endif %}"
   role="region"
@@ -240,7 +248,7 @@
     </div>
   {%- endif -%}
 </slideshow-component>
-
+</div>
 {%- if request.design_mode -%}
   <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
