@@ -82,7 +82,7 @@
 
   {%- style -%}
 
-    .shopify-section.section {
+    .section {
       width: 100%;
       max-width:100%;
     }
@@ -149,7 +149,7 @@
       
       
       <section
-        id="ProductInfo-{{ section.id }}"
+        id="ProductInfo-{{ section.id }}" class="section"
       >
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
