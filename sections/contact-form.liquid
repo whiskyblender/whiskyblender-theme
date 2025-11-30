@@ -12,6 +12,13 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+    .wb-container {
+      padding: 10px 30px;
+      max-width: 1024px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
 {%- endstyle -%}
 
 {{ 'fonts-wb.css' | asset_url | stylesheet_tag }}
