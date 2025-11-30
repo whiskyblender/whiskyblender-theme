@@ -92,7 +92,6 @@
     }
   {%- endstyle -%}
 
-  <!--<div class="page-width">-->
     <h3>{{ product.title }}</h3>
     <ul class="product-summary">
       {% if product.type != blank %}
@@ -699,7 +698,7 @@
     <script type="application/ld+json">
       {{ product | structured_data }}
     </script>
-  <!--</div>-->
+    
 </product-info>
 
 {% javascript %}
