@@ -529,6 +529,7 @@
             {%- when 'variant_picker' -%}
               {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
       <div class="easify-product-options"></div>
+      <div style="background:red">
 
             {%- when 'buy_buttons' -%}
               {%- render 'buy-buttons',
@@ -576,7 +577,7 @@
                   </p>
                 </div>
               {%- endif -%}
-            </div></div>
+            </div></div></div>
             {%- when 'complementary' -%}
               <product-recommendations
                 class="complementary-products quick-add-hidden{% if block.settings.make_collapsible_row %} is-accordion{% endif %}{% if block.settings.enable_quick_add %} complementary-products-contains-quick-add{% endif %}"
