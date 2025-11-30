@@ -27,11 +27,11 @@
             "url": "shopify://pages/blend"
           }
         },
-        "link_n9p8Mt": {
+        "link_nKG6TP": {
           "type": "link",
           "settings": {
-            "text": "Our collections",
-            "url": "shopify://collections"
+            "text": "Single casks",
+            "url": "shopify://collections/single-cask"
           }
         },
         "link_mcXGni": {
@@ -41,22 +41,25 @@
             "url": "https://whiskyblender.com/collections/gift-vouchers"
           }
         },
+        "link_n9p8Mt": {
+          "type": "link",
+          "disabled": true,
+          "settings": {
+            "text": "Our collections",
+            "url": "shopify://collections"
+          }
+        },
         "link_KBLU4U": {
           "type": "link",
+          "disabled": true,
           "settings": {
             "text": "Andras' bottles",
             "url": "shopify://collections/oor-bottlings"
           }
         },
-        "link_nKG6TP": {
-          "type": "link",
-          "settings": {
-            "text": "Single casks",
-            "url": "shopify://collections/single-cask"
-          }
-        },
         "link_dkVW7p": {
           "type": "link",
+          "disabled": true,
           "settings": {
             "text": "Wee bits",
             "url": "shopify://collections/claes-an-hings"
@@ -89,10 +92,10 @@
       },
       "block_order": [
         "link_EUiBJn",
-        "link_n9p8Mt",
-        "link_mcXGni",
-        "link_KBLU4U",
         "link_nKG6TP",
+        "link_mcXGni",
+        "link_n9p8Mt",
+        "link_KBLU4U",
         "link_dkVW7p",
         "link_tcbkFH",
         "link_pUMDGH",
