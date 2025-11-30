@@ -239,7 +239,7 @@
     </ul>
   </div>
   <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
-    <div class="glide thumbnails">
+    <div class="glide thumbnails wb-container">
       <div class="glide__track" data-glide-el="track">
         <ul class="glide__slides">
           {% for image in product.images %}
