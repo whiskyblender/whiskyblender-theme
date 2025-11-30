@@ -254,6 +254,7 @@
               </div>
               {%- endif -%}
               <div class="wb-container-full">
+              <div class="wb-container">
             {%- when 'sku' -%}
               <p
                 class="product__sku{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.sku.size == 0 %} visibility-hidden{% endif %}"
@@ -554,6 +555,7 @@
                   </p>
                 </div>
               {%- endif -%}
+            </div></div>
             {%- when 'complementary' -%}
               <product-recommendations
                 class="complementary-products quick-add-hidden{% if block.settings.make_collapsible_row %} is-accordion{% endif %}{% if block.settings.enable_quick_add %} complementary-products-contains-quick-add{% endif %}"
@@ -696,7 +698,6 @@
                     </div>
                   </aside>
                 {%- endif -%}
-              </div>
                 {{ 'component-card.css' | asset_url | stylesheet_tag }}
                 {{ 'component-complementary-products.css' | asset_url | stylesheet_tag }}
                 {%- if block.settings.enable_quick_add -%}
