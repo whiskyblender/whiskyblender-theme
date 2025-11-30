@@ -80,8 +80,20 @@
     >
   {%- endif -%}
 
+  {%- style -%}
+    .wb-container {
+      padding: 10px 5%;
+    }
+
+    @media screen and (min-width: 750px) {
+      .wb-container {
+        padding: 10px 5%;
+      }
+    }
+  {%- endstyle -%}
+
   <div class="page-width">
-    <div style="padding: 10px 5%;">
+    <div class="wb-container">
     <h3>{{ product.title }}</h3>
     <ul class="product-summary">
       {% if product.type != blank %}
