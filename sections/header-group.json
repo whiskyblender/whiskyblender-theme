@@ -14,6 +14,13 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_7FH4dD": {
+          "type": "announcement",
+          "settings": {
+            "text": "Orders made after the 18th of December will be shipped in the New Year",
+            "link": ""
+          }
+        },
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
@@ -23,6 +30,7 @@
         }
       },
       "block_order": [
+        "announcement_7FH4dD",
         "announcement-bar-0"
       ],
       "custom_css": [
