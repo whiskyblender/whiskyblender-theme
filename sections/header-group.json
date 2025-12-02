@@ -17,7 +17,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Welcome to our store",
+            "text": "Cost of shipping 2 bottles is the same as 1",
             "link": ""
           }
         }
@@ -25,9 +25,8 @@
       "block_order": [
         "announcement-bar-0"
       ],
-      "disabled": true,
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-5",
         "show_line_separator": true,
         "show_social": false,
         "auto_rotate": false,
