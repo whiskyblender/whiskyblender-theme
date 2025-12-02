@@ -41,13 +41,21 @@
             "text": "Orders made after the 18th of December will be shipped in the New Year",
             "link": ""
           }
+        },
+        "announcement_C7Gqrm": {
+          "type": "announcement",
+          "settings": {
+            "text": "Check out our early Christmas gift bottles",
+            "link": "shopify://products/the-nip-before-chritmas"
+          }
         }
       },
       "block_order": [
         "announcement-bar-0",
         "announcement_idnGwp",
         "announcement_XWfxmd",
-        "announcement_7FH4dD"
+        "announcement_7FH4dD",
+        "announcement_C7Gqrm"
       ],
       "custom_css": [
         ".announcement-bar__message {min-height: auto;}"
