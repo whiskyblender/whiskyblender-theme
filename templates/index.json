@@ -15,7 +15,7 @@
         "intro_text": "Welcome to the home of custom Scotch whisky. Great tasting, unique and personalised whisky for drinking. Perfect for that special occasion or just a wee treat for yersel*.",
         "help_text": "* because let's face it, we all deserve a wee treat now and again.",
         "signature_image": "shopify://shop_images/signed.svg",
-        "show_snow": false,
+        "show_snow": true,
         "show_banner": false,
         "banner_text": "The Lab is closed until 6 January 2025 but place your orders for prompt delivery in the new year.",
         "title": "Your own whisky",
