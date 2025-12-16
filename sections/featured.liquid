@@ -12,7 +12,7 @@
       {{ section.settings.keythings_text }}
     </p>
     <ul class="product-list">
-      {% assign bottles = collections.promoted %}
+      {% assign bottles = collections.featured %}
 
       {% for product in bottles.products %}
         {% render 'product-display', product: product %}
