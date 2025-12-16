@@ -178,6 +178,13 @@
         "padding_top": 52,
         "padding_bottom": 100
       }
+    },
+    "featured_dfYCnx": {
+      "type": "featured",
+      "name": "Featured",
+      "settings": {
+        "keythings_text": "The key things you need to know about this site are that you can blend your own whisky (that's right, you read correctly), shop around for other unique whisky goods and gifts, and more Scotch-related stuff."
+      }
     }
   },
   "order": [
@@ -185,6 +192,7 @@
     "main",
     "slideshow_AdUzKq",
     "rich_text_hwTken",
-    "form"
+    "form",
+    "featured_dfYCnx"
   ]
 }
