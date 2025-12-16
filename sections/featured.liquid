@@ -1,4 +1,5 @@
 {{ 'fonts-wb.css' | asset_url | stylesheet_tag }}
+{{ 'main.css' | asset_url | stylesheet_tag }}
 {{ 'shop.css' | asset_url | stylesheet_tag }}
 
 <section class="banding">
@@ -7,7 +8,7 @@
       {{ section.settings.keythings_text }}
     </p>
     <ul class="product-list">
-      {% assign bottles = collections.promoted %}
+      {% assign bottles = collections.client-bottles %}
 
       {% for product in bottles.products %}
         {% render 'product-display', product: product %}
