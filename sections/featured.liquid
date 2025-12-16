@@ -14,67 +14,6 @@
     <button onclick="location.href='/collections';" class="secondary-button">Our collections</button>
   </article>
 </section>
-<section class="standard">
-  <div id="guide"></div>
-  <article>
-    <div class="video-embed desktop">
-      <iframe src={{ section.settings.video_url_desktop }} frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div class="video-embed tablet">
-      <iframe src={{ section.settings.video_url_tablet }} frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div class="video-embed mobile">
-      <iframe src={{ section.settings.video_url_mobile }} frameborder="0" allowfullscreen></iframe>
-    </div>
-  </article>
-  <article class="hang-right">
-    <a name="guide"></a>
-    <h3 class="section-title-wb">{{ section.settings.guide_title }}</h3>
-    <p>
-      {{ section.settings.guide_text }}
-    </p>
-    <div class="step">
-      <span class="step1">Step 1</span>
-      <h4>{{ section.settings.step1_title }}</h4>
-      <p>
-        {{ section.settings.step1_text }}
-      </p>
-    </div>
-    <div class="step">
-      <span class="step2">Step 2</span>
-      <h4>{{ section.settings.step2_title }}</h4>
-      <p>
-        {{ section.settings.step2_text }}
-      </p>
-    </div>
-    <div class="step">
-      <span class="step3">Step 3</span>
-      <h4>{{ section.settings.step3_title }}</h4>
-      <p>
-        {{ section.settings.step3_text }}
-      </p>
-    </div>
-    <div class="home-image4">
-      <div class="label-cycle"></div>
-      <img
-        height="auto"
-        width="auto"
-        src="{{ section.settings.stepper_image | image_url: width: 356, height: 866 }}"
-        alt=" {{ section.settings.stepper_image.alt }}"
-      >
-    </div>
-  </article>
-  <article>
-    <span class="get-started-link">
-      <button class="pulse" onclick="window.location.href='{{ section.settings.start_link }}';">
-        {{ section.settings.start_button_label }}
-      </button>
-    </span>
-  </article>
-</section>
-{% javascript %}
-  var lightbox= new SimpleLightbox({ elements: document.querySelectorAll('.imageGallery1 a') });
-{% endjavascript %}
 
 {% schema %}
 {
