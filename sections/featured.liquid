@@ -1,0 +1,178 @@
+
+<section class="banding">
+  <article class="max">
+    <p>
+      {{ section.settings.keythings_text }}
+    </p>
+    <ul class="product-list">
+      {% assign bottles = collections.promoted %}
+
+      {% for product in bottles.products %}
+        {% render 'product-display', product: product %}
+      {% endfor %}
+    </ul>
+    <button onclick="location.href='/collections';" class="secondary-button">Our collections</button>
+  </article>
+</section>
+<section class="standard">
+  <div id="guide"></div>
+  <article>
+    <div class="video-embed desktop">
+      <iframe src={{ section.settings.video_url_desktop }} frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="video-embed tablet">
+      <iframe src={{ section.settings.video_url_tablet }} frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="video-embed mobile">
+      <iframe src={{ section.settings.video_url_mobile }} frameborder="0" allowfullscreen></iframe>
+    </div>
+  </article>
+  <article class="hang-right">
+    <a name="guide"></a>
+    <h3 class="section-title-wb">{{ section.settings.guide_title }}</h3>
+    <p>
+      {{ section.settings.guide_text }}
+    </p>
+    <div class="step">
+      <span class="step1">Step 1</span>
+      <h4>{{ section.settings.step1_title }}</h4>
+      <p>
+        {{ section.settings.step1_text }}
+      </p>
+    </div>
+    <div class="step">
+      <span class="step2">Step 2</span>
+      <h4>{{ section.settings.step2_title }}</h4>
+      <p>
+        {{ section.settings.step2_text }}
+      </p>
+    </div>
+    <div class="step">
+      <span class="step3">Step 3</span>
+      <h4>{{ section.settings.step3_title }}</h4>
+      <p>
+        {{ section.settings.step3_text }}
+      </p>
+    </div>
+    <div class="home-image4">
+      <div class="label-cycle"></div>
+      <img
+        height="auto"
+        width="auto"
+        src="{{ section.settings.stepper_image | image_url: width: 356, height: 866 }}"
+        alt=" {{ section.settings.stepper_image.alt }}"
+      >
+    </div>
+  </article>
+  <article>
+    <span class="get-started-link">
+      <button class="pulse" onclick="window.location.href='{{ section.settings.start_link }}';">
+        {{ section.settings.start_button_label }}
+      </button>
+    </span>
+  </article>
+</section>
+{% javascript %}
+  var lightbox= new SimpleLightbox({ elements: document.querySelectorAll('.imageGallery1 a') });
+{% endjavascript %}
+
+{% schema %}
+{
+  "name": "Landing - Whisky Blender",
+  "tag": "div",
+
+  "presets": [
+    {
+      "name": "Landing - WB"
+    }
+  ],
+  "settings": [
+
+    {
+      "type": "textarea",
+      "id": "keythings_text",
+      "label": "Key Things Text",
+      "default": "The key things you need to know about this site are that you can blend your own whisky (that's right, you read correctly), shop around for other unique whisky goods and gifts, and more Scotch-related stuff."
+    },
+    {
+      "type": "text",
+      "id": "guide_title",
+      "label": "Guide Title",
+      "default": "It's a skoosh!"
+    },
+    {
+      "type": "textarea",
+      "id": "guide_text",
+      "label": "Guide Text",
+      "default": "Blending your own whisky is a fun and rewarding experience. Here's a quick guide to get you started."
+    },
+    {
+      "type": "image_picker",
+      "id": "stepper_image",
+      "label": "blend stepper image"
+    },
+    {
+      "type": "text",
+      "id": "step1_title",
+      "label": "Step 1 Title",
+      "default": "BLEND IT"
+    },
+    {
+      "type": "textarea",
+      "id": "step1_text",
+      "label": "Step 1 Text",
+      "default": "Select from a range of whiskies to create your own unique blend."
+    },
+    {
+      "type": "text",
+      "id": "step2_title",
+      "label": "Step 2 Title",
+      "default": "BRAND IT"
+    },
+    {
+      "type": "textarea",
+      "id": "step2_text",
+      "label": "Step 2 Text",
+      "default": "Select from a range of casks to mature your blend in."
+    },
+    {
+      "type": "text",
+      "id": "step3_title",
+      "label": "Step 3 Title",
+      "default": "BOTTLE IT"
+    },
+    {
+      "type": "textarea",
+      "id": "step3_text",
+      "label": "Step 3 Text",
+      "default": "Give your blend a name and share it with the world."
+    },
+    {
+      "type": "url",
+      "id": "start_link",
+      "label": "Start Link"
+    },
+    {
+      "type": "text",
+      "id": "start_button_label",
+      "label": "Start Button Label",
+      "default": "Get Started"
+    },
+        {
+      "type": "url",
+      "id": "video_url_mobile",
+      "label": "Video URL Mobile"
+    },
+        {
+      "type": "url",
+      "id": "video_url_desktop",
+      "label": "Video URL Desktop"
+    },
+        {
+      "type": "url",
+      "id": "video_url_tablet",
+      "label": "Video URL Tablet"
+    },
+  ]
+}
+{% endschema %}
