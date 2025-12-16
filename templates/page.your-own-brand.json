@@ -124,6 +124,7 @@
         "slide_LfMcex",
         "slide_c8WRR9"
       ],
+      "disabled": true,
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "layout": "grid",
