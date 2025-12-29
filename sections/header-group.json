@@ -20,42 +20,10 @@
             "text": "Save on shipping by ordering multiple bottles",
             "link": ""
           }
-        },
-        "announcement_idnGwp": {
-          "type": "announcement",
-          "settings": {
-            "text": "Label up one of our exclusive single malts",
-            "link": "shopify://collections/single-cask"
-          }
-        },
-        "announcement_XWfxmd": {
-          "type": "announcement",
-          "settings": {
-            "text": "Get a gift voucher via email to give to someone",
-            "link": "shopify://products/gift-credit"
-          }
-        },
-        "announcement_7FH4dD": {
-          "type": "announcement",
-          "settings": {
-            "text": "Orders made after the 21st of December will be shipped in the New Year",
-            "link": ""
-          }
-        },
-        "announcement_C7Gqrm": {
-          "type": "announcement",
-          "settings": {
-            "text": "Check out our early Christmas gift bottles",
-            "link": "shopify://products/the-nip-before-christmas"
-          }
         }
       },
       "block_order": [
-        "announcement-bar-0",
-        "announcement_idnGwp",
-        "announcement_XWfxmd",
-        "announcement_7FH4dD",
-        "announcement_C7Gqrm"
+        "announcement-bar-0"
       ],
       "custom_css": [
         ".announcement-bar__message {min-height: auto;}"
