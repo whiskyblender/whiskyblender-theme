@@ -17,13 +17,29 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
+            "text": "We're closed for the holidays. All orders will be sent out from the 5th of January",
+            "link": ""
+          }
+        },
+        "announcement_xCxpKT": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "link": ""
+          }
+        },
+        "announcement_RkfYQT": {
+          "type": "announcement",
+          "settings": {
             "text": "Save on shipping by ordering multiple bottles",
             "link": ""
           }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "announcement_xCxpKT",
+        "announcement_RkfYQT"
       ],
       "custom_css": [
         ".announcement-bar__message {min-height: auto;}"
