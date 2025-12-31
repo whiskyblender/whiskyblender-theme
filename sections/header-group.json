@@ -21,13 +21,6 @@
             "link": ""
           }
         },
-        "announcement_xCxpKT": {
-          "type": "announcement",
-          "settings": {
-            "text": "Welcome to our store",
-            "link": ""
-          }
-        },
         "announcement_RkfYQT": {
           "type": "announcement",
           "settings": {
@@ -38,7 +31,6 @@
       },
       "block_order": [
         "announcement-bar-0",
-        "announcement_xCxpKT",
         "announcement_RkfYQT"
       ],
       "custom_css": [
