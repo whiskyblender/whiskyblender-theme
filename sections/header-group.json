@@ -16,6 +16,7 @@
       "blocks": {
         "announcement-bar-0": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "We're closed for the holidays. All orders will be sent out from the 5th of January",
             "link": ""
