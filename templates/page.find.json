@@ -1,21 +1,21 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "find_hero_banner_qVihVQ": {
       "type": "find-hero-banner",
       "settings": {
         "title": "Blends",
-        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/4b29f434eab9483aa4eb2464ffa0cb00.webm",
-        "webp_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/4b29f434eab9483aa4eb2464ffa0cb00.webm",
-        "poster_url": "shopify:\/\/shop_images\/uisge-bg.jpg"
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/4b29f434eab9483aa4eb2464ffa0cb00.webm",
+        "webp_url": "https://cdn.shopify.com/videos/c/o/v/4b29f434eab9483aa4eb2464ffa0cb00.webm",
+        "poster_url": "shopify://shop_images/uisge-bg.jpg"
       }
     },
     "main": {
@@ -39,7 +39,7 @@
         "link_tRtMmV": {
           "type": "link",
           "settings": {
-            "image_url": "shopify:\/\/shop_images\/cocoanutsnberries.jpg",
+            "image_url": "shopify://shop_images/cocoanutsnberries.jpg",
             "circle_background_color": "lightblue",
             "circle_background_top_position": "80px",
             "circle_background_left_position": "-80px",
@@ -47,13 +47,13 @@
             "circle_background_left_position_mobile": "",
             "title": "Rich & Complex",
             "description": "You'll spend months trying to pick out all the subtle flavours.",
-            "url": "\/"
+            "url": "/"
           }
         },
         "link_r9BPCm": {
           "type": "link",
           "settings": {
-            "image_url": "shopify:\/\/shop_images\/bananasplit.jpg",
+            "image_url": "shopify://shop_images/bananasplit.jpg",
             "circle_background_color": "pink",
             "circle_background_top_position": "80px",
             "circle_background_left_position": "90px",
@@ -61,13 +61,13 @@
             "circle_background_left_position_mobile": "",
             "title": "Sherry Influence",
             "description": "Rich, full-bodied and with that distinctive velvety mouthfeel",
-            "url": "\/"
+            "url": "/"
           }
         },
         "link_py9MpT": {
           "type": "link",
           "settings": {
-            "image_url": "shopify:\/\/shop_images\/toastedmarshmallows.jpg",
+            "image_url": "shopify://shop_images/toastedmarshmallows.jpg",
             "circle_background_color": "yellow",
             "circle_background_top_position": "-140px",
             "circle_background_left_position": "",
@@ -75,13 +75,13 @@
             "circle_background_left_position_mobile": "",
             "title": "Sweet Tooth",
             "description": "Love sweet things? Toffee, caramel, honey, the lot!",
-            "url": "\/"
+            "url": "/"
           }
         },
         "link_GHj9di": {
           "type": "link",
           "settings": {
-            "image_url": "shopify:\/\/shop_images\/maltsoakedbacon.jpg",
+            "image_url": "shopify://shop_images/maltsoakedbacon.jpg",
             "circle_background_color": "lightblue",
             "circle_background_top_position": "-80px",
             "circle_background_left_position": "80px",
@@ -89,7 +89,7 @@
             "circle_background_left_position_mobile": "",
             "title": "Malt Lover",
             "description": "Don't like grain? No problem. Blended malt Scotch whisky.",
-            "url": "\/"
+            "url": "/"
           }
         }
       },
@@ -104,8 +104,8 @@
         "title": "A few wee  suggestions!",
         "description": "These are good starting points to take into the lab and tweak, or simply fill out the label and buy it. We still recommend diving in and \"doing it yourself\". It's a skoosh... so have fun, trust your instincts and",
         "link_text": "create that perfect whisky!",
-        "link_url": "shopify:\/\/pages\/blend",
-        "find_image": "shopify:\/\/shop_images\/lightbulb.svg"
+        "link_url": "shopify://pages/create",
+        "find_image": "shopify://shop_images/lightbulb.svg"
       }
     },
     "find_sharing_mKHPfB": {
@@ -113,13 +113,13 @@
       "settings": {
         "title": "Share Your Blend",
         "description": "Share your blend with the world. Tag us or use #myownwhisky or #whiskyblender so we can find it.",
-        "find_image": "shopify:\/\/shop_images\/glencairn.svg",
-        "social_image1": "shopify:\/\/shop_images\/twitter1.jpg",
-        "social_image1_url": "https:\/\/twitter.com\/DG_Referee\/status\/1380980990689091589",
-        "social_image2": "shopify:\/\/shop_images\/facebook1.jpg",
-        "social_image2_url": "https:\/\/www.facebook.com\/themachar\/posts\/pfbid07KRCHXJvstmUmmtR2rXbbAvciggDjfPVUiwUNGaeLYbtpjb6Tj2ywJ4c1cnCZipal",
-        "social_image3": "shopify:\/\/shop_images\/instagram2.jpg",
-        "social_image3_url": "https:\/\/www.instagram.com\/p\/Bzg038CnOJX\/"
+        "find_image": "shopify://shop_images/glencairn.svg",
+        "social_image1": "shopify://shop_images/twitter1.jpg",
+        "social_image1_url": "https://twitter.com/DG_Referee/status/1380980990689091589",
+        "social_image2": "shopify://shop_images/facebook1.jpg",
+        "social_image2_url": "https://www.facebook.com/themachar/posts/pfbid07KRCHXJvstmUmmtR2rXbbAvciggDjfPVUiwUNGaeLYbtpjb6Tj2ywJ4c1cnCZipal",
+        "social_image3": "shopify://shop_images/instagram2.jpg",
+        "social_image3_url": "https://www.instagram.com/p/Bzg038CnOJX/"
       }
     },
     "find_newsletter_yRCnzG": {

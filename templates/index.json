@@ -21,7 +21,7 @@
         "title": "Your own whisky",
         "hero_video": "https://cdn.shopify.com/videos/c/o/v/52dedaab3e1348939a50021f6ebf171d.webm",
         "hero_video_webm": "https://cdn.shopify.com/videos/c/o/v/52dedaab3e1348939a50021f6ebf171d.webm",
-        "get_started_button_url": "shopify://pages/blend",
+        "get_started_button_url": "shopify://pages/create",
         "start_button_label": "Get Started",
         "gallery_image1": "shopify://shop_images/gallery03.jpg",
         "gallery_image2": "shopify://shop_images/gallery14.jpg",
@@ -67,7 +67,7 @@
         "step2_text": "Once your bottle is full you have to give it a name for us to print onto your label. Seriously though, go to town with the name. We have an award-winning bottle called <a href=\"/products/yer-aunt-fannys\">Yer Aunt Fanny's.</a>",
         "step3_title": "Own it",
         "step3_text": "All that's left is to declare this blend YOURS, save it into our growing database of thousands, and then buy it (or ask someone else to buy it for you)! And enjoy whisky like it's supposed to be enjoyed. With good friends and banter.",
-        "start_link": "shopify://pages/blend",
+        "start_link": "shopify://pages/create",
         "start_button_label": "Start blending"
       }
     }
