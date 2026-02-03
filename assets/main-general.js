@@ -1,3 +1,8 @@
+  new Glide('.glide', {
+      type: 'carousel',
+      gap: 20
+  }).mount()
+
 const attachEventListeners = () => {
   const radioButtons = document.querySelectorAll('.max input[type="radio"]');
 
