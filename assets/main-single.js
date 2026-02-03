@@ -137,6 +137,7 @@ const addProductToCart = async () => {
 
   atc_button.addEventListener("click", async function () {
     let variant = getVariantFromSelectedOptions();
+    console.log(variant);
     let quantity = document
       .querySelector(".quantity")
       .querySelector("input").value;
