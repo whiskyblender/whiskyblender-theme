@@ -1,3 +1,16 @@
+console.log('start js')
+      var glide = new Glide('.glide', {
+            type: 'carousel',
+            focusAt: 'center',
+            gap: 40,
+            perView: 2,
+            breakpoints: {
+                767: { perView: 1 }
+            }
+        })
+
+  glide.mount()
+
 const createStylesheet = async () => {
   await fetch("https://app.whiskyblender.com/blend/get-all")
     .then((response) => response.json())
