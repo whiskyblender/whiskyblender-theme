@@ -95,6 +95,7 @@ const getVariantFromSelectedOptions = () => {
   });
   console.log(Window.product.variants)
   console.log(selectedOptions)
+  console.log(variant)
   return variant;
 };
 
