@@ -1,11 +1,23 @@
-  new Glide('.glide', {
-      type: 'carousel',
-      gap: 40,
+new Glide('.glide', {
+  type: 'carousel',
+  gap: 60,
+  perView: 3,
+  autoplay: 1,
+  animationDuration: 3000,
+  animationTimingFunc: 'linear',
+  hoverpause: true,
+  peek: {
+    before: 50,
+    after: 50,
+  },
+  breakpoints: {
+    767: {
       perView: 2,
-      autoplay: 2000,
-      animationDuration: 1000,
-      hoverpause: true,
-      breakpoints: {
-          767: { perView: 1 }
-      }
-  }).mount()
+      gap: 10,
+      peek: {
+        before: 5,
+        after: 5,
+      },
+    },
+  },
+}).mount();
