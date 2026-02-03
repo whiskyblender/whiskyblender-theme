@@ -82,7 +82,7 @@ const getVariantFromSelectedOptions = () => {
   let radios = document.querySelectorAll('.max input[type="radio"]');
   let checked = Array.from(radios).filter((radio) => radio.checked);
   let selectedOptions = checked.map((radio) => radio.value);
-
+  console.log(selectedOptions)
   const active = document.querySelector('.glide__slide--active');
   if(active){
     selectedOptions.push(active.classList[0]);
