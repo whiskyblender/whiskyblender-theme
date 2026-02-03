@@ -88,7 +88,7 @@ const getVariantFromSelectedOptions = () => {
   if(active){
     selectedOptions.push(active.classList[0]);
   } else{
-        selectedOptions.push('Standard');
+        selectedOptions.push('standard');
   }
   let variant = Window.product.variants.find((variant) => {
     return variant.options.every((option, i) => option === selectedOptions[i]);
