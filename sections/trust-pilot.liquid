@@ -2,6 +2,7 @@
 {{ 'glide.core.css' | asset_url | stylesheet_tag }}
 {{ 'glide.theme.css' | asset_url | stylesheet_tag }}
 {{ 'glide.custom.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'yas-glide.js' | asset_url }}" defer="defer"></script>
 
 <section class="banding">
   <article class="max">
@@ -97,17 +98,7 @@
 {% endstylesheet %}
 
 {% javascript %}
-  new Glide('.glide', {
-      type: 'carousel',
-      gap: 40,
-      perView: 2,
-      autoplay: 2000,
-      animationDuration: 1000,
-      hoverpause: true,
-      breakpoints: {
-          767: { perView: 1 }
-      }
-  }).mount()
+
 {% endjavascript %}
 {% schema %}
 {
