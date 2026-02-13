@@ -14,13 +14,9 @@ window.onload = function() {
         window.location = window.location + '#loaded';
     }
 }
-// Source - https://stackoverflow.com/a/24400865
-// Posted by Amin Jafari, modified by community. See post 'Timeline' for change history
-// Retrieved 2026-02-13, License - CC BY-SA 4.0
-
 setTimeout(function(){
-    window.location.reload(); // you can pass true to reload function to ignore the client cache and reload from the server
-},delayTime); //delayTime should be written in milliseconds e.g. 1000 which equals 1 second
+    location.reload();
+}, 3000);
 
   </script>
 <script src="{{ 'main-single.js' | asset_url }}" defer="defer"></script>
