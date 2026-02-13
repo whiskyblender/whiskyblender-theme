@@ -9,12 +9,13 @@
 {{ 'glide.theme.css' | asset_url | stylesheet_tag }}
 {{ 'glide.custom.css' | asset_url | stylesheet_tag }}
 <script type="text/javascript">
-window.onload = function() {
-    if(!window.location.hash) {
-        window.location = window.location + '#loaded';
-        window.location.reload(), 3000;
-    }
-}
+if (!sessionStorage.getItem("pageRefreshed")) {
+    sessionStorage.setItem("pageRefreshed", "true");
+
+    setTimeout(() => {
+      location.reload();
+    }, 4000);
+  }
   </script>
 <script src="{{ 'main-single.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'confetti.min.js' | asset_url }}" defer="defer"></script>
