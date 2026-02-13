@@ -15,7 +15,7 @@ const params = new URLSearchParams(window.location.search);
     setTimeout(() => {
       params.set("refreshed", "1");
       window.location.search = params.toString();
-    }, 1000);
+    }, 3000);
   }
   </script>
 <script src="{{ 'main-single.js' | asset_url }}" defer="defer"></script>
