@@ -153,12 +153,12 @@
           {{ product.first_available_variant.price | money }}
         </div>
       </div>
-      <!--{% if product.selected_or_first_available_variant.available == false %}-->
+      {% if product.selected_or_first_available_variant.available == false %}
         <!-- Product is out of stock -->
-        <!--<button class=" atc disabled" disabled>Out of stock</button>-->
-      <!--{% else %}-->
+        <button class=" atc disabled" disabled>Out of stock</button>
+      {% else %}
         <button class="pulse atc">Add to basket</button>
-      <!--</div>{% endif %}</article>-->
+      {% endif %}
     </div>
   </article>
 </section>
