@@ -12,7 +12,7 @@
 window.onload = function() {
     if(!window.location.hash) {
         window.location = window.location + '#loaded';
-        window.location.reload();
+        setTimeout(location.reload.bind(location), 60000);
     }
 }
   </script>
