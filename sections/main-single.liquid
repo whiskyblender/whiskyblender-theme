@@ -8,7 +8,7 @@
 {{ 'glide.core.css' | asset_url | stylesheet_tag }}
 {{ 'glide.theme.css' | asset_url | stylesheet_tag }}
 {{ 'glide.custom.css' | asset_url | stylesheet_tag }}
-<script type="text/javascript">
+<!-->--<script type="text/javascript">
 const params = new URLSearchParams(window.location.search);
 
   if (!params.has("refreshed")) {
@@ -17,7 +17,7 @@ const params = new URLSearchParams(window.location.search);
       window.location.search = params.toString();
     }, 6000);
   }
-  </script>
+  </script>-->
 <script src="{{ 'main-single.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'confetti.min.js' | asset_url }}" defer="defer"></script>
 
