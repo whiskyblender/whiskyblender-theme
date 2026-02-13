@@ -12,12 +12,9 @@
 window.onload = function() {
     if(!window.location.hash) {
         window.location = window.location + '#loaded';
+        window.location.reload(), 3000;
     }
 }
-setTimeout(function(){
-    location.reload();
-}, 3000);
-
   </script>
 <script src="{{ 'main-single.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'confetti.min.js' | asset_url }}" defer="defer"></script>
