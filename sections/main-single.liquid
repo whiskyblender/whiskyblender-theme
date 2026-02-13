@@ -8,9 +8,9 @@
 {{ 'glide.theme.css' | asset_url | stylesheet_tag }}
 {{ 'glide.custom.css' | asset_url | stylesheet_tag }}
 
+<script src="{{ 'main-single.js' | asset_url }}" defer></script>
 <script src="{{ 'confetti.min.js' | asset_url }}" defer></script>
-<script src="{{ 'main-single.js' | asset_url }}" async></script>
-<script src="{{ 'glide.min.js' | asset_url }}" async></script>
+<script src="{{ 'glide.min.js' | asset_url }}" defer></script>
 
 <div id="bottle-page" class="label">
   <section class="standard crop">
