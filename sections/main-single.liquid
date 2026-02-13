@@ -11,6 +11,19 @@
 <script src="{{ 'main-single.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'confetti.min.js' | asset_url }}" defer="defer"></script>
 
+
+
+<script type="text/javascript">
+const params = new URLSearchParams(window.location.search);
+
+  if (!params.has("refreshed")) {
+    setTimeout(() => {
+      params.set("refreshed", "1");
+      window.location.search = params.toString();
+    }, 4000);
+  }
+  </script>
+
 <div id="bottle-page" class="label">
   <section class="standard crop">
     <article class="hang-right">
@@ -312,14 +325,3 @@
   ]
 }
 {% endschema %}
-
-<script type="text/javascript">
-const params = new URLSearchParams(window.location.search);
-
-  if (!params.has("refreshed")) {
-    setTimeout(() => {
-      params.set("refreshed", "1");
-      window.location.search = params.toString();
-    }, 4000);
-  }
-  </script>
