@@ -9,11 +9,12 @@
 {{ 'glide.theme.css' | asset_url | stylesheet_tag }}
 {{ 'glide.custom.css' | asset_url | stylesheet_tag }}
 <script type="text/javascript">
-if (!sessionStorage.getItem("pageRefreshed")) {
-    sessionStorage.setItem("pageRefreshed", "true");
+const params = new URLSearchParams(window.location.search);
 
+  if (!params.has("refreshed")) {
     setTimeout(() => {
-      location.reload();
+      params.set("refreshed", "1");
+      window.location.search = params.toString();
     }, 4000);
   }
   </script>
