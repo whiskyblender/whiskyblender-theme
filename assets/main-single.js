@@ -11,6 +11,30 @@ console.log('start js')
 
   glide.mount()
 
+
+function fetchProduct() {
+  let urlDetails = location.href.split("?")
+  fetch(urlDetails[0] + ".js")
+    .then((response) => response.json())
+    .then((data) => {
+      Window.product = data;
+    });
+
+
+  createStylesheet();
+  attachEventListeners();
+  addQuantityListeners();
+  addProductToCart();
+}
+
+if (document.readyState === "loading") {
+  // Loading hasn't finished yet
+  document.addEventListener("DOMContentLoaded", fetchProduct);
+} else {
+  // `DOMContentLoaded` has already fired
+  fetchProduct();
+}
+
     const labelLayer = document.querySelector('.label-background');
   const glide_slide = document.querySelectorAll('.max .glide__slide--active');
   console.log(glide_slide)
@@ -247,30 +271,6 @@ const addProductToCart = async () => {
       });
   });
 };
-
-
-function fetchProduct() {
-  let urlDetails = location.href.split("?")
-  fetch(urlDetails[0] + ".js")
-    .then((response) => response.json())
-    .then((data) => {
-      Window.product = data;
-    });
-
-
-  createStylesheet();
-  attachEventListeners();
-  addQuantityListeners();
-  addProductToCart();
-}
-
-if (document.readyState === "loading") {
-  // Loading hasn't finished yet
-  document.addEventListener("DOMContentLoaded", fetchProduct);
-} else {
-  // `DOMContentLoaded` has already fired
-  fetchProduct();
-}
 
         // start - confetti
 
