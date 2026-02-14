@@ -1,4 +1,15 @@
+console.log('start js')
+      var glide = new Glide('.glide', {
+            type: 'carousel',
+            focusAt: 'center',
+            gap: 40,
+            perView: 2,
+            breakpoints: {
+                767: { perView: 1 }
+            }
+        })
 
+  glide.mount()
 
     const labelLayer = document.querySelector('.label-background');
   const glide_slide = document.querySelectorAll('.max .glide__slide--active');
@@ -278,15 +289,3 @@ if (document.readyState === "loading") {
   // `DOMContentLoaded` has already fired
   fetchProduct();
 }
-console.log('start js')
-      var glide = new Glide('.glide', {
-            type: 'carousel',
-            focusAt: 'center',
-            gap: 40,
-            perView: 2,
-            breakpoints: {
-                767: { perView: 1 }
-            }
-        })
-
-  glide.mount()
