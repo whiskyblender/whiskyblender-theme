@@ -11,42 +11,6 @@ console.log('start js')
 
   glide.mount()
 
-
-
-const addProductToCart = async () => {
-  let atc_button = document.querySelector(".atc");
-
-  atc_button.addEventListener("click", async function () {
-    let variant = getVariantFromSelectedOptions();
-    console.log(variant);
-    let quantity = document
-      .querySelector(".quantity")
-      .querySelector("input").value;
-    let data = {
-      items: [
-        {
-          id: variant.id,
-          quantity: parseInt(quantity),
-        },
-      ],
-    };
-
-    await fetch("/cart/add.js", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        atc_button.innerHTML = "Added to Basket!";
-        window.location.href = "/cart";
-      });
-  });
-};
-
-
     const labelLayer = document.querySelector('.label-background');
   const glide_slide = document.querySelectorAll('.max .glide__slide--active');
   console.log(glide_slide)
@@ -248,6 +212,39 @@ const addQuantityListeners = () => {
     } else {
       subtotal.innerHTML = `£${((variant.price / 100) * quantity.value).toFixed(2)}`;
     }
+  });
+};
+
+const addProductToCart = async () => {
+  let atc_button = document.querySelector(".atc");
+
+  atc_button.addEventListener("click", async function () {
+    let variant = getVariantFromSelectedOptions();
+    console.log(variant);
+    let quantity = document
+      .querySelector(".quantity")
+      .querySelector("input").value;
+    let data = {
+      items: [
+        {
+          id: variant.id,
+          quantity: parseInt(quantity),
+        },
+      ],
+    };
+
+    await fetch("/cart/add.js", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        atc_button.innerHTML = "Added to Basket!";
+        window.location.href = "/cart";
+      });
   });
 };
 
