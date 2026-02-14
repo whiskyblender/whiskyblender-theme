@@ -1,4 +1,4 @@
-console.log('start')
+console.log('start js')
       var glide = new Glide('.glide', {
             type: 'carousel',
             focusAt: 'center',
