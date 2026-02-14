@@ -30,24 +30,6 @@ console.log('start js')
       }
     
 })
-        // start - confetti
-
-        const start = () => {
-            setTimeout(function() {
-                confetti.start()
-            }, 600); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
-        };
-
-        //  Stop - confetti
-
-        const stop = () => {
-            setTimeout(function() {
-                confetti.stop()
-            }, 4000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
-        };
-
-        start();
-        stop();
   
           function insertSpaceForLongWords(str) {
             const splitLength = 14;
@@ -289,3 +271,22 @@ if (document.readyState === "loading") {
   // `DOMContentLoaded` has already fired
   fetchProduct();
 }
+
+        // start - confetti
+
+        const start = () => {
+            setTimeout(function() {
+                confetti.start()
+            }, 600); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+        };
+
+        //  Stop - confetti
+
+        const stop = () => {
+            setTimeout(function() {
+                confetti.stop()
+            }, 4000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+        };
+
+        start();
+        stop();
