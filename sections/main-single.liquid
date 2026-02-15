@@ -1,4 +1,3 @@
-
 {{ 'fonts-wb.css' | asset_url | stylesheet_tag }}
 {{ 'main.css' | asset_url | stylesheet_tag }}
 {{ 'lab.css' | asset_url | stylesheet_tag }}
@@ -8,7 +7,7 @@
 {{ 'glide.core.css' | asset_url | stylesheet_tag }}
 {{ 'glide.theme.css' | asset_url | stylesheet_tag }}
 {{ 'glide.custom.css' | asset_url | stylesheet_tag }}
-<script src="{{ 'confetti.min.js' | asset_url }}"  defer="defer"></script>
+<script src="{{ 'confetti.min.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'main-single.js' | asset_url }}" defer="defer"></script>
 
 <div id="bottle-page" class="label">
@@ -223,7 +222,7 @@
         </li>
       </ul>
     </article>
-    <!--<p><center>US customers save on postage when purchasing multiple bottles</center></p>-->
+    <!-- <p><center>US customers save on postage when purchasing multiple bottles</center></p> -->
   </section>
 
   {% render 'product-selector' %}
@@ -231,6 +230,16 @@
 
 <style id="bar-colors"></style>
 
+{% javascript %}
+  const params = new URLSearchParams(window.location.search);
+
+  if (!params.has('refreshed')) {
+    setTimeout(() => {
+      params.set('refreshed', '1');
+      window.location.search = params.toString();
+    }, 10000);
+  }
+{% endjavascript %}
 
 {% schema %}
 {
@@ -241,69 +250,69 @@
     }
   ],
   "settings": [
-            {
+    {
       "type": "image_picker",
       "id": "whats_include_1_image",
       "label": "whats_include_1_image"
     },
-                {
+    {
       "type": "text",
       "id": "whats_include_1_title",
       "label": "whats_include_1_title"
     },
-                {
+    {
       "type": "text",
       "id": "whats_include_1_text",
       "label": "whats_include_1_text"
     },
 
-                {
+    {
       "type": "image_picker",
       "id": "whats_include_2_image",
       "label": "whats_include_2_image"
     },
-                {
+    {
       "type": "text",
       "id": "whats_include_2_title",
       "label": "whats_include_2_title"
     },
-                {
+    {
       "type": "text",
       "id": "whats_include_2_text",
       "label": "whats_include_2_text"
     },
 
-                {
+    {
       "type": "image_picker",
       "id": "whats_include_3_image",
       "label": "whats_include_3_image"
     },
-                {
+    {
       "type": "text",
       "id": "whats_include_3_title",
       "label": "whats_include_3_title"
     },
-                {
+    {
       "type": "text",
       "id": "whats_include_3_text",
       "label": "whats_include_3_text"
     },
 
-                {
+    {
       "type": "image_picker",
       "id": "whats_include_4_image",
       "label": "whats_include_4_image"
     },
-                {
+    {
       "type": "text",
       "id": "whats_include_4_title",
       "label": "whats_include_4_title"
     },
-                {
+    {
       "type": "text",
       "id": "whats_include_4_text",
       "label": "whats_include_4_text"
-    },
+    }
   ]
 }
 {% endschema %}
