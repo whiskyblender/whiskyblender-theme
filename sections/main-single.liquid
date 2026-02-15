@@ -231,18 +231,6 @@
 
 <style id="bar-colors"></style>
 
-{% javascript %}
-
-  const params = new URLSearchParams(window.location.search);
-
-  if (!params.has("refreshed")) {
-    setTimeout(() => {
-      params.set("refreshed", "1");
-      window.location.search = params.toString();
-    }, 10000);
-  }
-
-{% endjavascript %}
 
 {% schema %}
 {

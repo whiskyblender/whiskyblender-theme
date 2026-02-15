@@ -1,4 +1,3 @@
-console.log('start js')
       var glide = new Glide('.glide', {
             type: 'carousel',
             focusAt: 'center',
@@ -13,7 +12,6 @@ console.log('start js')
 
     const labelLayer = document.querySelector('.label-background');
   const glide_slide = document.querySelectorAll('.max .glide__slide--active');
-  console.log(glide_slide)
   glide.on('move.after', () => {
       const active = document.querySelector('.glide__slide--active');
       if (active){
@@ -169,7 +167,6 @@ const getVariantFromSelectedOptions = () => {
   let checked = Array.from(radios).filter((radio) => radio.checked);
   let selectedOptions = checked.map((radio) => radio.value);
   const active = document.querySelector('.glide__slide--active');
-  console.log(active)
   if(active){
     selectedOptions.push(active.classList[0]);
   } else{
