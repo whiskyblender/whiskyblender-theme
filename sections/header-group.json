@@ -22,16 +22,24 @@
             "link": ""
           }
         },
+        "announcement_eMgfcW": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "link": ""
+          }
+        },
         "announcement_RkfYQT": {
           "type": "announcement",
           "settings": {
-            "text": "Free UK Shipping",
+            "text": "Free UK Shipping & Discounts on USA",
             "link": ""
           }
         }
       },
       "block_order": [
         "announcement-bar-0",
+        "announcement_eMgfcW",
         "announcement_RkfYQT"
       ],
       "custom_css": [
