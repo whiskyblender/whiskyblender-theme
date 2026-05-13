@@ -9,6 +9,60 @@
  */
 {
   "sections": {
+    "multicolumn_UWtdNR": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_Y9Qt3U": {
+          "type": "column",
+          "settings": {
+            "title": "Duties & Taxes Paid",
+            "text": "<p>No hidden fees on delivery. All duties and taxes are calculated and paid at checkout.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_e4nTDx": {
+          "type": "column",
+          "settings": {
+            "title": "Tracked Shipping",
+            "text": "<p>Fully tracked international shipping to your door. Real-time updates on your order status.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_ym8CJK": {
+          "type": "column",
+          "settings": {
+            "title": "Compliant US Import",
+            "text": "<p>We only ship to states where alcohol import is permitted. Full compliance with all regulations.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_Y9Qt3U",
+        "column_e4nTDx",
+        "column_ym8CJK"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "circle",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "landing_hero_wb_B8tf9K": {
       "type": "landing-hero-wb",
       "settings": {
@@ -77,6 +131,7 @@
     }
   },
   "order": [
+    "multicolumn_UWtdNR",
     "landing_hero_wb_B8tf9K",
     "landing_wb_wBDYHD",
     "trust_pilot_bfYdYJ"
