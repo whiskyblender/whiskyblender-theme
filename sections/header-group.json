@@ -25,10 +25,13 @@
       "block_order": [
         "announcement_jJGFUK"
       ],
+      "custom_css": [
+        ".announcement-bar__message {min-height: auto;}"
+      ],
       "name": "t:sections.announcement-bar.presets.name",
       "settings": {
-        "color_scheme": "scheme-4",
-        "show_line_separator": true,
+        "color_scheme": "scheme-3",
+        "show_line_separator": false,
         "show_social": false,
         "auto_rotate": false,
         "change_slides_speed": 5,
@@ -49,6 +52,7 @@
         },
         "announcement_RkfYQT": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Free shipping available on all orders!",
             "link": ""
@@ -59,6 +63,7 @@
         "announcement-bar-0",
         "announcement_RkfYQT"
       ],
+      "disabled": true,
       "custom_css": [
         ".announcement-bar__message {min-height: auto;}"
       ],
