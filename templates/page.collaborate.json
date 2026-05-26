@@ -11,8 +11,75 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "settings": { "padding_top": 28, "padding_bottom": 28 }
+      "disabled": true,
+      "settings": { "padding_top": 0, "padding_bottom": 0 }
+    },
+    "main_landing": {
+      "type": "wb-main-landing",
+      "name": "Landing Hero",
+      "settings": {
+        "video_file": "",
+        "background_image": "collaborate.jpg",
+        "title": "Your own brand",
+        "description": "Let's collaborate",
+        "primary_button_text": "",
+        "primary_button_url": "",
+        "secondary_button_text": "",
+        "secondary_button_url": ""
+      }
+    },
+    "copy_and_carousel": {
+      "type": "custom-liquid",
+      "name": "Copy and carousel",
+      "settings": {
+        "custom_liquid": "<div class=\"wb-container\"><div class=\"wb-padding wb-collection-copy\"><p>We work with individuals, brands, and businesses to craft bespoke bottles of Scotch whisky that tell a story &mdash; so <a href=\"#wb-getintouch\">tell us yours</a>.</p><p>Whether you're launching a limited-edition release, celebrating a milestone, or building something entirely new, our team helps you create a Scotch that carries your name, your values, and your taste.</p><p>From cask selection and blending to design, bottling, and packaging, we'll guide you through each step of the journey. The result? A whisky that's uniquely yours &mdash; authentic, memorable, and made to share.</p></div><div class=\"glide wb-collabs\"><div class=\"glide__track\" data-glide-el=\"track\"><ul class=\"glide__slides wb-collabphotos\"><li class=\"glide__slide wb-collabphoto\"><img src=\"{{ '01_hoonjuice.jpg' | asset_url }}\" loading=\"lazy\"></li><li class=\"glide__slide wb-collabphoto\"><img src=\"{{ '02_glasgow850.jpg' | asset_url }}\" loading=\"lazy\"></li><li class=\"glide__slide wb-collabphoto\"><img src=\"{{ '03_goldendrop.jpg' | asset_url }}\" loading=\"lazy\"></li><li class=\"glide__slide wb-collabphoto\"><img src=\"{{ '04_joeydunlop.jpg' | asset_url }}\" loading=\"lazy\"></li><li class=\"glide__slide wb-collabphoto\"><img src=\"{{ '05_caskslug.jpg' | asset_url }}\" loading=\"lazy\"></li><li class=\"glide__slide wb-collabphoto\"><img src=\"{{ '06_alba.jpg' | asset_url }}\" loading=\"lazy\"></li><li class=\"glide__slide wb-collabphoto\"><img src=\"{{ '07_oldsport.jpg' | asset_url }}\" loading=\"lazy\"></li><li class=\"glide__slide wb-collabphoto\"><img src=\"{{ '08_joker.jpg' | asset_url }}\" loading=\"lazy\"></li><li class=\"glide__slide wb-collabphoto\"><img src=\"{{ '09_dramsylvania.jpg' | asset_url }}\" loading=\"lazy\"></li></ul></div></div></div><script>document.addEventListener('DOMContentLoaded',function(){if(typeof Glide!=='undefined'){new Glide('.wb-collabs',{type:'carousel',gap:40,perView:4,autoplay:1,animationDuration:5000,animationTimingFunc:'linear',hoverpause:true,breakpoints:{600:{perView:2,animationDuration:3000,gap:20},768:{perView:3,animationDuration:4000,gap:30}}}).mount();}});</script>",
+        "color_scheme": "scheme-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "contact_form": {
+      "type": "custom-liquid",
+      "name": "Contact form",
+      "settings": {
+        "custom_liquid": "<section class=\"wb-banded\"><div class=\"wb-container\"><div class=\"wb-padding\"><a id=\"wb-getintouch\"></a>{% render 'wb-contact-form-markup', heading: 'Let\\'s talk Scotch', description: 'Tell us about an idea, a label, or even just a spark of inspiration.' %}</div></div></section>",
+        "color_scheme": "scheme-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "name": "Some collaborations",
+      "settings": {
+        "collection": "collaborations",
+        "products_to_show": 8,
+        "title": "Some collaborations",
+        "heading_size": "h1",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
-  "order": ["main"]
+  "order": [
+    "main",
+    "main_landing",
+    "copy_and_carousel",
+    "contact_form",
+    "featured_collection"
+  ]
 }
