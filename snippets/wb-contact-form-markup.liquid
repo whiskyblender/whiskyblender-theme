@@ -1,0 +1,72 @@
+{{ 'wb-collaborate.css' | asset_url | stylesheet_tag }}
+
+<section class="wb-banded">
+  <div class="wb-container">
+    <div class="wb-padding">
+      <a id="wb-getintouch"></a>
+      <h2 class="wb-medium-heading">{{ heading | default: 'Let&rsquo;s talk Scotch' }}</h2>
+      <p>
+        {{ description | default: 'Tell us about an idea, a label, or even just a spark of inspiration you have.' }}
+      </p>
+      {%- form 'contact', id: 'ContactForm', class: 'wb-bottle-form wb-letter-form' -%}
+        {%- if form.posted_successfully? -%}
+          <p class="form-status form__message">
+            {{- 'icon-success.svg' | inline_asset_content -}}
+            {{ 'templates.contact.form.post_success' | t }}
+          </p>
+        {%- elsif form.errors -%}
+          <p class="form-status form__message" role="alert">
+            {{- 'icon-error.svg' | inline_asset_content -}}
+            {{ form.errors.translated_fields.email | capitalize }}
+            {{ form.errors.messages.email }}
+          </p>
+        {%- endif -%}
+        <div class="wb-lab-inputs wb-letter-emailinput">
+          <div class="wb-lab-input">
+            <label for="wb-youremail">Your email</label>
+            <input
+              type="email"
+              id="wb-youremail"
+              name="contact[email]"
+              autocomplete="email"
+              aria-required="true"
+              value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+              placeholder="legend@domain.com"
+            >
+          </div>
+        </div>
+        <div class="wb-lab-inputs wb-letter" style="background-image: url({{ 'wb-paper.png' | asset_url }})">
+          <div class="wb-lab-input">
+            <label for="wb-message">Your message</label>
+            <textarea
+              id="wb-message"
+              name="contact[{{ 'templates.contact.form.comment' | t }}]"
+              placeholder="Gie's yer thoughts..."
+              rows="7"
+            >{{- form.body -}}</textarea>
+          </div>
+        </div>
+        <div class="wb-buttons">
+          <input
+            type="submit"
+            value="Send to us"
+            class="wb-button wb-primary-button wb-button-disabled"
+          >
+        </div>
+      {%- endform -%}
+      <script>
+        (function () {
+          const email = document.getElementById('wb-youremail');
+          const submit = document.querySelector('.wb-letter-form .wb-button');
+          if (email && submit) {
+            email.addEventListener('input', function () {
+              submit.classList.toggle('wb-button-disabled', !this.value.trim());
+              submit.disabled = !this.value.trim();
+            });
+            submit.disabled = !email.value.trim();
+          }
+        })();
+      </script>
+    </div>
+  </div>
+</section>
