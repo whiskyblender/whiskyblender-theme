@@ -9,77 +9,191 @@
  */
 {
   "sections": {
+    "1762084597702c0b08": {
+      "type": "_blocks",
+      "settings": {}
+    },
     "main": {
       "type": "main-page",
+      "custom_css": [
+        "h3 {font-family: trimPosterCompressed, sans-serif; font-weight: 400; color: #000; margin: 0 0 20px; font-size: 100px; line-height: 76px;}"
+      ],
+      "settings": {
+        "padding_top": 52,
+        "padding_bottom": 44
+      }
+    },
+    "slideshow_AdUzKq": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_8He3ej": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/01_hoonjuice.jpg",
+            "heading": "",
+            "heading_size": "h2",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": true,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_GhE3x3": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/08_joker.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_dW4yih": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/03_goldendrop.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_LfMcex": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/09_dramsylvania.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_c8WRR9": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/05_caskslug.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_8He3ej",
+        "slide_GhE3x3",
+        "slide_dW4yih",
+        "slide_LfMcex",
+        "slide_c8WRR9"
+      ],
       "disabled": true,
-      "settings": { "padding_top": 0, "padding_bottom": 0 }
-    },
-    "main_landing": {
-      "type": "wb-main-landing",
-      "name": "Landing Hero",
+      "name": "t:sections.slideshow.presets.name",
       "settings": {
-        "video_file": "",
-        "background_image": "collaborate.jpg",
-        "title": "Your own brand",
-        "description": "Let's collaborate",
-        "primary_button_text": "",
-        "primary_button_url": "",
-        "secondary_button_text": "",
-        "secondary_button_url": ""
+        "layout": "grid",
+        "slide_height": "small",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 3,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
       }
     },
-    "copy_and_carousel": {
-      "type": "custom-liquid",
-      "name": "Copy and carousel",
+    "rich_text_hwTken": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_MnqXhY": {
+          "type": "heading",
+          "settings": {
+            "heading": "Let’s talk Scotch",
+            "heading_size": "h1"
+          }
+        },
+        "text_JiPn69": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you have an idea, an event, a label, or even just a spark of inspiration, write us a \"letter\".</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_MnqXhY",
+        "text_JiPn69"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
       "settings": {
-        "custom_liquid": "<div class=\"wb-container\"><div class=\"wb-padding wb-collection-copy\"><p>We work with individuals, brands, and businesses to craft bespoke bottles of Scotch whisky that tell a story &mdash; so <a href=\"#wb-getintouch\">tell us yours</a>.</p><p>Whether you're launching a limited-edition release, celebrating a milestone, or building something entirely new, our team helps you create a Scotch that carries your name, your values, and your taste.</p><p>From cask selection and blending to design, bottling, and packaging, we'll guide you through each step of the journey. The result? A whisky that's uniquely yours &mdash; authentic, memorable, and made to share.</p></div><div class=\"glide wb-collabs\"><div class=\"glide__track\" data-glide-el=\"track\"><ul class=\"glide__slides wb-collabphotos\"><li class=\"glide__slide wb-collabphoto\"><img src=\"{{ '01_hoonjuice.jpg' | asset_url }}\" loading=\"lazy\"></li><li class=\"glide__slide wb-collabphoto\"><img src=\"{{ '02_glasgow850.jpg' | asset_url }}\" loading=\"lazy\"></li><li class=\"glide__slide wb-collabphoto\"><img src=\"{{ '03_goldendrop.jpg' | asset_url }}\" loading=\"lazy\"></li><li class=\"glide__slide wb-collabphoto\"><img src=\"{{ '04_joeydunlop.jpg' | asset_url }}\" loading=\"lazy\"></li><li class=\"glide__slide wb-collabphoto\"><img src=\"{{ '05_caskslug.jpg' | asset_url }}\" loading=\"lazy\"></li><li class=\"glide__slide wb-collabphoto\"><img src=\"{{ '06_alba.jpg' | asset_url }}\" loading=\"lazy\"></li><li class=\"glide__slide wb-collabphoto\"><img src=\"{{ '07_oldsport.jpg' | asset_url }}\" loading=\"lazy\"></li><li class=\"glide__slide wb-collabphoto\"><img src=\"{{ '08_joker.jpg' | asset_url }}\" loading=\"lazy\"></li><li class=\"glide__slide wb-collabphoto\"><img src=\"{{ '09_dramsylvania.jpg' | asset_url }}\" loading=\"lazy\"></li></ul></div></div></div><script>document.addEventListener('DOMContentLoaded',function(){if(typeof Glide!=='undefined'){new Glide('.wb-collabs',{type:'carousel',gap:40,perView:4,autoplay:1,animationDuration:5000,animationTimingFunc:'linear',hoverpause:true,breakpoints:{600:{perView:2,animationDuration:3000,gap:20},768:{perView:3,animationDuration:4000,gap:30}}}).mount();}});</script>",
-        "color_scheme": "scheme-1",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "contact_form": {
-      "type": "custom-liquid",
-      "name": "Contact form",
-      "settings": {
-        "custom_liquid": "<section class=\"wb-banded\"><div class=\"wb-container\"><div class=\"wb-padding\"><a id=\"wb-getintouch\"></a>{% render 'wb-contact-form-markup', heading: 'Let\\'s talk Scotch', description: 'Tell us about an idea, a label, or even just a spark of inspiration.' %}</div></div></section>",
-        "color_scheme": "scheme-1",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "name": "Some collaborations",
-      "settings": {
-        "collection": "collaborations",
-        "products_to_show": 8,
-        "title": "Some collaborations",
-        "heading_size": "h1",
-        "columns_desktop": 4,
-        "enable_desktop_slider": false,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "link",
+        "desktop_content_position": "left",
+        "content_alignment": "left",
         "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 0,
-        "padding_bottom": 0
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "<strong>Let's collaborate</strong>",
+        "paragraph": "If you have an idea, a label, or even just a spark of inspiration, let us know about.",
+        "heading_size": "h2",
+        "color_scheme": "scheme-1",
+        "padding_top": 52,
+        "padding_bottom": 100
+      }
+    },
+    "featured_dfYCnx": {
+      "type": "featured",
+      "name": "Featured",
+      "settings": {
+        "keythings_text": "From cask selection and blending to design, bottling, and packaging, we’ll guide you through each step of the journey. The result? A whisky that’s uniquely yours — authentic, memorable, and made to share. Here's some collaborations we've helped create for different"
       }
     }
   },
   "order": [
+    "1762084597702c0b08",
     "main",
-    "main_landing",
-    "copy_and_carousel",
-    "contact_form",
-    "featured_collection"
+    "slideshow_AdUzKq",
+    "rich_text_hwTken",
+    "form",
+    "featured_dfYCnx"
   ]
 }
