@@ -1,0 +1,240 @@
+{{ 'template-collection.css' | asset_url | stylesheet_tag }}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+
+{%- unless section.settings.quick_add == 'none' -%}
+  {{ 'quick-add.css' | asset_url | stylesheet_tag }}
+{%- endunless -%}
+
+<section class="wb-first-item">
+<div class="wb-container">
+  <div class="wb-padding">
+
+    <div class="wb-collection-header">
+      <h1 class="wb-medium-heading">Shop</h1>
+      {%- if section.settings.collections_link_url != blank -%}
+        <a class="wb-float-right" href="{{ section.settings.collections_link_url }}">Our collections</a>
+      {%- endif -%}
+    </div>
+
+    {%- assign filter_handles = section.settings.filter_collections | split: ',' -%}
+
+    {%- assign first_filter_set = false -%}
+    <div class="wb-bottle-form" style="margin-top: 24px;">
+      {%- for handle_raw in filter_handles -%}
+        {%- assign handle = handle_raw | strip -%}
+        {%- assign col = collections[handle] -%}
+        {%- if col != blank and first_filter_set == false -%}
+          {%- assign first_filter_set = true -%}
+          <span class="wb-radio">
+            <input type="radio" name="wb-filter" id="filter-{{ handle }}" value="{{ col.title }}" checked>
+            <label for="filter-{{ handle }}">{{ col.title }}</label>
+          </span>
+        {%- endif -%}
+      {%- endfor -%}
+      <span class="wb-radio">
+        <input type="radio" name="wb-filter" id="filter-all" value="__all__">
+        <label for="filter-all">All</label>
+      </span>
+      {%- assign skipped_first = false -%}
+      {%- for handle_raw in filter_handles -%}
+        {%- assign handle = handle_raw | strip -%}
+        {%- assign col = collections[handle] -%}
+        {%- if col != blank -%}
+          {%- if skipped_first == false -%}
+            {%- assign skipped_first = true -%}
+          {%- else -%}
+            <span class="wb-radio">
+              <input type="radio" name="wb-filter" id="filter-{{ handle }}" value="{{ col.title }}">
+              <label for="filter-{{ handle }}">{{ col.title }}</label>
+            </span>
+          {%- endif -%}
+        {%- endif -%}
+      {%- endfor -%}
+      <span class="wb-radio">
+        <input type="radio" name="wb-filter" id="filter-sale" value="__sale__">
+        <label for="filter-sale">Sale</label>
+      </span>
+    </div>
+
+    {%- assign source_handles = section.settings.all_source_collections | split: ',' -%}
+    {%- assign seen = '|' -%}
+
+    <ul class="wb-productsgrid wb-tightergrid" role="list" id="wb-shop-grid">
+      {%- for src_handle_raw in source_handles -%}
+        {%- assign src_handle = src_handle_raw | strip -%}
+        {%- assign src_col = collections[src_handle] -%}
+        {%- if src_col != blank -%}
+          {%- for product in src_col.products -%}
+            {%- unless product.tags contains 'Custom-Blend' -%}
+              {%- assign check = '|' | append: product.handle | append: '|' -%}
+              {%- unless seen contains check -%}
+                {%- assign seen = seen | append: product.handle | append: '|' -%}
+                {%- assign col_titles = '' -%}
+                {%- for col in product.collections -%}
+                  {%- assign col_titles = col_titles | append: col.title | append: '|' -%}
+                {%- endfor -%}
+                {%- assign is_sale = false -%}
+                {%- if product.compare_at_price > product.price -%}
+                  {%- assign is_sale = true -%}
+                {%- endif -%}
+                <li class="wb-productcell grid__item product-item"
+                    data-collections="{{ col_titles }}"
+                    {% if is_sale %}data-sale="true"{% endif %}>
+                  {% render 'card-product',
+                    card_product: product,
+                    media_aspect_ratio: section.settings.image_ratio,
+                    image_shape: section.settings.image_shape,
+                    show_secondary_image: section.settings.show_secondary_image,
+                    show_vendor: section.settings.show_vendor,
+                    show_rating: section.settings.show_rating,
+                    quick_add: section.settings.quick_add,
+                    section_id: section.id
+                  %}
+                </li>
+              {%- endunless -%}
+            {%- endunless -%}
+          {%- endfor -%}
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+
+  </div>
+</div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var radios = document.querySelectorAll('input[name="wb-filter"]');
+  var items  = document.querySelectorAll('#wb-shop-grid .product-item');
+  var grid   = document.getElementById('wb-shop-grid');
+
+  function applyFilter(filter) {
+    grid.style.transition = 'opacity 0.2s ease';
+    grid.style.opacity = '0';
+    setTimeout(function () {
+      items.forEach(function (item) {
+        var show;
+        if (filter === '__all__') {
+          show = true;
+        } else if (filter === '__sale__') {
+          show = item.dataset.sale === 'true';
+        } else {
+          var cols = (item.dataset.collections || '').split('|').map(function (c) { return c.trim(); });
+          show = cols.indexOf(filter) !== -1;
+        }
+        item.style.display = show ? '' : 'none';
+      });
+      grid.style.opacity = '1';
+    }, 180);
+  }
+
+  radios.forEach(function (radio) {
+    radio.addEventListener('change', function () {
+      if (this.checked) applyFilter(this.value);
+    });
+  });
+
+  var checkedRadio = document.querySelector('input[name="wb-filter"]:checked');
+  if (checkedRadio) applyFilter(checkedRadio.value);
+
+  var hasSale = Array.from(items).some(function (item) { return item.dataset.sale === 'true'; });
+  if (!hasSale) {
+    var saleSpan = document.getElementById('filter-sale');
+    if (saleSpan) saleSpan.closest('.wb-radio').style.display = 'none';
+  }
+});
+</script>
+
+{% schema %}
+{
+  "name": "Shop All Products",
+  "class": "section",
+  "settings": [
+    {
+      "type": "url",
+      "id": "collections_link_url",
+      "label": "\"Our collections\" link URL"
+    },
+    {
+      "type": "text",
+      "id": "all_source_collections",
+      "label": "All-tab source collections (handles, comma-separated)",
+      "default": "andrews-of-bothwell,wee-bits,custom,collaborations,football",
+      "info": "Products from these collections are combined (deduplicated) for the All tab. Add every collection whose products should appear."
+    },
+    {
+      "type": "text",
+      "id": "filter_collections",
+      "label": "Filter tab collections (handles, comma-separated, in order)",
+      "default": "andrews-of-bothwell,wee-bits,custom,collaborations",
+      "info": "Collection handles to show as filter tabs, in order."
+    },
+    {
+      "type": "header",
+      "content": "Product card"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "options": [
+        { "value": "adapt", "label": "Adapt to image" },
+        { "value": "portrait", "label": "Portrait" },
+        { "value": "square", "label": "Square" }
+      ],
+      "default": "adapt",
+      "label": "Image ratio"
+    },
+    {
+      "type": "select",
+      "id": "image_shape",
+      "options": [
+        { "value": "default", "label": "Default" },
+        { "value": "arch", "label": "Arch" },
+        { "value": "blob", "label": "Blob" },
+        { "value": "chevronleft", "label": "Chevron left" },
+        { "value": "chevronright", "label": "Chevron right" },
+        { "value": "diamond", "label": "Diamond" },
+        { "value": "parallelogram", "label": "Parallelogram" },
+        { "value": "round", "label": "Round" }
+      ],
+      "default": "default",
+      "label": "Image shape"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_secondary_image",
+      "default": true,
+      "label": "Show second image on hover"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_vendor",
+      "default": false,
+      "label": "Show vendor"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_rating",
+      "default": false,
+      "label": "Show product rating"
+    },
+    {
+      "type": "select",
+      "id": "quick_add",
+      "default": "none",
+      "label": "Quick add button",
+      "options": [
+        { "value": "none", "label": "None" },
+        { "value": "standard", "label": "Standard" },
+        { "value": "bulk", "label": "Bulk" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Shop All Products"
+    }
+  ]
+}
+{% endschema %}
