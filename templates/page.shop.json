@@ -119,7 +119,7 @@
     "shop_collection_rAEy64": {
       "type": "shop-collection",
       "settings": {
-        "collection": "custom-labels",
+        "collection": "featured",
         "grey_background": true,
         "display_stock": true
       }
