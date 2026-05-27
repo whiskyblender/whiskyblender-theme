@@ -31,7 +31,7 @@
           "type": "link",
           "settings": {
             "text": "Single casks",
-            "url": "shopify://collections/single-cask"
+            "url": "shopify://collections/single-malts"
           }
         },
         "link_mcXGni": {
@@ -110,7 +110,6 @@
     },
     "shop_items_h3jtr8": {
       "type": "shop-items",
-      "disabled": true,
       "name": "Shop Items",
       "settings": {
         "title": "",
@@ -119,6 +118,7 @@
     },
     "shop_collection_rAEy64": {
       "type": "shop-collection",
+      "disabled": true,
       "settings": {
         "collection": "featured",
         "grey_background": true,
