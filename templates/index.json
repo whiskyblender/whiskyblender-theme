@@ -11,6 +11,7 @@
   "sections": {
     "multicolumn_UWtdNR": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "column_Y9Qt3U": {
           "type": "column",
