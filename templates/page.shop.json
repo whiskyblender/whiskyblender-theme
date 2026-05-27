@@ -110,6 +110,7 @@
     },
     "shop_items_h3jtr8": {
       "type": "shop-items",
+      "disabled": true,
       "name": "Shop Items",
       "settings": {
         "title": "",
