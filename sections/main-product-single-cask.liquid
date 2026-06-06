@@ -248,18 +248,9 @@
       {% if product.type != blank %}
         <li>{{ product.type }}</li>
       {% endif %}
-      {% for option in product.options_with_values %}
-        {% if option.name == 'Bottle size' %}
-          <li>
-            {% for value in option.values %}
-              {%- if forloop.length > 0 -%}
-                {{ value }}
-                {% unless forloop.last %}/{% endunless %}
-              {% endif %}
-            {% endfor %}
-          </li>
-        {% endif %}
-      {% endfor %}
+      {% if product.metafields.custom.bottle_size != blank %}
+        <li>{{ product.metafields.custom.bottle_size }}</li>
+      {% endif %}
       {% if product.metafields.custom.abv != blank %}
         <li>{{ product.metafields.custom.abv }} abv</li>
       {% endif %}
